@@ -89,19 +89,16 @@ class LockAndLoad extends Analyzer {
   }
 
   binomialCDF(n, k, p) {
-    function choose(n, k) {
-      let val = 1;
-      for(let i = 1; i <= k; i++) {
-        val *= (n + 1 - i) / i;
+    const entries = [];
+    for(let i = k; i > 0; i--) {
+      entries.push(Math.pow(p, i) * Math.pow(1 - p, n - i));
+      for(let j = 0; j <= k - i; j++) {
+        entries[j] *= (n + 1 - i) / i;
       }
-      return val;
+      console.log(entries);
     }
-
-    let sum = 0;
-    for(let i = 0; i <= k; i++) {
-      sum += choose(n, i) * Math.pow(p, i) * Math.pow(1 - p, n - i);
-    }
-    return sum;
+    entries.push(Math.pow(1 - p, n));
+    return entries.reduce((a, b) => a + b);
   }
 
   binomialCalculation(procs, tries, proc_chance) {
