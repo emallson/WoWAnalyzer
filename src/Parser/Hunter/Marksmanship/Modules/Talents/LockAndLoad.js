@@ -88,45 +88,24 @@ class LockAndLoad extends Analyzer {
     return this.autoShots * PROC_CHANCE;
   }
 
-  GetZPercent(z) {
-    // If z is greater than 6.5 standard deviations from the mean
-    // the number of significant digits will be outside of a reasonable
-    // range.
-    if (z < -6.5)
-      return 0.0;
-
-    if (z > 6.5)
-      return 1.0;
-
-    let factK = 1;
-    let sum = 0;
-    let term = 1;
-    let k = 0;
-    const loopStop = Math.exp(-23);
-
-    while (Math.abs(term) > loopStop) {
-      term = 0.3989422804 * Math.pow(-1, k) * Math.pow(z, k) / (2 * k + 1) /
-        Math.pow(2, k) * Math.pow(z, k + 1) / factK;
-      sum += term;
-      k++;
-      factK *= k;
+  binomialCDF(n, k, p) {
+    function choose(n, k) {
+      let val = 1;
+      for(let i = 1; i <= k; i++) {
+        val *= (n + 1 - i) / i;
+      }
+      return val;
     }
-    sum += 0.5;
 
+    let sum = 0;
+    for(let i = 0; i <= k; i++) {
+      sum += choose(n, i) * Math.pow(p, i) * Math.pow(1 - p, n - i);
+    }
     return sum;
   }
 
   binomialCalculation(procs, tries, proc_chance) {
-    //Correcting for continuity we add 0.5 to procs, because we're looking for the probability of getting at most the amount of procs we received
-    // if P(X <= a), then P(X<a+0.5)
-    const correctedProcs = procs + 0.5;
-    const nonProcChance = 1 - proc_chance;
-
-    const stddev = Math.sqrt(proc_chance * nonProcChance * tries);
-    //zScore is calculated by saying (X - M) / stddev
-    const zScore = (correctedProcs - this.pn) / stddev;
-
-    return this.GetZPercent(zScore);
+    return this.binomialCDF(tries, procs, proc_chance);
   }
 
   //pn is the mean value of procs
