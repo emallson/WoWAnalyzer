@@ -7,7 +7,7 @@
     "scaling_type": -8,
     "effects": {
       "707038": {
-        "type": 4,
+        "type": 285,
         "avg": 82.454002
       }
     }
@@ -263,8 +263,8 @@
     "scaling_type": -7,
     "effects": {
       "714807": {
-        "type": 4,
-        "avg": 0.051257
+        "type": 285,
+        "avg": 22
       }
     }
   },
@@ -320,7 +320,7 @@
     "scaling_type": -8,
     "effects": {
       "715939": {
-        "type": 4,
+        "type": 285,
         "avg": 28.8589
       }
     }
@@ -352,7 +352,7 @@
     "scaling_type": -8,
     "effects": {
       "716159": {
-        "type": 4,
+        "type": 285,
         "avg": 90
       },
       "720319": {
@@ -393,7 +393,7 @@
     "scaling_type": -1,
     "effects": {
       "716165": {
-        "type": 4,
+        "type": 285,
         "avg": 10.177098
       },
       "720314": {
@@ -411,7 +411,7 @@
     "scaling_type": -8,
     "effects": {
       "716167": {
-        "type": 4,
+        "type": 285,
         "avg": 7.695707
       },
       "716168": {
@@ -420,29 +420,21 @@
       }
     }
   },
-  "269621": {
-    "name": "Invigorating Brew",
-    "effect_list": [
-      718012
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "718012": {
-        "type": 4,
-        "avg": 12.269938
-      }
-    }
-  },
   "270669": {
     "name": "Arcane Pummeling",
     "effect_list": [
-      720338
+      720338,
+      748104
     ],
     "scaling_type": -1,
     "effects": {
       "720338": {
         "type": 4,
-        "avg": 0.312977
+        "avg": 0.39084
+      },
+      "748104": {
+        "type": 4,
+        "avg": 0
       }
     }
   },
@@ -567,19 +559,6 @@
       }
     }
   },
-  "272738": {
-    "name": "Festering Doom",
-    "effect_list": [
-      723827
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "723827": {
-        "type": 4,
-        "avg": 14.202455
-      }
-    }
-  },
   "272742": {
     "name": "Wildfire Cluster",
     "effect_list": [
@@ -650,78 +629,26 @@
       }
     }
   },
-  "272802": {
-    "name": "Fungal Essence",
-    "effect_list": [
-      723924
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "723924": {
-        "type": 4,
-        "avg": 66.239265
-      }
-    }
-  },
-  "272804": {
-    "name": "Iron Fists",
-    "effect_list": [
-      723926,
-      723927
-    ],
-    "scaling_type": -7,
-    "effects": {
-      "723926": {
-        "type": 4,
-        "avg": 2.381773
-      },
-      "723927": {
-        "type": 0,
-        "avg": 0
-      }
-    }
-  },
   "272824": {
     "name": "Deafening Crash",
     "effect_list": [
       723960,
-      723961
+      723961,
+      752814
     ],
     "scaling_type": -8,
     "effects": {
       "723960": {
-        "type": 4,
+        "type": 285,
         "avg": 0
       },
       "723961": {
         "type": 107,
         "avg": 2.300614
-      }
-    }
-  },
-  "272836": {
-    "name": "Trample the Weak",
-    "effect_list": [
-      723998
-    ],
-    "scaling_type": -1,
-    "effects": {
-      "723998": {
-        "type": 4,
-        "avg": 0.334351
-      }
-    }
-  },
-  "272866": {
-    "name": "Executioner's Precision",
-    "effect_list": [
-      724045
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "724045": {
-        "type": 4,
-        "avg": 33.779999
+      },
+      "752814": {
+        "type": 0,
+        "avg": 0
       }
     }
   },
@@ -764,19 +691,6 @@
       }
     }
   },
-  "272911": {
-    "name": "Sharpened Blades",
-    "effect_list": [
-      724115
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "724115": {
-        "type": 4,
-        "avg": 3.233129
-      }
-    }
-  },
   "272932": {
     "name": "Flames of Alacrity",
     "effect_list": [
@@ -813,19 +727,6 @@
       "724173": {
         "type": 4,
         "avg": 15.797545
-      }
-    }
-  },
-  "272955": {
-    "name": "Accelerant",
-    "effect_list": [
-      724206
-    ],
-    "scaling_type": -7,
-    "effects": {
-      "724206": {
-        "type": 4,
-        "avg": 0.95
       }
     }
   },
@@ -890,7 +791,7 @@
     "effects": {
       "724260": {
         "type": 4,
-        "avg": 4.294478
+        "avg": 2.576687
       }
     }
   },
@@ -1008,19 +909,6 @@
       }
     }
   },
-  "273136": {
-    "name": "Critical Flash",
-    "effect_list": [
-      724540
-    ],
-    "scaling_type": -1,
-    "effects": {
-      "724540": {
-        "type": 4,
-        "avg": 1
-      }
-    }
-  },
   "273140": {
     "name": "Righteous Flames",
     "effect_list": [
@@ -1054,19 +942,6 @@
       "724548": {
         "type": 0,
         "avg": 0
-      }
-    }
-  },
-  "273147": {
-    "name": "Deferred Sentence",
-    "effect_list": [
-      724554
-    ],
-    "scaling_type": -1,
-    "effects": {
-      "724554": {
-        "type": 4,
-        "avg": 1
       }
     }
   },
@@ -1127,19 +1002,6 @@
       }
     }
   },
-  "273265": {
-    "name": "Arcane Flurry",
-    "effect_list": [
-      724756
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "724756": {
-        "type": 4,
-        "avg": 1.772
-      }
-    }
-  },
   "273283": {
     "name": "Latent Poison",
     "effect_list": [
@@ -1197,19 +1059,6 @@
       }
     }
   },
-  "273319": {
-    "name": "Thought Harvester",
-    "effect_list": [
-      724849
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "724849": {
-        "type": 4,
-        "avg": 34.785278
-      }
-    }
-  },
   "273326": {
     "name": "Brain Storm",
     "effect_list": [
@@ -1245,20 +1094,35 @@
     "effects": {
       "724865": {
         "type": 4,
-        "avg": 7.607362
+        "avg": 8.871165
       }
     }
   },
   "273338": {
-    "name": "Raking Ferocity",
+    "name": "Untamed Ferocity",
     "effect_list": [
-      724873
+      724873,
+      753655,
+      753656,
+      753659
     ],
     "scaling_type": -8,
     "effects": {
       "724873": {
         "type": 4,
-        "avg": 13.128834
+        "avg": 0
+      },
+      "753655": {
+        "type": 107,
+        "avg": 1.226994
+      },
+      "753656": {
+        "type": 4,
+        "avg": 0
+      },
+      "753659": {
+        "type": 4,
+        "avg": 0
       }
     }
   },
@@ -1280,24 +1144,6 @@
       }
     }
   },
-  "273346": {
-    "name": "Winter's Reach",
-    "effect_list": [
-      724886,
-      724889
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "724886": {
-        "type": 4,
-        "avg": 41.276073
-      },
-      "724889": {
-        "type": 0,
-        "avg": 0
-      }
-    }
-  },
   "273367": {
     "name": "Power of the Moon",
     "effect_list": [
@@ -1312,7 +1158,7 @@
       },
       "736537": {
         "type": 107,
-        "avg": 7
+        "avg": 0.920245
       }
     }
   },
@@ -1325,12 +1171,12 @@
     "scaling_type": -1,
     "effects": {
       "725007": {
-        "type": 4,
-        "avg": 0.446452
+        "type": 285,
+        "avg": 0.351145
       },
       "725008": {
-        "type": 189,
-        "avg": 0.2
+        "type": 4,
+        "avg": 0
       }
     }
   },
@@ -1347,19 +1193,6 @@
       }
     }
   },
-  "273420": {
-    "name": "Bloodcraze",
-    "effect_list": [
-      725030
-    ],
-    "scaling_type": -7,
-    "effects": {
-      "725030": {
-        "type": 4,
-        "avg": 1.2
-      }
-    }
-  },
   "273448": {
     "name": "Lava Shock",
     "effect_list": [
@@ -1373,19 +1206,6 @@
       }
     }
   },
-  "273452": {
-    "name": "Storm of Steel",
-    "effect_list": [
-      725095
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "725095": {
-        "type": 4,
-        "avg": 3.638037
-      }
-    }
-  },
   "273461": {
     "name": "Strength of Earth",
     "effect_list": [
@@ -1395,7 +1215,7 @@
     "effects": {
       "725109": {
         "type": 4,
-        "avg": 18.6
+        "avg": 11.15951
       }
     }
   },
@@ -1465,7 +1285,7 @@
     "effects": {
       "725219": {
         "type": 4,
-        "avg": 0.668712
+        "avg": 0.834356
       }
     }
   },
@@ -1482,37 +1302,6 @@
         "avg": 15.61
       },
       "725222": {
-        "type": 0,
-        "avg": 0
-      }
-    }
-  },
-  "273553": {
-    "name": "Dauntless Divinity",
-    "effect_list": [
-      725290
-    ],
-    "scaling_type": -1,
-    "effects": {
-      "725290": {
-        "type": 4,
-        "avg": 9
-      }
-    }
-  },
-  "273597": {
-    "name": "Ebb and Flow",
-    "effect_list": [
-      725375,
-      725376
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "725375": {
-        "type": 4,
-        "avg": 2.834356
-      },
-      "725376": {
         "type": 0,
         "avg": 0
       }
@@ -1660,7 +1449,7 @@
     "scaling_type": -8,
     "effects": {
       "726617": {
-        "type": 4,
+        "type": 285,
         "avg": 19.239267
       }
     }
@@ -1673,7 +1462,7 @@
     "scaling_type": -8,
     "effects": {
       "726630": {
-        "type": 4,
+        "type": 285,
         "avg": 13.852272
       }
     }
@@ -1686,7 +1475,7 @@
     "scaling_type": -8,
     "effects": {
       "726642": {
-        "type": 4,
+        "type": 285,
         "avg": 103.892036
       }
     }
@@ -1712,21 +1501,8 @@
     "scaling_type": -8,
     "effects": {
       "726680": {
-        "type": 4,
+        "type": 285,
         "avg": 41.556816
-      }
-    }
-  },
-  "274397": {
-    "name": "Sunblaze",
-    "effect_list": [
-      726695
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "726695": {
-        "type": 4,
-        "avg": 9.656442
       }
     }
   },
@@ -1738,7 +1514,7 @@
     "scaling_type": -8,
     "effects": {
       "726726": {
-        "type": 4,
+        "type": 285,
         "avg": 53.100376
       }
     }
@@ -1748,24 +1524,34 @@
     "effect_list": [
       726739
     ],
-    "scaling_type": -7,
+    "scaling_type": -1,
     "effects": {
       "726739": {
-        "type": 4,
-        "avg": 1.11428
+        "type": 285,
+        "avg": 1.14
       }
     }
   },
   "274424": {
-    "name": "Shredding Fury",
+    "name": "Jungle Fury",
     "effect_list": [
-      726746
+      726746,
+      753578,
+      753579
     ],
-    "scaling_type": -8,
+    "scaling_type": -7,
     "effects": {
       "726746": {
         "type": 4,
-        "avg": 11.202454
+        "avg": 1.476421
+      },
+      "753578": {
+        "type": 4,
+        "avg": 0
+      },
+      "753579": {
+        "type": 4,
+        "avg": 0
       }
     }
   },
@@ -1778,7 +1564,7 @@
     "effects": {
       "726761": {
         "type": 4,
-        "avg": 1.533742
+        "avg": 1.165644
       }
     }
   },
@@ -1804,7 +1590,7 @@
     "effects": {
       "726781": {
         "type": 4,
-        "avg": 0.891424
+        "avg": 0.598925
       }
     }
   },
@@ -1831,7 +1617,7 @@
     "effects": {
       "727008": {
         "type": 4,
-        "avg": 14.785275
+        "avg": 14.779141
       },
       "727009": {
         "type": 0,
@@ -1861,7 +1647,7 @@
     "scaling_type": -7,
     "effects": {
       "727160": {
-        "type": 4,
+        "type": 285,
         "avg": 1.604145
       },
       "727161": {
@@ -1878,7 +1664,7 @@
     "scaling_type": -8,
     "effects": {
       "727285": {
-        "type": 4,
+        "type": 285,
         "avg": 10.620075
       }
     }
@@ -1892,7 +1678,7 @@
     "effects": {
       "727372": {
         "type": 4,
-        "avg": 207.784073
+        "avg": 415
       }
     }
   },
@@ -1957,7 +1743,7 @@
     "effects": {
       "728400": {
         "type": 4,
-        "avg": 4.417178
+        "avg": 2.650307
       }
     }
   },
@@ -1990,13 +1776,18 @@
   "275463": {
     "name": "Divine Revelations",
     "effect_list": [
-      728510
+      728510,
+      750486
     ],
-    "scaling_type": -7,
+    "scaling_type": -1,
     "effects": {
       "728510": {
-        "type": 4,
+        "type": 189,
         "avg": 1.39285
+      },
+      "750486": {
+        "type": 107,
+        "avg": 2.748091
       }
     }
   },
@@ -2027,7 +1818,7 @@
     "effects": {
       "728551": {
         "type": 4,
-        "avg": 9.09816
+        "avg": 4.257668
       }
     }
   },
@@ -2070,8 +1861,8 @@
     "scaling_type": -8,
     "effects": {
       "728629": {
-        "type": 4,
-        "avg": 0.662577
+        "type": 285,
+        "avg": 1.325153
       }
     }
   },
@@ -2104,13 +1895,18 @@
   "275722": {
     "name": "Whispers of the Damned",
     "effect_list": [
-      728943
+      728943,
+      751888
     ],
     "scaling_type": -8,
     "effects": {
       "728943": {
         "type": 4,
-        "avg": 4.828221
+        "avg": 0
+      },
+      "751888": {
+        "type": 107,
+        "avg": 7.361963
       }
     }
   },
@@ -2122,21 +1918,8 @@
     "scaling_type": -8,
     "effects": {
       "729163": {
-        "type": 4,
-        "avg": 2.319018
-      }
-    }
-  },
-  "275860": {
-    "name": "Reinforced Plating",
-    "effect_list": [
-      729190
-    ],
-    "scaling_type": -1,
-    "effects": {
-      "729190": {
-        "type": 4,
-        "avg": 0.111789
+        "type": 285,
+        "avg": 1.159509
       }
     }
   },
@@ -2162,7 +1945,7 @@
     "effects": {
       "729242": {
         "type": 4,
-        "avg": 0.662
+        "avg": 0.4
       }
     }
   },
@@ -2192,19 +1975,6 @@
       }
     }
   },
-  "275924": {
-    "name": "Embrace of the Darkfallen",
-    "effect_list": [
-      729279
-    ],
-    "scaling_type": -7,
-    "effects": {
-      "729279": {
-        "type": 4,
-        "avg": 1.089209
-      }
-    }
-  },
   "275929": {
     "name": "Harrowing Decay",
     "effect_list": [
@@ -2231,37 +2001,6 @@
       }
     }
   },
-  "275968": {
-    "name": "Gaping Maw",
-    "effect_list": [
-      729328,
-      729330
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "729328": {
-        "type": 4,
-        "avg": 33.128834
-      },
-      "729330": {
-        "type": 0,
-        "avg": 0
-      }
-    }
-  },
-  "275974": {
-    "name": "Deathbloom",
-    "effect_list": [
-      729338
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "729338": {
-        "type": 4,
-        "avg": 3.680982
-      }
-    }
-  },
   "275975": {
     "name": "Misty Peaks",
     "effect_list": [
@@ -2272,19 +2011,6 @@
       "729339": {
         "type": 4,
         "avg": 1.894276
-      }
-    }
-  },
-  "276007": {
-    "name": "Excoriate",
-    "effect_list": [
-      729381
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "729381": {
-        "type": 4,
-        "avg": 8.055215
       }
     }
   },
@@ -2306,19 +2032,6 @@
       }
     }
   },
-  "276072": {
-    "name": "Poisoned Wire",
-    "effect_list": [
-      729498
-    ],
-    "scaling_type": -7,
-    "effects": {
-      "729498": {
-        "type": 4,
-        "avg": 6
-      }
-    }
-  },
   "276152": {
     "name": "Dawning Sun",
     "effect_list": [
@@ -2329,19 +2042,6 @@
       "730125": {
         "type": 4,
         "avg": 5.626
-      }
-    }
-  },
-  "276155": {
-    "name": "Craggy Bark",
-    "effect_list": [
-      730129
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "730129": {
-        "type": 4,
-        "avg": -4.601227
       }
     }
   },
@@ -2460,8 +2160,7 @@
     "name": "Overflowing Shores",
     "effect_list": [
       732958,
-      732959,
-      733622
+      732959
     ],
     "scaling_type": -8,
     "effects": {
@@ -2470,11 +2169,7 @@
         "avg": 7.97546
       },
       "732959": {
-        "type": 108,
-        "avg": 0
-      },
-      "733622": {
-        "type": 108,
+        "type": 0,
         "avg": 0
       }
     }
@@ -2492,29 +2187,26 @@
       }
     }
   },
-  "277665": {
-    "name": "Niuzao's Blessing",
-    "effect_list": [
-      732966
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "732966": {
-        "type": 4,
-        "avg": 6
-      }
-    }
-  },
   "277666": {
     "name": "Ancestral Resonance",
     "effect_list": [
-      732968
+      732968,
+      754433,
+      756142
     ],
     "scaling_type": -7,
     "effects": {
       "732968": {
-        "type": 4,
-        "avg": 0.233999
+        "type": 285,
+        "avg": 1.532135
+      },
+      "754433": {
+        "type": 0,
+        "avg": 0
+      },
+      "756142": {
+        "type": 285,
+        "avg": 0
       }
     }
   },
@@ -2561,15 +2253,15 @@
     "name": "Perforate",
     "effect_list": [
       732982,
-      732983
+      752549
     ],
     "scaling_type": -8,
     "effects": {
       "732982": {
         "type": 4,
-        "avg": 1.515337
+        "avg": 1.515
       },
-      "732983": {
+      "752549": {
         "type": 4,
         "avg": 0
       }
@@ -2614,26 +2306,8 @@
     "scaling_type": -7,
     "effects": {
       "732986": {
-        "type": 4,
+        "type": 285,
         "avg": 0.372
-      }
-    }
-  },
-  "277678": {
-    "name": "Divine Right",
-    "effect_list": [
-      732989,
-      734266
-    ],
-    "scaling_type": -1,
-    "effects": {
-      "732989": {
-        "type": 4,
-        "avg": 1.480916
-      },
-      "734266": {
-        "type": 0,
-        "avg": 0
       }
     }
   },
@@ -2647,24 +2321,6 @@
       "732991": {
         "type": 4,
         "avg": 0.216794
-      }
-    }
-  },
-  "277680": {
-    "name": "Gift of Forgiveness",
-    "effect_list": [
-      732992,
-      734277
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "732992": {
-        "type": 4,
-        "avg": 2.509202
-      },
-      "734277": {
-        "type": 0,
-        "avg": 0
       }
     }
   },
@@ -2898,7 +2554,7 @@
       },
       "734245": {
         "type": 107,
-        "avg": 7
+        "avg": 1.196319
       }
     }
   },
@@ -2929,7 +2585,7 @@
       },
       "734252": {
         "type": 107,
-        "avg": 0.134969
+        "avg": 0.675
       }
     }
   },
@@ -2937,7 +2593,8 @@
     "name": "Gory Regeneration",
     "effect_list": [
       734253,
-      734254
+      734254,
+      752811
     ],
     "scaling_type": -8,
     "effects": {
@@ -2946,6 +2603,10 @@
         "avg": 13.404907
       },
       "734254": {
+        "type": 0,
+        "avg": 0
+      },
+      "752811": {
         "type": 0,
         "avg": 0
       }
@@ -2997,19 +2658,6 @@
       "734262": {
         "type": 107,
         "avg": 1.656442
-      }
-    }
-  },
-  "278528": {
-    "name": "Pack Alpha",
-    "effect_list": [
-      734282
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "734282": {
-        "type": 4,
-        "avg": 4.171779
       }
     }
   },
@@ -3092,24 +2740,6 @@
       "743265": {
         "type": 107,
         "avg": 2.730061
-      }
-    }
-  },
-  "278533": {
-    "name": "Up Close And Personal",
-    "effect_list": [
-      734294,
-      734295
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "734294": {
-        "type": 4,
-        "avg": 23.8773
-      },
-      "734295": {
-        "type": 0,
-        "avg": 0
       }
     }
   },
@@ -3318,29 +2948,12 @@
       }
     }
   },
-  "278580": {
-    "name": "Meridian Strikes",
-    "effect_list": [
-      734386,
-      734387
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "734386": {
-        "type": 107,
-        "avg": 160.80368
-      },
-      "734387": {
-        "type": 0,
-        "avg": 0
-      }
-    }
-  },
   "278593": {
     "name": "Grace of the Justicar",
     "effect_list": [
       734416,
-      734421
+      734421,
+      750475
     ],
     "scaling_type": -8,
     "effects": {
@@ -3349,6 +2962,10 @@
         "avg": 5.02454
       },
       "734421": {
+        "type": 0,
+        "avg": 0
+      },
+      "750475": {
         "type": 0,
         "avg": 0
       }
@@ -3413,19 +3030,6 @@
       }
     }
   },
-  "278615": {
-    "name": "Zealotry",
-    "effect_list": [
-      734444
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "734444": {
-        "type": 4,
-        "avg": 1.852761
-      }
-    }
-  },
   "278617": {
     "name": "Relentless Inquisitor",
     "effect_list": [
@@ -3458,7 +3062,7 @@
       },
       "734462": {
         "type": 107,
-        "avg": 1.631902
+        "avg": 1.8
       }
     }
   },
@@ -3498,24 +3102,6 @@
       }
     }
   },
-  "278655": {
-    "name": "Sacred Flame",
-    "effect_list": [
-      734493,
-      734494
-    ],
-    "scaling_type": -1,
-    "effects": {
-      "734493": {
-        "type": 107,
-        "avg": 1.608456
-      },
-      "734494": {
-        "type": 189,
-        "avg": 0.430534
-      }
-    }
-  },
   "278659": {
     "name": "Death Throes",
     "effect_list": [
@@ -3543,30 +3129,7 @@
     "effects": {
       "734503": {
         "type": 4,
-        "avg": 0.139285
-      }
-    }
-  },
-  "278664": {
-    "name": "Fan of Blades",
-    "effect_list": [
-      734508,
-      734509,
-      734510
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "734508": {
-        "type": 4,
-        "avg": 1.546012
-      },
-      "734509": {
-        "type": 0,
-        "avg": 0
-      },
-      "734510": {
-        "type": 0,
-        "avg": 0
+        "avg": 0.0836
       }
     }
   },
@@ -3627,13 +3190,18 @@
   "278681": {
     "name": "The First Dance",
     "effect_list": [
-      734538
+      734538,
+      753883
     ],
     "scaling_type": -7,
     "effects": {
       "734538": {
         "type": 4,
-        "avg": 6.72
+        "avg": 3.119984
+      },
+      "753883": {
+        "type": 0,
+        "avg": 0
       }
     }
   },
@@ -3743,8 +3311,8 @@
     "scaling_type": -8,
     "effects": {
       "734592": {
-        "type": 4,
-        "avg": 39.263802
+        "type": 285,
+        "avg": 34
       },
       "734593": {
         "type": 0,
@@ -3763,7 +3331,7 @@
     "effects": {
       "734600": {
         "type": 4,
-        "avg": 8.1
+        "avg": 4.858896
       },
       "734601": {
         "type": 0,
@@ -3807,7 +3375,7 @@
       },
       "734620": {
         "type": 107,
-        "avg": 0.81
+        "avg": 1.05
       }
     }
   },
@@ -3826,19 +3394,6 @@
       "734637": {
         "type": 0,
         "avg": 0
-      }
-    }
-  },
-  "278738": {
-    "name": "Forbidden Knowledge",
-    "effect_list": [
-      734638
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "734638": {
-        "type": 4,
-        "avg": 104.766869
       }
     }
   },
@@ -3900,7 +3455,7 @@
     "scaling_type": -8,
     "effects": {
       "734680": {
-        "type": 4,
+        "type": 285,
         "avg": 0
       },
       "734681": {
@@ -3933,7 +3488,7 @@
       734700,
       734701
     ],
-    "scaling_type": -1,
+    "scaling_type": -8,
     "effects": {
       "734700": {
         "type": 4,
@@ -4090,7 +3645,7 @@
     "effects": {
       "736071": {
         "type": 4,
-        "avg": 0.272
+        "avg": 0.19
       }
     }
   },
@@ -4125,7 +3680,8 @@
     "effect_list": [
       736419,
       736420,
-      736422
+      736422,
+      754443
     ],
     "scaling_type": -8,
     "effects": {
@@ -4138,6 +3694,10 @@
         "avg": 3.067485
       },
       "736422": {
+        "type": 0,
+        "avg": 0
+      },
+      "754443": {
         "type": 0,
         "avg": 0
       }
@@ -4153,19 +3713,6 @@
       "736464": {
         "type": 4,
         "avg": 27.386503
-      }
-    }
-  },
-  "279867": {
-    "name": "Anomalous Impact",
-    "effect_list": [
-      736478
-    ],
-    "scaling_type": -8,
-    "effects": {
-      "736478": {
-        "type": 4,
-        "avg": 0.533742
       }
     }
   },
@@ -4263,7 +3810,7 @@
     "effects": {
       "736562": {
         "type": 4,
-        "avg": 0.036641
+        "avg": 0.030534
       }
     }
   },
@@ -4277,7 +3824,7 @@
     "scaling_type": -8,
     "effects": {
       "737261": {
-        "type": 4,
+        "type": 285,
         "avg": 0
       },
       "737262": {
@@ -4299,7 +3846,7 @@
     "scaling_type": -7,
     "effects": {
       "737263": {
-        "type": 4,
+        "type": 285,
         "avg": 0.972209
       },
       "737264": {
@@ -4329,7 +3876,7 @@
     "scaling_type": -8,
     "effects": {
       "737266": {
-        "type": 4,
+        "type": 285,
         "avg": 138.52272
       }
     }
@@ -4343,7 +3890,7 @@
     "scaling_type": -8,
     "effects": {
       "737267": {
-        "type": 4,
+        "type": 285,
         "avg": 115.4356
       },
       "737268": {
@@ -4360,7 +3907,7 @@
     "scaling_type": -8,
     "effects": {
       "737269": {
-        "type": 4,
+        "type": 285,
         "avg": 18.469696
       }
     }
@@ -4374,7 +3921,7 @@
     "scaling_type": -7,
     "effects": {
       "737270": {
-        "type": 4,
+        "type": 285,
         "avg": 1.06943
       },
       "737271": {
@@ -4392,7 +3939,7 @@
     "scaling_type": -7,
     "effects": {
       "737273": {
-        "type": 4,
+        "type": 285,
         "avg": 1.458313
       },
       "737274": {
@@ -4411,7 +3958,7 @@
     "effects": {
       "737275": {
         "type": 4,
-        "avg": 53.966145
+        "avg": 13.401786
       },
       "737276": {
         "type": 0,
@@ -4425,15 +3972,15 @@
       737278,
       737279
     ],
-    "scaling_type": -8,
+    "scaling_type": -1,
     "effects": {
       "737278": {
-        "type": 4,
-        "avg": 18.469696
+        "type": 285,
+        "avg": 2.215078
       },
       "737279": {
         "type": 4,
-        "avg": 10
+        "avg": 1
       }
     }
   },
@@ -4445,7 +3992,7 @@
     "scaling_type": -8,
     "effects": {
       "737280": {
-        "type": 4,
+        "type": 285,
         "avg": 15.3914
       }
     }
@@ -4459,7 +4006,7 @@
     "scaling_type": -8,
     "effects": {
       "737281": {
-        "type": 4,
+        "type": 285,
         "avg": 17.31534
       },
       "737282": {
@@ -4477,7 +4024,7 @@
     "scaling_type": -8,
     "effects": {
       "737283": {
-        "type": 4,
+        "type": 285,
         "avg": 49.079754
       },
       "737284": {
@@ -4495,7 +4042,7 @@
     "scaling_type": -8,
     "effects": {
       "737445": {
-        "type": 4,
+        "type": 285,
         "avg": 103.892036
       },
       "737446": {
@@ -5056,21 +4603,21 @@
       }
     }
   },
-  "281843": {
-    "name": "Tradewinds",
+  "285958": {
+    "name": "Straight, No Chaser",
     "effect_list": [
-      741004,
-      741005
+      748082,
+      748083
     ],
-    "scaling_type": -7,
+    "scaling_type": -1,
     "effects": {
-      "741004": {
+      "748082": {
         "type": 4,
-        "avg": 2.540558
+        "avg": 0.244275
       },
-      "741005": {
+      "748083": {
         "type": 4,
-        "avg": 0.501426
+        "avg": 0
       }
     }
   }

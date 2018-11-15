@@ -15,11 +15,11 @@ const dbc_lines = fs.readFileSync(dbc_dump, { encoding: 'utf8' }).split(/\n/);
 
 // we use regex to find the start locations to pull data from and to
 // identify fields.
-const SPELL_DATA_COUNT_RE = /#define SPELL_SIZE \((\d+)\)/;
+const SPELL_DATA_COUNT_RE = /#define (PTR_)?SPELL_SIZE \((\d+)\)/;
 const SPELL_DATA_START_RE = /static struct spell_data_t/;
 const SPELL_DATA_RE = /.*{ "([^"]+)".*?,(.+)}.*\/\* ([\d, ]+) \*\//;
 
-const SPELL_EFFECT_COUNT_RE = /#define __SPELLEFFECT_SIZE \((\d+)\)/;
+const SPELL_EFFECT_COUNT_RE = /#define __(PTR_)?SPELLEFFECT_SIZE \((\d+)\)/;
 const SPELL_EFFECT_START_RE = /static struct spelleffect_data_t/;
 const SPELL_EFFECT_DATA_RE = /.*?{ ([^{}}]+).+/;
 
@@ -32,7 +32,7 @@ for (; i < dbc_lines.length; i++) {
   if (!match) {
     continue;
   }
-  num_spells = match[1];
+  num_spells = match[2];
   break;
 }
 
@@ -88,7 +88,7 @@ for (; i < dbc_lines.length; i++) {
   if (!match) {
     continue;
   }
-  num_effects = match[1];
+  num_effects = match[2];
   break;
 }
 
