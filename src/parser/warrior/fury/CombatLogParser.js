@@ -12,7 +12,6 @@ import Enrage from './modules/buffdebuff/Enrage';
 
 import MissedRampage from './modules/spells/MissedRampage';
 import RampageCancelled from './modules/spells/RampageCancelled';
-import Recklessness from './modules/spells/Recklessness';
 
 import AngerManagement from './modules/talents/AngerManagement';
 import Carnage from './modules/talents/Carnage';
@@ -47,7 +46,6 @@ class CombatLogParser extends CoreCombatLogParser {
 
     missedRampage: MissedRampage,
     rampageCancelled: RampageCancelled,
-    recklessness: Recklessness,
 
     angerManagement: AngerManagement,
     carnage: Carnage,
@@ -59,7 +57,6 @@ class CombatLogParser extends CoreCombatLogParser {
     furiousSlashUptime: FuriousSlashUptime,
     meatCleaver: MeatCleaver,
     recklessness: Recklessness,
-    recklessFlurry: RecklessFlurry,
     impendingVictory: ImpendingVicory,
     siegebreaker: Siegebreaker,
     recklessAbandon: RecklessAbandon,
