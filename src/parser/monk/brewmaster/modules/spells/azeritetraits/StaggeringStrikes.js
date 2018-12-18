@@ -24,7 +24,7 @@ class StaggeringStrikes extends Analyzer {
   // amount of reduction per-cast
   _staggerReduction = 0;
   // total amount removed
-  _staggerRemoved = 0;
+  staggerRemoved = 0;
   _bocCasts = 0;
   _overhealing = 0;
 
@@ -46,7 +46,7 @@ class StaggeringStrikes extends Analyzer {
     
     this._bocCasts += 1;
     const actual = this.fab.removeStagger(event, this._staggerReduction);
-    this._staggerRemoved += actual;
+    this.staggerRemoved += actual;
     this._overhealing += this._staggerReduction - actual;
   }
 
@@ -56,11 +56,11 @@ class StaggeringStrikes extends Analyzer {
         position={STATISTIC_ORDER.OPTIONAL()}
         trait={SPELLS.STAGGERING_STRIKES.id}
         value={(
-          <ItemHealingDone amount={this._staggerRemoved} />
+          <ItemHealingDone amount={this.staggerRemoved} />
         )}
         tooltip={`Your Blackout Strike casts each remove ${formatNumber(this._staggerReduction)} staggered damage.
             
-            A total of ${this._bocCasts} casts removed ${formatNumber(this._staggerRemoved)} staggered damage (${formatNumber(this._overhealing)} overhealed).`}
+            A total of ${this._bocCasts} casts removed ${formatNumber(this.staggerRemoved)} staggered damage (${formatNumber(this._overhealing)} overhealed).`}
       />
     );
   }
