@@ -14,14 +14,25 @@ import InformationIcon from 'interface/icons/Information';
 
 import CelestialFortune from '../spells/CelestialFortune';
 import MasteryValue from '../core/MasteryValue';
+import Stagger from '../core/Stagger';
 import AgilityValue, { BASE_AGI } from './AgilityValue';
 import { diminish, ULDIR_K, MPLUS_K } from '../constants/Mitigation';
 
 // Traits
 import FitToBurst from '../spells/azeritetraits/FitToBurst';
 import StaggeringStrikes from '../spells/azeritetraits/StaggeringStrikes';
+import TrainingOfNiuzao from '../spells/azeritetraits/TrainingOfNiuzao';
 import Gemhide from 'parser/shared/modules/spells/bfa/azeritetraits/Gemhide';
 import CrystallineCarapace from 'parser/shared/modules/spells/bfa/azeritetraits/CrystallineCarapace';
+import LaserMatrix from 'parser/shared/modules/spells/bfa/azeritetraits/LaserMatrix';
+
+function formatGain(gain) {
+  if(typeof gain === 'number') {
+    return formatNumber(gain);
+  } else if(gain.low !== undefined && gain.high !== undefined) {
+    return <small>{`${formatNumber(gain.low)} - ${formatNumber(gain.high)}`}</small>;
+  }
+}
 
 export default class MitigationSheet extends Analyzer {
   static dependencies = {
@@ -29,12 +40,15 @@ export default class MitigationSheet extends Analyzer {
     agilityValue: AgilityValue,
     cf: CelestialFortune,
     stats: StatTracker,
+    stagger: Stagger,
 
     // Traits
     ftb: FitToBurst,
     ss: StaggeringStrikes,
+    ton: TrainingOfNiuzao,
     gemhide: Gemhide,
     carapace: CrystallineCarapace,
+    laserMatrix: LaserMatrix,
   };
 
   K = null;
@@ -157,28 +171,36 @@ export default class MitigationSheet extends Analyzer {
     const armorPerPt = this.armorDamageMitigated / this._avgStats.armor;
     return {
       [STAT.ARMOR]: {
+        avg: this._avgStats.armor,
         gain: this.armorDamageMitigated,
         weight: 1,
         _scale: armorPerPt,
       },
       [STAT.AGILITY]: {
+        avg: this._avgStats.agility - BASE_AGI,
         gain: this.agiDamageMitigated,
         weight: this.agiDamageMitigated / (this._avgStats.agility - BASE_AGI) / armorPerPt,
-        tooltip: 'Calculated based on additional damage purified due to Agility. Healing gained from Gift of the Ox is currently not implemented.',
+        tooltip: 'Calculated based on additional damage purified due to Agility. Only Agility from gear and buffs is counted. Healing gained from Gift of the Ox is currently not implemented.',
         isLoaded: this.masteryValue._loaded,
       },
       [STAT.MASTERY]: {
-        gain: this.masteryDamageMitigated,
-        weight: this.masteryDamageMitigated / this._avgStats.mastery / armorPerPt,
+        avg: this._avgStats.mastery,
+        gain: {
+          low: this.masteryDamageMitigated * (1 - this.stagger.pctPurified),
+          high: this.masteryDamageMitigated,
+        },
+        weight: this.masteryDamageMitigated * (1 + 1 - this.stagger.pctPurified) / 2 / this._avgStats.mastery / armorPerPt,
         tooltip: 'Estimated only after the "Expected Mitigation by Mastery" stat is loaded.',
         isLoaded: this.masteryValue._loaded,
       },
       [STAT.VERSATILITY]: {
+        avg: this._avgStats.versatility,
         gain: this.versDamageMitigated + this.versHealing,
         weight: (this.versDamageMitigated + this.versHealing) / this._avgStats.versatility / armorPerPt,
         tooltip: 'Includes both <em>damage mitigated</em> and <em>increased healing</em>.',
       },
       [STAT.CRITICAL_STRIKE]: {
+        avg: this._avgStats.crit,
         gain: this.critHealing,
         weight: this.critHealing / this._avgStats.crit / armorPerPt,
       },
@@ -186,16 +208,17 @@ export default class MitigationSheet extends Analyzer {
   }
 
   get traitResults() {
+    const scale = this.results[STAT.ARMOR]._scale;
     return {
       [SPELLS.FIT_TO_BURST.id]: {
         active: this.ftb.active,
         gain: this.ftb.totalHealing,
-        weight: this.ftb.totalHealing / this.results[STAT.ARMOR]._scale,
+        weight: this.ftb.totalHealing / scale,
       },
       [SPELLS.STAGGERING_STRIKES.id]: {
         active: this.ss.active,
         gain: this.ss.staggerRemoved,
-        weight: this.ss.staggerRemoved / this.results[STAT.ARMOR]._scale,
+        weight: this.ss.staggerRemoved / scale,
       },
       [SPELLS.GEMHIDE.id]: {
         active: this.gemhide.active,
@@ -207,6 +230,22 @@ export default class MitigationSheet extends Analyzer {
         active: this.carapace.active,
         gain: this.carapace.avgArmor / this._avgStats.armor * this.armorDamageMitigated,
         weight: this.carapace.avgArmor,
+      },
+      [SPELLS.LASER_MATRIX.id]: {
+        active: this.laserMatrix.active,
+        gain: this.laserMatrix.selfHealing,
+        weight: this.laserMatrix.selfHealing / scale,
+        tooltip: 'Only self-healing is counted.',
+      },
+      [SPELLS.TRAINING_OF_NIUZAO.id]: {
+        active: this.ton.active,
+        abbrv: 'Training',
+        gain: {
+          low: this.ton.avgMastery / this._avgStats.mastery * this.masteryDamageMitigated * this.stagger.pctPurified,
+          high: this.ton.avgMastery / this._avgStats.mastery * this.masteryDamageMitigated,
+        },
+        weight: this.ton.avgMastery * this.results[STAT.MASTERY].weight,
+        isLoaded: this.masteryValue._loaded,
       },
     };
   }
@@ -231,23 +270,25 @@ export default class MitigationSheet extends Analyzer {
               <table className="data-table compact">
                 <thead>
                   <tr>
-                    <th style={{ minWidth: '13.2em' }}><b>Stat</b></th>
+                    <th>
+                      <b>Stat</b>
+                    </th>
                     <th className="text-right">
                       <b>Total</b>
                     </th>
                     <th className="text-right">
-                      <dfn data-tip="Value per rating. Normalized so Armor is always 1.00."><b>Normalized</b></dfn>
+                      <dfn data-tip="Value per rating. Normalized so Armor is always 1.00."><b>Norm.</b></dfn>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   {Object.entries(this.results).map(([stat, result]) => {
-                    const { gain, weight, tooltip, isLoaded } = result;
+                    const { avg, gain, weight, tooltip, isLoaded } = result;
                     const Icon = getIcon(stat);
 
                     let gainEl = 'NYI';
                     if(gain !== null && isLoaded !== false) {
-                      gainEl = formatNumber(gain);
+                      gainEl = formatGain(gain);
                     } else if(gain !== null) {
                       gainEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
                     }
@@ -281,57 +322,56 @@ export default class MitigationSheet extends Analyzer {
                     );
                   })}
                 </tbody>
-              </table>
-              <table className="data-table compact">
                 <thead>
                   <tr>
-                    <th style={{ minWidth: '13.2em' }}><b>Trait</b></th>
+                    <th><b>Trait</b></th>
                     <th className="text-right">
                       <b>Total</b>
                     </th>
                     <th className="text-right">
-                      <dfn data-tip="Amount of Armor equal to this trait's effective healing."><b>Armor Value</b></dfn>
+                      <dfn data-tip="Amount of Armor equal to this trait's effective healing. The average value is used when a trait has a range of effectiveness."><b>≈ Armor</b></dfn>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   {Object.entries(this.traitResults)
                       .filter(([id, {active}]) => active)
-                      .sort(([ida, {gain: a}], [idb, {gain: b}]) => b - a)
+                      .sort(([ida, {weight: a}], [idb, {weight: b}]) => b - a)
                       .map(([id, result]) => {
-                    const { gain, weight, isLoaded, tooltip } = result;
+                        const { abbrv, gain, weight, isLoaded, tooltip } = result;
+                        const numTraits = this.selectedCombatant.traitRanks(id).length;
 
-                    let gainEl = 'NYI';
-                    if(gain !== null && isLoaded !== false) {
-                      gainEl = formatNumber(gain);
-                    } else if(gain !== null) {
-                      gainEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
-                    }
+                        let gainEl = 'NYI';
+                        if(gain !== null && isLoaded !== false) {
+                          gainEl = formatGain(gain);
+                        } else if(gain !== null) {
+                          gainEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
+                        }
 
-                    let valueEl = 'NYI';
-                    if(gain !== null && isLoaded !== false) {
-                      valueEl = weight.toFixed(2);
-                    } else if(gain !== null) {
-                      valueEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
-                    }
+                        let valueEl = 'NYI';
+                        if(gain !== null && isLoaded !== false) {
+                          valueEl = weight.toFixed(2);
+                        } else if(gain !== null) {
+                          valueEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
+                        }
 
-                    return (
-                      <tr key={id}>
-                        <td>
-                          <SpellLink id={id} />
-                          {tooltip ? (
-                            <>{' '}<InformationIcon data-tip={tooltip} /></>
-                          ) : null}
-                        </td>
-                        <td className="text-right">
-                          {gainEl}
-                        </td>
-                        <td className="text-right">
-                          {valueEl}
-                        </td>
-                      </tr>
-                    );
-                  })}
+                        return (
+                          <tr key={id}>
+                            <td>
+                              {numTraits}x <SpellLink id={id}>{abbrv ? abbrv : null}</SpellLink>
+                              {tooltip ? (
+                                <>{' '}<InformationIcon data-tip={tooltip} /></>
+                              ) : null}
+                            </td>
+                            <td className="text-right">
+                              {gainEl}
+                            </td>
+                            <td className="text-right">
+                              {valueEl}
+                            </td>
+                          </tr>
+                        );
+                      })}
                 </tbody>
               </table>
             </div>
