@@ -3,6 +3,7 @@ import Analyzer, { SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events from 'parser/core/Events';
 import StatTracker from 'parser/shared/modules/StatTracker';
 import SPELLS from 'common/SPELLS';
+import SpellLink from 'common/SpellLink';
 import HIT_TYPES from 'game/HIT_TYPES';
 import MAGIC_SCHOOLS from 'game/MAGIC_SCHOOLS';
 import { STATISTIC_ORDER } from 'interface/others/StatisticBox';
@@ -13,29 +14,27 @@ import InformationIcon from 'interface/icons/Information';
 
 import CelestialFortune from '../spells/CelestialFortune';
 import MasteryValue from '../core/MasteryValue';
+import AgilityValue, { BASE_AGI } from './AgilityValue';
+import { diminish, ULDIR_K, MPLUS_K } from '../constants/Mitigation';
 
-// K is a constant that attenuates the diminishing return formula,
-// giving lower damage reduction on higher difficulties.
-const ULDIR_K = [
-  null, // unknown difficulty
-  6300, // LFR --- using world K
-  null, // unknown
-  7736.4, // Normal
-  8467.2, // Heroic
-  9311.4, // Mythic
-];
-
-const MPLUS_K = 7100.1;
-
-function diminish(stat, K) {
-  return stat / (stat + K);
-}
+// Traits
+import FitToBurst from '../spells/azeritetraits/FitToBurst';
+import StaggeringStrikes from '../spells/azeritetraits/StaggeringStrikes';
+import Gemhide from 'parser/shared/modules/spells/bfa/azeritetraits/Gemhide';
+import CrystallineCarapace from 'parser/shared/modules/spells/bfa/azeritetraits/CrystallineCarapace';
 
 export default class MitigationSheet extends Analyzer {
   static dependencies = {
     masteryValue: MasteryValue,
+    agilityValue: AgilityValue,
     cf: CelestialFortune,
     stats: StatTracker,
+
+    // Traits
+    ftb: FitToBurst,
+    ss: StaggeringStrikes,
+    gemhide: Gemhide,
+    carapace: CrystallineCarapace,
   };
 
   K = null;
@@ -43,7 +42,6 @@ export default class MitigationSheet extends Analyzer {
   armorDamageMitigated = 0;
   versDamageMitigated = 0;
   versHealing = 0;
-  agiDamageMitigated = 0;
 
   static statsToAvg = ['agility', 'armor', 'versatility', 'mastery', 'crit'];
   _lastStatUpdate = null;
@@ -56,6 +54,10 @@ export default class MitigationSheet extends Analyzer {
   _critBonusHealing = 0;
   get critHealing() {
     return this.cf.totalHealing + this._critBonusHealing;
+  }
+
+  get agiDamageMitigated() {
+    return this.agilityValue.totalAgiPurified + (this.masteryValue.expectedMitigation - this.masteryValue.noAgiExpectedDamageMitigated);
   }
 
   constructor(...args) {
@@ -157,10 +159,13 @@ export default class MitigationSheet extends Analyzer {
       [STAT.ARMOR]: {
         gain: this.armorDamageMitigated,
         weight: 1,
+        _scale: armorPerPt,
       },
       [STAT.AGILITY]: {
-        gain: null,
-        weight: 0,
+        gain: this.agiDamageMitigated,
+        weight: this.agiDamageMitigated / (this._avgStats.agility - BASE_AGI) / armorPerPt,
+        tooltip: 'Calculated based on additional damage purified due to Agility. Healing gained from Gift of the Ox is currently not implemented.',
+        isLoaded: this.masteryValue._loaded,
       },
       [STAT.MASTERY]: {
         gain: this.masteryDamageMitigated,
@@ -176,6 +181,32 @@ export default class MitigationSheet extends Analyzer {
       [STAT.CRITICAL_STRIKE]: {
         gain: this.critHealing,
         weight: this.critHealing / this._avgStats.crit / armorPerPt,
+      },
+    };
+  }
+
+  get traitResults() {
+    return {
+      [SPELLS.FIT_TO_BURST.id]: {
+        active: this.ftb.active,
+        gain: this.ftb.totalHealing,
+        weight: this.ftb.totalHealing / this.results[STAT.ARMOR]._scale,
+      },
+      [SPELLS.STAGGERING_STRIKES.id]: {
+        active: this.ss.active,
+        gain: this.ss.staggerRemoved,
+        weight: this.ss.staggerRemoved / this.results[STAT.ARMOR]._scale,
+      },
+      [SPELLS.GEMHIDE.id]: {
+        active: this.gemhide.active,
+        gain: this.gemhide.avgArmor / this._avgStats.armor * this.armorDamageMitigated,
+        weight: this.gemhide.avgArmor,
+        tooltip: 'Avoidance is not counted.'
+      },
+      [SPELLS.CRYSTALLINE_CARAPACE.id]: {
+        active: this.carapace.active,
+        gain: this.carapace.avgArmor / this._avgStats.armor * this.armorDamageMitigated,
+        weight: this.carapace.avgArmor,
       },
     };
   }
@@ -200,11 +231,11 @@ export default class MitigationSheet extends Analyzer {
               <table className="data-table compact">
                 <thead>
                   <tr>
-                    <th style={{ minWidth: 30 }}><b>Stat</b></th>
-                    <th className="text-right" style={{ minWidth: 30 }}>
+                    <th style={{ minWidth: '13.2em' }}><b>Stat</b></th>
+                    <th className="text-right">
                       <b>Total</b>
                     </th>
-                    <th className="text-right" style={{ minWidth: 30 }}>
+                    <th className="text-right">
                       <dfn data-tip="Value per rating. Normalized so Armor is always 1.00."><b>Normalized</b></dfn>
                     </th>
                   </tr>
@@ -239,6 +270,58 @@ export default class MitigationSheet extends Analyzer {
                             }}
                           />{' '}
                           {tooltip ? <dfn data-tip={tooltip}>{getName(stat)}</dfn> : getName(stat)}
+                        </td>
+                        <td className="text-right">
+                          {gainEl}
+                        </td>
+                        <td className="text-right">
+                          {valueEl}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+              <table className="data-table compact">
+                <thead>
+                  <tr>
+                    <th style={{ minWidth: '13.2em' }}><b>Trait</b></th>
+                    <th className="text-right">
+                      <b>Total</b>
+                    </th>
+                    <th className="text-right">
+                      <dfn data-tip="Amount of Armor equal to this trait's effective healing."><b>Armor Value</b></dfn>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(this.traitResults)
+                      .filter(([id, {active}]) => active)
+                      .sort(([ida, {gain: a}], [idb, {gain: b}]) => b - a)
+                      .map(([id, result]) => {
+                    const { gain, weight, isLoaded, tooltip } = result;
+
+                    let gainEl = 'NYI';
+                    if(gain !== null && isLoaded !== false) {
+                      gainEl = formatNumber(gain);
+                    } else if(gain !== null) {
+                      gainEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
+                    }
+
+                    let valueEl = 'NYI';
+                    if(gain !== null && isLoaded !== false) {
+                      valueEl = weight.toFixed(2);
+                    } else if(gain !== null) {
+                      valueEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
+                    }
+
+                    return (
+                      <tr key={id}>
+                        <td>
+                          <SpellLink id={id} />
+                          {tooltip ? (
+                            <>{' '}<InformationIcon data-tip={tooltip} /></>
+                          ) : null}
                         </td>
                         <td className="text-right">
                           {gainEl}
