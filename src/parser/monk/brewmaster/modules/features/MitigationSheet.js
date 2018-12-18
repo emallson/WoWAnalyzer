@@ -12,6 +12,11 @@ import STAT, { getClassNameColor, getIcon, getName } from 'parser/shared/modules
 import { formatNumber } from 'common/format';
 import InformationIcon from 'interface/icons/Information';
 
+// General Traits
+import Gemhide from 'parser/shared/modules/spells/bfa/azeritetraits/Gemhide';
+import CrystallineCarapace from 'parser/shared/modules/spells/bfa/azeritetraits/CrystallineCarapace';
+import LaserMatrix from 'parser/shared/modules/spells/bfa/azeritetraits/LaserMatrix';
+
 import CelestialFortune from '../spells/CelestialFortune';
 import MasteryValue from '../core/MasteryValue';
 import Stagger from '../core/Stagger';
@@ -22,9 +27,6 @@ import { diminish, ULDIR_K, MPLUS_K } from '../constants/Mitigation';
 import FitToBurst from '../spells/azeritetraits/FitToBurst';
 import StaggeringStrikes from '../spells/azeritetraits/StaggeringStrikes';
 import TrainingOfNiuzao from '../spells/azeritetraits/TrainingOfNiuzao';
-import Gemhide from 'parser/shared/modules/spells/bfa/azeritetraits/Gemhide';
-import CrystallineCarapace from 'parser/shared/modules/spells/bfa/azeritetraits/CrystallineCarapace';
-import LaserMatrix from 'parser/shared/modules/spells/bfa/azeritetraits/LaserMatrix';
 
 function formatGain(gain) {
   if(typeof gain === 'number') {
@@ -32,6 +34,7 @@ function formatGain(gain) {
   } else if(gain.low !== undefined && gain.high !== undefined) {
     return <small>{`${formatNumber(gain.low)} - ${formatNumber(gain.high)}`}</small>;
   }
+  return null;
 }
 
 export default class MitigationSheet extends Analyzer {
@@ -82,7 +85,7 @@ export default class MitigationSheet extends Analyzer {
       this.K = MPLUS_K;
     } else {
       this.K = ULDIR_K[fight.difficulty];
-    };
+    }
 
     this._lastStatUpdate = fight.start_time;
     this._avgStats = MitigationSheet.statsToAvg.reduce((obj, stat) => {
@@ -224,7 +227,7 @@ export default class MitigationSheet extends Analyzer {
         active: this.gemhide.active,
         gain: this.gemhide.avgArmor / this._avgStats.armor * this.armorDamageMitigated,
         weight: this.gemhide.avgArmor,
-        tooltip: 'Avoidance is not counted.'
+        tooltip: 'Avoidance is not counted.',
       },
       [SPELLS.CRYSTALLINE_CARAPACE.id]: {
         active: this.carapace.active,
@@ -283,7 +286,7 @@ export default class MitigationSheet extends Analyzer {
                 </thead>
                 <tbody>
                   {Object.entries(this.results).map(([stat, result]) => {
-                    const { avg, gain, weight, tooltip, isLoaded } = result;
+                    const { gain, weight, tooltip, isLoaded } = result;
                     const Icon = getIcon(stat);
 
                     let gainEl = 'NYI';
