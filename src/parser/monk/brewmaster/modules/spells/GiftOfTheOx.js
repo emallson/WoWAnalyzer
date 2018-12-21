@@ -1,6 +1,7 @@
 import React from 'react';
 import SPELLS from 'common/SPELLS';
 import SpellIcon from 'common/SpellIcon';
+import { calculatePrimaryStat } from 'common/stats';
 import { formatNumber } from 'common/format';
 import Analyzer, { SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events from 'parser/core/Events';
@@ -11,6 +12,9 @@ import StatTracker from 'parser/shared/modules/StatTracker';
 import { BASE_AGI, GIFT_OF_THE_OX_SPELLS } from '../../constants';
 
 const GOTOX_COEFF = 1.5;
+
+const WDPS_BASE_ILVL = 310;
+const WDPS_310_AGI_POLEARM = 122.8;
 
 /**
  * Gift of the Ox
@@ -30,6 +34,7 @@ export default class GiftOfTheOx extends Analyzer {
   totalHealing = 0;
   agiBonusHealing = 0;
   masteryBonusHealing = 0;
+  wdpsBonusHealing = 0;
 
   orbsGenerated = 0;
   orbsConsumed = 0;
@@ -40,11 +45,15 @@ export default class GiftOfTheOx extends Analyzer {
 
   _lastEHTimestamp = null;
 
+  _wdps = 0;
+
   constructor(...args) {
     super(...args);
     this.addEventListener(new EventFilter('tick').by(SELECTED_PLAYER).spell(GIFT_OF_THE_OX_SPELLS), this._orbGenerated);
     this.addEventListener(Events.cast.by(SELECTED_PLAYER).spell(SPELLS.EXPEL_HARM), this._expelCast);
     this.addEventListener(Events.heal.by(SELECTED_PLAYER).spell(GIFT_OF_THE_OX_SPELLS), this._gotoxHeal);
+
+    this._wdps = calculatePrimaryStat(WDPS_BASE_ILVL, WDPS_310_AGI_POLEARM, this.selectedCombatant.mainHand.itemLevel);
   }
 
   _orbGenerated(event) {
@@ -62,7 +71,7 @@ export default class GiftOfTheOx extends Analyzer {
 
     // REMINDER: check this math in the morning
     const masteryAmount = (1 - this.stats.masteryPercentage(0, true) / this.stats.currentMasteryPercentage) * (event.amount + (event.absorbed || 0) + (event.overheal || 0));
-    const remainingOverheal = Math.max(0, (event.overheal || 0) - masteryAmount);
+    let remainingOverheal = Math.max(0, (event.overheal || 0) - masteryAmount);
     this.masteryBonusHealing += Math.max(0, masteryAmount - (event.overheal || 0));
     // so the formula for the healing is
     //
@@ -80,6 +89,11 @@ export default class GiftOfTheOx extends Analyzer {
     // and just rely on the stattracker being close enough :shrug:
     const agiAmount = GOTOX_COEFF * (1 + this.stats.currentMasteryPercentage) * (1 + this.stats.currentVersatilityPercentage) * (this.stats.currentAgilityRating - BASE_AGI);
     this.agiBonusHealing += Math.max(agiAmount - remainingOverheal, 0);
+    remainingOverheal = Math.max(remainingOverheal - agiAmount, 0);
+
+    // same formulation for WDPS. addition sucks
+    const wdpsAmount = GOTOX_COEFF * (1 + this.stats.currentMasteryPercentage) * (1 + this.stats.currentVersatilityPercentage) * 6 * this._wdps;
+    this.wdpsBonusHealing += Math.max(wdpsAmount - remainingOverheal, 0);
 
     if(event.timestamp === this._lastEHTimestamp) {
       this.expelHarmOrbsConsumed += 1;
