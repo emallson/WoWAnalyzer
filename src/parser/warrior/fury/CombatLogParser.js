@@ -46,7 +46,6 @@ class CombatLogParser extends CoreCombatLogParser {
 
     missedRampage: MissedRampage,
     rampageCancelled: RampageCancelled,
-    recklessness: Recklessness,
 
     angerManagement: AngerManagement,
     carnage: Carnage,
@@ -58,6 +57,7 @@ class CombatLogParser extends CoreCombatLogParser {
     furiousSlashUptime: FuriousSlashUptime,
     meatCleaver: MeatCleaver,
     recklessFlurry: RecklessFlurry,
+    recklessness: Recklessness,
     impendingVictory: ImpendingVicory,
     siegebreaker: Siegebreaker,
     recklessAbandon: RecklessAbandon,
