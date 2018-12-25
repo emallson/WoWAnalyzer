@@ -238,24 +238,6 @@ export default class MitigationSheet extends Analyzer {
 
   get results() {
     return {
-      wdps: {
-        icon: (
-          <img
-            src="/img/sword.png"
-            style={{ 
-              border: 0,
-              marginRight: 10,
-            }}
-            alt="Sword"
-          />
-        ),
-        name: 'Weapon DPS',
-        className: 'stat-criticalstrike',
-        avg: this.gotox._wdps,
-        gain: [
-          { name: <><SpellLink id={SPELLS.GIFT_OF_THE_OX_1.id} /> Healing</>, amount: this.wdpsHealing },
-        ],
-      },
       armor: {
         icon: (
           <img
@@ -274,7 +256,24 @@ export default class MitigationSheet extends Analyzer {
           { name: 'Physical Damage Mitigated', amount: this.armorDamageMitigated },
         ],
         weight: 1,
-        _scale: this.normalizer,
+      },
+      wdps: {
+        icon: (
+          <img
+            src="/img/sword.png"
+            style={{ 
+              border: 0,
+              marginRight: 10,
+            }}
+            alt="Sword"
+          />
+        ),
+        name: 'Weapon DPS',
+        className: 'stat-criticalstrike',
+        avg: this.gotox._wdps,
+        gain: [
+          { name: <><SpellLink id={SPELLS.GIFT_OF_THE_OX_1.id} /> Healing</>, amount: this.wdpsHealing },
+        ],
       },
       [STAT.AGILITY]: {
         icon: makeIcon(STAT.AGILITY),
@@ -367,9 +366,8 @@ export default class MitigationSheet extends Analyzer {
       },
       [SPELLS.TRAINING_OF_NIUZAO.id]: {
         active: this.ton.active,
-        abbrv: 'Training',
         gain: {
-          low: this.ton.avgMastery / this._avgStats.mastery * this.masteryDamageMitigated * this.stagger.pctPurified,
+          low: this.ton.avgMastery / this._avgStats.mastery * this.masteryDamageMitigated * (1 - this.stagger.pctPurified),
           high: this.ton.avgMastery / this._avgStats.mastery * this.masteryDamageMitigated,
         },
         weight: this.ton.avgMastery * this.results[STAT.MASTERY].weight,
@@ -439,27 +437,27 @@ export default class MitigationSheet extends Analyzer {
       .filter(([id, {active}]) => active)
       .sort(([ida, {weight: a}], [idb, {weight: b}]) => b - a)
       .map(([id, result]) => {
-        const { abbrv, gain, weight, isLoaded, tooltip } = result;
+        const { gain, isLoaded, tooltip } = result;
         const numTraits = this.selectedCombatant.traitRanks(id).length;
 
-        let gainEl = 'NYI';
-        if(gain !== null && isLoaded !== false) {
+        let gainEl;
+        if(isLoaded !== false) {
           gainEl = formatGain(gain);
-        } else if(gain !== null) {
+        } else {
           gainEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
         }
 
-        let valueEl = 'NYI';
-        if(gain !== null && isLoaded !== false) {
-          valueEl = weight.toFixed(2);
-        } else if(gain !== null) {
+        let valueEl;
+        if(isLoaded !== false) {
+          valueEl = formatWeight(gain, numTraits, this.normalizer);
+        } else {
           valueEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
         }
 
         return (
           <tr key={id}>
             <td>
-              {numTraits}x <SpellLink id={Number(id)}>{abbrv ? abbrv : null}</SpellLink>
+              {numTraits}x <SpellLink id={Number(id)} />
               {tooltip ? (
                 <>{' '}<InformationIcon data-tip={tooltip} /></>
               ) : null}
@@ -492,7 +490,7 @@ export default class MitigationSheet extends Analyzer {
         </tr>
       </thead>
       <tbody>
-        {this.statEntries()};
+        {this.statEntries()}
       </tbody>
       <thead>
         <tr>
@@ -506,6 +504,7 @@ export default class MitigationSheet extends Analyzer {
         </tr>
       </thead>
       <tbody>
+        {this.traitEntries()}
       </tbody>
       </>
     );
