@@ -12,6 +12,11 @@ import STAT, { getClassNameColor, getIcon, getName } from 'parser/shared/modules
 import { formatNumber } from 'common/format';
 import InformationIcon from 'interface/icons/Information';
 
+// General Traits
+import Gemhide from 'parser/shared/modules/spells/bfa/azeritetraits/Gemhide';
+import CrystallineCarapace from 'parser/shared/modules/spells/bfa/azeritetraits/CrystallineCarapace';
+import LaserMatrix from 'parser/shared/modules/spells/bfa/azeritetraits/LaserMatrix';
+
 import CelestialFortune from '../spells/CelestialFortune';
 import MasteryValue from '../core/MasteryValue';
 import Stagger from '../core/Stagger';
@@ -22,9 +27,6 @@ import { diminish, ULDIR_K, MPLUS_K } from '../constants/Mitigation';
 import FitToBurst from '../spells/azeritetraits/FitToBurst';
 import StaggeringStrikes from '../spells/azeritetraits/StaggeringStrikes';
 import TrainingOfNiuzao from '../spells/azeritetraits/TrainingOfNiuzao';
-import Gemhide from 'parser/shared/modules/spells/bfa/azeritetraits/Gemhide';
-import CrystallineCarapace from 'parser/shared/modules/spells/bfa/azeritetraits/CrystallineCarapace';
-import LaserMatrix from 'parser/shared/modules/spells/bfa/azeritetraits/LaserMatrix';
 
 function formatGain(gain) {
   if(typeof gain === 'number') {
@@ -225,7 +227,7 @@ export default class MitigationSheet extends Analyzer {
         active: this.gemhide.active,
         gain: this.gemhide.avgArmor / this._avgStats.armor * this.armorDamageMitigated,
         weight: this.gemhide.avgArmor,
-        tooltip: 'Avoidance is not counted.'
+        tooltip: 'Avoidance is not counted.',
       },
       [SPELLS.CRYSTALLINE_CARAPACE.id]: {
         active: this.carapace.active,

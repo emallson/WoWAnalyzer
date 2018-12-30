@@ -25,7 +25,7 @@ class LaserMatrix extends Analyzer{
       return;
     }
 
-    const amount = event.amount + (event.absorbed || 0)
+    const amount = event.amount + (event.absorbed || 0);
     this.healing += amount;
     if(event.sourceID === event.targetID) {
       this.selfHealing += amount;
