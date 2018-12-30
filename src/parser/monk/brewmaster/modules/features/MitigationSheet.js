@@ -361,7 +361,7 @@ export default class MitigationSheet extends Analyzer {
                         return (
                           <tr key={id}>
                             <td>
-                              {numTraits}x <SpellLink id={id}>{abbrv ? abbrv : null}</SpellLink>
+                              {numTraits}x <SpellLink id={Number(id)}>{abbrv ? abbrv : null}</SpellLink>
                               {tooltip ? (
                                 <>{' '}<InformationIcon data-tip={tooltip} /></>
                               ) : null}
