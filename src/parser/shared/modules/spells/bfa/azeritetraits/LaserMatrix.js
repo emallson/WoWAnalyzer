@@ -11,6 +11,7 @@ import SpellLink from 'common/SpellLink';
  */
 class LaserMatrix extends Analyzer{
   healing = 0;
+  selfHealing = 0;
   damage = 0;
 
   constructor(...args){
@@ -20,9 +21,14 @@ class LaserMatrix extends Analyzer{
 
   on_byPlayer_heal(event) {
     const spellId = event.ability.guid;
+    if (spellId !== SPELLS.LASER_MATRIX_HEAL.id) {
+      return;
+    }
 
-    if (spellId === SPELLS.LASER_MATRIX_HEAL.id) {
-      this.healing += event.amount + (event.absorbed || 0);
+    const amount = event.amount + (event.absorbed || 0)
+    this.healing += amount;
+    if(event.sourceID === event.targetID) {
+      this.selfHealing += amount;
     }
   }
 
