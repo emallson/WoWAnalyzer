@@ -12,6 +12,6 @@ describe('GiftOfTheOx', () => {
 
   it('should have wdps and agility healing sum to totalHealing', () => {
     const gotox = parser.getModule(GiftOfTheOx);
-    expect(gotox._baseAgiHealing + gotox.wdpsBonusHealing + gotox.agiBonusHealing).toEqual(gotox.totalHealing);
+    expect(Math.abs(gotox._baseAgiHealing + gotox.wdpsBonusHealing + gotox.agiBonusHealing - gotox.totalHealing)).toBeLessThan(1e-6);
   });
 });
