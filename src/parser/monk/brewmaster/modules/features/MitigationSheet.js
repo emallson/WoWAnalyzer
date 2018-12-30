@@ -3,6 +3,7 @@ import Analyzer, { SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events from 'parser/core/Events';
 import StatTracker from 'parser/shared/modules/StatTracker';
 import SPELLS from 'common/SPELLS';
+import SpellLink from 'common/SpellLink';
 import HIT_TYPES from 'game/HIT_TYPES';
 import MAGIC_SCHOOLS from 'game/MAGIC_SCHOOLS';
 import { STATISTIC_ORDER } from 'interface/others/StatisticBox';
@@ -16,6 +17,11 @@ import MasteryValue from '../core/MasteryValue';
 import AgilityValue, { BASE_AGI } from './AgilityValue';
 import { diminish, ULDIR_K, MPLUS_K } from '../constants/Mitigation';
 
+// Traits
+import FitToBurst from '../spells/azeritetraits/FitToBurst';
+import StaggeringStrikes from '../spells/azeritetraits/StaggeringStrikes';
+import Gemhide from 'parser/shared/modules/spells/bfa/azeritetraits/Gemhide';
+import CrystallineCarapace from 'parser/shared/modules/spells/bfa/azeritetraits/CrystallineCarapace';
 
 export default class MitigationSheet extends Analyzer {
   static dependencies = {
@@ -23,6 +29,12 @@ export default class MitigationSheet extends Analyzer {
     agilityValue: AgilityValue,
     cf: CelestialFortune,
     stats: StatTracker,
+
+    // Traits
+    ftb: FitToBurst,
+    ss: StaggeringStrikes,
+    gemhide: Gemhide,
+    carapace: CrystallineCarapace,
   };
 
   K = null;
@@ -173,6 +185,32 @@ export default class MitigationSheet extends Analyzer {
     };
   }
 
+  get traitResults() {
+    return {
+      [SPELLS.FIT_TO_BURST.id]: {
+        active: this.ftb.active,
+        gain: this.ftb.totalHealing,
+        weight: this.ftb.totalHealing / this.results[STAT.ARMOR]._scale,
+      },
+      [SPELLS.STAGGERING_STRIKES.id]: {
+        active: this.ss.active,
+        gain: this.ss.staggerRemoved,
+        weight: this.ss.staggerRemoved / this.results[STAT.ARMOR]._scale,
+      },
+      [SPELLS.GEMHIDE.id]: {
+        active: this.gemhide.active,
+        gain: this.gemhide.avgArmor / this._avgStats.armor * this.armorDamageMitigated,
+        weight: this.gemhide.avgArmor,
+        tooltip: 'Avoidance is not counted.'
+      },
+      [SPELLS.CRYSTALLINE_CARAPACE.id]: {
+        active: this.carapace.active,
+        gain: this.carapace.avgArmor / this._avgStats.armor * this.armorDamageMitigated,
+        weight: this.carapace.avgArmor,
+      },
+    };
+  }
+
   statistic() {
     return (
       <StatisticWrapper position={STATISTIC_ORDER.CORE(11)}>
@@ -232,6 +270,58 @@ export default class MitigationSheet extends Analyzer {
                             }}
                           />{' '}
                           {tooltip ? <dfn data-tip={tooltip}>{getName(stat)}</dfn> : getName(stat)}
+                        </td>
+                        <td className="text-right">
+                          {gainEl}
+                        </td>
+                        <td className="text-right">
+                          {valueEl}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+              <table className="data-table compact">
+                <thead>
+                  <tr>
+                    <th style={{ minWidth: '13.2em' }}><b>Trait</b></th>
+                    <th className="text-right">
+                      <b>Total</b>
+                    </th>
+                    <th className="text-right">
+                      <dfn data-tip="Amount of Armor equal to this trait's effective healing."><b>Armor Value</b></dfn>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(this.traitResults)
+                      .filter(([id, {active}]) => active)
+                      .sort(([ida, {gain: a}], [idb, {gain: b}]) => b - a)
+                      .map(([id, result]) => {
+                    const { gain, weight, isLoaded, tooltip } = result;
+
+                    let gainEl = 'NYI';
+                    if(gain !== null && isLoaded !== false) {
+                      gainEl = formatNumber(gain);
+                    } else if(gain !== null) {
+                      gainEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
+                    }
+
+                    let valueEl = 'NYI';
+                    if(gain !== null && isLoaded !== false) {
+                      valueEl = weight.toFixed(2);
+                    } else if(gain !== null) {
+                      valueEl = <dfn data-tip="Not Yet Loaded">NYL</dfn>;
+                    }
+
+                    return (
+                      <tr key={id}>
+                        <td>
+                          <SpellLink id={id} />
+                          {tooltip ? (
+                            <>{' '}<InformationIcon data-tip={tooltip} /></>
+                          ) : null}
                         </td>
                         <td className="text-right">
                           {gainEl}

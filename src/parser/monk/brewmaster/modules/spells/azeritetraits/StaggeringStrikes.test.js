@@ -49,15 +49,15 @@ describe('Brewmaster.Spells.AzeriteTraits.StaggeringStrikes', () => {
   });
 
   it('should count each BoS cast to determine total removed', () => {
-    expect(ss._staggerRemoved).toBe(0);
+    expect(ss.staggerRemoved).toBe(0);
     parser.processEvents(testEvents);
-    expect(ss._staggerRemoved).toBe(bocCasts(testEvents) * PER_CAST_REMOVAL);
+    expect(ss.staggerRemoved).toBe(bocCasts(testEvents) * PER_CAST_REMOVAL);
   });
 
   it('should correctly count overhealing', () => {
-    expect(ss._staggerRemoved).toBe(0);
+    expect(ss.staggerRemoved).toBe(0);
     parser.processEvents(overhealEvents);
-    expect(ss._staggerRemoved).toBe(INITIAL_STAGGER);
+    expect(ss.staggerRemoved).toBe(INITIAL_STAGGER);
     expect(ss._overhealing).toBe(bocCasts(overhealEvents) * PER_CAST_REMOVAL - INITIAL_STAGGER);
   });
 });
