@@ -16,6 +16,7 @@ import AplChoiceDescription from './modules/core/AplCheck/AplChoiceDescription';
 import CastEfficiencyBar from 'parser/ui/CastEfficiencyBar';
 import { GapHighlight } from 'parser/ui/CooldownBar';
 import Explanation from 'interface/guide/components/Explanation';
+import Block, { Category, SequenceDisplay } from 'interface/guide/components/Apl/blocks';
 
 const explainers = {
   explainSCK,
@@ -54,6 +55,63 @@ export default function Guide({ modules, events, info }: GuideProps<typeof Comba
           <SpellLink id={SPELLS.TIGER_PALM.id} />.
         </p>
         <AplChoiceDescription aplChoice={AplCheck.chooseApl(info)} />
+        <SubSection>
+          <Block category={Category.CastSequence} rules={[]}>
+            Use <SpellLink id={SPELLS.SPINNING_CRANE_KICK_BRM} /> to trigger the bonus damage from{' '}
+            <SpellLink id={talents.EXPLODING_KEG_TALENT} />.
+            <SequenceDisplay
+              sequence={[
+                talents.EXPLODING_KEG_TALENT,
+                SPELLS.SPINNING_CRANE_KICK_BRM,
+                SPELLS.SPINNING_CRANE_KICK_BRM,
+              ]}
+            />
+          </Block>
+          <Block category={Category.MaintainDebuff} rules={[]}>
+            Re-apply <SpellLink id={talents.BONEDUST_BREW_TALENT} /> when it drops.
+          </Block>
+          <Block category={Category.Talent} rules={[]}>
+            <p>
+              Use <SpellLink id={SPELLS.BLACKOUT_KICK_BRM} /> to activate{' '}
+              <SpellLink id={talents.BLACKOUT_COMBO_TALENT} />.
+            </p>
+            <p>
+              Only use <SpellLink id={talents.BREATH_OF_FIRE_TALENT} /> if{' '}
+              <SpellLink id={talents.BLACKOUT_COMBO_TALENT} /> is active.
+            </p>
+            <small>
+              (You can spend <SpellLink id={talents.BLACKOUT_COMBO_TALENT} /> on other things.)
+            </small>
+          </Block>
+          <Block category={Category.Core} rules={[]}>
+            <p>Use these abilities on cooldown:</p>
+            <ul>
+              <li>
+                <SpellLink id={talents.RISING_SUN_KICK_TALENT} />
+              </li>
+              <li>
+                <SpellLink id={talents.KEG_SMASH_TALENT} />
+              </li>
+            </ul>
+          </Block>
+          <Block category={Category.MaintainBuff} rules={[]}>
+            <p>
+              Refresh <SpellLink id={talents.RUSHING_JADE_WIND_TALENT} />.
+            </p>
+            <small>It is okay to refresh early.</small>
+          </Block>
+          <Block category={Category.Filler} rules={[]}>
+            <p>Cast these when you have nothing else to do:</p>
+            <ul>
+              <li>
+                <SpellLink id={SPELLS.SPINNING_CRANE_KICK_BRM} /> if there are multiple enemies
+              </li>
+              <li>
+                <SpellLink id={SPELLS.TIGER_PALM} /> if there is only one enemy
+              </li>
+            </ul>
+          </Block>
+        </SubSection>
         <SubSection>
           <AplSectionData
             checker={AplCheck.check}
