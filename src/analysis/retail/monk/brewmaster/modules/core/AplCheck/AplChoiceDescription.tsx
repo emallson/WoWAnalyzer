@@ -48,7 +48,7 @@ const ChPDfBDescription = () => {
   return (
     <>
       <p>
-        The {aplTitle(BrewmasterApl.ChPDfB)} rotation is idental to the core rotation, except that{' '}
+        The {aplTitle(BrewmasterApl.ChPDfB)} rotation is identical to the core rotation, except that{' '}
         <SpellLink id={talents.BREATH_OF_FIRE_TALENT} /> becomes much higher priority.
       </p>
       {info?.combatant.hasTalent(talents.CHARRED_PASSIONS_TALENT) ? (

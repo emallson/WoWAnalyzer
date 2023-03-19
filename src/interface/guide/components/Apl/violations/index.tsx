@@ -16,7 +16,7 @@ import {
   minClaimCount,
   ViolationExplainer,
 } from './claims';
-import deduplicate, { DEDUP_WINDOW } from './deduplication';
+import deduplicate from './deduplication';
 import PassFailBar from 'interface/guide/components/PassFailBar';
 
 const EmbedContainer = styled.div`
@@ -69,7 +69,8 @@ const ClaimCountDescription = styled.div`
   align-items: start;
 `;
 
-function AplViolationExplanation<T = any>({
+function AplViolationExplanationInternal<T = any>({
+  onClick,
   claimData,
   describer,
   children,
@@ -79,6 +80,7 @@ function AplViolationExplanation<T = any>({
   describer: ViolationExplainer<T>['describe'];
   children: React.ReactChild;
   totalViolations: number;
+  onClick?: (data: SelectedExplanation<any>) => void;
 }): JSX.Element {
   const setSelection = useContext(ExplanationSelectionContext);
 
@@ -91,12 +93,37 @@ function AplViolationExplanation<T = any>({
           <ClaimCountBar pass={claimData.claims.size} total={totalViolations} />
         </ClaimCountDescription>
       </div>
-      <ShowMeButton onClick={() => setSelection?.({ describer, claimData })}>Show Me!</ShowMeButton>
+      <ShowMeButton onClick={() => (onClick ?? setSelection)?.({ describer, claimData })}>
+        Show Me!
+      </ShowMeButton>
     </EmbedContainer>
   );
 }
 
-const ExplanationList = styled.ul`
+export function AplViolationExplanation({
+  data: { claimData, explainer },
+  apl,
+  result,
+  onClick,
+}: {
+  onClick: (data: SelectedExplanation<any>) => void;
+  data: AplViolationExplanationData;
+  apl: Apl;
+  result: CheckResult;
+}): JSX.Element {
+  return (
+    <AplViolationExplanationInternal
+      onClick={onClick}
+      claimData={claimData}
+      describer={explainer.describe}
+      totalViolations={result.violations.length}
+    >
+      {explainer.render(claimData, apl, result)}
+    </AplViolationExplanationInternal>
+  );
+}
+
+export const ExplanationList = styled.ul`
   list-style: none;
   padding-left: 0;
 
@@ -108,6 +135,59 @@ const ExplanationList = styled.ul`
     }
   }
 `;
+
+export type AplViolationExplanationData = {
+  explainer: ViolationExplainer<any>;
+  claimData: AplProblemData<any>;
+};
+
+export const violationExplanations = (
+  apl: Apl,
+  result: CheckResult,
+  explainers: AplViolationExplainers,
+): AplViolationExplanationData[] => {
+  const claims = Object.entries(explainers)
+    .flatMap(([key, { claim }]) =>
+      claim(apl, result).map((res): [string, AplProblemData<any>] => [key, res]),
+    )
+    .sort(([, resA], [, resB]) => resA.claims.size - resB.claims.size);
+
+  const unclaimedViolations = new Set(result.violations);
+
+  let remainingClaimData = claims.map(
+    ([key, claimData]): [string, AplProblemData<any>, Set<Violation>] => [
+      key,
+      claimData,
+      new Set(claimData.claims),
+    ],
+  );
+
+  const appliedClaims = [];
+
+  // very inefficient approach, performance hinges on claim list being short
+  while (remainingClaimData.length > 0) {
+    const [key, claimData, remainingClaims] = remainingClaimData.pop()!;
+    for (const violation of remainingClaims) {
+      unclaimedViolations.delete(violation);
+    }
+    appliedClaims.push({
+      explainer: explainers[key],
+      claimData,
+    });
+
+    remainingClaimData = remainingClaimData
+      .map((datum) => {
+        for (const violation of remainingClaims) {
+          datum[2].delete(violation);
+        }
+        return datum;
+      })
+      .filter(([, , otherClaims]) => otherClaims.size > minClaimCount(result))
+      .sort(([, , setA], [, , setB]) => setA.size - setB.size);
+  }
+
+  return appliedClaims;
+};
 
 /**
  * Show a list of problem explanations.
@@ -141,51 +221,7 @@ export function AplViolationExplanations({
   result: CheckResult;
   explainers: AplViolationExplainers;
 }): JSX.Element {
-  const claims = Object.entries(explainers)
-    .flatMap(([key, { claim }]) =>
-      claim(apl, result).map((res): [string, AplProblemData<any>] => [key, res]),
-    )
-    .sort(([, resA], [, resB]) => resA.claims.size - resB.claims.size);
-
-  const unclaimedViolations = new Set(result.violations);
-
-  let remainingClaimData = claims.map(
-    ([key, claimData]): [string, AplProblemData<any>, Set<Violation>] => [
-      key,
-      claimData,
-      new Set(claimData.claims),
-    ],
-  );
-
-  const appliedClaims = [];
-
-  // very inefficient approach, performance hinges on claim list being short
-  while (remainingClaimData.length > 0) {
-    const [key, claimData, remainingClaims] = remainingClaimData.pop()!;
-    for (const violation of remainingClaims) {
-      unclaimedViolations.delete(violation);
-    }
-    const explanation = explainers[key].render(claimData, apl, result);
-    appliedClaims.push(
-      <AplViolationExplanation
-        claimData={claimData}
-        describer={explainers[key].describe}
-        totalViolations={result.violations.length}
-      >
-        {explanation}
-      </AplViolationExplanation>,
-    );
-
-    remainingClaimData = remainingClaimData
-      .map((datum) => {
-        for (const violation of remainingClaims) {
-          datum[2].delete(violation);
-        }
-        return datum;
-      })
-      .filter(([, , otherClaims]) => otherClaims.size > minClaimCount(result))
-      .sort(([, , setA], [, , setB]) => setA.size - setB.size);
-  }
+  const appliedClaims = violationExplanations(apl, result, explainers);
 
   if (appliedClaims.length === 0) {
     return <NoProblem>No major problems found.</NoProblem>;
@@ -193,8 +229,17 @@ export function AplViolationExplanations({
 
   return (
     <ExplanationList>
-      {appliedClaims.map((result, ix) => (
-        <li key={ix}>{result}</li>
+      {appliedClaims.map(({ explainer, claimData }, ix) => (
+        <li key={ix}>
+          <AplViolationExplanationInternal
+            claimData={claimData}
+            describer={explainer.describe}
+            totalViolations={result.violations.length}
+          >
+            {explainer.render(claimData, apl, result)}
+          </AplViolationExplanationInternal>
+          ,
+        </li>
       ))}
     </ExplanationList>
   );
@@ -208,12 +253,18 @@ const ViolationProblemContainer = styled.div`
   grid-gap: 1rem;
 `;
 
+type ViolationProblemListProps<T> = SelectedExplanation<T> & {
+  result: CheckResult;
+  apl: Apl;
+} & Pick<React.ComponentProps<typeof ViolationTimeline>, 'secondsShown'>;
+
 export default function ViolationProblemList<T = any>({
   describer: DescribeViolation,
   claimData,
   apl,
   result,
-}: SelectedExplanation<T> & { result: CheckResult; apl: Apl }): JSX.Element | null {
+  secondsShown,
+}: ViolationProblemListProps<T>): JSX.Element | null {
   const events = useEvents();
   const info = useInfo();
 
@@ -228,6 +279,7 @@ export default function ViolationProblemList<T = any>({
           )}
           <div>
             <ViolationTimeline
+              secondsShown={secondsShown}
               violation={props.problem.data}
               events={props.events}
               results={result}
@@ -236,12 +288,16 @@ export default function ViolationProblemList<T = any>({
           </div>
         </ViolationProblemContainer>
       ),
-    [DescribeViolation, result, apl],
+    [DescribeViolation, result, apl, secondsShown],
   );
 
   if (!info) {
     return null;
   }
+
+  const windowDuration = (secondsShown ?? 12) * 1000;
+  const before = windowDuration / 3;
+  const after = (windowDuration * 2) / 3;
 
   const problems = deduplicate(claimData.claims).map(
     (violation): Problem<Violation> => ({
@@ -250,8 +306,8 @@ export default function ViolationProblemList<T = any>({
         end: violation.actualCast.timestamp,
       },
       context: {
-        before: 5000,
-        after: DEDUP_WINDOW,
+        before,
+        after,
       },
       data: violation,
     }),

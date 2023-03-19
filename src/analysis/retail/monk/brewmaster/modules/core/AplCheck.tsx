@@ -20,31 +20,33 @@ const AOE_SCK = {
   ),
 };
 
-const commonTop = [
-  {
-    spell: SPELLS.SPINNING_CRANE_KICK_BRM,
-    condition: cnd.optionalRule(
-      cnd.debuffPresent(talents.EXPLODING_KEG_TALENT, {
-        targetLinkRelation: SCK_DAMAGE_LINK,
-      }),
+const BDB = {
+  spell: talents.BONEDUST_BREW_TALENT,
+  condition: cnd.describe(
+    cnd.debuffMissing(
+      talents.BONEDUST_BREW_TALENT,
+      {
+        pandemicCap: 1,
+        duration: 10000,
+        timeRemaining: 1000,
+      },
+      { targetLinkRelation: BdbLink.debuffApplicationRelation },
     ),
-  },
-  {
-    spell: talents.BONEDUST_BREW_TALENT,
-    condition: cnd.describe(
-      cnd.debuffMissing(
-        talents.BONEDUST_BREW_TALENT,
-        {
-          pandemicCap: 1,
-          duration: 10000,
-          timeRemaining: 1000,
-        },
-        { targetLinkRelation: BdbLink.debuffApplicationRelation },
-      ),
-      (tense) => <>any enemies {tenseAlt(tense, 'are', 'were')} missing the debuff</>,
-    ),
-  },
-];
+    (tense) => <>any enemies {tenseAlt(tense, 'are', 'were')} missing the debuff</>,
+  ),
+};
+
+const EK_TECH = {
+  spell: SPELLS.SPINNING_CRANE_KICK_BRM,
+  condition: cnd.optionalRule(
+    cnd.debuffPresent(talents.EXPLODING_KEG_TALENT, {
+      targetLinkRelation: SCK_DAMAGE_LINK,
+    }),
+  ),
+};
+
+const commonTop = [EK_TECH, BDB];
+
 const commonBottom = [
   AOE_SCK,
   SPELLS.TIGER_PALM,
@@ -62,57 +64,36 @@ const bofMissingCondition = cnd.debuffMissing(
   { targetLinkRelation: BoFLink.targetRelation },
 );
 
-const rotation_boc = build([
-  ...commonTop,
-  SPELLS.BLACKOUT_KICK_BRM,
-  // we let you cast KS on 2+ targets regardless of BoC buff
-  {
-    spell: talents.KEG_SMASH_TALENT,
-    condition: cnd.targetsHit({ atLeast: 2 }),
-  },
-  // again, slight cheat. the official APL does some BoC counting to result in a fixed rotation. we're a little more fluid
-  talents.RISING_SUN_KICK_TALENT,
-  {
-    spell: talents.BREATH_OF_FIRE_TALENT,
-    condition: cnd.describe(
-      cnd.and(cnd.buffPresent(SPELLS.BLACKOUT_COMBO_BUFF), bofMissingCondition),
-      (tense) => (
-        <>
-          <SpellLink id={SPELLS.BLACKOUT_COMBO_BUFF} /> {tenseAlt(tense, 'is', 'was')} active and
-          the empowered debuff is missing.
-        </>
-      ),
-    ),
-  },
-  {
-    spell: talents.KEG_SMASH_TALENT,
-    condition: cnd.buffPresent(SPELLS.BLACKOUT_COMBO_BUFF),
-  },
-  {
-    spell: talents.RUSHING_JADE_WIND_TALENT,
-    // lack of pandemic stuff is intentional
-    condition: cnd.buffMissing(talents.RUSHING_JADE_WIND_TALENT),
-  },
-  {
-    spell: talents.KEG_SMASH_TALENT,
-    condition: cnd.describe(
-      cnd.and(
-        cnd.hasTalent(talents.STORMSTOUTS_LAST_KEG_TALENT),
-        cnd.spellCharges(talents.KEG_SMASH_TALENT, { atLeast: 1 }),
-      ),
-      (tense) => (
-        <>
-          you {tenseAlt(tense, 'have', 'had')} at least 1 charge (with{' '}
-          <SpellLink id={talents.STORMSTOUTS_LAST_KEG_TALENT} />)
-        </>
-      ),
-    ),
-  },
-  ...commonBottom,
-]);
+const AOE_KS = {
+  spell: talents.KEG_SMASH_TALENT,
+  condition: cnd.targetsHit({ atLeast: 2 }),
+};
 
-const rotation_noBoC_chpdfb = build([
-  ...commonTop,
+const BOC_BOF = {
+  spell: talents.BREATH_OF_FIRE_TALENT,
+  condition: cnd.describe(
+    cnd.and(cnd.buffPresent(SPELLS.BLACKOUT_COMBO_BUFF), bofMissingCondition),
+    (tense) => (
+      <>
+        <SpellLink id={SPELLS.BLACKOUT_COMBO_BUFF} /> {tenseAlt(tense, 'is', 'was')} active and the
+        empowered debuff is missing.
+      </>
+    ),
+  ),
+};
+
+const BOC_KS = {
+  spell: talents.KEG_SMASH_TALENT,
+  condition: cnd.buffPresent(SPELLS.BLACKOUT_COMBO_BUFF),
+};
+
+const RJW = {
+  spell: talents.RUSHING_JADE_WIND_TALENT,
+  // lack of pandemic stuff is intentional
+  condition: cnd.buffMissing(talents.RUSHING_JADE_WIND_TALENT),
+};
+
+const CHP_DFB_BOF = [
   {
     spell: talents.BREATH_OF_FIRE_TALENT,
     condition: cnd.hasTalent(talents.DRAGONFIRE_BREW_TALENT),
@@ -126,16 +107,57 @@ const rotation_noBoC_chpdfb = build([
       timeRemaining: 1500,
     }),
   },
+];
+
+const DUMP_KS = {
+  spell: talents.KEG_SMASH_TALENT,
+  condition: cnd.describe(
+    cnd.and(
+      cnd.hasTalent(talents.STORMSTOUTS_LAST_KEG_TALENT),
+      cnd.spellCharges(talents.KEG_SMASH_TALENT, { atLeast: 1 }),
+    ),
+    (tense) => (
+      <>
+        you {tenseAlt(tense, 'have', 'had')} at least 1 charge (with{' '}
+        <SpellLink id={talents.STORMSTOUTS_LAST_KEG_TALENT} />)
+      </>
+    ),
+  ),
+};
+
+export const rules = {
+  AOE_SCK,
+  BDB,
+  EK_TECH,
+  AOE_KS,
+  BOC_BOF,
+  BOC_KS,
+  RJW,
+  DUMP_KS,
+  fillers: commonBottom,
+  CHP_DFB_BOF,
+};
+
+const rotation_boc = build([
+  ...commonTop,
   SPELLS.BLACKOUT_KICK_BRM,
+  // we let you cast KS on 2+ targets regardless of BoC buff
+  AOE_KS,
+  // again, slight cheat. the official APL does some BoC counting to result in a fixed rotation. we're a little more fluid
+  talents.RISING_SUN_KICK_TALENT,
+  BOC_BOF,
+  BOC_KS,
+  RJW,
+  DUMP_KS,
+  ...commonBottom,
+]);
+
+const rotation_noBoC_chpdfb = build([
+  ...commonTop,
+  SPELLS.BLACKOUT_KICK_BRM,
+  ...CHP_DFB_BOF,
   talents.KEG_SMASH_TALENT,
-  {
-    spell: talents.RUSHING_JADE_WIND_TALENT,
-    condition: cnd.buffMissing(talents.RUSHING_JADE_WIND_TALENT, {
-      timeRemaining: 1500,
-      duration: 6000,
-      pandemicCap: 1.5,
-    }),
-  },
+  RJW,
   talents.RISING_SUN_KICK_TALENT,
   ...commonBottom,
 ]);
@@ -146,7 +168,7 @@ const rotation_fallback = build([
   talents.KEG_SMASH_TALENT,
   talents.BREATH_OF_FIRE_TALENT,
   SPELLS.BLACKOUT_KICK_BRM,
-  talents.RUSHING_JADE_WIND_TALENT,
+  RJW,
   // slight modification to the fallback APL - TP on ST, SCK on AoE
   ...commonBottom,
 ]);
@@ -186,8 +208,8 @@ export const check = (events: AnyEvent[], info: PlayerInfo): CheckResult => {
 };
 
 export default suggestion((events, info) => {
-  const { violations } = check(events, info);
-  annotateTimeline(violations);
+  const result = check(events, info);
+  annotateTimeline(result.violations);
 
   return undefined;
 });

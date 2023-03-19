@@ -1,8 +1,16 @@
 import styled from '@emotion/styled';
 import { t } from '@lingui/macro';
 import Spell from 'common/SPELLS/Spell';
-import { GoodColor } from 'interface/guide';
-import { Rule } from 'parser/shared/metrics/apl';
+import { GoodColor, SubSection } from 'interface/guide';
+import { Apl, CheckResult, isRuleEqual, Rule } from 'parser/shared/metrics/apl';
+import React, { useContext, useState } from 'react';
+import ViolationProblemList, {
+  AplViolationExplanation,
+  ExplanationList,
+  SelectedExplanation,
+  violationExplanations,
+} from './violations';
+import { AplViolationExplainers, defaultExplainers } from './violations/claims';
 
 export enum Category {
   Core,
@@ -32,11 +40,13 @@ type Props = React.PropsWithChildren<
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: [explanation] 33% [problems] 1fr;
+  grid-template-columns: [explanation] 40% [problems] 1fr;
+  align-items: start;
+  grid-gap: 0 2rem;
 `;
 
 const categoryColors: Record<FixedCategory, string> & Record<Category.Custom, undefined> = {
-  [Category.Core]: '#40c057',
+  [Category.Core]: '#15aabf',
   [Category.MaintainBuff]: GoodColor,
   [Category.MaintainDebuff]: GoodColor,
   [Category.Filler]: '#ced4da',
@@ -58,11 +68,16 @@ const categoryTitles: Record<FixedCategory, string> & Record<Category.Custom, un
   [Category.Talent]: t({ id: 'apl.block.title.talent', message: 'Talent' }),
 };
 
-const InnerBlockContainer = styled.div<{ column: 'explanation' | 'problems'; background: string }>`
+const InnerBlockContainer = styled.div<{
+  column: 'explanation' | 'connector' | 'problems';
+  background: string;
+  borderless?: boolean;
+}>`
   background-color: ${(props) => props.background};
-  grid-area: ${(props) => props.column};
+  grid-column: ${(props) => props.column};
+  align-content: start;
 
-  border: 1px solid black;
+  border: ${(props) => (props.borderless ? 'unset' : '1px solid black')};
 
   border-radius: 0.5rem;
   margin: 0.5rem 0;
@@ -123,19 +138,96 @@ const InnerBlock = ({
   </InnerBlockContainer>
 );
 
+type ContextData = {
+  explanations: ReturnType<typeof violationExplanations>;
+  apl: Apl | undefined;
+  result: CheckResult | undefined;
+};
+
+const ViolationExplanationContext = React.createContext<ContextData>({
+  explanations: [],
+  apl: undefined,
+  result: undefined,
+});
+
 export default function Block({ rules, category, color, children, title }: Props): JSX.Element {
+  const { explanations, apl, result } = useContext(ViolationExplanationContext);
+
+  const [selectedExplanation, setSelectedExplanation] = useState<
+    SelectedExplanation<any> | undefined
+  >(undefined);
+
+  const problems = explanations.filter(({ claimData }) =>
+    Array.from(claimData.claims).some((v) => rules.some((rule) => isRuleEqual(v.rule, rule))),
+  );
+
   return (
-    <Container>
+    <>
       <InnerBlock
         color={categoryColors[category] ?? color ?? 'red'}
         title={categoryTitles[category] ?? title ?? 'Error'}
       >
         {children}
       </InnerBlock>
-    </Container>
+      <InnerBlockContainer background="none" column="problems" borderless>
+        <ExplanationList>
+          {problems.map(
+            (problem, ix) =>
+              apl &&
+              result && (
+                <li key={ix}>
+                  <AplViolationExplanation
+                    data={problem}
+                    apl={apl}
+                    result={result}
+                    onClick={setSelectedExplanation}
+                  />
+                </li>
+              ),
+          )}
+        </ExplanationList>
+        {apl && result && selectedExplanation && (
+          <ViolationProblemList
+            apl={apl}
+            result={result}
+            {...selectedExplanation}
+            secondsShown={7}
+          />
+        )}
+      </InnerBlockContainer>
+    </>
   );
 }
 
 export function SequenceDisplay({ sequence }: { sequence: Spell[] }): JSX.Element | null {
   return null;
+}
+
+export function AplSubSection({
+  children,
+  apl,
+  result,
+  explainers: inputExplainers,
+}: React.PropsWithChildren<{
+  apl: Apl;
+  explainers?: AplViolationExplainers;
+  result: CheckResult;
+}>): JSX.Element {
+  const explainers = inputExplainers ?? defaultExplainers;
+
+  const appliedClaims = result && violationExplanations(apl, result, explainers);
+
+  return (
+    <SubSection>
+      <ViolationExplanationContext.Provider
+        value={{
+          apl,
+          result,
+          explanations: appliedClaims ?? [],
+        }}
+      >
+        <Container>{children}</Container>
+      </ViolationExplanationContext.Provider>
+    </SubSection>
+  );
 }
