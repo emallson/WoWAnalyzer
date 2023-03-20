@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { t } from '@lingui/macro';
 import Spell from 'common/SPELLS/Spell';
-import { GoodColor, SubSection } from 'interface/guide';
+import { SubSection } from 'interface/guide';
 import { Apl, CheckResult, isRuleEqual, Rule } from 'parser/shared/metrics/apl';
 import React, { useContext, useState } from 'react';
 import ViolationProblemList, {
@@ -45,13 +45,15 @@ const Container = styled.div`
   grid-gap: 0 2rem;
 `;
 
+const color = (hue: number) => `hsl(${hue}, 80%, 70%)`;
+
 const categoryColors: Record<FixedCategory, string> & Record<Category.Custom, undefined> = {
-  [Category.Core]: '#15aabf',
-  [Category.MaintainBuff]: GoodColor,
-  [Category.MaintainDebuff]: GoodColor,
-  [Category.Filler]: '#ced4da',
-  [Category.CastSequence]: '#fab005',
-  [Category.Talent]: '#fab005',
+  [Category.Core]: color(180),
+  [Category.MaintainBuff]: color(132),
+  [Category.MaintainDebuff]: color(132),
+  [Category.Filler]: 'hsl(180, 30%, 90%)',
+  [Category.CastSequence]: color(55),
+  [Category.Talent]: color(30),
   [Category.Custom]: undefined,
 };
 
@@ -69,33 +71,47 @@ const categoryTitles: Record<FixedCategory, string> & Record<Category.Custom, un
 };
 
 const InnerBlockContainer = styled.div<{
-  column: 'explanation' | 'connector' | 'problems';
   background: string;
-  borderless?: boolean;
 }>`
   background-color: ${(props) => props.background};
-  grid-column: ${(props) => props.column};
+  grid-column: explanation;
   align-content: start;
 
-  border: ${(props) => (props.borderless ? 'unset' : '1px solid black')};
+  border: 1px solid black;
 
   border-radius: 0.5rem;
   margin: 0.5rem 0;
+
+  display: grid;
+  grid-template-areas: 'titlebar' 'content';
 `;
-const InnerBlockTitle = styled.div`
-  font-size: 120%;
-  font-weight: bold;
-  border: 1px solid black;
-  border-top: none;
-  border-left: none;
-  color: black;
-  width: max-content;
-  padding: 0 0.5rem;
+const ProblemContainer = styled.div`
+  grid-column: problems;
+  padding-top: 1rem;
+`;
+
+const InnerBlockTitleArea = styled.div`
+  grid-area: titlebar;
+  width: 100%;
+  padding-left: 1rem;
+
+  border-bottom: 1px solid hsla(0, 100%, 100%, 10%);
 
   background-color: hsla(0, 100%, 100%, 5%);
 `;
-const InnerBlockChildren = styled.div`
+// TODO: we don't ship Roboto Slab
+const InnerBlockTitle = styled.div`
+  color: hsla(0, 0%, 0%, 75%);
+  font-family: 'Roboto Slab', sans-serif;
+  font-variant: small-caps;
+`;
+
+const InnerBlockActions = styled.div``;
+
+const InnerBlockContent = styled.div`
   color: black;
+  font-size: 1.6rem;
+  grid-area: content;
 
   line-height: 1.8em;
   padding: 1rem 1rem 0.5rem 1rem;
@@ -132,9 +148,12 @@ const InnerBlock = ({
   title,
   children,
 }: React.PropsWithChildren<{ color: string; title: string }>) => (
-  <InnerBlockContainer background={color} column="explanation">
-    <InnerBlockTitle>{title}</InnerBlockTitle>
-    <InnerBlockChildren>{children}</InnerBlockChildren>
+  <InnerBlockContainer background={color}>
+    <InnerBlockTitleArea>
+      <InnerBlockTitle>{title}</InnerBlockTitle>
+      <InnerBlockActions></InnerBlockActions>
+    </InnerBlockTitleArea>
+    <InnerBlockContent>{children}</InnerBlockContent>
   </InnerBlockContainer>
 );
 
@@ -169,7 +188,7 @@ export default function Block({ rules, category, color, children, title }: Props
       >
         {children}
       </InnerBlock>
-      <InnerBlockContainer background="none" column="problems" borderless>
+      <ProblemContainer>
         <ExplanationList>
           {problems.map(
             (problem, ix) =>
@@ -194,7 +213,7 @@ export default function Block({ rules, category, color, children, title }: Props
             secondsShown={7}
           />
         )}
-      </InnerBlockContainer>
+      </ProblemContainer>
     </>
   );
 }
