@@ -6,6 +6,7 @@ import Block, {
   AplSubSection,
   Category,
   SequenceDisplay,
+  SpellList,
 } from 'interface/guide/components/Apl/blocks';
 import { defaultExplainers } from 'interface/guide/components/Apl/violations/claims';
 import Explanation from 'interface/guide/components/Explanation';
@@ -106,17 +107,13 @@ const ChpDfBBlocks = () => (
       rules={[SPELLS.BLACKOUT_KICK_BRM, talents.RISING_SUN_KICK_TALENT, talents.KEG_SMASH_TALENT]}
     >
       <p>Use these abilities on cooldown:</p>
-      <ul>
-        <li>
-          <SpellLink id={SPELLS.BLACKOUT_KICK_BRM} />
-        </li>
-        <li>
-          <SpellLink id={talents.RISING_SUN_KICK_TALENT} />
-        </li>
-        <li>
-          <SpellLink id={talents.KEG_SMASH_TALENT} />
-        </li>
-      </ul>
+      <SpellList
+        spells={[
+          SPELLS.BLACKOUT_KICK_BRM,
+          talents.RISING_SUN_KICK_TALENT,
+          talents.KEG_SMASH_TALENT,
+        ]}
+      />
     </Block>
     <RjwBlock />
     <FillerBlock />

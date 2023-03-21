@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { t } from '@lingui/macro';
 import Spell from 'common/SPELLS/Spell';
-import { SubSection } from 'interface/guide';
+import { BadMark, SubSection } from 'interface/guide';
+import SpellLink from 'interface/SpellLink';
 import { Apl, CheckResult, isRuleEqual, Rule } from 'parser/shared/metrics/apl';
 import React, { useContext, useState } from 'react';
 import ViolationProblemList, {
@@ -94,10 +95,13 @@ const InnerBlockTitleArea = styled.div`
   grid-area: titlebar;
   width: 100%;
   padding-left: 1rem;
+  padding-right: 1rem;
 
   border-bottom: 1px solid hsla(0, 100%, 100%, 10%);
-
   background-color: hsla(0, 100%, 100%, 5%);
+
+  display: grid;
+  grid-template-columns: 1fr auto;
 `;
 // TODO: we don't ship Roboto Slab
 const InnerBlockTitle = styled.div`
@@ -120,25 +124,28 @@ const InnerBlockContent = styled.div`
     color: hsla(0, 0%, 20%, 1);
   }
 
+  p {
+    margin: 0;
+  }
+
   .spell-link-text {
     background: #333;
     border-radius: 0.25em;
-    padding-right: 0.5em;
-    display: inline;
+    display: inline-block;
 
     overflow: hidden;
-
-    position: relative;
-    padding-left: 1.75em;
-    padding-bottom: 0.15em;
+    padding: 0;
+    padding-right: 0.35em;
+    display: inline-flex;
+    justify-content: start;
+    align-items: baseline;
+    gap: 0.35em;
+    height: 1.7em;
 
     img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
+      align-self: stretch;
       height: 100%;
-      margin-top: 0;
+      margin: 0;
     }
   }
 `;
@@ -147,11 +154,16 @@ const InnerBlock = ({
   color,
   title,
   children,
-}: React.PropsWithChildren<{ color: string; title: string }>) => (
+  problemCount,
+}: React.PropsWithChildren<{
+  color: string;
+  title: string;
+  problemCount: number;
+}>) => (
   <InnerBlockContainer background={color}>
     <InnerBlockTitleArea>
       <InnerBlockTitle>{title}</InnerBlockTitle>
-      <InnerBlockActions></InnerBlockActions>
+      <InnerBlockActions>{problemCount > 0 && <BadMark />}</InnerBlockActions>
     </InnerBlockTitleArea>
     <InnerBlockContent>{children}</InnerBlockContent>
   </InnerBlockContainer>
@@ -169,6 +181,24 @@ const ViolationExplanationContext = React.createContext<ContextData>({
   result: undefined,
 });
 
+const SpellListContainer = styled.div`
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: baseline;
+  align-content: baseline;
+`;
+
+export function SpellList({ spells }: { spells: Spell[] }): JSX.Element {
+  return (
+    <SpellListContainer>
+      {spells.map((spell) => (
+        <SpellLink id={spell} key={spell.id} />
+      ))}
+    </SpellListContainer>
+  );
+}
+
 export default function Block({ rules, category, color, children, title }: Props): JSX.Element {
   const { explanations, apl, result } = useContext(ViolationExplanationContext);
 
@@ -185,6 +215,7 @@ export default function Block({ rules, category, color, children, title }: Props
       <InnerBlock
         color={categoryColors[category] ?? color ?? 'red'}
         title={categoryTitles[category] ?? title ?? 'Error'}
+        problemCount={problems.length}
       >
         {children}
       </InnerBlock>
