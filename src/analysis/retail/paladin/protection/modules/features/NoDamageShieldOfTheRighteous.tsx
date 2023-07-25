@@ -73,10 +73,9 @@ class NoDamageShieldOfTheRighteous extends Analyzer {
   suggestions(when: When) {
     when(this.hitRatioSuggestionThresholds).addSuggestion((suggest, actual, recommended) =>
       suggest(
-        defineMessage({
-          id: 'paladin.protection.modules.features.noDamageShieldOfTheRighteous.suggestion',
-          message: `SotR is a major source of damage. Make sure that each cast hits at least 1 enemy.`,
-        }),
+        <Trans id="paladin.protection.modules.features.noDamageShieldOfTheRighteous.suggestion">
+          SotR is a major source of damage. Make sure that each cast hits at least 1 enemy.
+        </Trans>,
       )
         .icon(SPELLS.SHIELD_OF_THE_RIGHTEOUS.icon)
         .actual(
