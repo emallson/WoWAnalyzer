@@ -1,4 +1,4 @@
-import { defineMessage } from '@lingui/macro';
+import { defineMessage, Trans } from '@lingui/macro';
 import { formatMilliseconds, formatNumber } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import { SpellLink } from 'interface';
@@ -102,12 +102,10 @@ class VanishFindWeakness extends Analyzer {
   suggestions(when: When) {
     when(this.badVanishCastsSuggestionThresholds).addSuggestion((suggest, actual, recommended) =>
       suggest(
-        defineMessage({
-          id: 'rogue.subtlety.suggestions.findWeaknessAndVanish.badCasts.suggestion',
-          message: `Avoid casting Vanish with more than ${
-            this.BAD_CAST_WINDOW / 1000
-          }s left on Find Weakness on the current target.`,
-        }),
+        <Trans id="rogue.subtlety.suggestions.findWeaknessAndVanish.badCasts.suggestion">
+          Avoid casting Vanish with more than {this.BAD_CAST_WINDOW / 1000}s left on Find Weakness
+          on the current target.
+        </Trans>,
       )
         .icon(SPELLS.VANISH.icon)
         .actual(

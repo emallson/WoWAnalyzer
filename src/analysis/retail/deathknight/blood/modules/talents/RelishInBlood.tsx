@@ -71,11 +71,10 @@ class RelishInBlood extends Analyzer {
   suggestions(when: When) {
     when(this.efficiencySuggestionThresholds).addSuggestion((suggest, actual, recommended) =>
       suggest(
-        defineMessage({
-          id: 'deathknight.blood.relishInBlood.suggestion.suggestion',
-          message: `Avoid being Runic Power capped at all times, you wasted ${this.runicPowerWasted} PR by
-          being RP capped`,
-        }),
+        <Trans id="deathknight.blood.relishInBlood.suggestion.suggestion">
+          Avoid being Runic Power capped at all times, you wasted ${this.runicPowerWasted} PR by
+          being RP capped
+        </Trans>,
       )
         .icon(TALENTS.RELISH_IN_BLOOD_TALENT.icon)
         .actual(
