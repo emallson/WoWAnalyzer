@@ -33,7 +33,7 @@ import Iridescence from './modules/talents/Iridescence';
 import T31DevaTier from './modules/dragonflight/tier/T31DevaTier';
 
 // Shared
-import { LeapingFlamesNormalizer, LeapingFlames } from 'analysis/retail/evoker/shared';
+import { LeapingFlames, LeapingFlamesNormalizer } from 'analysis/retail/evoker/shared';
 
 class CombatLogParser extends MainCombatLogParser {
   static specModules = {

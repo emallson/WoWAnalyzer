@@ -1,4 +1,4 @@
-import { Panel as InterfacePanel, ErrorBoundary } from 'interface';
+import { ErrorBoundary, Panel as InterfacePanel } from 'interface';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 
 type Props = {

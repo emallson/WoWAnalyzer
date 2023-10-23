@@ -10,8 +10,8 @@ import Analyzer, { SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   AbsorbedEvent,
   DamageEvent,
-  ResourceChangeEvent,
   HealEvent,
+  ResourceChangeEvent,
 } from 'parser/core/Events';
 import { Options } from 'parser/core/Module';
 import Abilities from 'parser/core/modules/Abilities';

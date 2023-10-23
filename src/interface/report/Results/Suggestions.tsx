@@ -4,7 +4,7 @@ import Panel from 'interface/Panel';
 import { Suggestion as SuggestionData } from 'parser/core/CombatLogParser';
 import ISSUE_IMPORTANCE from 'parser/core/ISSUE_IMPORTANCE';
 import { Issue } from 'parser/core/ParseResults';
-import { PureComponent, CSSProperties } from 'react';
+import { CSSProperties, PureComponent } from 'react';
 import Toggle from 'react-toggle';
 
 import Suggestion from './Suggestion';

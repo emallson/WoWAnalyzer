@@ -1,8 +1,7 @@
 import { Trans } from '@lingui/macro';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/shaman';
-import { SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
+import { SpellLink, TooltipElement } from 'interface';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { BeginCastEvent, CastEvent } from 'parser/core/Events';
 import GlobalCooldown from 'parser/shared/modules/GlobalCooldown';
@@ -11,7 +10,7 @@ import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import { STATISTIC_ORDER } from 'parser/ui/StatisticsListBox';
 
-import { RESTORATION_COLORS, FLASH_FLOOD_CAST_SPEED_MODIFIER } from '../../constants';
+import { FLASH_FLOOD_CAST_SPEED_MODIFIER, RESTORATION_COLORS } from '../../constants';
 
 const BUFFER_MS = 50;
 

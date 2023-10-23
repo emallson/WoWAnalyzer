@@ -1,6 +1,5 @@
 import { change, date } from 'common/changelog';
-import { jazminite } from 'CONTRIBUTORS';
-import { Melnais } from 'CONTRIBUTORS';
+import { jazminite, Melnais } from 'CONTRIBUTORS';
 
 export default [
   change(date(2023, 8, 4), 'Add Decimation to timeline', Melnais),

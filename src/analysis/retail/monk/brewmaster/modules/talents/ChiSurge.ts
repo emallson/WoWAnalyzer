@@ -1,7 +1,7 @@
 import SPELLS from 'common/SPELLS';
 import talents from 'common/TALENTS/monk';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
-import Events, { CastEvent, ApplyDebuffEvent } from 'parser/core/Events';
+import Events, { ApplyDebuffEvent, CastEvent } from 'parser/core/Events';
 import Abilities from 'parser/core/modules/Abilities';
 import SpellUsable from 'parser/shared/modules/SpellUsable';
 

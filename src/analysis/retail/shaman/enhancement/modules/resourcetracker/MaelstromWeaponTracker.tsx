@@ -3,17 +3,17 @@ import TALENTS from 'common/TALENTS/shaman';
 import { Resource } from 'game/RESOURCE_TYPES';
 import { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
-  RefreshBuffEvent,
-  ChangeBuffStackEvent,
-  EventType,
-  CastEvent,
-  FreeCastEvent,
-  LinkedEvent,
   ApplyBuffEvent,
   ApplyBuffStackEvent,
+  CastEvent,
+  ChangeBuffStackEvent,
+  ClassResources,
+  EventType,
+  FreeCastEvent,
+  LinkedEvent,
+  RefreshBuffEvent,
   RemoveBuffEvent,
   RemoveBuffStackEvent,
-  ClassResources,
 } from 'parser/core/Events';
 import SpellUsable from 'parser/shared/modules/SpellUsable';
 import ResourceTracker from 'parser/shared/modules/resources/resourcetracker/ResourceTracker';

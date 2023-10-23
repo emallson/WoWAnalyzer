@@ -1,8 +1,7 @@
-import { defineMessage } from '@lingui/macro';
-import { Trans } from '@lingui/macro';
-import { formatNth, formatDuration } from 'common/format';
-import { SpellLink, SpecIcon } from 'interface';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import { defineMessage, Trans } from '@lingui/macro';
+import { formatDuration, formatNth } from 'common/format';
+import { SpecIcon, SpellLink } from 'interface';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import { SpellInfo } from 'parser/core/EventFilter';
 import Events, { CastEvent, EventType, HealEvent } from 'parser/core/Events';
 import { ThresholdStyle, When } from 'parser/core/ParseResults';

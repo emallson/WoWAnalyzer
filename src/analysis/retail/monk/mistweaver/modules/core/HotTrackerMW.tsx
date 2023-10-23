@@ -2,7 +2,7 @@ import SPELLS from 'common/SPELLS';
 import { TALENTS_MONK } from 'common/TALENTS';
 import { Options } from 'parser/core/Analyzer';
 import Combatant from 'parser/core/Combatant';
-import HotTracker, { Tracker, HotInfo, Extension } from 'parser/shared/modules/HotTracker';
+import HotTracker, { Extension, HotInfo, Tracker } from 'parser/shared/modules/HotTracker';
 import { ATTRIBUTION_STRINGS } from '../../constants';
 
 const RAPID_DIFFUSION = 3000;

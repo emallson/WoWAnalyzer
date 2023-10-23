@@ -2,6 +2,7 @@ import ParseResults from 'parser/core/ParseResults';
 import BaseChecklist from 'parser/shared/modules/features/Checklist/Module';
 import { ReactElement } from 'react';
 import renderer from 'react-test-renderer';
+import { beforeAll, vi } from 'vitest';
 
 import Analyzer from '../Analyzer';
 import CombatLogParser, { DependenciesDefinition } from '../CombatLogParser';
@@ -85,7 +86,8 @@ export default function integrationTest(
     beforeAll(async () => {
       const log = await loadLog(path);
       parser = parseLog(parserClass, log, build, suppressLog, suppressWarn);
-      window.fetch = jest.fn((url) => {
+
+      window.fetch = vi.fn((url) => {
         throw new Error(`Attempt to fetch "${url}". These tests shouldn't do AJAX calls.`);
       });
     });

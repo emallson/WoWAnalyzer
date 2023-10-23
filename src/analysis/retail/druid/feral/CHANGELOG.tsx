@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { Sref, emallson, ToppleTheNun } from 'CONTRIBUTORS';
+import { emallson, Sref, ToppleTheNun } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 import SPELLS from 'common/SPELLS';
 import { TALENTS_DRUID } from 'common/TALENTS/druid';

@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { jazminite, Arbixal } from 'CONTRIBUTORS';
+import { Arbixal, jazminite } from 'CONTRIBUTORS';
 
 export default [
   change(date(2023, 2, 23), 'Added better guidance around the use of Swiftmend.', Arbixal),

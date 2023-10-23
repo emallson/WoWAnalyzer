@@ -7,6 +7,7 @@ import Events, {
   AnyEvent,
   ApplyBuffEvent,
   ApplyBuffStackEvent,
+  EventType,
   FightEndEvent,
   HasTarget,
   HealEvent,
@@ -14,7 +15,6 @@ import Events, {
   RemoveBuffEvent,
   TargettedEvent,
 } from 'parser/core/Events';
-import { EventType } from 'parser/core/Events';
 import Combatants from 'parser/shared/modules/Combatants';
 import Haste from 'parser/shared/modules/Haste';
 

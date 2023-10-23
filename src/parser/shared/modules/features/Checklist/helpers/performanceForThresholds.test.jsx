@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import performanceForThresholds from './performanceForThresholds';
 
 const EPS = 1e-16;

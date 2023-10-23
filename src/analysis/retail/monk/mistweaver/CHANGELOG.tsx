@@ -1,9 +1,8 @@
 import { change, date } from 'common/changelog';
 import SPELLS from 'common/SPELLS';
 import { TALENTS_MONK } from 'common/TALENTS';
-import { emallson, Trevor, ToppleTheNun, Vetyst, Vohrr, Tialyss } from 'CONTRIBUTORS';
+import { emallson, Tialyss, ToppleTheNun, Trevor, Vetyst, Vohrr } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
-
 
 export default [
   change(date(2023, 10, 15), <>Extend <SpellLink spell={TALENTS_MONK.INVOKE_YULON_THE_JADE_SERPENT_TALENT}/> tracking duration in the Cooldowns tab to include the full duration of any <SpellLink spell={TALENTS_MONK.ENVELOPING_MIST_TALENT} /> and <SpellLink spell={TALENTS_MONK.RENEWING_MIST_TALENT} /> cast during the ramp.</>, Tialyss),

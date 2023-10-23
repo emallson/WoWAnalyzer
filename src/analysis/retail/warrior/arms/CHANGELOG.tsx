@@ -1,7 +1,7 @@
 import { change, date } from 'common/changelog';
 import SPELLS from 'common/SPELLS';
-import TALENTS from 'common/TALENTS/warrior'
-import { Abelito75, carglass, Carrottopp, Otthopsy, bandit, Toreole, emallson, ToppleTheNun } from 'CONTRIBUTORS';
+import TALENTS from 'common/TALENTS/warrior';
+import { Abelito75, bandit, carglass, Carrottopp, emallson, Otthopsy, ToppleTheNun, Toreole } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 
 export default [

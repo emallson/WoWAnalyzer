@@ -1,3 +1,4 @@
+import { beforeEach, describe, it, expect, vi } from 'vitest';
 import Events, { EventType } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 import TestCombatLogParser from 'parser/core/tests/TestCombatLogParser';
@@ -41,7 +42,7 @@ describe('Core/Analyzer', () => {
   });
   describe('triggerEvent', () => {
     it('calls the event handler on the class if it exists', () => {
-      const onSuccess = jest.fn();
+      const onSuccess = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);
@@ -66,7 +67,7 @@ describe('Core/Analyzer', () => {
       // Ummm how do we test for it doing nothing? I guess it just shouldn't crash...
     });
     it('calls on_event on every event if it exists', () => {
-      const onEvent = jest.fn();
+      const onEvent = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);
@@ -83,10 +84,10 @@ describe('Core/Analyzer', () => {
       expect(onEvent).toBeCalled();
     });
     it('calls convenience handlers byPlayer and toPlayer', () => {
-      const onByPlayerTest = jest.fn();
-      const onToPlayerTest = jest.fn();
-      const onByPlayerPetTest = jest.fn();
-      const onToPlayerPetTest = jest.fn();
+      const onByPlayerTest = vi.fn();
+      const onToPlayerTest = vi.fn();
+      const onByPlayerPetTest = vi.fn();
+      const onToPlayerPetTest = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);
@@ -118,10 +119,10 @@ describe('Core/Analyzer', () => {
       expect(onToPlayerPetTest).toBeCalled();
     });
     it("doesn't call convenience handlers byPlayer when event is by someone else", () => {
-      const onByPlayerTest = jest.fn();
-      const onToPlayerTest = jest.fn();
-      const onByPlayerPetTest = jest.fn();
-      const onToPlayerPetTest = jest.fn();
+      const onByPlayerTest = vi.fn();
+      const onToPlayerTest = vi.fn();
+      const onByPlayerPetTest = vi.fn();
+      const onToPlayerPetTest = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);
@@ -143,7 +144,7 @@ describe('Core/Analyzer', () => {
           onToPlayerPetTest();
         }
       }
-      parser.byPlayer = jest.fn(() => false);
+      parser.byPlayer = vi.fn(() => false);
       parser.loadModule(MyModule);
       eventEmitter.triggerEvent({
         type: EventType.Test,
@@ -154,10 +155,10 @@ describe('Core/Analyzer', () => {
       expect(onToPlayerPetTest).toBeCalled();
     });
     it("doesn't call convenience handlers toPlayer when event is to someone else", () => {
-      const onByPlayerTest = jest.fn();
-      const onToPlayerTest = jest.fn();
-      const onByPlayerPetTest = jest.fn();
-      const onToPlayerPetTest = jest.fn();
+      const onByPlayerTest = vi.fn();
+      const onToPlayerTest = vi.fn();
+      const onByPlayerPetTest = vi.fn();
+      const onToPlayerPetTest = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);
@@ -179,7 +180,7 @@ describe('Core/Analyzer', () => {
           onToPlayerPetTest();
         }
       }
-      parser.toPlayer = jest.fn(() => false);
+      parser.toPlayer = vi.fn(() => false);
       parser.loadModule(MyModule);
       eventEmitter.triggerEvent({
         type: EventType.Test,
@@ -190,10 +191,10 @@ describe('Core/Analyzer', () => {
       expect(onToPlayerPetTest).toBeCalled();
     });
     it("doesn't call convenience handlers byPlayerPet when event is by someone else", () => {
-      const onByPlayerTest = jest.fn();
-      const onToPlayerTest = jest.fn();
-      const onByPlayerPetTest = jest.fn();
-      const onToPlayerPetTest = jest.fn();
+      const onByPlayerTest = vi.fn();
+      const onToPlayerTest = vi.fn();
+      const onByPlayerPetTest = vi.fn();
+      const onToPlayerPetTest = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);
@@ -215,7 +216,7 @@ describe('Core/Analyzer', () => {
           onToPlayerPetTest();
         }
       }
-      parser.byPlayerPet = jest.fn(() => false);
+      parser.byPlayerPet = vi.fn(() => false);
       parser.loadModule(MyModule);
       eventEmitter.triggerEvent({
         type: EventType.Test,
@@ -226,10 +227,10 @@ describe('Core/Analyzer', () => {
       expect(onToPlayerPetTest).toBeCalled();
     });
     it("doesn't call convenience handlers toPlayerPet when event is to someone else", () => {
-      const onByPlayerTest = jest.fn();
-      const onToPlayerTest = jest.fn();
-      const onByPlayerPetTest = jest.fn();
-      const onToPlayerPetTest = jest.fn();
+      const onByPlayerTest = vi.fn();
+      const onToPlayerTest = vi.fn();
+      const onByPlayerPetTest = vi.fn();
+      const onToPlayerPetTest = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);
@@ -251,7 +252,7 @@ describe('Core/Analyzer', () => {
           onToPlayerPetTest();
         }
       }
-      parser.toPlayerPet = jest.fn(() => false);
+      parser.toPlayerPet = vi.fn(() => false);
       parser.loadModule(MyModule);
       eventEmitter.triggerEvent({
         type: EventType.Test,
@@ -262,7 +263,7 @@ describe('Core/Analyzer', () => {
       expect(onToPlayerPetTest).not.toBeCalled();
     });
     it('sets `this` to the module', () => {
-      const onSuccess = jest.fn();
+      const onSuccess = vi.fn();
       class MyModule extends Analyzer {
         constructor(options) {
           super(options);

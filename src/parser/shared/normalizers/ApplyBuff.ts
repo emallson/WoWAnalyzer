@@ -4,8 +4,8 @@ import {
   CombatantInfoEvent,
   EventType,
   HasAbility,
-  HasTarget,
   HasSource,
+  HasTarget,
 } from 'parser/core/Events';
 import EventsNormalizer from 'parser/core/EventsNormalizer';
 import { Options } from 'parser/core/Module';

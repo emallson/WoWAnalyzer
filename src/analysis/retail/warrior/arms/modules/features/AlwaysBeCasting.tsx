@@ -1,8 +1,7 @@
 import { defineMessage } from '@lingui/macro';
 import { formatPercentage } from 'common/format';
-import { ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import CoreAlwaysBeCasting from 'parser/shared/modules/AlwaysBeCasting';
-import { When } from 'parser/core/ParseResults';
 import SPELLS from 'common/SPELLS';
 
 class AlwaysBeCasting extends CoreAlwaysBeCasting {

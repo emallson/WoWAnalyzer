@@ -1,7 +1,7 @@
 import SPELLS from 'common/SPELLS';
 import { TALENTS_PRIEST } from 'common/TALENTS';
 import { SpellLink } from 'interface';
-import { Section, GuideProps, SubSection } from 'interface/guide';
+import { GuideProps, Section, SubSection } from 'interface/guide';
 import type CombatLogParser from './CombatLogParser';
 
 export const GUIDE_CORE_EXPLANATION_PERCENT = 30;

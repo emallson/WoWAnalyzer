@@ -6,14 +6,14 @@ import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import ItemDamageDone from 'parser/ui/ItemDamageDone';
 import Events, { CastEvent, GetRelatedEvent, HasRelatedEvent } from 'parser/core/Events';
 import {
-  getLeapingDamageEvents,
-  getLeapingHealEvents,
-  generatedEssenceBurst,
-  getCastedGeneratedEssenceBurst,
-  isFromLeapingFlames,
-  getWastedEssenceBurst,
   ESSENCE_BURST_CAST_GENERATED,
   ESSENCE_BURST_GENERATED,
+  generatedEssenceBurst,
+  getCastedGeneratedEssenceBurst,
+  getLeapingDamageEvents,
+  getLeapingHealEvents,
+  getWastedEssenceBurst,
+  isFromLeapingFlames,
 } from '../normalizers/LeapingFlamesNormalizer';
 
 import { getPupilDamageEvents } from 'analysis/retail/evoker/augmentation/modules/normalizers/CastLinkNormalizer';

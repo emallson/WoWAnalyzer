@@ -8,7 +8,7 @@ import {
   minClaimCount,
   ViolationExplainer,
 } from 'interface/guide/components/Apl/violations/claims';
-import { spells, InternalRule } from 'parser/shared/metrics/apl';
+import { InternalRule, spells } from 'parser/shared/metrics/apl';
 
 type Data = null;
 

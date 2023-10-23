@@ -1,5 +1,5 @@
 import { defineMessage } from '@lingui/macro';
-import { formatPercentage, formatThousands, formatNumber } from 'common/format';
+import { formatNumber, formatPercentage, formatThousands } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/warlock';
 import { SpellIcon, SpellLink, TooltipElement } from 'interface';

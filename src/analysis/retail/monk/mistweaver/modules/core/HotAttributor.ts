@@ -11,12 +11,12 @@ import Combatants from 'parser/shared/modules/Combatants';
 import HotTracker, { Attribution, Tracker } from 'parser/shared/modules/HotTracker';
 import { ATTRIBUTION_STRINGS } from '../../constants';
 import {
+  getSourceRem,
+  isFromDancingMists,
   isFromHardcast,
+  isFromMistsOfLife,
   isFromMistyPeaks,
   isFromRapidDiffusion,
-  isFromMistsOfLife,
-  isFromDancingMists,
-  getSourceRem,
   isFromRapidDiffusionEnvelopingMist,
   isFromRapidDiffusionRisingSunKick,
 } from '../../normalizers/CastLinkNormalizer';

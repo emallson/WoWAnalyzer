@@ -1,8 +1,6 @@
 import { Trans } from '@lingui/macro';
 import { formatNumber, formatPercentage } from 'common/format';
-import { Icon } from 'interface';
-import { SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
+import { Icon, SpellLink, TooltipElement } from 'interface';
 import HealingValue from 'parser/shared/modules/HealingValue';
 import PropTypes from 'prop-types';
 import { Component } from 'react';

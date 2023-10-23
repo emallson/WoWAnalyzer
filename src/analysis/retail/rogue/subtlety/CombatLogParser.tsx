@@ -6,13 +6,13 @@ import {
   EnergyCapTracker,
   EnergyDetails,
   EnergyTracker,
+  InstantPoison,
   InvigoratingShadowdust,
   Sepsis,
-  StealthAbilityFollowingSepsis,
   SpellEnergyCost,
   SpellUsable,
+  StealthAbilityFollowingSepsis,
   StealthDamageTracker,
-  InstantPoison,
 } from 'analysis/retail/rogue/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

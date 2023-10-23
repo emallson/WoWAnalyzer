@@ -10,13 +10,13 @@ import Events, {
 } from 'parser/core/Events';
 import SPELLS from 'common/SPELLS/evoker';
 import {
-  EBON_MIGHT_BASE_DURATION_MS,
-  TIMEWALKER_BASE_EXTENSION,
-  ERUPTION_EXTENSION_MS,
-  EMPOWER_EXTENSION_MS,
   BREATH_OF_EONS_EXTENSION_MS,
-  SANDS_OF_TIME_CRIT_MOD,
   DREAM_OF_SPRINGS_EXTENSION_MS,
+  EBON_MIGHT_BASE_DURATION_MS,
+  EMPOWER_EXTENSION_MS,
+  ERUPTION_EXTENSION_MS,
+  SANDS_OF_TIME_CRIT_MOD,
+  TIMEWALKER_BASE_EXTENSION,
 } from 'analysis/retail/evoker/augmentation/constants';
 import StatTracker from 'parser/shared/modules/StatTracker';
 import { ChecklistUsageInfo, SpellUse } from 'parser/core/SpellUsage/core';

@@ -5,7 +5,7 @@ import TALENTS from 'common/TALENTS/mage';
 import SPECS from 'game/SPECS';
 import { SpellLink } from 'interface';
 import { Options } from 'parser/core/Analyzer';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import CoreCancelledCasts from 'parser/shared/modules/CancelledCasts';
 
 class CancelledCasts extends CoreCancelledCasts {

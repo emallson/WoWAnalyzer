@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { formatNumber } from 'common/format';
 import { color } from 'game/MAGIC_SCHOOLS';
 import { TooltipElement } from 'interface';
-import { PerformanceMark, BadColor, OkColor, SubSection, useAnalyzer } from 'interface/guide';
+import { BadColor, OkColor, PerformanceMark, SubSection, useAnalyzer } from 'interface/guide';
 import {
   damageBreakdown,
   DamageSourceLink,

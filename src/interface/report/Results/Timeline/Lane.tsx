@@ -10,10 +10,10 @@ import {
   CastEvent,
   EventType,
   FilterCooldownInfoEvent,
+  HasAbility,
   RemoveBuffEvent,
   UpdateSpellUsableEvent,
   UpdateSpellUsableType,
-  HasAbility,
 } from 'parser/core/Events';
 import { Fragment, PureComponent } from 'react';
 

@@ -1,5 +1,5 @@
 import EventFilter, { SELECTED_PLAYER, SELECTED_PLAYER_PET } from './EventFilter';
-import { EventType, AnyEvent } from './Events';
+import { AnyEvent, EventType } from './Events';
 import Module, { Options as _Options } from './Module';
 
 export { SELECTED_PLAYER, SELECTED_PLAYER_PET };

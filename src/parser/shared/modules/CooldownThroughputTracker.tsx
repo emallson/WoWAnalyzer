@@ -1,24 +1,24 @@
 import { defineMessage, Trans } from '@lingui/macro';
-import { RETAIL_EXPANSION, CLASSIC_EXPANSION } from 'game/Expansion';
+import { CLASSIC_EXPANSION, RETAIL_EXPANSION } from 'game/Expansion';
 import SPELLS from 'common/SPELLS';
 import { TALENTS_PRIEST } from 'common/TALENTS';
 import { Panel } from 'interface';
 import CooldownIcon from 'interface/icons/Cooldown';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import CASTS_THAT_ARENT_CASTS from 'parser/core/CASTS_THAT_ARENT_CASTS';
 import EventFilter, { SELECTED_PLAYER_PET } from 'parser/core/EventFilter';
 import Events, {
-  AnyEvent,
   AbsorbedEvent,
+  AnyEvent,
   ApplyBuffEvent,
   ApplyDebuffEvent,
   CastEvent,
   DamageEvent,
+  DeathEvent,
   HealEvent,
   RemoveBuffEvent,
   RemoveDebuffEvent,
   SummonEvent,
-  DeathEvent,
 } from 'parser/core/Events';
 import EventHistory from 'parser/shared/modules/EventHistory';
 import CooldownOverview from 'parser/ui/CooldownOverview';

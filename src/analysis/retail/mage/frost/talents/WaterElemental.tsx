@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { formatPercentage, formatNumber, formatThousands, formatDuration } from 'common/format';
+import { formatDuration, formatNumber, formatPercentage, formatThousands } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import { PLACEHOLDER_TALENT } from 'common/TALENTS/types';
 import { SpellLink } from 'interface';
@@ -7,7 +7,7 @@ import CooldownIcon from 'interface/icons/Cooldown';
 import UptimeIcon from 'interface/icons/Uptime';
 import Analyzer, { Options, SELECTED_PLAYER_PET } from 'parser/core/Analyzer';
 import Events, { BeginCastEvent, CastEvent, DamageEvent } from 'parser/core/Events';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import BoringValueText from 'parser/ui/BoringValueText';
 import Statistic from 'parser/ui/Statistic';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';

@@ -3,6 +3,7 @@ import { GuideProps, Section } from 'interface/guide';
 import PreparationSection from 'interface/guide/components/Preparation/PreparationSection';
 import CombatLogParser from '../preservation/CombatLogParser';
 import styled from '@emotion/styled';
+
 /** Common 'rule line' point for the explanation/data in Core Spells section */
 export const GUIDE_CORE_EXPLANATION_PERCENT = 40;
 

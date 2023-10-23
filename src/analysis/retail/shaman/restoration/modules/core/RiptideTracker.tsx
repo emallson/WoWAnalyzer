@@ -2,12 +2,12 @@ import { Options } from 'parser/core/Module';
 import talents, { TALENTS_SHAMAN } from 'common/TALENTS/shaman';
 import HotTracker, { HotInfo, Tracker } from 'parser/shared/modules/HotTracker';
 import {
-  PRIMAL_TIDE_CORE,
   HARDCAST,
-  RIPTIDE_PWAVE,
+  PRIMAL_TIDE_CORE,
   RIPTIDE_BASE_DURATION,
-  WAVESPEAKERS_BLESSING,
+  RIPTIDE_PWAVE,
   UNLEASH_LIFE,
+  WAVESPEAKERS_BLESSING,
 } from '../../constants';
 import Combatant from 'parser/core/Combatant';
 

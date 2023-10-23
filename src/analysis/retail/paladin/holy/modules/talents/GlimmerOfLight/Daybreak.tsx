@@ -1,6 +1,6 @@
 import TALENTS from 'common/TALENTS/paladin';
 import { SpellLink, TooltipElement } from 'interface';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { CastEvent, EventType, GetRelatedEvents } from 'parser/core/Events';
 import BoringValueText from 'parser/ui/BoringValueText';
 import ItemManaGained from 'parser/ui/ItemManaGained';

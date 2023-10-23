@@ -1,4 +1,4 @@
-import { formatPercentage, formatNumber } from 'common/format';
+import { formatNumber, formatPercentage } from 'common/format';
 import { useCombatLogParser } from 'interface/report/CombatLogParserContext';
 
 interface Props {

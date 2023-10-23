@@ -11,9 +11,9 @@ import MajorDefensiveStatistic from 'interface/MajorDefensiveStatistic';
 import { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   DamageEvent,
-  ResourceChangeEvent,
   DrainEvent,
   HealEvent,
+  ResourceChangeEvent,
 } from 'parser/core/Events';
 import BoringValue from 'parser/ui/BoringValueText';
 import FooterChart, { Spec } from 'parser/ui/FooterChart';

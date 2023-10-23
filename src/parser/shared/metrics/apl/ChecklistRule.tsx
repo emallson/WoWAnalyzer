@@ -11,13 +11,13 @@ import * as React from 'react';
 
 import { ConditionDescription } from './annotate';
 import {
-  InternalRule as AplRule,
   Apl,
   CheckResult,
+  InternalRule as AplRule,
+  isRuleEqual,
   spells,
   Tense,
   Violation,
-  isRuleEqual,
 } from './index';
 
 interface Props {

@@ -1,11 +1,10 @@
 import { Trans } from '@lingui/macro';
 import fetchWcl from 'common/fetchWclApi';
-import { formatThousands, formatNumber } from 'common/format';
+import { formatNumber, formatThousands } from 'common/format';
 import makeWclUrl from 'common/makeWclUrl';
 import SPELLS from 'common/SPELLS';
 import { WCLDamageTaken, WCLDamageTakenTableResponse } from 'common/WCL_TYPES';
-import { SpellIcon } from 'interface';
-import { SpellLink } from 'interface';
+import { SpellIcon, SpellLink } from 'interface';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   ApplyBuffEvent,

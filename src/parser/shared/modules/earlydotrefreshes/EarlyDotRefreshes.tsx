@@ -3,13 +3,13 @@ import Spell from 'common/SPELLS/Spell';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   ApplyDebuffEvent,
-  RefreshDebuffEvent,
-  GlobalCooldownEvent,
   CastEvent,
+  GlobalCooldownEvent,
+  RefreshDebuffEvent,
 } from 'parser/core/Events';
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
-import Enemies from 'parser/shared/modules/Enemies';
-import { encodeTargetString } from 'parser/shared/modules/Enemies';
+import Enemies, { encodeTargetString } from 'parser/shared/modules/Enemies';
+
 const BUFFER_MS = 100;
 export const PANDEMIC_WINDOW = 0.3;
 

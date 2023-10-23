@@ -17,28 +17,28 @@ import { Options } from 'parser/core/Module';
 import talents from 'common/TALENTS/shaman';
 import {
   APPLIED_HEAL,
-  PRIMAL_TIDE_CORE,
-  HARDCAST,
-  RIPTIDE_PWAVE,
-  HEALING_WAVE_PWAVE,
-  PWAVE_REMOVAL,
   CAST_BUFFER_MS,
-  PWAVE_TRAVEL_MS,
-  HEALING_RAIN_DURATION,
-  HEALING_RAIN,
-  OVERFLOWING_SHORES,
-  HEALING_RAIN_GROUPING,
   CHAIN_HEAL,
   CHAIN_HEAL_GROUPING,
-  FLOW_OF_THE_TIDES,
   DOWNPOUR,
+  FLOW_OF_THE_TIDES,
+  HARDCAST,
+  HEALING_RAIN,
+  HEALING_RAIN_DURATION,
+  HEALING_RAIN_GROUPING,
+  HEALING_WAVE_PWAVE,
   HIGH_TIDE,
+  OVERFLOWING_SHORES,
+  PRIMAL_TIDE_CORE,
+  PWAVE_REMOVAL,
+  PWAVE_TRAVEL_MS,
+  RIPTIDE_PWAVE,
 } from '../constants';
 import SPELLS from 'common/SPELLS';
 
 /*
   This file is for attributing the various sources of spell applications to their respective abilities and talents.
-  It is needed because there are certain abilities that can have multiple sources based on talents, 
+  It is needed because there are certain abilities that can have multiple sources based on talents,
   i.e. riptide -> primorial wave & primal tide core
 */
 const EVENT_LINKS: EventLink[] = [

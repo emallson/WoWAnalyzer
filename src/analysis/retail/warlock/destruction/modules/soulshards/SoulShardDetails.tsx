@@ -1,10 +1,9 @@
 import { defineMessage } from '@lingui/macro';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/warlock';
-import { Panel } from 'interface';
-import { AlertWarning } from 'interface';
+import { AlertWarning, Panel } from 'interface';
 import Analyzer from 'parser/core/Analyzer';
-import { When, NumberThreshold, ThresholdStyle } from 'parser/core/ParseResults';
+import { NumberThreshold, ThresholdStyle, When } from 'parser/core/ParseResults';
 import ResourceBreakdown from 'parser/shared/modules/resources/resourcetracker/ResourceBreakdown';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';
 import Statistic from 'parser/ui/Statistic';

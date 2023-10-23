@@ -1,4 +1,4 @@
-import { TouchOfDeath, MysticTouch, DampenHarm } from 'analysis/retail/monk/shared';
+import { DampenHarm, MysticTouch, TouchOfDeath } from 'analysis/retail/monk/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';
 import Channeling from 'parser/shared/normalizers/Channeling';

@@ -3,7 +3,7 @@ import { SpellLink } from 'interface';
 import { EventType } from 'parser/core/Events';
 
 import { Condition, tenseAlt } from '../index';
-import { Range, formatRange } from './index';
+import { formatRange, Range } from './index';
 
 export function spellFractionalCharges(
   spell: Spell,

@@ -1,6 +1,6 @@
 import ThresholdPerformancePercentage, {
-  LTEThreshold,
   GTEThreshold,
+  LTEThreshold,
 } from './shared/ThresholdPerformancePercentage';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/shaman';

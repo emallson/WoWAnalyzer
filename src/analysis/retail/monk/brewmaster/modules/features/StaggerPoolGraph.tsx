@@ -1,15 +1,14 @@
 import SPELLS from 'common/SPELLS';
 import talents from 'common/TALENTS/monk';
-import { SpellLink } from 'interface';
-import { Panel } from 'interface';
+import { Panel, SpellLink } from 'interface';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   AddStaggerEvent,
-  RemoveStaggerEvent,
   DamageEvent,
   DeathEvent,
   EventType,
   HealEvent,
+  RemoveStaggerEvent,
 } from 'parser/core/Events';
 import BaseChart, { formatTime } from 'parser/ui/BaseChart';
 import { VisualizationSpec } from 'react-vega';

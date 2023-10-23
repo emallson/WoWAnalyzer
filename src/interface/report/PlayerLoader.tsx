@@ -33,9 +33,8 @@ import handleApiError from './handleApiError';
 import PlayerSelection from './PlayerSelection';
 import { getPlayerIdFromParam } from 'interface/selectors/url/report/getPlayerId';
 import { getPlayerNameFromParam } from 'interface/selectors/url/report/getPlayerName';
-import { isClassicExpansion } from 'game/Expansion';
+import { CLASSIC_EXPANSION, isClassicExpansion } from 'game/Expansion';
 import { useWaDispatch } from 'interface/utils/useWaDispatch';
-import { CLASSIC_EXPANSION } from 'game/Expansion';
 import { i18n } from '@lingui/core';
 import { uniqueBy } from 'common/uniqueBy';
 
@@ -165,7 +164,7 @@ const PlayerLoader = ({ children }: Props) => {
         let ilvl = 0;
 
         combatants.forEach((combatant) => {
-          if (process.env.NODE_ENV === 'development' && FAKE_PLAYER_IF_DEV_ENV) {
+          if (import.meta.env.DEV && FAKE_PLAYER_IF_DEV_ENV) {
             console.error(
               `This player (sourceID: ${combatant.sourceID!}) has an error. Because you're in development environment, we have faked the missing information, see CombatantInfoFaker.ts for more information.`,
             );

@@ -2,12 +2,12 @@ import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/paladin';
 import EventLinkNormalizer, { EventLink } from 'parser/core/EventLinkNormalizer';
 import {
+  ApplyBuffEvent,
   CastEvent,
-  EventType,
   DamageEvent,
+  EventType,
   GetRelatedEvents,
   HasRelatedEvent,
-  ApplyBuffEvent,
   RefreshBuffEvent,
 } from 'parser/core/Events';
 import { Options } from 'parser/core/Module';

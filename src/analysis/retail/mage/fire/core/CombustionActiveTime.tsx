@@ -1,10 +1,10 @@
 import { Trans } from '@lingui/macro';
-import { formatNumber, formatPercentage, formatDuration } from 'common/format';
+import { formatDuration, formatNumber, formatPercentage } from 'common/format';
 import TALENTS from 'common/TALENTS/mage';
 import { SpellLink } from 'interface';
 import Analyzer from 'parser/core/Analyzer';
 import { EventType } from 'parser/core/Events';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
 import EventHistory from 'parser/shared/modules/EventHistory';
 import FilteredActiveTime from 'parser/shared/modules/FilteredActiveTime';

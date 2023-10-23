@@ -1,3 +1,4 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import SPELLS from 'common/SPELLS';
 import CombatLogParser from 'parser/core/CombatLogParser';
 import { AnyEvent, EventType } from 'parser/core/Events';

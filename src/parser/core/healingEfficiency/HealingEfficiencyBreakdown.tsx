@@ -1,7 +1,6 @@
 import { Trans } from '@lingui/macro';
-import { formatNumber, formatPercentage, formatDuration } from 'common/format';
-import { SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
+import { formatDuration, formatNumber, formatPercentage } from 'common/format';
+import { SpellLink, TooltipElement } from 'interface';
 import PerformanceBar from 'parser/ui/PerformanceBar';
 import { Component } from 'react';
 import Toggle from 'react-toggle';

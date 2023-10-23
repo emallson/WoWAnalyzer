@@ -2,10 +2,10 @@ import type Spell from 'common/SPELLS/Spell';
 import { SpellLink } from 'interface';
 import {
   ApplyBuffEvent,
-  RefreshBuffEvent,
-  RemoveBuffEvent,
   ApplyBuffStackEvent,
   EventType,
+  RefreshBuffEvent,
+  RemoveBuffEvent,
 } from 'parser/core/Events';
 import { Condition, tenseAlt } from '../index';
 import { formatTimestampRange, Range } from './util';

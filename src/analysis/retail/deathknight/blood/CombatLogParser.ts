@@ -1,8 +1,8 @@
 import {
-  RuneTracker,
   RuneDetails,
-  RuneOfTheFallenCrusader,
   RuneOfHysteria,
+  RuneOfTheFallenCrusader,
+  RuneTracker,
 } from 'analysis/retail/deathknight/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import Channeling from 'parser/shared/normalizers/Channeling';

@@ -2,8 +2,7 @@ import { formatNumber, formatPercentage } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import talents from 'common/TALENTS/monk';
 import MAGIC_SCHOOLS, { color } from 'game/MAGIC_SCHOOLS';
-import { SpellLink } from 'interface';
-import { SpellIcon } from 'interface';
+import { SpellIcon, SpellLink } from 'interface';
 import {
   buff,
   MajorDefensiveBuff,

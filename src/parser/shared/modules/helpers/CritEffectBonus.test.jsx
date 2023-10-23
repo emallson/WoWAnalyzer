@@ -1,3 +1,4 @@
+import { describe, it, expect, vi } from 'vitest';
 import CritEffectBonus from './CritEffectBonus';
 
 describe('core/Modules/Helpers/CritEffectBonus', () => {
@@ -28,7 +29,7 @@ describe('core/Modules/Helpers/CritEffectBonus', () => {
   it('passes event around technical test', () => {
     const mod = new CritEffectBonus({});
     const myEvent = {};
-    const myHook = jest.fn();
+    const myHook = vi.fn();
     mod.hook(myHook);
     mod.getBonus(myEvent);
     expect(myHook.mock.calls[0][1]).toBe(myEvent);

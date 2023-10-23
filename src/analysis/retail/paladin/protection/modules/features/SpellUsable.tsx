@@ -3,6 +3,7 @@ import { Options } from 'parser/core/Analyzer';
 import { CastEvent, EventType, FreeCastEvent } from 'parser/core/Events';
 import CoreSpellUsable from 'parser/shared/modules/SpellUsable';
 import GrandCrusader from '../talents/GrandCrusader';
+
 class SpellUsable extends CoreSpellUsable {
   static dependencies = {
     ...CoreSpellUsable.dependencies,

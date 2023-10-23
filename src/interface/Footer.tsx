@@ -1,7 +1,7 @@
 import DiscordLogo from 'interface/icons/DiscordTiny';
 import GithubLogo from 'interface/icons/GitHubMarkSmall';
 import PatreonIcon from 'interface/icons/PatreonTiny';
-import Logo from 'interface/images/logo.svg';
+import Logo from 'interface/images/logo.svg?react';
 import Tooltip, { TooltipElement } from 'interface/Tooltip';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const Footer = () => (
     <div className="container text-center">
       <div>
         <a href="/">
-          <img src={Logo} alt="Logo" className="wowanalyzer-logo" />
+          <Logo alt="Logo" className="wowanalyzer-logo" />
         </a>
 
         <h1>Be a part of us</h1>

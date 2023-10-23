@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';
 
 import {

@@ -1,4 +1,4 @@
-import { formatPercentage, formatNumber } from 'common/format';
+import { formatNumber, formatPercentage } from 'common/format';
 import TALENTS from 'common/TALENTS/warlock';
 import SPELLS from 'common/SPELLS/warlock';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';

@@ -2,7 +2,7 @@
 import BaseCombatLogParser from 'parser/classic/CombatLogParser';
 // Shared
 import lowRankSpellsSuggestion from 'parser/classic/suggestions/lowRankSpells';
-import { lowRankSpells, Haste } from '../shared';
+import { Haste, lowRankSpells } from '../shared';
 import ManaLevelChart from 'parser/shared/modules/resources/mana/ManaLevelChart';
 import ManaTracker from 'parser/core/healingEfficiency/ManaTracker';
 import ManaUsageChart from 'parser/shared/modules/resources/mana/ManaUsageChart';

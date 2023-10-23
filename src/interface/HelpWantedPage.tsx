@@ -1,4 +1,4 @@
-import { Trans, t } from '@lingui/macro';
+import { t, Trans } from '@lingui/macro';
 import DocumentTitle from 'interface/DocumentTitle';
 import Panel from 'interface/Panel';
 import { Link } from 'react-router-dom';

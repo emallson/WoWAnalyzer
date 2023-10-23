@@ -1,17 +1,17 @@
 import { getResource, Resource } from 'game/RESOURCE_TYPES';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
-  EventType,
-  ClassResources,
-  ResourceChangeEvent,
+  AbilityEvent,
+  BeginChannelEvent,
   CastEvent,
-  HealEvent,
-  SpendResourceEvent,
+  ClassResources,
   DamageEvent,
   DrainEvent,
-  BeginChannelEvent,
-  AbilityEvent,
+  EventType,
+  HealEvent,
+  ResourceChangeEvent,
   SourcedEvent,
+  SpendResourceEvent,
 } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 import Haste from 'parser/shared/modules/Haste';

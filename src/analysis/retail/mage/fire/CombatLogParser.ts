@@ -3,13 +3,13 @@ import {
   CancelledCasts,
   DivertedEnergy,
   ElementalBarrier,
-  QuickWitted,
+  MasterOfTime,
   MirrorImage,
+  QuickWitted,
+  SharedCode,
   ShiftingPower,
   TempestBarrier,
-  MasterOfTime,
   TimeAnomaly,
-  SharedCode,
 } from 'analysis/retail/mage/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

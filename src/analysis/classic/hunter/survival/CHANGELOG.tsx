@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { Zerotorescue, bdfreeman1421 } from 'CONTRIBUTORS';
+import { bdfreeman1421, Zerotorescue } from 'CONTRIBUTORS';
 
 export default [
   change(date(2023, 3, 3), 'Cleanup from Marksman changes to add shared files', bdfreeman1421),

@@ -1,9 +1,9 @@
 import {
-  TouchOfDeath,
-  InvokersDelight,
-  MysticTouch,
   DampenHarm,
   FaelineStomp,
+  InvokersDelight,
+  MysticTouch,
+  TouchOfDeath,
 } from 'analysis/retail/monk/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 

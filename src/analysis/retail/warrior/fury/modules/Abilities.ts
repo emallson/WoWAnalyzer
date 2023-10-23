@@ -1,9 +1,9 @@
 import SPELLS from 'common/SPELLS';
 import talents from 'common/TALENTS/warrior';
+import TALENTS from 'common/TALENTS/warrior';
 import ISSUE_IMPORTANCE from 'parser/core/ISSUE_IMPORTANCE';
 import CoreAbilities from 'parser/core/modules/Abilities';
 import SPELL_CATEGORY from 'parser/core/SPELL_CATEGORY';
-import TALENTS from 'common/TALENTS/warrior';
 import { TIERS } from 'game/TIERS';
 
 //https://www.warcraftlogs.com/reports/9Vw8TvjHNfXgWyP7#fight=19&type=summary&source=21 2+ cold steel hot blood

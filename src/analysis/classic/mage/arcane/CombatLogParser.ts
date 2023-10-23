@@ -2,7 +2,7 @@ import BaseCombatLogParser from 'parser/classic/CombatLogParser';
 // Shared
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
 import Channeling from 'parser/shared/normalizers/Channeling';
-import { lowRankSpells, Haste, ColdSnap } from 'analysis/classic/mage/shared';
+import { ColdSnap, Haste, lowRankSpells } from 'analysis/classic/mage/shared';
 // Core
 import GlobalCooldown from './modules/core/GlobalCooldown';
 // Features

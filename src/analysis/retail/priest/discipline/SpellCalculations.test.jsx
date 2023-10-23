@@ -4,6 +4,8 @@
 //   SmiteEstimation,
 // } from './SpellCalculations';
 
+import { describe, it, expect } from 'vitest';
+
 const calculateOverhealing = {};
 const OffensivePenanceBoltEstimation = {};
 const SmiteEstimation = {};

@@ -1,7 +1,7 @@
 import { change, date } from 'common/changelog';
 import TALENTS, { TALENTS_PALADIN } from 'common/TALENTS/paladin';
 import { SpellLink } from 'interface';
-import { CamClark, Tialyss, ToppleTheNun, xizbow, Trevor, Abelito75 } from 'CONTRIBUTORS';
+import { Abelito75, CamClark, Tialyss, ToppleTheNun, Trevor, xizbow } from 'CONTRIBUTORS';
 import SPELLS from 'common/SPELLS/paladin';
 
 export default [

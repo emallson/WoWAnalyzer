@@ -1,7 +1,7 @@
 import { change, date } from 'common/changelog';
 import SPELLS from 'common/SPELLS';
 import { TALENTS_DRUID } from 'common/TALENTS';
-import { Hartra344, Sref, ToppleTheNun, ap2355, attluh, Jundarer } from 'CONTRIBUTORS';
+import { ap2355, attluh, Hartra344, Jundarer, Sref, ToppleTheNun } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 
 export default [

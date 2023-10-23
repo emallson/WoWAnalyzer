@@ -1,3 +1,4 @@
+import { describe, it, expect, vi } from 'vitest';
 import CombatLogParser from './CombatLogParser';
 import Events from './Events';
 import TestCombatLogParser from './tests/TestCombatLogParser';
@@ -92,8 +93,8 @@ describe('Core/CombatLogParser', () => {
       expect(Object.keys(parser._modules).length).toBe(1);
     });
     it('only instantiates the overriding module', () => {
-      const MyModule = jest.fn();
-      const MySubModule = jest.fn();
+      const MyModule = vi.fn();
+      const MySubModule = vi.fn();
       class MyCombatLogParser extends EmptyCombatLogParser {
         static defaultModules = {
           myModule: MyModule,
@@ -295,7 +296,7 @@ describe('Core/CombatLogParser', () => {
       expect(parser.getModule(MyChildModule)).toBeInstanceOf(MyChildModule);
     });
     it('passes the dependencies as a prop to the module', () => {
-      const MyChildModule = jest.fn();
+      const MyChildModule = vi.fn();
       MyChildModule.dependencies = {
         parent: MyModule,
       };
@@ -353,7 +354,7 @@ describe('Core/CombatLogParser', () => {
   });
   describe('emits static events', () => {
     it('emits fightend event', () => {
-      const onFinish = jest.fn();
+      const onFinish = vi.fn();
       const parser = new TestCombatLogParser();
       const events = parser.normalize([]);
       parser.addEventListener(Events.fightend, onFinish, { active: true });

@@ -1,5 +1,4 @@
-import { SpellIcon, TooltipElement } from 'interface';
-import { SpellLink } from 'interface';
+import { SpellIcon, SpellLink, TooltipElement } from 'interface';
 import { ReactNode } from 'react';
 import { Talent } from 'common/TALENTS/types';
 import { useCombatLogParser } from 'interface/report/CombatLogParserContext';

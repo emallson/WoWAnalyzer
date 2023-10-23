@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/paladin';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events from 'parser/core/Events';
 import BoringSpellValue from 'parser/ui/BoringSpellValue';
 import PlayerHits from 'parser/ui/PlayerHits';

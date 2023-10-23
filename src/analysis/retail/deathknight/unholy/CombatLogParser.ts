@@ -1,7 +1,7 @@
 import {
   RuneDetails,
-  RuneOfTheFallenCrusader,
   RuneOfHysteria,
+  RuneOfTheFallenCrusader,
 } from 'analysis/retail/deathknight/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

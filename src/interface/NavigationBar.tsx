@@ -3,7 +3,7 @@ import getFightName from 'common/getFightName';
 import DiscordIcon from 'interface/icons/DiscordTiny';
 import GitHubIcon from 'interface/icons/GitHubMarkSmall';
 import PremiumIcon from 'interface/icons/Premium';
-import { ReactComponent as Logo } from 'interface/images/logo.svg';
+import Logo from 'interface/images/logo.svg?react';
 import makeAnalyzerUrl from 'interface/makeAnalyzerUrl';
 import { getFightById } from 'interface/selectors/fight';
 import { getReport } from 'interface/selectors/report';
@@ -12,8 +12,7 @@ import { getUser } from 'interface/selectors/user';
 import Tooltip from 'interface/Tooltip';
 import { useWaSelector } from 'interface/utils/useWaSelector';
 import { HTMLAttributes, ReactNode } from 'react';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import './NavigationBar.scss';
 

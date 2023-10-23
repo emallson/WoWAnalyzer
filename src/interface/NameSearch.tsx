@@ -2,12 +2,12 @@ import { defineMessage, t, Trans } from '@lingui/macro';
 import { makeCharacterApiUrl, makeGuildApiUrl } from 'common/makeApiUrl';
 import makeCharacterPageUrl from 'common/makeCharacterPageUrl';
 import makeGuildPageUrl from 'common/makeGuildPageUrl';
-import { REALM_LIST, CLASSIC_REALM_LIST } from 'game/RealmList';
+import { CLASSIC_REALM_LIST, REALM_LIST } from 'game/RealmList';
 import { FormEvent, useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SelectSearch from 'react-select-search';
 import { useLingui } from '@lingui/react';
-import { RETAIL_EXPANSION_NAME, CLASSIC_EXPANSION_NAME } from 'game/Expansion';
+import { CLASSIC_EXPANSION_NAME, RETAIL_EXPANSION_NAME } from 'game/Expansion';
 
 export enum SearchType {
   CHARACTER = 'Character',

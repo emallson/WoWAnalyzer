@@ -6,15 +6,15 @@ import {
   AbilityEvent,
   AnyEvent,
   ApplyBuffEvent,
+  ApplyBuffStackEvent,
+  CastEvent,
   EventType,
+  GetRelatedEvent,
   GetRelatedEvents,
   HasRelatedEvent,
-  RemoveBuffEvent,
-  RefreshBuffEvent,
   HealEvent,
-  CastEvent,
-  ApplyBuffStackEvent,
-  GetRelatedEvent,
+  RefreshBuffEvent,
+  RemoveBuffEvent,
 } from 'parser/core/Events';
 
 export const APPLIED_HEAL = 'AppliedHeal';

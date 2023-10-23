@@ -14,14 +14,15 @@ import {
   DEFAULT_PLAYER_INFO,
   DEFAULT_REPORT,
 } from 'parser/core/tests/constants';
+import { vi } from 'vitest';
 
 class TestCombatLogParser extends CombatLogParser {
   static defaultModules = {};
 
-  toPlayer = jest.fn(() => true);
-  byPlayer = jest.fn(() => true);
-  toPlayerPet = jest.fn(() => true);
-  byPlayerPet = jest.fn(() => true);
+  toPlayer = vi.fn(() => true);
+  byPlayer = vi.fn(() => true);
+  toPlayerPet = vi.fn(() => true);
+  byPlayerPet = vi.fn(() => true);
 
   get currentTimestamp() {
     return super.currentTimestamp;

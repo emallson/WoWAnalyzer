@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { ToppleTheNun, Bigsxy, Whispyr} from 'CONTRIBUTORS';
+import { Bigsxy, ToppleTheNun, Whispyr } from 'CONTRIBUTORS';
 import SpellLink from 'interface/SpellLink';
 import SPELLS from 'common/SPELLS/rogue';
 import TALENTS from 'common/TALENTS/rogue';

@@ -1,12 +1,12 @@
 import { Trans } from '@lingui/macro';
 import {
   COMBUSTION_END_BUFFER,
+  FIRE_DIRECT_DAMAGE_SPELLS,
   FIRESTARTER_THRESHOLD,
   SEARING_TOUCH_THRESHOLD,
-  FIRE_DIRECT_DAMAGE_SPELLS,
   SharedCode,
 } from 'analysis/retail/mage/shared';
-import { formatPercentage, formatNumber } from 'common/format';
+import { formatNumber, formatPercentage } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/mage';
 import HIT_TYPES from 'game/HIT_TYPES';
@@ -14,7 +14,7 @@ import { SpellLink } from 'interface';
 import { highlightInefficientCast } from 'interface/report/Results/Timeline/Casts';
 import Analyzer from 'parser/core/Analyzer';
 import { EventType, HasTarget } from 'parser/core/Events';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import { encodeTargetString } from 'parser/shared/modules/Enemies';
 import EventHistory from 'parser/shared/modules/EventHistory';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';
@@ -44,7 +44,7 @@ class HotStreak extends Analyzer {
   missingHotStreakPreCast = () => {
     let hotStreakRemovals = this.eventHistory.getEvents(EventType.RemoveBuff, { spell: SPELLS.HOT_STREAK });
     hotStreakRemovals = hotStreakRemovals.filter(hs => !this.sharedCode.getPreCast(hs, SPELLS.FIREBALL));
-    
+
     //If Hot Streak was used on Flamestrike, filter it out
     hotStreakRemovals = hotStreakRemovals.filter(hs => !this.sharedCode.getPreCast(hs, SPELLS.FLAMESTRIKE));
 

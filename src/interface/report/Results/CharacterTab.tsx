@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro';
 import ArmoryIcon from 'interface/icons/Armory';
 import WoWAnalyzerIcon from 'interface/icons/WoWAnalyzer';
-import { makeCharacterUrl, makeArmoryUrl } from 'interface/makeAnalyzerUrl';
+import { makeArmoryUrl, makeCharacterUrl } from 'interface/makeAnalyzerUrl';
 import Combatant from 'parser/core/Combatant';
 import StatTracker from 'parser/shared/modules/StatTracker';
 import { Link } from 'react-router-dom';

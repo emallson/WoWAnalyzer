@@ -1,10 +1,8 @@
-import { defineMessage } from '@lingui/macro';
-import { Trans } from '@lingui/macro';
-import { formatNth, formatDuration } from 'common/format';
+import { defineMessage, Trans } from '@lingui/macro';
+import { formatDuration, formatNth } from 'common/format';
 import TALENTS from 'common/TALENTS/shaman';
-import { SpellIcon, SpellLink, SpecIcon } from 'interface';
-import { TooltipElement } from 'interface';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import { SpecIcon, SpellIcon, SpellLink, TooltipElement } from 'interface';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { CastEvent, EventType, HealEvent } from 'parser/core/Events';
 import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import Combatants from 'parser/shared/modules/Combatants';

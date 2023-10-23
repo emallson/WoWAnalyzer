@@ -1,11 +1,11 @@
 import SPELLS from 'common/SPELLS';
 import { TALENTS_EVOKER } from 'common/TALENTS';
 import { Options } from 'parser/core/Analyzer';
-import HotTracker, { Tracker, HotInfo } from 'parser/shared/modules/HotTracker';
+import HotTracker, { HotInfo, Tracker } from 'parser/shared/modules/HotTracker';
 import {
-  REVERSION_BASE_DURATION,
   DREAM_BREATH_MAX_DURATION,
   DREAM_BREATH_MIN_DURATION,
+  REVERSION_BASE_DURATION,
   TIMELESS_MAGIC,
 } from '../../constants';
 

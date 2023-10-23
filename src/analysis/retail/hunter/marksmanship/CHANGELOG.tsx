@@ -3,6 +3,7 @@ import { Arlie, emallson, Putro, Swolorno, ToppleTheNun, Trevor } from 'CONTRIBU
 import { ItemLink, SpellLink } from 'interface';
 import TALENTS from 'common/TALENTS/hunter';
 import ITEMS from 'common/ITEMS';
+
 export default [
   change(date(2023, 10, 3), <>Add <SpellLink spell={TALENTS.STEEL_TRAP_TALENT} /> as a trackable talent. </>, Putro),
   change(date(2023, 7, 3), 'Update SpellLink usage.', ToppleTheNun),

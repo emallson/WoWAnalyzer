@@ -1,9 +1,7 @@
 import { Trans } from '@lingui/macro';
 import { formatNumber } from 'common/format';
 import indexByProperty from 'common/indexByProperty';
-import { TooltipElement } from 'interface';
-import { SpecIcon } from 'interface';
-import { SpellLink } from 'interface';
+import { SpecIcon, SpellLink, TooltipElement } from 'interface';
 import Combatant from 'parser/core/Combatant';
 import { PlayerInfo } from 'parser/core/Player';
 import { Component } from 'react';

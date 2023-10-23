@@ -1,11 +1,11 @@
 import {
+  DampenHarm,
   FaelineStomp,
   InvokersDelight,
   MysticTouch,
-  TouchOfDeath,
-  DampenHarm,
   SaveThemAll,
   TeachingsOfTheMonestary,
+  TouchOfDeath,
 } from 'analysis/retail/monk/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ManaTracker from 'parser/core/healingEfficiency/ManaTracker';

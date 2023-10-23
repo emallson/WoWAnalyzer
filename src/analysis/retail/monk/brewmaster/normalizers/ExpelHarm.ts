@@ -1,6 +1,5 @@
 import SPELLS from 'common/SPELLS';
-import EventOrderNormalizer from 'parser/core/EventOrderNormalizer';
-import { EventOrder } from 'parser/core/EventOrderNormalizer';
+import EventOrderNormalizer, { EventOrder } from 'parser/core/EventOrderNormalizer';
 import { EventType } from 'parser/core/Events';
 import { Options } from 'parser/core/Module';
 

@@ -1,7 +1,7 @@
 import BaseCombatLogParser from 'parser/classic/CombatLogParser';
 // Shared
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
-import { lowRankSpells, GlobalCooldown } from 'analysis/classic/deathknight/shared';
+import { GlobalCooldown, lowRankSpells } from 'analysis/classic/deathknight/shared';
 import Haste from 'parser/shared/modules/Haste';
 // Features
 import Abilities from './modules/features/Abilities';

@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import Spell from 'common/SPELLS/Spell';
 import MAGIC_SCHOOLS from 'game/MAGIC_SCHOOLS';
 import { ApplyBuffEvent, EventType, RefreshBuffEvent, RemoveBuffEvent } from 'parser/core/Events';

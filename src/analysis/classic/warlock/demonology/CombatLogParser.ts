@@ -3,11 +3,11 @@ import Guide from './Guide';
 // Shared
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
 import {
-  lowRankSpells,
-  whitelist,
   DemonicCirclesCreated,
   GlobalCooldown,
+  lowRankSpells,
   Spellstone,
+  whitelist,
 } from 'analysis/classic/warlock/shared';
 // Normalizers
 import Channeling from 'parser/shared/normalizers/Channeling';

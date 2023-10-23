@@ -2,9 +2,8 @@ import styled from '@emotion/styled';
 import { formatDuration, formatNumber } from 'common/format';
 import { SpellLink, Tooltip } from 'interface';
 import { GoodColor, useAnalyzer, useEvents, useInfo } from 'interface/guide';
-import { HasAbility, AbilityEvent, EventType } from 'parser/core/Events';
-import { useMemo } from 'react';
-import { useCallback, useState } from 'react';
+import { AbilityEvent, EventType, HasAbility } from 'parser/core/Events';
+import { useCallback, useMemo, useState } from 'react';
 import { SignalListener } from 'react-vega';
 import { AutoSizer } from 'react-virtualized';
 import EmbeddedTimelineContainer, {

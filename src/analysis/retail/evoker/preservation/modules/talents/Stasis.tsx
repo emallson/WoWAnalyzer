@@ -12,7 +12,7 @@ import Events, {
 } from 'parser/core/Events';
 import CastEfficiencyBar from 'parser/ui/CastEfficiencyBar';
 import { GapHighlight } from 'parser/ui/CooldownBar';
-import { QualitativePerformance, getLowestPerf } from 'parser/ui/QualitativePerformance';
+import { getLowestPerf, QualitativePerformance } from 'parser/ui/QualitativePerformance';
 import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';

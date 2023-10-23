@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { ChangelogEntry } from 'common/changelog';
 import AVAILABLE_CONFIGS from 'parser';
 

@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import * as React from 'react';
+import { useState } from 'react';
 
 export interface Props extends React.VideoHTMLAttributes<HTMLVideoElement> {
   videos: string[];

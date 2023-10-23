@@ -14,14 +14,12 @@ import { isDefined } from 'common/typeGuards';
 import { combineQualitativePerformances } from 'common/combineQualitativePerformances';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';
 import {
-  getRelatedBuffApplicationFromHardcast,
-  getDebuffApplicationFromHardcast,
-  getSepsisConsumptionCastForBuffEvent,
   getAuraLifetimeEvent,
-} from '../../normalizers/SepsisLinkNormalizer';
-import {
-  SEPSIS_DEBUFF_DURATION,
+  getDebuffApplicationFromHardcast,
+  getRelatedBuffApplicationFromHardcast,
+  getSepsisConsumptionCastForBuffEvent,
   SEPSIS_BUFF_DURATION,
+  SEPSIS_DEBUFF_DURATION,
 } from '../../normalizers/SepsisLinkNormalizer';
 import { ExplanationSection } from 'analysis/retail/demonhunter/shared/guide/CommonComponents';
 import { Expandable } from 'interface';

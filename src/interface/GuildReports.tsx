@@ -1,5 +1,5 @@
 import { i18n } from '@lingui/core';
-import { Trans, defineMessage } from '@lingui/macro';
+import { defineMessage, Trans } from '@lingui/macro';
 import { captureException } from 'common/errorLogger';
 import fetchWcl, { GuildNotFoundError, UnknownApiError, WclApiError } from 'common/fetchWclApi';
 import { makeGuildApiUrl } from 'common/makeApiUrl';

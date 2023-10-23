@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/paladin';
 import { EventType } from 'parser/core/Events';

@@ -7,7 +7,7 @@ import {
   UpdateSpellUsableEvent,
   UpdateSpellUsableType,
 } from 'parser/core/Events';
-import { useInfo, useEvents } from 'interface/guide';
+import { useEvents, useInfo } from 'interface/guide';
 import { Fragment } from 'react';
 import { ExecuteRange } from 'parser/shared/modules/helpers/ExecuteHelper';
 

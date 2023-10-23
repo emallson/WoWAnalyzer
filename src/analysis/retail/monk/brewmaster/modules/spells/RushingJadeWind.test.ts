@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import talents from 'common/TALENTS/monk';
 import { Talent } from 'common/TALENTS/types';
 import Combatant from 'parser/core/Combatant';

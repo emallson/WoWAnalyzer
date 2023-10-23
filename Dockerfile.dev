@@ -6,6 +6,6 @@ RUN npm i -g pnpm
 
 COPY . /usr/src/wowanalyzer/
 
-EXPOSE 3000
+EXPOSE 5173
 
 CMD ["pnpm", "run", "safestart"]

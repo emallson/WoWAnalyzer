@@ -1,7 +1,7 @@
 import { change, date } from 'common/changelog';
 import SPELLS from 'common/SPELLS';
 import { TALENTS_SHAMAN } from 'common/TALENTS';
-import { Taum, Vetyst, Vohrr, xunni, Seriousnes, ToppleTheNun, Putro } from 'CONTRIBUTORS';
+import { Putro, Seriousnes, Taum, ToppleTheNun, Vetyst, Vohrr, xunni } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 
 export default [

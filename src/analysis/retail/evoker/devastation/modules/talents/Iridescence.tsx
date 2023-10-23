@@ -5,11 +5,11 @@ import { formatNumber } from 'common/format';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import ItemDamageDone from 'parser/ui/ItemDamageDone';
 import Events, {
+  CastEvent,
   DamageEvent,
+  HasRelatedEvent,
   RemoveBuffEvent,
   RemoveBuffStackEvent,
-  HasRelatedEvent,
-  CastEvent,
 } from 'parser/core/Events';
 import { calculateEffectiveDamage } from 'parser/core/EventCalculateLib';
 
@@ -17,9 +17,9 @@ import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
 import {
-  IRIDESCENCE_MULTIPLIER,
   DISINTEGRATE_CHAINED_TICKS,
   DISINTEGRATE_TICKS,
+  IRIDESCENCE_MULTIPLIER,
 } from 'analysis/retail/evoker/devastation/constants';
 import { SpellLink } from 'interface';
 import {

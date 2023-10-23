@@ -1,6 +1,5 @@
-import { defineMessage } from '@lingui/macro';
-import { Trans } from '@lingui/macro';
-import { formatPercentage, formatNumber } from 'common/format';
+import { defineMessage, Trans } from '@lingui/macro';
+import { formatNumber, formatPercentage } from 'common/format';
 import RESOURCE_TYPES from 'game/RESOURCE_TYPES';
 import ROLES from 'game/ROLES';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';

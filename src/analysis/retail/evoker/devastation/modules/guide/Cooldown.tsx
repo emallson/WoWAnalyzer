@@ -1,6 +1,4 @@
-import { GuideProps, Section } from 'interface/guide';
-
-import { useAnalyzer } from 'interface/guide';
+import { GuideProps, Section, useAnalyzer } from 'interface/guide';
 import { TALENTS_EVOKER } from 'common/TALENTS';
 import CastEfficiency from 'parser/shared/modules/CastEfficiency';
 import CastEfficiencyBar from 'parser/ui/CastEfficiencyBar';

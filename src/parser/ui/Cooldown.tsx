@@ -1,10 +1,9 @@
 import { Trans } from '@lingui/macro';
-import { formatThousands, formatNumber, formatPercentage, formatDuration } from 'common/format';
+import { formatDuration, formatNumber, formatPercentage, formatThousands } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import Spell from 'common/SPELLS/Spell';
 import RESOURCE_TYPES from 'game/RESOURCE_TYPES';
-import { Icon, SpellIcon, SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
+import { Icon, SpellIcon, SpellLink, TooltipElement } from 'interface';
 import {
   AbsorbedEvent,
   AnyEvent,

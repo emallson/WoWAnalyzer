@@ -128,9 +128,9 @@ jobs:
         run: pnpm run build
         env:
           DISABLE_AUTOMATIC_ESLINT: true
-          REACT_APP_ENABLE_GA: true
-          REACT_APP_ENVIRONMENT_NAME: ${{ steps.environment-name.outputs.environment_name }}
-          REACT_APP_VERSION: ${{ github.sha }}
+          VITE_ENABLE_GA: true
+          VITE_ENVIRONMENT_NAME: ${{ steps.environment-name.outputs.environment_name }}
+          VITE_VERSION: ${{ github.sha }}
       - run: tar -czf build.tar.gz build
       - uses: actions/upload-artifact@v3
         with:
@@ -165,9 +165,9 @@ jobs:
         run: pnpm run build
         env:
           DISABLE_AUTOMATIC_ESLINT: true
-          REACT_APP_ENABLE_GA: false
-          REACT_APP_ENVIRONMENT_NAME: ${{ steps.environment-name.outputs.environment_name }}
-          REACT_APP_VERSION: ${{ github.sha }}
+          VITE_ENABLE_GA: false
+          VITE_ENVIRONMENT_NAME: ${{ steps.environment-name.outputs.environment_name }}
+          VITE_VERSION: ${{ github.sha }}
       - run: tar -czf build.tar.gz build
       - uses: actions/upload-artifact@v3
         with:

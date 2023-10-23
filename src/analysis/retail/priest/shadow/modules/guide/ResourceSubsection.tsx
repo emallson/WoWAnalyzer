@@ -1,4 +1,4 @@
-import { SubSection, GuideProps } from 'interface/guide';
+import { GuideProps, SubSection } from 'interface/guide';
 import { Trans } from '@lingui/macro';
 import { PerformanceStrong } from './ExtraComponents';
 import TALENTS from 'common/TALENTS/priest';

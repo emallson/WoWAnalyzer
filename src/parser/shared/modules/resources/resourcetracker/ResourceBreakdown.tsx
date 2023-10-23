@@ -1,7 +1,6 @@
 import { t, Trans } from '@lingui/macro';
 import { formatPercentage } from 'common/format';
-import { SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
+import { SpellLink, TooltipElement } from 'interface';
 import { Component } from 'react';
 
 import ResourceTracker from './ResourceTracker';

@@ -1,4 +1,4 @@
-import { AlexanderJKremer, Khazak, Bicepspump } from 'CONTRIBUTORS';
+import { AlexanderJKremer, Bicepspump, Khazak } from 'CONTRIBUTORS';
 import Expansion from 'game/Expansion';
 import SPECS from 'game/SPECS';
 import Config from 'parser/Config';
@@ -68,7 +68,7 @@ const config: Config = {
       (exports) => exports.default,
     ),
   // The path to the current directory (relative form project root). This is used for generating a GitHub link directly to your spec's code.
-  path: __dirname,
+  path: import.meta.url,
 };
 
 export default config;

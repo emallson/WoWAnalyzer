@@ -9,8 +9,7 @@ import {
   DotUptimeProps,
 } from 'parser/shared/modules/features/Checklist/ChecklistTypes';
 import Requirement from 'parser/shared/modules/features/Checklist/Requirement';
-import Rule from 'parser/shared/modules/features/Checklist/Rule';
-import { PERFORMANCE_METHOD } from 'parser/shared/modules/features/Checklist/Rule';
+import Rule, { PERFORMANCE_METHOD } from 'parser/shared/modules/features/Checklist/Rule';
 
 const ClassicDemonologyChecklist = ({ combatant, castEfficiency, thresholds }: ChecklistProps) => {
   const DotUptime = (props: DotUptimeProps) => (

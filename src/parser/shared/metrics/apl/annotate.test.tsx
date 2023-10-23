@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import renderer from 'react-test-renderer';
 import { Provider as ReduxProvider } from 'react-redux';
 import { store } from 'store';

@@ -2,7 +2,7 @@
 import BaseCombatLogParser from 'parser/classic/CombatLogParser';
 // Shared
 import lowRankSpellsSuggestion from 'parser/classic/suggestions/lowRankSpells';
-import { lowRankSpells, Haste, ColdSnap } from 'analysis/classic/mage/shared';
+import { ColdSnap, Haste, lowRankSpells } from 'analysis/classic/mage/shared';
 import ManaTracker from 'parser/core/healingEfficiency/ManaTracker';
 import SpellManaCost from 'parser/shared/modules/SpellManaCost';
 // Features

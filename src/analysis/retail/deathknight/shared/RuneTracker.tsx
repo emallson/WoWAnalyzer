@@ -6,8 +6,8 @@ import { SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   ApplyBuffEvent,
   CastEvent,
-  ResourceChangeEvent,
   RemoveBuffEvent,
+  ResourceChangeEvent,
   UpdateSpellUsableEvent,
   UpdateSpellUsableType,
 } from 'parser/core/Events';

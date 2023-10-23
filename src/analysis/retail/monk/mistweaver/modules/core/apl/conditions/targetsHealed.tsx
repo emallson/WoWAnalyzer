@@ -1,7 +1,7 @@
 import type Spell from 'common/SPELLS/Spell';
-import { EventType, GetRelatedEvents, CastEvent } from 'parser/core/Events';
+import { CastEvent, EventType, GetRelatedEvents } from 'parser/core/Events';
 import { Condition, tenseAlt } from 'parser/shared/metrics/apl';
-import { Range, formatRange } from 'parser/shared/metrics/apl/conditions';
+import { formatRange, Range } from 'parser/shared/metrics/apl/conditions';
 
 export interface Options {
   targetType: EventType;

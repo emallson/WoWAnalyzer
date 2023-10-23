@@ -1,8 +1,7 @@
 import { change, date } from 'common/changelog';
 import talents from 'common/TALENTS/deathknight';
-import { Tialyss, Chizu, emallson, ToppleTheNun, Yajinni } from 'CONTRIBUTORS';
+import { Chizu, emallson, Tialyss, ToppleTheNun, Yajinni } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
-
 
 export default [
   change(date(2023, 8, 12), 'Large update to the abilities file to include many missing spells and talents.',Yajinni),

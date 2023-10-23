@@ -1,9 +1,9 @@
 import type Spell from 'common/SPELLS/Spell';
-import { HasAbility, HasTarget, EventType, GetRelatedEvents } from 'parser/core/Events';
+import { EventType, GetRelatedEvents, HasAbility, HasTarget } from 'parser/core/Events';
 import { encodeEventTargetString } from 'parser/shared/modules/Enemies';
 import { encodeFriendlyEventTargetString } from 'parser/shared/modules/Entities';
-import { tenseAlt, Condition } from '../index';
-import { Range, formatRange } from './index';
+import { Condition, tenseAlt } from '../index';
+import { formatRange, Range } from './index';
 
 export interface Options {
   lookahead: number;

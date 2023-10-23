@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { Sref, Phased, emallson, Trevor, Vohrr, ToppleTheNun } from 'CONTRIBUTORS';
+import { emallson, Phased, Sref, ToppleTheNun, Trevor, Vohrr } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 import { TALENTS_DRUID } from 'common/TALENTS';
 import SPELLS from 'common/SPELLS';

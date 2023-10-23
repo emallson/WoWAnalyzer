@@ -1,7 +1,6 @@
 import { Trans } from '@lingui/macro';
-import { formatThousands, formatNumber } from 'common/format';
-import { SpellIcon } from 'interface';
-import { SpellLink } from 'interface';
+import { formatNumber, formatThousands } from 'common/format';
+import { SpellIcon, SpellLink } from 'interface';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { DamageEvent } from 'parser/core/Events';
 import StatisticBox, { STATISTIC_ORDER } from 'parser/ui/StatisticBox';

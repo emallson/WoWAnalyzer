@@ -12,7 +12,7 @@ import { explanationAndDataSubsection } from 'interface/guide/components/Explana
 import { GUIDE_CORE_EXPLANATION_PERCENT } from 'analysis/retail/priest/holy/Guide';
 import { getCircleOfHealingEvents } from '../../normalizers/CastLinkNormalizer';
 import GradiatedPerformanceBar from 'interface/guide/components/GradiatedPerformanceBar';
-import { BadColor, OkColor, GoodColor } from 'interface/guide';
+import { BadColor, GoodColor, OkColor } from 'interface/guide';
 import CastEfficiencyPanel from 'interface/guide/components/CastEfficiencyPanel';
 
 const OVERHEAL_THRESHOLD = 0.75;

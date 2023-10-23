@@ -5,17 +5,17 @@ import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import Events, { CastEvent, HealEvent } from 'parser/core/Events';
 import {
+  calculateEffectiveDamage,
   calculateEffectiveHealing,
   calculateOverhealing,
-  calculateEffectiveDamage,
 } from 'parser/core/EventCalculateLib';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
 import ItemHealingDone from 'parser/ui/ItemHealingDone';
 import {
-  getSerenityHealEvent,
   getChastiseDamageEvent,
   getSalvationHealEvents,
   getSanctifyHealEvents,
+  getSerenityHealEvent,
 } from 'analysis/retail/priest/holy/normalizers/CastLinkNormalizer';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';
 import { formatNumber, formatPercentage } from 'common/format';

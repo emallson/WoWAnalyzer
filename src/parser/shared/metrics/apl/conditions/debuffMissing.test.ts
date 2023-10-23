@@ -1,6 +1,7 @@
+import { describe, expect, it } from 'vitest';
 import Spell from 'common/SPELLS/Spell';
 import MAGIC_SCHOOLS from 'game/MAGIC_SCHOOLS';
-import { CastEvent, DamageEvent, EventType, AnyEvent } from 'parser/core/Events';
+import { AnyEvent, CastEvent, DamageEvent, EventType } from 'parser/core/Events';
 import { debuffMissing } from './debuffMissing';
 import { cast, dummyBuff, dummyCast, runCondition } from './test-tools';
 

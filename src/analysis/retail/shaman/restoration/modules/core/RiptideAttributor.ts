@@ -2,7 +2,7 @@ import Analyzer, { SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Combatants from 'parser/shared/modules/Combatants';
 import RiptideTracker from './RiptideTracker';
 import talents from 'common/TALENTS/shaman';
-import { PRIMAL_TIDE_CORE, HARDCAST, RIPTIDE_PWAVE, UNLEASH_LIFE } from '../../constants';
+import { HARDCAST, PRIMAL_TIDE_CORE, RIPTIDE_PWAVE, UNLEASH_LIFE } from '../../constants';
 import HotTracker from 'parser/shared/modules/HotTracker';
 import Events, { ApplyBuffEvent, RefreshBuffEvent } from 'parser/core/Events';
 import { Options } from 'parser/core/Module';

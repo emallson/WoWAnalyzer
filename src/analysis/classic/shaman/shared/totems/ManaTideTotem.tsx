@@ -1,8 +1,7 @@
 import { Trans } from '@lingui/macro';
 import { formatNumber } from 'common/format';
 import RESOURCE_TYPES from 'game/RESOURCE_TYPES';
-import { SpellLink } from 'interface';
-import { SpecIcon } from 'interface';
+import { SpecIcon, SpellLink } from 'interface';
 import PeopleIcon from 'interface/icons/People';
 import PersonIcon from 'interface/icons/Person';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';

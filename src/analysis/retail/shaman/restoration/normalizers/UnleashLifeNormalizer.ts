@@ -13,11 +13,11 @@ import {
 import { Options } from 'parser/core/Module';
 import talents from 'common/TALENTS/shaman';
 import {
+  CAST_BUFFER_MS,
+  HARDCAST,
+  PWAVE_TRAVEL_MS,
   UNLEASH_LIFE_HEALING_WAVE,
   UNLEASH_LIFE_REMOVE,
-  CAST_BUFFER_MS,
-  PWAVE_TRAVEL_MS,
-  HARDCAST,
 } from '../constants';
 import SPELLS from 'common/SPELLS';
 

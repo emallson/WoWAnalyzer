@@ -4,7 +4,7 @@ import EventFilter, {
   SELECTED_PLAYER_PET,
   SpellInfo,
 } from 'parser/core/EventFilter';
-import { HasAbility, AnyEvent, EventType } from 'parser/core/Events';
+import { AnyEvent, EventType, HasAbility } from 'parser/core/Events';
 import Module from 'parser/core/Module';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 

@@ -1,3 +1,4 @@
+import { describe, test, expect } from 'vitest';
 import { calculateEffectiveHealing } from './EventCalculateLib';
 
 describe('calculateEffectiveHealing', () => {

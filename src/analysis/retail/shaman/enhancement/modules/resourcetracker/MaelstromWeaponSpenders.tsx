@@ -5,9 +5,9 @@ import Panel from 'parser/ui/Panel';
 import { MAELSTROM_WEAPON_ELIGIBLE_SPELLS } from '../../constants';
 import Events, {
   DamageEvent,
+  GetRelatedEvents,
   HealEvent,
   RemoveBuffEvent,
-  GetRelatedEvents,
 } from 'parser/core/Events';
 import { SpellLink } from 'interface';
 import Abilities from 'parser/core/modules/Abilities';

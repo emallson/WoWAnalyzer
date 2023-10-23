@@ -8,9 +8,9 @@ import Events, {
   ApplyBuffEvent,
   ApplyBuffStackEvent,
   CastEvent,
+  DamageEvent,
   RemoveBuffEvent,
   RemoveBuffStackEvent,
-  DamageEvent,
   ResourceChangeEvent,
 } from 'parser/core/Events';
 import { ThresholdStyle, When } from 'parser/core/ParseResults';

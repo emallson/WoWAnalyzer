@@ -16,12 +16,12 @@ import { useEffect, useState } from 'react';
 import { VisualizationSpec } from 'react-vega';
 import { AutoSizer } from 'react-virtualized';
 
-import { staggerChart, line, point, color, normalizeTimestampTransform } from '../../charts';
+import { color, line, normalizeTimestampTransform, point, staggerChart } from '../../charts';
 import PurifyingBrewProblems, {
-  ProblemType,
   ProblemData,
-  PurifyReason,
+  ProblemType,
   PurifyData,
+  PurifyReason,
 } from './analyzer';
 import { potentialStaggerEvents } from './solver';
 

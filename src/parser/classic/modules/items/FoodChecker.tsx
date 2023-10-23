@@ -1,8 +1,8 @@
 import SPELLS from 'common/SPELLS';
-import { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { ApplyBuffEvent } from 'parser/core/Events';
 import SUGGESTION_IMPORTANCE from 'parser/core/ISSUE_IMPORTANCE';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import { ItemLink } from 'interface';
 import BaseFoodChecker from 'parser/shared/modules/items/FoodChecker';
 

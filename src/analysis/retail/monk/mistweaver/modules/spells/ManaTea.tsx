@@ -27,9 +27,9 @@ import RenewingMistDuringManaTea from './RenewingMistDuringManaTea';
 import { PerformanceMark } from 'interface/guide';
 import { explanationAndDataSubsection } from 'interface/guide/components/ExplanationRow';
 import {
-  HasStackChange,
   getManaTeaChannelDuration,
   getManaTeaStacksConsumed,
+  HasStackChange,
 } from '../../normalizers/CastLinkNormalizer';
 import { MANA_TEA_MAX_STACKS, MANA_TEA_REDUCTION } from '../../constants';
 import Haste from 'parser/shared/modules/Haste';

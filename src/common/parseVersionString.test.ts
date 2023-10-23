@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import parseVersionString from './parseVersionString';
 
 describe('parseVersionString', () => {

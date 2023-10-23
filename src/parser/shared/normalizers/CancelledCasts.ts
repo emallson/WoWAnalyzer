@@ -1,6 +1,6 @@
 import CASTABLE_WHILE_CASTING_SPELLS from 'parser/core/CASTABLE_WHILE_CASTING_SPELLS';
 import CASTS_THAT_ARENT_CASTS from 'parser/core/CASTS_THAT_ARENT_CASTS';
-import { AnyEvent, BeginCastEvent, EventType, CastEvent } from 'parser/core/Events';
+import { AnyEvent, BeginCastEvent, CastEvent, EventType } from 'parser/core/Events';
 import EventsNormalizer from 'parser/core/EventsNormalizer';
 
 /**

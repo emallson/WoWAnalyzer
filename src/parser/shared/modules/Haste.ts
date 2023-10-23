@@ -7,7 +7,6 @@ import Analyzer, { Options } from 'parser/core/Analyzer';
 import Combatant from 'parser/core/Combatant';
 import EventFilter, { SELECTED_PLAYER } from 'parser/core/EventFilter';
 import Events, {
-  Item,
   AnyEvent,
   ApplyBuffEvent,
   ApplyDebuffEvent,
@@ -15,9 +14,10 @@ import Events, {
   ChangeDebuffStackEvent,
   ChangeStatsEvent,
   EventType,
-  SourcedEvent,
+  Item,
   RemoveBuffEvent,
   RemoveDebuffEvent,
+  SourcedEvent,
 } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 import StatTracker from 'parser/shared/modules/StatTracker';

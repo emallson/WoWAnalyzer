@@ -1,4 +1,5 @@
-import { ResourceChangeEvent, EventType } from 'parser/core/Events';
+import { describe, expect, it } from 'vitest';
+import { EventType, ResourceChangeEvent } from 'parser/core/Events';
 
 import resourceWasted from './resourceWasted';
 

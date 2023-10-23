@@ -2,7 +2,7 @@ import { GoodColor, GuideProps, Section, SubSection, useAnalyzers } from 'interf
 import CombatLogParser from 'analysis/retail/druid/guardian/CombatLogParser';
 import PreparationSection from 'interface/guide/components/Preparation/PreparationSection';
 import IronfurSection from 'analysis/retail/druid/guardian/modules/spells/IronfurGuideSection';
-import { ResourceLink, SpellLink } from 'interface';
+import { ResourceLink, SpellLink, TooltipElement } from 'interface';
 import RESOURCE_TYPES from 'game/RESOURCE_TYPES';
 import SPELLS from 'common/SPELLS';
 import { TALENTS_DRUID } from 'common/TALENTS';
@@ -15,7 +15,6 @@ import {
 } from 'analysis/retail/druid/guardian/modules/core/rage/RageTracker';
 import { Highlight } from 'interface/Highlight';
 import Explanation from 'interface/guide/components/Explanation';
-import { TooltipElement } from 'interface';
 import Timeline from 'interface/guide/components/MajorDefensives/Timeline';
 import AllCooldownUsagesList from 'interface/guide/components/MajorDefensives/AllCooldownUsagesList';
 import { MAJOR_DEFENSIVE_ANALYZERS } from 'analysis/retail/druid/guardian/modules/core/defensives/config';

@@ -1,5 +1,7 @@
 // import BeaconOfVirtue from './BeaconOfVirtue';
 
+import { describe, it, expect } from 'vitest';
+
 describe.skip('Paladin/Holy/Normalizers/BeaconOfVirtue', () => {
   it.skip('is currently skipped', () => expect(true).toBeFalsy());
   /*

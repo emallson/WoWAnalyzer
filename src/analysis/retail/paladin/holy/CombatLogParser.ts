@@ -1,10 +1,10 @@
 import {
-  HammerOfWrath,
   DivinePurpose,
-  HolyPowerTracker,
-  HolyPowerDetails,
   DivineToll,
+  HammerOfWrath,
+  HolyPowerDetails,
   HolyPowerPerMinute,
+  HolyPowerTracker,
 } from 'analysis/retail/paladin/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import LowHealthHealing from 'parser/shared/modules/features/LowHealthHealing';

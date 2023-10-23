@@ -1,4 +1,4 @@
-import { formatThousands, formatNumber } from 'common/format';
+import { formatNumber, formatThousands } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/warlock';
 import { TooltipElement } from 'interface';
@@ -11,8 +11,7 @@ import Events, {
   RefreshDebuffEvent,
   RemoveDebuffEvent,
 } from 'parser/core/Events';
-import Enemies from 'parser/shared/modules/Enemies';
-import { encodeTargetString } from 'parser/shared/modules/Enemies';
+import Enemies, { encodeTargetString } from 'parser/shared/modules/Enemies';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';
 import Statistic from 'parser/ui/Statistic';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';

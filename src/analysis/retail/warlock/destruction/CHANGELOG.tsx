@@ -1,6 +1,6 @@
 import { change, date } from 'common/changelog';
 import SPELLS from 'common/SPELLS';
-import { Arlie, Sharrq, ogunb, Meldris, ToppleTheNun, Omegabiscuit, Mae, dodse} from 'CONTRIBUTORS';
+import { Arlie, dodse, Mae, Meldris, ogunb, Omegabiscuit, Sharrq, ToppleTheNun } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 
 // prettier-ignore

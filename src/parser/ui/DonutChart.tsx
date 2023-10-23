@@ -1,6 +1,5 @@
 import { formatNumber, formatPercentage } from 'common/format';
-import { SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
+import { SpellLink, TooltipElement } from 'interface';
 import BaseChart from 'parser/ui/BaseChart';
 import { PureComponent } from 'react';
 import { VisualizationSpec } from 'react-vega';

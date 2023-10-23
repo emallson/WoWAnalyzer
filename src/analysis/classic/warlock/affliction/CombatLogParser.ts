@@ -1,4 +1,4 @@
-import { lowRankSpells, whitelist, DemonicCirclesCreated } from 'analysis/classic/warlock/shared';
+import { DemonicCirclesCreated, lowRankSpells, whitelist } from 'analysis/classic/warlock/shared';
 
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
 import BaseCombatLogParser from 'parser/classic/CombatLogParser';

@@ -1,4 +1,4 @@
-import { EventType, Event, AnyEvent } from 'parser/core/Events';
+import { AnyEvent, Event, EventType } from 'parser/core/Events';
 import EventsNormalizer from 'parser/core/EventsNormalizer';
 
 type EnergizeEvent = Event<'energize'>;

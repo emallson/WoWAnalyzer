@@ -1,4 +1,4 @@
-import { Trans, t } from '@lingui/macro';
+import { t, Trans } from '@lingui/macro';
 import ErrorBoundary from 'interface/ErrorBoundary';
 import FullscreenError from 'interface/FullscreenError';
 import ApiDownBackground from 'interface/images/api-down-background.gif';

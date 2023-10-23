@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import EventOrderNormalizer from 'parser/core/EventOrderNormalizer';
 import { EventType } from 'parser/core/Events';
 

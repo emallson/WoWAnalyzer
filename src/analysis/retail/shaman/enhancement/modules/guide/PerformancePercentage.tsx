@@ -2,9 +2,9 @@ import { formatNumber, formatPercentage } from 'common/format';
 import PerformanceStrongWithTooltip from 'interface/PerformanceStrongWithTooltip';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';
 import {
-  PERFECT_WASTED_PERCENT,
   GOOD_WASTED_PERCENT,
   OK_WASTED_PERCENT,
+  PERFECT_WASTED_PERCENT,
 } from '../resourcetracker/MaelstromWeaponTracker';
 import { PerformanceMark } from 'interface/guide';
 

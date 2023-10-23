@@ -24,7 +24,7 @@ function setUser(user: User | null) {
 export function logout(): ThunkAction<void, RootState, unknown, AnyAction> {
   return (dispatch) => {
     dispatch(setUser(null));
-    return fetch(`${process.env.REACT_APP_SERVER_BASE}logout`, {
+    return fetch(`${import.meta.env.VITE_SERVER_BASE}logout`, {
       credentials: 'include',
     }).catch((err) => {
       captureException(err);
@@ -36,7 +36,7 @@ export function logout(): ThunkAction<void, RootState, unknown, AnyAction> {
 
 export function fetchUser(): ThunkAction<void, RootState, unknown, AnyAction> {
   return (dispatch) =>
-    fetch(`${process.env.REACT_APP_SERVER_BASE}user`, {
+    fetch(`${import.meta.env.VITE_SERVER_BASE}user`, {
       credentials: 'include',
     })
       .then((response) => {

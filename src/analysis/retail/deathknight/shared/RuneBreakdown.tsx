@@ -1,9 +1,7 @@
 import { t, Trans } from '@lingui/macro';
 import { formatPercentage } from 'common/format';
 import SPELLS from 'common/SPELLS';
-import { SpellIcon } from 'interface';
-import { SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
+import { SpellIcon, SpellLink, TooltipElement } from 'interface';
 import ResourceBreakdown from 'parser/shared/modules/resources/resourcetracker/ResourceBreakdown';
 
 //Need to extend this class to change how passive rune regeneration is displayed.

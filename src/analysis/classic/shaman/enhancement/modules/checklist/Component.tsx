@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { SpellLink, SpellIcon } from 'interface';
+import { SpellIcon, SpellLink } from 'interface';
 import Checklist from 'parser/shared/modules/features/Checklist';
 import {
   AbilityRequirementProps,

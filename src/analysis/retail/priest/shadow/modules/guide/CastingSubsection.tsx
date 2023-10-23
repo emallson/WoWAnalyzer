@@ -1,4 +1,4 @@
-import { Section, SubSection, GuideProps } from 'interface/guide';
+import { GuideProps, Section, SubSection } from 'interface/guide';
 import { PerformanceStrong } from './ExtraComponents';
 import { formatPercentage } from 'common/format';
 import CombatLogParser from 'analysis/retail/priest/shadow/CombatLogParser';

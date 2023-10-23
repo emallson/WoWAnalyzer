@@ -19,8 +19,7 @@ import {
   getEssenceBurstConsumeAbility,
   isEbFromT30Tier,
 } from '../../../normalizers/CastLinkNormalizer';
-import { ESSENCE_COSTS } from '../../talents/EssenceBurst';
-import { MANA_COSTS } from '../../talents/EssenceBurst';
+import { ESSENCE_COSTS, MANA_COSTS } from '../../talents/EssenceBurst';
 import Soup from 'interface/icons/Soup';
 import { SpellLink, TooltipElement } from 'interface';
 import { TALENTS_EVOKER } from 'common/TALENTS';

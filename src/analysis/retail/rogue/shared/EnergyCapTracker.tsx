@@ -1,7 +1,6 @@
 import { defineMessage } from '@lingui/macro';
 import { formatDuration, formatPercentage } from 'common/format';
-import { Icon } from 'interface';
-import { Tooltip } from 'interface';
+import { Icon, Tooltip } from 'interface';
 import Analyzer from 'parser/core/Analyzer';
 import StatisticBox, { STATISTIC_ORDER } from 'parser/ui/StatisticBox';
 

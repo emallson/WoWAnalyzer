@@ -12,6 +12,7 @@ import Buffs from './modules/features/Buffs';
 import CooldownThroughputTracker from './modules/features/CooldownThroughputTracker';
 import FillerUsage from './modules/features/FillerUsage';
 import Checklist from './modules/checklist/Module';
+
 // Spells
 
 class CombatLogParser extends BaseCombatLogParser {

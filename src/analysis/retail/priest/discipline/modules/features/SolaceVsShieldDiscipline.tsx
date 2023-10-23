@@ -4,7 +4,7 @@ import SPELLS from 'common/SPELLS';
 import { TALENTS_PRIEST } from 'common/TALENTS';
 import { SpellIcon, SpellLink } from 'interface';
 import Analyzer, { SELECTED_PLAYER } from 'parser/core/Analyzer';
-import Events, { RemoveBuffEvent, CastEvent, ResourceChangeEvent } from 'parser/core/Events';
+import Events, { CastEvent, RemoveBuffEvent, ResourceChangeEvent } from 'parser/core/Events';
 import { Options } from 'parser/core/Module';
 import BoringValue from 'parser/ui/BoringValueText';
 import Statistic from 'parser/ui/Statistic';

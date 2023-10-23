@@ -5,6 +5,7 @@ import { CombatLogParserProvider } from 'interface/report/CombatLogParserContext
 
 import { loadLog, parseLog } from './log-tools';
 import Analyzer from 'parser/core/Analyzer';
+
 function renderWithParser(output: ReactNode, parser: CombatLogParser) {
   let sanitizedOutput = output;
   if (Array.isArray(output)) {

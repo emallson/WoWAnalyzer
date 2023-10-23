@@ -3,12 +3,12 @@ import SPELLS from 'common/SPELLS';
 import HasteIcon from 'interface/icons/Haste';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
-  EventType,
   ApplyBuffEvent,
   ApplyBuffStackEvent,
+  EventType,
+  FightEndEvent,
   RemoveBuffEvent,
   RemoveBuffStackEvent,
-  FightEndEvent,
 } from 'parser/core/Events';
 import { currentStacks } from 'parser/shared/modules/helpers/Stacks';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';

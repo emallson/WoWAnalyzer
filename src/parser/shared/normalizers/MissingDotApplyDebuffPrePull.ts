@@ -1,4 +1,4 @@
-import { AnyEvent, DamageEvent, EventType, ApplyDebuffEvent } from 'parser/core/Events';
+import { AnyEvent, ApplyDebuffEvent, DamageEvent, EventType } from 'parser/core/Events';
 import EventsNormalizer from 'parser/core/EventsNormalizer';
 
 // We can stop the normalization after 5 seconds. Any dot that was applied during pre-pull should've ticked.

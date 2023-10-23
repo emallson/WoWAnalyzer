@@ -16,9 +16,9 @@ import { PanelHeader, RoundedPanel } from 'interface/guide/components/GuideDivs'
 import { ChecklistUsageInfo, SpellUse, spellUseToBoxRowEntry } from 'parser/core/SpellUsage/core';
 import { PerformanceBoxRow } from 'interface/guide/components/PerformanceBoxRow';
 import {
+  determinePerformance,
   GTEThreshold,
   LTEThreshold,
-  determinePerformance,
 } from '../features/shared/ThresholdPerformancePercentage';
 import { calculateEffectiveDamage } from 'parser/core/EventCalculateLib';
 import Statistic from 'parser/ui/Statistic';

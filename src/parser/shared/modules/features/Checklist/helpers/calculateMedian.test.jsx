@@ -1,3 +1,5 @@
+import { describe, test, expect } from 'vitest';
+
 import calculateMedian from './calculateMedian';
 
 describe('calculateEffectiveHealing', () => {

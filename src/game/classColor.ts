@@ -1,4 +1,4 @@
-import { Spec, isRetailSpec } from 'game/SPECS';
+import { isRetailSpec, Spec } from 'game/SPECS';
 import Combatant from 'parser/core/Combatant';
 
 /**

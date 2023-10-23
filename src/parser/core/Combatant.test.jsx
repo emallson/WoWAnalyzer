@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import COMBATANTINFO from 'parser/core/tests/COMBATANTINFO.json';
 
 import Combatant from './Combatant';

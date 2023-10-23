@@ -1,5 +1,5 @@
 import SPELLS from 'common/SPELLS';
-import { TALENTS_MONK, TALENTS_PRIEST, TALENTS_PALADIN } from 'common/TALENTS';
+import { TALENTS_MONK, TALENTS_PALADIN, TALENTS_PRIEST } from 'common/TALENTS';
 
 //saving it as spell-prop as this might be a good place to add further information about the externals (for issue #1083)
 

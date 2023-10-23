@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { jazminite, HerzBlutRaffy, beckeeh } from 'CONTRIBUTORS';
+import { beckeeh, HerzBlutRaffy, jazminite } from 'CONTRIBUTORS';
 import SpellLink from 'interface/SpellLink';
 import SPELLS from 'common/SPELLS/classic/priest';
 

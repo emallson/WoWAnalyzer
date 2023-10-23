@@ -4,13 +4,13 @@ import { AnyEvent } from 'parser/core/Events';
 import aplCheck, { Apl, build, CheckResult, PlayerInfo, Rule } from 'parser/shared/metrics/apl';
 import {
   and,
-  or,
+  buffMissing,
   buffPresent,
   buffStacks,
   debuffMissing,
-  spellCharges,
   describe,
-  buffMissing,
+  or,
+  spellCharges,
 } from 'parser/shared/metrics/apl/conditions';
 import annotateTimeline from 'parser/shared/metrics/apl/annotate';
 import { SpellLink } from 'interface';

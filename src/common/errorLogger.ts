@@ -5,7 +5,7 @@ export function captureException(
     contexts?: { react: { componentStack: unknown } };
   },
 ) {
-  if (process.env.NODE_ENV === 'production') {
+  if (import.meta.env.PROD) {
     console.error('An error occurred and was sent to Sentry.', exception);
     window.Sentry?.withScope((scope) => {
       if (options && options.extra) {

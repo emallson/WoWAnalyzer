@@ -1,4 +1,4 @@
-import { EnergyTracker, EnergyCapTracker } from 'analysis/retail/rogue/shared';
+import { EnergyCapTracker, EnergyTracker } from 'analysis/retail/rogue/shared';
 import SPELLS from 'common/SPELLS';
 import { SpellLink } from 'interface';
 import Analyzer from 'parser/core/Analyzer';

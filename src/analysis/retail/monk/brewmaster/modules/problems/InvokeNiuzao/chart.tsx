@@ -12,8 +12,8 @@ import {
   line,
   normalizeTimestampTransform,
   point,
-  timeAxis,
   staggerAxis,
+  timeAxis,
 } from '../../charts';
 import type { CommonProps } from './index';
 

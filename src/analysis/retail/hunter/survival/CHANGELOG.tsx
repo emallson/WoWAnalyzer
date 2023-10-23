@@ -1,6 +1,6 @@
 import { change, date } from 'common/changelog';
 import { TALENTS_HUNTER } from 'common/TALENTS';
-import { Putro, Arlie, ToppleTheNun } from 'CONTRIBUTORS';
+import { Arlie, Putro, ToppleTheNun } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 
 export default [

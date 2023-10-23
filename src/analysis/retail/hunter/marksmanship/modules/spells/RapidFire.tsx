@@ -8,10 +8,10 @@ import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   AnyEvent,
   ApplyBuffEvent,
-  ResourceChangeEvent,
   EventType,
   RefreshBuffEvent,
   RemoveBuffEvent,
+  ResourceChangeEvent,
 } from 'parser/core/Events';
 import Abilities from 'parser/core/modules/Abilities';
 import SpellUsable from 'parser/shared/modules/SpellUsable';

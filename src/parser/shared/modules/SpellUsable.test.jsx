@@ -1,3 +1,4 @@
+import { beforeEach, describe, it, expect, vi } from 'vitest';
 import SPELLS from 'common/SPELLS';
 import { EventType, UpdateSpellUsableType } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
@@ -16,9 +17,9 @@ describe('core/Modules/SpellUsable', () => {
     // Reset mocks:
     parser = new TestCombatLogParser();
     abilitiesMock = {
-      getExpectedCooldownDuration: jest.fn(() => 7500),
-      getMaxCharges: jest.fn(),
-      getAbility: jest.fn((id) => ({ spell: id, primarySpell: id })),
+      getExpectedCooldownDuration: vi.fn(() => 7500),
+      getMaxCharges: vi.fn(),
+      getAbility: vi.fn((id) => ({ spell: id, primarySpell: id })),
     };
 
     eventEmitter = parser.getModule(EventEmitter);
@@ -60,7 +61,7 @@ describe('core/Modules/SpellUsable', () => {
       expect(module.isOnCooldown(SPELLS.FAKE_SPELL.id)).toBe(true);
     });
     it("even if a spell has another charge left it's still considered on cooldown", () => {
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
       expect(module.isOnCooldown(SPELLS.FAKE_SPELL.id)).toBe(true);
     });
@@ -69,12 +70,12 @@ describe('core/Modules/SpellUsable', () => {
       expect(module.isAvailable(SPELLS.FAKE_SPELL.id)).toBe(false);
     });
     it('when a spell with multiple charges has another charge available, it is still available', () => {
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
       expect(module.isAvailable(SPELLS.FAKE_SPELL.id)).toBe(true);
     });
     it('when a spell with multiple charges has all charges on cooldown, the spell becomes unavailable', () => {
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
       triggerCast(SPELLS.FAKE_SPELL.id);
       expect(module.isAvailable(SPELLS.FAKE_SPELL.id)).toBe(false);
@@ -99,7 +100,7 @@ describe('core/Modules/SpellUsable', () => {
       expect(module.isOnCooldown(SPELLS.FAKE_SPELL.id)).toBe(false);
     });
     it('the cooldown restarts when a cooldown on a spell with multiple charges on cooldown finishes', () => {
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 10000;
@@ -110,7 +111,7 @@ describe('core/Modules/SpellUsable', () => {
       expect(module.isAvailable(SPELLS.FAKE_SPELL.id)).toBe(true);
     });
     it('casting a spell already on cooldown before the cooldown runs out restarts the cooldown (and reports)', () => {
-      console.error = jest.fn();
+      console.error = vi.fn();
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 5000;
       triggerCast(SPELLS.FAKE_SPELL.id);
@@ -123,11 +124,11 @@ describe('core/Modules/SpellUsable', () => {
       expect(module.cooldownRemaining(SPELLS.FAKE_SPELL.id)).toBe(7500);
     });
     it('casting a spell on cooldown with additional charges available uses a charge and does not change the cooldown period', () => {
-      console.error = jest.fn();
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      console.error = vi.fn();
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 5000;
-      eventEmitter.fabricateEvent = jest.fn();
+      eventEmitter.fabricateEvent = vi.fn();
       triggerCast(SPELLS.FAKE_SPELL.id);
 
       // It does NOT report when this happens, as it's normal behavior.
@@ -153,7 +154,7 @@ describe('core/Modules/SpellUsable', () => {
       expect(module.isOnCooldown(SPELLS.FAKE_SPELL.id)).toBe(false);
     });
     it('reducing a spell with multiple charges on cooldown reduces the CD time on the next charge if it fully recharges the first charge', () => {
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 6000; //Leaves 1500ms cooldown remaining of the total 7500ms of the first charge recharging.
@@ -168,7 +169,7 @@ describe('core/Modules/SpellUsable', () => {
   describe('custom events', () => {
     // Custom event tests are separate to keep the above tests much simpler and cleaner. Their separation isn't *that* weird.
     it('a new spell going on cooldown triggers an `updatespellusable` event indicating the spell going on cooldown', () => {
-      eventEmitter.fabricateEvent = jest.fn();
+      eventEmitter.fabricateEvent = vi.fn();
 
       triggerCast(SPELLS.FAKE_SPELL.id);
 
@@ -204,7 +205,7 @@ describe('core/Modules/SpellUsable', () => {
     });
     it('casting a spell already on cooldown before the cooldown runs out restarts the cooldown and fires both endcooldown and begincooldown events', () => {
       triggerCast(SPELLS.FAKE_SPELL.id);
-      eventEmitter.fabricateEvent = jest.fn();
+      eventEmitter.fabricateEvent = vi.fn();
       triggerCast(SPELLS.FAKE_SPELL.id);
 
       expect(eventEmitter.fabricateEvent).toHaveBeenCalledTimes(2);
@@ -270,9 +271,9 @@ describe('core/Modules/SpellUsable', () => {
       }
     });
     it('using another charge of a spell already on cooldown triggers an `updatespellusable` event indicating the charge going on cooldown', () => {
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
-      eventEmitter.fabricateEvent = jest.fn();
+      eventEmitter.fabricateEvent = vi.fn();
       triggerCast(SPELLS.FAKE_SPELL.id);
 
       expect(eventEmitter.fabricateEvent).toHaveBeenCalledTimes(1);
@@ -309,7 +310,7 @@ describe('core/Modules/SpellUsable', () => {
       parser.currentTimestamp = 0;
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 10000;
-      eventEmitter.fabricateEvent = jest.fn();
+      eventEmitter.fabricateEvent = vi.fn();
       triggerTestEvent();
 
       expect(eventEmitter.fabricateEvent).toHaveBeenCalledTimes(1);
@@ -343,11 +344,11 @@ describe('core/Modules/SpellUsable', () => {
       });
     });
     it("a spell having a charge restored while there's still another charge recharging, triggers an `updatespellusable` event indicating the charge being available again", () => {
-      abilitiesMock.getMaxCharges = jest.fn(() => 2);
+      abilitiesMock.getMaxCharges = vi.fn(() => 2);
       triggerCast(SPELLS.FAKE_SPELL.id);
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 10000;
-      eventEmitter.fabricateEvent = jest.fn();
+      eventEmitter.fabricateEvent = vi.fn();
       triggerTestEvent();
 
       expect(eventEmitter.fabricateEvent).toHaveBeenCalledTimes(1);
@@ -387,7 +388,7 @@ describe('core/Modules/SpellUsable', () => {
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 1000;
       // Simulate Haste increasing which would reduce our spell's cooldown to 6s (down from 7.5sec)
-      abilitiesMock.getExpectedCooldownDuration = jest.fn(() => 6000);
+      abilitiesMock.getExpectedCooldownDuration = vi.fn(() => 6000);
       triggerHasteChange();
 
       // New expected cooldown is `1000 + (6000 * (1 - (1000 / 7500)))=6200`, but we already spent 1000ms on cooldown, so what's remaining is 5200.
@@ -397,7 +398,7 @@ describe('core/Modules/SpellUsable', () => {
       triggerCast(SPELLS.FAKE_SPELL.id);
       parser.currentTimestamp = 1000;
       // Simulate Haste decreasing which would increase our spell's cooldown to 9s (up from 7.5sec)
-      abilitiesMock.getExpectedCooldownDuration = jest.fn(() => 9000);
+      abilitiesMock.getExpectedCooldownDuration = vi.fn(() => 9000);
       triggerHasteChange();
 
       // New expected cooldown is `1000 + (6000 * (1 - (1000 / 7500)))=8800`, but we already spent 1000ms on cooldown, so what's remaining is 7800.
@@ -410,7 +411,7 @@ describe('core/Modules/SpellUsable', () => {
 
       // at t=2000, change haste so new cooldown is 9000
       parser.currentTimestamp = 2000;
-      abilitiesMock.getExpectedCooldownDuration = jest.fn(() => 9000);
+      abilitiesMock.getExpectedCooldownDuration = vi.fn(() => 9000);
       triggerHasteChange();
 
       // Calculate the new cooldown remaining:

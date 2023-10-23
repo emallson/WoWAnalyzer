@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { Zerotorescue, bdfreeman1421 } from 'CONTRIBUTORS';
+import { bdfreeman1421, Zerotorescue } from 'CONTRIBUTORS';
 
 export default [
   change(date(2023, 2, 26), 'Initial WOTLK Classic Support for Marksman', bdfreeman1421),

@@ -9,6 +9,7 @@ import Events, { DamageEvent } from 'parser/core/Events';
 import { calculateEffectiveDamageFromCritIncrease } from 'parser/core/EventCalculateLib';
 import StatTracker from 'parser/shared/modules/StatTracker';
 import { formatNumber } from 'common/format';
+
 /**
  * Focusing Aim increases critical strike chance by 100%
  */

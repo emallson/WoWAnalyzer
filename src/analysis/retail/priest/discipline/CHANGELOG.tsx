@@ -1,9 +1,8 @@
 import { change, date } from 'common/changelog';
 import { TALENTS_PRIEST } from 'common/TALENTS';
-import SPELLS  from 'common/SPELLS'
+import SPELLS from 'common/SPELLS';
 import { Hana, Tapir, ToppleTheNun } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
-
 
 export default [
   change(date(2023, 9, 15), <>Added new atonement damage sources which will appear in the new patch. Can be merged now as it doesn't break any old functionality.</>, Hana),

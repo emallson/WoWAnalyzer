@@ -1,4 +1,4 @@
-import { OPEN_MODAL, CLOSE_MODAL } from 'interface/actions/modals';
+import { CLOSE_MODAL, OPEN_MODAL } from 'interface/actions/modals';
 import { AnyAction } from 'redux';
 
 export type ModalState = string[];

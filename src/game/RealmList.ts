@@ -1,4 +1,4 @@
-import { REALMS, CLASSIC_REALMS } from './REALMS';
+import { CLASSIC_REALMS, REALMS } from './REALMS';
 
 interface RealmList {
   [region: string]: Realm[];

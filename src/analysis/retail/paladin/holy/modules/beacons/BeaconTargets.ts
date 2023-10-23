@@ -1,6 +1,6 @@
 import TALENTS from 'common/TALENTS/paladin';
 import { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
-import Events, { ApplyBuffEvent, RemoveBuffEvent, EventType } from 'parser/core/Events';
+import Events, { ApplyBuffEvent, EventType, RemoveBuffEvent } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 import Combatants from 'parser/shared/modules/Combatants';
 

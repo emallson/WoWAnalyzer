@@ -10,9 +10,9 @@ import '../Styling.scss';
 import { t } from '@lingui/macro';
 import ExplanationGraph, {
   DataSeries,
+  generateGraphData,
   GraphData,
   SpellTracker,
-  generateGraphData,
 } from 'analysis/retail/evoker/shared/modules/components/ExplanationGraph';
 
 type Props = {

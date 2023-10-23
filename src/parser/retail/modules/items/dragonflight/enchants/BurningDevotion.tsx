@@ -2,7 +2,7 @@ import ITEMS from 'common/ITEMS/dragonflight/enchants';
 import SPELLS from 'common/SPELLS/dragonflight/enchants';
 import { formatNumber, formatPercentage } from 'common/format';
 import { PlusIcon } from 'interface/icons';
-import { SELECTED_PLAYER, type Options } from 'parser/core/Analyzer';
+import { type Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { type HealEvent } from 'parser/core/Events';
 import WeaponEnchantAnalyzer from './WeaponEnchantAnalyzer';
 

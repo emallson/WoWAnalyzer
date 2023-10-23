@@ -1,6 +1,6 @@
 import { change, date } from 'common/changelog';
 import TALENTS from 'common/TALENTS/mage';
-import { Sharrq, emallson, SyncSubaru, ToppleTheNun } from 'CONTRIBUTORS';
+import { emallson, Sharrq, SyncSubaru, ToppleTheNun } from 'CONTRIBUTORS';
 import { SpellLink } from 'interface';
 
 export default [

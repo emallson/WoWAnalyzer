@@ -1,6 +1,6 @@
 // Generated file, changes will be overwritten!
 
-import { Region, ClassicRegion } from 'common/regions';
+import { ClassicRegion, Region } from 'common/regions';
 
 interface Realm {
   name: string;

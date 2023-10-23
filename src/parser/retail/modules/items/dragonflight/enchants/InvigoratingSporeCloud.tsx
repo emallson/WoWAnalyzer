@@ -14,7 +14,7 @@ import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
 import Statistic from 'parser/ui/Statistic';
 import { Fragment } from 'react';
-import { SporeTenderEnchantRank, getSporeTenderRank, hasSporeTender } from './SporeTender';
+import { getSporeTenderRank, hasSporeTender, SporeTenderEnchantRank } from './SporeTender';
 
 function findLast<T>(arr: T[], predicate: (value: T) => boolean) {
   for (let i = arr.length - 1; i >= 0; i -= 1) {

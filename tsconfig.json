@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "ES2021"],
-    "target": "ES2021",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -14,7 +15,26 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src",
+    "baseUrl": ".",
+    "paths": {
+      "analysis/*": ["./src/analysis/*"],
+      "analysis": ["./src/analysis"],
+      "common/*": ["./src/common/*"],
+      "common": ["./src/common"],
+      "game/*": ["./src/game/*"],
+      "game": ["./src/game"],
+      "interface/*": ["./src/interface/*"],
+      "interface": ["./src/interface"],
+      "localization/*": ["./src/localization/*"],
+      "localization": ["./src/localization"],
+      "parser/*": ["./src/parser/*"],
+      "parser": ["./src/parser"],
+      "CHANGELOG": ["./src/CHANGELOG"],
+      "CONTRIBUTORS": ["./src/CONTRIBUTORS"],
+      "mergeAllChangelogs": ["./src/mergeAllChangelogs"],
+      "Root": ["./src/Root"],
+      "store": ["./src/store"]
+    },
     "noFallthroughCasesInSwitch": true
   },
   "include": ["./types", "./src"],
@@ -26,11 +46,5 @@
     "src/analysis/retail/druid/guardian/CHANGELOG.tsx",
     "src/analysis/retail/paladin/protection/CONFIG.tsx",
     "src/analysis/retail/paladin/protection/CHANGELOG.tsx"
-  ],
-  "ts-node": {
-    // these options are overrides used only by ts-node
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  }
+  ]
 }

@@ -12,8 +12,7 @@ import { Item } from 'parser/ui/DonutChart';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';
 import { TALENTS_EVOKER } from 'common/TALENTS';
 
-import { formatNumber } from 'common/format';
-import { formatDuration } from 'common/format';
+import { formatDuration, formatNumber } from 'common/format';
 
 import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';

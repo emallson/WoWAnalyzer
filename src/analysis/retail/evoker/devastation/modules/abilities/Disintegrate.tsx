@@ -13,10 +13,10 @@ import Events, {
   RemoveDebuffEvent,
 } from 'parser/core/Events';
 import ExplanationGraph, {
-  GraphData,
   DataSeries,
-  SpellTracker,
   generateGraphData,
+  GraphData,
+  SpellTracker,
 } from 'analysis/retail/evoker/shared/modules/components/ExplanationGraph';
 import { SpellLink } from 'interface';
 import { DISINTEGRATE_REMOVE_APPLY } from '../normalizers/CastLinkNormalizer';

@@ -1,11 +1,10 @@
 import { Trans } from '@lingui/macro';
 import fetchWcl from 'common/fetchWclApi';
 import { formatNumber } from 'common/format';
-import { SpellIcon } from 'interface';
-import { SpecIcon } from 'interface';
+import { SpecIcon, SpellIcon } from 'interface';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Combatant from 'parser/core/Combatant';
-import Events, { EventType, AnyEvent, HealEvent, ResourceChangeEvent } from 'parser/core/Events';
+import Events, { AnyEvent, EventType, HealEvent, ResourceChangeEvent } from 'parser/core/Events';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
 import Combatants from 'parser/shared/modules/Combatants';

@@ -2,7 +2,7 @@ import PreciseShots from 'analysis/retail/hunter/marksmanship/modules/spells/Pre
 import CallingTheShots from 'analysis/retail/hunter/marksmanship/modules/talents/CallingTheShots';
 import SerpentSting from 'analysis/retail/hunter/shared/talents/SerpentSting';
 import SteadyFocus from 'analysis/retail/hunter/marksmanship/modules/talents/SteadyFocus';
-import { FocusDetails, FocusCapTracker, CancelledCasts } from 'analysis/retail/hunter/shared';
+import { CancelledCasts, FocusCapTracker, FocusDetails } from 'analysis/retail/hunter/shared';
 import PreparationRuleAnalyzer from 'parser/retail/modules/features/Checklist/PreparationRuleAnalyzer';
 import CastEfficiency from 'parser/shared/modules/CastEfficiency';
 import Combatants from 'parser/shared/modules/Combatants';

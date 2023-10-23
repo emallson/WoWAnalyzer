@@ -1,16 +1,17 @@
+import { describe, expect, it } from 'vitest';
 import Spell from 'common/SPELLS/Spell';
 import {
-  EventType,
-  CastEvent,
   AnyEvent,
   ApplyBuffEvent,
+  CastEvent,
+  EventType,
   RemoveBuffEvent,
   UpdateSpellUsableType,
 } from 'parser/core/Events';
 import SpellUsable from 'parser/shared/modules/SpellUsable';
 
 import { buffPresent } from './conditions';
-import aplCheck, { build, Apl, PlayerInfo, ResultKind, lookaheadSlice } from './index';
+import aplCheck, { Apl, build, lookaheadSlice, PlayerInfo, ResultKind } from './index';
 
 // OK, i called this BOF but BOF is a debuff. oops.
 const BOF = { id: 3, name: 'Important Buff', icon: '' };

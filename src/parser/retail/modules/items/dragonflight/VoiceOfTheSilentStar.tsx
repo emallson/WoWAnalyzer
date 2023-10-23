@@ -8,7 +8,7 @@ import Events, { ApplyBuffEvent, Item, RemoveBuffEvent } from 'parser/core/Event
 import { calculateSecondaryStatDefault } from 'parser/core/stats';
 import Combatants from 'parser/shared/modules/Combatants';
 import StatTracker from 'parser/shared/modules/StatTracker';
-import STAT, { SECONDARY_STAT, getIcon, getName } from 'parser/shared/modules/features/STAT';
+import STAT, { getIcon, getName, SECONDARY_STAT } from 'parser/shared/modules/features/STAT';
 import BoringItemValueText from 'parser/ui/BoringItemValueText';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';

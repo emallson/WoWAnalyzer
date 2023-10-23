@@ -1,6 +1,5 @@
 import SPELLS from 'common/SPELLS';
-import { Panel } from 'interface';
-import { SpellLink } from 'interface';
+import { Panel, SpellLink } from 'interface';
 import Analyzer, { SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events from 'parser/core/Events';
 import BaseChart, { formatTime } from 'parser/ui/BaseChart';

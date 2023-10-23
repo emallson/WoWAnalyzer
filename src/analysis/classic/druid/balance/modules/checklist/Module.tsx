@@ -8,6 +8,7 @@ import CombatPotionChecker from 'parser/classic/modules/items/CombatPotionChecke
 import PreparationRuleAnalyzer from 'parser/classic/modules/features/Checklist/PreparationRuleAnalyzer';
 // Features
 import AlwaysBeCasting from '../features/AlwaysBeCasting';
+
 // Spells
 
 class Checklist extends BaseChecklist {

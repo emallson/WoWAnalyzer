@@ -1,6 +1,5 @@
 import SPELLS from 'common/SPELLS';
-import { TooltipElement } from 'interface';
-import { SpellIcon, SpellLink } from 'interface';
+import { SpellIcon, SpellLink, TooltipElement } from 'interface';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { BuffEvent, CastEvent, TargettedEvent } from 'parser/core/Events';
 import Statistic from 'parser/ui/Statistic';
@@ -8,9 +7,8 @@ import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
 
 import { getHitCount, getHits } from '../../normalizers/CastLinkNormalizer';
 import { TALENTS_DRUID } from 'common/TALENTS';
-import { SubSection } from 'interface/guide';
+import { BadColor, GoodColor, PerfectColor, SubSection, VeryBadColor } from 'interface/guide';
 import DonutChart from 'parser/ui/DonutChart';
-import { VeryBadColor, BadColor, GoodColor, PerfectColor } from 'interface/guide';
 import { proccedBloodtalons } from 'analysis/retail/druid/feral/normalizers/BloodtalonsLinkNormalizer';
 import ThrashUptimeAndSnapshot from 'analysis/retail/druid/feral/modules/spells/ThrashUptimeAndSnapshot';
 import { PANDEMIC_FRACTION } from 'analysis/retail/druid/feral/constants';

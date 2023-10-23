@@ -7,13 +7,13 @@ import Events, {
   ApplyDebuffEvent,
   ApplyDebuffStackEvent,
   EventType,
+  HasTarget,
   RefreshBuffEvent,
   RefreshDebuffEvent,
   RemoveBuffEvent,
   RemoveBuffStackEvent,
   RemoveDebuffEvent,
   RemoveDebuffStackEvent,
-  HasTarget,
 } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 

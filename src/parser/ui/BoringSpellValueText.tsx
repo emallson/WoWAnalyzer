@@ -3,8 +3,7 @@
  * Use this only as the last resort, prefer a custom layout instead.
  */
 import Spell from 'common/SPELLS/Spell';
-import { SpellIcon } from 'interface';
-import { SpellLink } from 'interface';
+import { SpellIcon, SpellLink } from 'interface';
 import { ReactNode } from 'react';
 
 interface Props {

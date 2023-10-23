@@ -1,3 +1,4 @@
+import { beforeEach, describe, it, expect, vi } from 'vitest';
 import TestCombatLogParser from 'parser/core/tests/TestCombatLogParser';
 
 import Abilities from './Abilities';
@@ -20,7 +21,7 @@ describe('core/Modules/Ability', () => {
   });
 
   it('provides the current Haste to the cooldown property of an ability', () => {
-    const cooldown = jest.fn((haste) => haste);
+    const cooldown = vi.fn((haste) => haste);
     const instance = new Ability(abilitiesMock, {
       cooldown,
     });

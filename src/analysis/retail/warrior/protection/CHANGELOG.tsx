@@ -1,7 +1,7 @@
 import { change, date } from 'common/changelog';
 import { TALENTS_WARRIOR } from 'common/TALENTS';
 import { SpellLink } from 'interface';
-import { Abelito75, Greedyhugs, ToppleTheNun, CodersKitchen } from 'CONTRIBUTORS';
+import { Abelito75, CodersKitchen, Greedyhugs, ToppleTheNun } from 'CONTRIBUTORS';
 import SPELLS from 'common/SPELLS';
 
 // prettier-ignore

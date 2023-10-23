@@ -1,8 +1,6 @@
 import { Trans } from '@lingui/macro';
-import { formatNumber, formatPercentage, formatDuration } from 'common/format';
-import { SpellLink } from 'interface';
-import { SpecIcon } from 'interface';
-import { TooltipElement } from 'interface';
+import { formatDuration, formatNumber, formatPercentage } from 'common/format';
+import { SpecIcon, SpellLink, TooltipElement } from 'interface';
 import Combatant from 'parser/core/Combatant';
 import { Ability, HealEvent } from 'parser/core/Events';
 import Slider from 'rc-slider';

@@ -1,12 +1,11 @@
 import { formatPercentage, formatThousands } from 'common/format';
 import SPELLS from 'common/SPELLS';
-import { SpellIcon } from 'interface';
-import { SpellLink } from 'interface';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import { SpellIcon, SpellLink } from 'interface';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { DamageEvent } from 'parser/core/Events';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import Enemies from 'parser/shared/modules/Enemies';
-import { shouldIgnore, magic } from 'parser/shared/modules/hit-tracking/utilities';
+import { magic, shouldIgnore } from 'parser/shared/modules/hit-tracking/utilities';
 import StatisticBox, { STATISTIC_ORDER } from 'parser/ui/StatisticBox';
 
 class ShieldOfTheRighteous extends Analyzer {

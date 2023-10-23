@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { CastEvent, EventType } from 'parser/core/Events';
 
 import castCount from './castCount';

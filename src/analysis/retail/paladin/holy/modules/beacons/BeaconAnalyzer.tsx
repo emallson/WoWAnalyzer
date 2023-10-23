@@ -1,6 +1,6 @@
 import TALENTS from 'common/TALENTS/paladin';
 import Analyzer, { Options } from 'parser/core/Analyzer';
-import { BEACON_TYPE, BEACON_SPELL_IDS } from '../../constants';
+import { BEACON_SPELL_IDS, BEACON_TYPE } from '../../constants';
 
 class BeaconAnalyzer extends Analyzer {
   beaconType: BEACON_TYPE;

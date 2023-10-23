@@ -9,6 +9,7 @@ import { NumberThreshold, ThresholdStyle, When } from 'parser/core/ParseResults'
 import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import TalentSpellText from 'parser/ui/TalentSpellText';
+
 const debug = false;
 
 const BUFF_DURATION = 10000;

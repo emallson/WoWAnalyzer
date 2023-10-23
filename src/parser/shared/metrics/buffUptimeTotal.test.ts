@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { ApplyBuffEvent, EventType, RemoveBuffEvent } from 'parser/core/Events';
 import { Info } from 'parser/core/metric';
 

@@ -2,8 +2,8 @@ import { Tooltip } from 'interface';
 import InfoIcon from 'interface/icons/Info';
 import DrilldownIcon from 'interface/icons/Link';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
-import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
 import * as React from 'react';
+import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Statistic.scss';

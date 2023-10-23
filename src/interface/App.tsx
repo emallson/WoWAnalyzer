@@ -114,7 +114,7 @@ const appRoutes = createRoutesFromElements(
 );
 
 const router =
-  process.env.NODE_ENV === 'test' ? createMemoryRouter(appRoutes) : createBrowserRouter(appRoutes);
+  import.meta.env.MODE === 'test' ? createMemoryRouter(appRoutes) : createBrowserRouter(appRoutes);
 
 const App = () => <RouterProvider router={router} />;
 

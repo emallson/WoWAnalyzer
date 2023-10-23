@@ -1,9 +1,9 @@
 import {
-  Judgment,
-  HolyPowerTracker,
-  HolyPowerDetails,
   DivineToll,
+  HolyPowerDetails,
   HolyPowerPerMinute,
+  HolyPowerTracker,
+  Judgment,
 } from 'analysis/retail/paladin/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

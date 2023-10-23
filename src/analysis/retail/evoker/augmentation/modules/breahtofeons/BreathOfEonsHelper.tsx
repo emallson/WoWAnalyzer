@@ -11,13 +11,13 @@ import { fetchEvents } from 'common/fetchWclApi';
 import CombatLogParser from '../../CombatLogParser';
 import ExplanationGraph, {
   DataSeries,
-  GraphData,
   generateGraphData,
+  GraphData,
 } from 'analysis/retail/evoker/shared/modules/components/ExplanationGraph';
 import DonutChart from 'parser/ui/DonutChart';
 import { PlayerInfo } from 'parser/core/Player';
 import { DamageEvent } from 'parser/core/Events';
-import { BREATH_OF_EONS_MULTIPLIER, ABILITY_BLACKLIST } from '../../constants';
+import { ABILITY_BLACKLIST, BREATH_OF_EONS_MULTIPLIER } from '../../constants';
 
 type Props = {
   windows: BreathOfEonsWindows[];
@@ -59,9 +59,9 @@ const BreathOfEonsHelper: React.FC<Props> = ({ windows, fightStartTime, fightEnd
 
     const abilityFilter = ABILITY_BLACKLIST.map((id) => `${id}`).join(', ');
 
-    const filter = `type = "damage" 
-    AND not ability.id in (${abilityFilter}) 
-    AND (source.name in (${nameFilter}, "${owner.selectedCombatant.name}") OR source.owner.name in (${nameFilter}, "${owner.selectedCombatant.name}")) 
+    const filter = `type = "damage"
+    AND not ability.id in (${abilityFilter})
+    AND (source.name in (${nameFilter}, "${owner.selectedCombatant.name}") OR source.owner.name in (${nameFilter}, "${owner.selectedCombatant.name}"))
     AND (target.id != source.id) AND (supportedActor.id = 0)`;
 
     if (debug) {
@@ -450,9 +450,9 @@ const BreathOfEonsHelper: React.FC<Props> = ({ windows, fightStartTime, fightEnd
           <div className="flex-row">
             <div className="flex-cell">
               <TooltipElement
-                content="Because of the way Blizzard handles damage attribution, the values 
-                    displayed here may have a small margin of error. Additionally, if an enemy 
-                    becomes immune or takes reduced damage when your Breath of Eons explodes, this 
+                content="Because of the way Blizzard handles damage attribution, the values
+                    displayed here may have a small margin of error. Additionally, if an enemy
+                    becomes immune or takes reduced damage when your Breath of Eons explodes, this
                     value may also be overestimated."
               >
                 Damage:
@@ -472,8 +472,8 @@ const BreathOfEonsHelper: React.FC<Props> = ({ windows, fightStartTime, fightEnd
           <div className="flex-row">
             <div className="flex-cell">
               <TooltipElement
-                content="This value represents the potential damage increase achievable 
-                    by using Breath of Eons at its optimal timing. It assumes that you didn't 
+                content="This value represents the potential damage increase achievable
+                    by using Breath of Eons at its optimal timing. It assumes that you didn't
                     lose any damage due to prematurely dropping Ebon Might or mobs dying early."
               >
                 Potential damage increase:
@@ -514,7 +514,7 @@ const BreathOfEonsHelper: React.FC<Props> = ({ windows, fightStartTime, fightEnd
         <div className="explanation-table">
           <div className="flex-row">
             <TooltipElement
-              content="The values below assume that you didn't lose any damage 
+              content="The values below assume that you didn't lose any damage
                   due to prematurely dropping Ebon Might or mobs dying early."
             >
               <strong>Player contribution breakdown</strong>

@@ -1,5 +1,5 @@
 import SPELLS from 'common/SPELLS';
-import { SpellLink, SpellIcon } from 'interface';
+import { SpellIcon, SpellLink } from 'interface';
 import CrossIcon from 'interface/icons/Cross';
 import UpArrowIcon from 'interface/icons/UpArrow';
 import UptimeIcon from 'interface/icons/Uptime';
@@ -7,8 +7,8 @@ import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
   ApplyBuffEvent,
   DamageEvent,
-  ResourceChangeEvent,
   RefreshBuffEvent,
+  ResourceChangeEvent,
 } from 'parser/core/Events';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';
 import ItemPercentDamageDone from 'parser/ui/ItemPercentDamageDone';

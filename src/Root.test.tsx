@@ -1,12 +1,16 @@
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 
 import Root from './Root';
-jest.unmock('react-router-dom');
 
 describe('App', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
   it('renders without crashing', async () => {
     // Add mock for window.scrollTo so that ScrollRestoration can be rendered
-    window.scrollTo = jest.fn();
+    vi.stubGlobal('scrollTo', vi.fn());
 
     render(<Root />);
 

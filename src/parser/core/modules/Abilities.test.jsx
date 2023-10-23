@@ -1,3 +1,4 @@
+import { beforeEach, describe, it, expect, vi } from 'vitest';
 import TALENTS from 'common/TALENTS/paladin';
 import TestCombatLogParser from 'parser/core/tests/TestCombatLogParser';
 
@@ -57,7 +58,7 @@ describe('core/modules/Abilities', () => {
   });
   describe('getExpectedCooldownDuration', () => {
     it('calculates the cooldown duration using the cooldown property of an ability', () => {
-      module.getAbility = jest.fn(
+      module.getAbility = vi.fn(
         () =>
           new Ability(parserMock, {
             spell: TALENTS.HOLY_SHOCK_TALENT.id,
@@ -72,7 +73,7 @@ describe('core/modules/Abilities', () => {
   describe('getMaxCharges', () => {
     it('returns the value of the charges property', () => {
       const charges = 14;
-      module.getAbility = jest.fn(() => ({
+      module.getAbility = vi.fn(() => ({
         spell: TALENTS.HOLY_SHOCK_TALENT.id,
         charges,
       }));
@@ -80,7 +81,7 @@ describe('core/modules/Abilities', () => {
       expect(module.getMaxCharges(TALENTS.HOLY_SHOCK_TALENT.id)).toBe(charges);
     });
     it('defaults to 1 charge', () => {
-      module.getAbility = jest.fn(() => ({
+      module.getAbility = vi.fn(() => ({
         spell: TALENTS.HOLY_SHOCK_TALENT.id,
       }));
 

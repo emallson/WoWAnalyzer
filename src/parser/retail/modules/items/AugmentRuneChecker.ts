@@ -1,8 +1,8 @@
 import SPELLS from 'common/SPELLS/dragonflight/others';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, { ApplyBuffEvent } from 'parser/core/Events';
 import SUGGESTION_IMPORTANCE from 'parser/core/ISSUE_IMPORTANCE';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 
 const AUGMENT_RUNE_ID = SPELLS.DRACONIC_AUGMENT_RUNE.id;
 // Dragonflight doesn't have an eternal augment rune yet

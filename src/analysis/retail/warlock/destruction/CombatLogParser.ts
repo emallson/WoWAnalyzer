@@ -1,7 +1,7 @@
 import {
   DemonicCirclesCreated,
-  GrimoireOfSacrificeNormalizer,
   GrimoireOfSacrifice,
+  GrimoireOfSacrificeNormalizer,
 } from 'analysis/retail/warlock/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

@@ -32,11 +32,11 @@ import {
 } from '../../constants';
 import CooldownThroughputTracker from '../features/CooldownThroughputTracker';
 import {
+  getDownPourEvents,
   getHealingRainEvents,
   getHealingRainHealEventsForTick,
   getOverflowingShoresEvents,
   isHealingWaveFromPrimordialWave,
-  getDownPourEvents,
 } from '../../normalizers/CastLinkNormalizer';
 import {
   getCastEvent,

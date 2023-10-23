@@ -1,6 +1,6 @@
 import { SpellLink } from 'interface';
 
-import type { Tense, CheckResult, InternalRule, Violation } from './index';
+import type { CheckResult, InternalRule, Tense, Violation } from './index';
 
 export function ConditionDescription({
   tense,

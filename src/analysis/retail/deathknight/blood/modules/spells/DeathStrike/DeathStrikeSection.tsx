@@ -2,11 +2,11 @@ import styled from '@emotion/styled';
 import { Trans } from '@lingui/macro';
 import { RuneTracker } from 'analysis/retail/deathknight/shared';
 import {
+  color as brewColors,
   line,
+  normalizeTimestampTransform,
   point,
   timeAxis,
-  normalizeTimestampTransform,
-  color as brewColors,
 } from 'analysis/retail/monk/brewmaster/modules/charts';
 import { formatNumber, formatPercentage } from 'common/format';
 import SPELLS from 'common/SPELLS';
@@ -24,13 +24,13 @@ import ProblemList, { ProblemRendererProps } from 'interface/guide/components/Pr
 import {
   AnyEvent,
   BaseCastEvent,
+  CastEvent,
   EventType,
+  GetRelatedEvent,
   HasHitpoints,
   HealEvent,
   HitpointsEvent,
   ResourceActor,
-  CastEvent,
-  GetRelatedEvent,
 } from 'parser/core/Events';
 import { Info } from 'parser/core/metric';
 import DamageTaken from 'parser/shared/modules/throughput/DamageTaken';

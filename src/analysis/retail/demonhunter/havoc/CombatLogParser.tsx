@@ -2,18 +2,18 @@ import {
   CharredWarblades,
   CollectiveAnguish,
   Demonic,
+  DemonSoulBuff,
   DisruptingFury,
   Felblade,
   FlamesOfFury,
+  FodderToTheFlame,
   ImmolationAura,
   MasterOfTheGlaive,
   ShatteredRestoration,
   SwallowedAnger,
   TheHunt,
-  UnnaturalMalice,
-  DemonSoulBuff,
-  FodderToTheFlame,
   TheHuntNormalizer,
+  UnnaturalMalice,
 } from 'analysis/retail/demonhunter/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

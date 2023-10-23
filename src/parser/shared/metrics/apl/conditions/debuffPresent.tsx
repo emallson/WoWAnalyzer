@@ -5,7 +5,7 @@ import { encodeTargetString } from 'parser/shared/modules/Enemies';
 
 import { Condition, tenseAlt } from '../index';
 
-import { TargetOptions, getTargets } from './debuffMissing';
+import { getTargets, TargetOptions } from './debuffMissing';
 
 export function debuffPresent(spell: Spell, targetOptions?: TargetOptions): Condition<Set<string>> {
   return {

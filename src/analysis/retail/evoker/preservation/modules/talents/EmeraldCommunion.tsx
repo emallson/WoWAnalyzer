@@ -20,7 +20,7 @@ import SpellUsable from 'parser/shared/modules/SpellUsable';
 import CastEfficiencyBar from 'parser/ui/CastEfficiencyBar';
 import { PerformanceMark } from 'interface/guide';
 import { GapHighlight } from 'parser/ui/CooldownBar';
-import { QualitativePerformance, getLowestPerf } from 'parser/ui/QualitativePerformance';
+import { getLowestPerf, QualitativePerformance } from 'parser/ui/QualitativePerformance';
 import { GUIDE_CORE_EXPLANATION_PERCENT } from '../../Guide';
 import Lifebind from './Lifebind';
 

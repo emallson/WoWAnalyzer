@@ -2,6 +2,7 @@ import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/priest';
 import { SpellFilter } from 'parser/core/EventFilter';
 import { TALENTS_PRIEST } from 'common/TALENTS';
+
 export const DISCIPLINE_ABILITIES_AFFECTED_BY_HEALING_INCREASES = [
   SPELLS.ATONEMENT_HEAL_NON_CRIT.id,
   SPELLS.ATONEMENT_HEAL_CRIT.id,

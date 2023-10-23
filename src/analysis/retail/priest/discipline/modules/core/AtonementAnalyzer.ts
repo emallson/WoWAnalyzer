@@ -3,13 +3,13 @@ import HIT_TYPES from 'game/HIT_TYPES';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import EventFilter from 'parser/core/EventFilter';
 import Events, {
-  Event,
+  ApplyBuffEvent,
+  CastEvent,
   DamageEvent,
+  Event,
   EventType,
   HealEvent,
-  ApplyBuffEvent,
   RefreshBuffEvent,
-  CastEvent,
 } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 

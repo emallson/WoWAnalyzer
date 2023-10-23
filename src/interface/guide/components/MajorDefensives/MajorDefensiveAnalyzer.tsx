@@ -7,13 +7,13 @@ import Analyzer, { Options } from 'parser/core/Analyzer';
 import EventFilter, { SELECTED_PLAYER } from 'parser/core/EventFilter';
 import Events, {
   AbilityEvent,
-  HasSource,
-  HasTarget,
   AnyEvent,
   DamageEvent,
-  FightEndEvent,
-  ResourceActor,
   EventType,
+  FightEndEvent,
+  HasSource,
+  HasTarget,
+  ResourceActor,
 } from 'parser/core/Events';
 import { PerformanceUsageRow } from 'parser/core/SpellUsage/core';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';

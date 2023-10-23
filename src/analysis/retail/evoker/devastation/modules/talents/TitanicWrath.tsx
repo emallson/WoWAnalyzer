@@ -5,12 +5,12 @@ import { formatNumber } from 'common/format';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import ItemDamageDone from 'parser/ui/ItemDamageDone';
 import Events, {
-  DamageEvent,
-  RemoveBuffEvent,
   CastEvent,
+  DamageEvent,
+  HasRelatedEvent,
+  RemoveBuffEvent,
   RemoveBuffStackEvent,
   RemoveDebuffEvent,
-  HasRelatedEvent,
 } from 'parser/core/Events';
 import { calculateEffectiveDamage } from 'parser/core/EventCalculateLib';
 
@@ -18,9 +18,9 @@ import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
 import {
-  TITANIC_WRATH_MULTIPLIER,
   DISINTEGRATE_CHAINED_TICKS,
   DISINTEGRATE_TICKS,
+  TITANIC_WRATH_MULTIPLIER,
 } from 'analysis/retail/evoker/devastation/constants';
 import { SpellLink } from 'interface';
 import { ESSENCE_BURST_CONSUME } from '../normalizers/CastLinkNormalizer';

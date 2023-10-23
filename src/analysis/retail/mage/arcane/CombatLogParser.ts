@@ -3,11 +3,11 @@ import {
   CancelledCasts,
   DivertedEnergy,
   ElementalBarrier,
-  QuickWitted,
+  MasterOfTime,
   MirrorImage,
+  QuickWitted,
   ShiftingPower,
   TempestBarrier,
-  MasterOfTime,
   TimeAnomaly,
 } from 'analysis/retail/mage/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
@@ -27,7 +27,6 @@ import ArcaneSurgeMana from './core/ArcaneSurgeMana';
 import ArcaneSurgePreReqs from './core/ArcaneSurgePreReqs';
 
 //Items
-
 //Mana Chart
 import Mana from './ManaChart/Mana';
 import ManaValues from './ManaChart/ManaValues';

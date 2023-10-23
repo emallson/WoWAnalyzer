@@ -14,13 +14,13 @@ import {
   and,
   buffMissing,
   buffPresent,
-  hasResource,
-  or,
-  describe,
   buffStacks,
+  describe,
+  hasResource,
+  hasTalent,
   not,
   optionalRule,
-  hasTalent,
+  or,
 } from 'parser/shared/metrics/apl/conditions';
 
 import { AnyEvent } from 'parser/core/Events';

@@ -1,9 +1,10 @@
+import { beforeEach, afterEach, describe, it, expect, vi } from 'vitest';
 import retryingPromise, { MAX_ATTEMPTS } from './retryingPromise';
 
 describe('retryingPromise', () => {
   function makeTimersInstant() {
     global.oldSetTimeout = global.setTimeout;
-    global.setTimeout = jest.fn((func) => global.oldSetTimeout(func, 0));
+    global.setTimeout = vi.fn((func) => global.oldSetTimeout(func, 0));
   }
   function resetTimers() {
     if (global.oldSetTimeout) {
@@ -13,7 +14,7 @@ describe('retryingPromise', () => {
   }
   beforeEach(() => {
     makeTimersInstant();
-    console.error = jest.fn();
+    console.error = vi.fn();
   });
   afterEach(resetTimers);
   it('resolves a Promise and returns its return value', async () => {

@@ -4,11 +4,11 @@ import {
   EnergyDetails,
   EnergyTracker,
   Flagellation,
+  InstantPoison,
+  Sepsis,
   SerratedBoneSpike,
   SpellEnergyCost,
   SpellUsable,
-  InstantPoison,
-  Sepsis,
   StealthAbilityFollowingSepsis,
   ThistleTeaCastLinkNormalizer,
 } from 'analysis/retail/rogue/shared';

@@ -1,11 +1,11 @@
 import { defineMessage } from '@lingui/macro';
-import { formatPercentage, formatThousands, formatNumber } from 'common/format';
+import { formatNumber, formatPercentage, formatThousands } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/warlock';
 import { SpellLink } from 'interface';
 import CriticalStrikeIcon from 'interface/icons/CriticalStrike';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
-import Events, { ResourceChangeEvent, RemoveDebuffEvent } from 'parser/core/Events';
+import Events, { RemoveDebuffEvent, ResourceChangeEvent } from 'parser/core/Events';
 import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
 import Enemies from 'parser/shared/modules/Enemies';

@@ -7,7 +7,7 @@ services:
     container_name: wowanalyzer-dev
     stdin_open: true
     ports:
-      - 3000:3000
+      - 5173:5173
       - 35729:35729
     volumes:
       - .:/usr/src/wowanalyzer/

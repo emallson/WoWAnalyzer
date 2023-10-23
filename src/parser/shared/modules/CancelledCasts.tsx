@@ -9,7 +9,7 @@ import Statistic from 'parser/ui/Statistic';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';
 
-import Events, { CastEvent, BeginCastEvent } from '../../core/Events';
+import Events, { BeginCastEvent, CastEvent } from '../../core/Events';
 
 const debug = false;
 const MS_BUFFER = 100;

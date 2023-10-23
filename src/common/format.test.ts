@@ -1,4 +1,5 @@
-import { formatThousands, formatDuration } from './format';
+import { describe, expect, test } from 'vitest';
+import { formatDuration, formatThousands } from './format';
 
 describe('formatThousands', () => {
   test('regular values', () => {

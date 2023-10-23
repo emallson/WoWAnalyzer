@@ -1,8 +1,8 @@
 import {
+  DemonicCirclesCreated,
+  GrimoireOfSacrifice,
   GrimoireOfSacrificeNormalizer,
   WarlockMissingDotApplyDebuffPrePull,
-  GrimoireOfSacrifice,
-  DemonicCirclesCreated,
 } from 'analysis/retail/warlock/shared';
 import CoreCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

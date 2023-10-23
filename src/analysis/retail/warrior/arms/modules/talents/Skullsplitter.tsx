@@ -4,8 +4,8 @@ import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import AbilityTracker from 'parser/shared/modules/AbilityTracker';
 import Events, { DamageEvent } from 'parser/core/Events';
 import {
-  rendDamageEvents,
   deepWoundsDamageEvents,
+  rendDamageEvents,
 } from '../../normalizers/SkullsplitterExpiredDots';
 import Statistic from 'parser/ui/Statistic';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';

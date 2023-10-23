@@ -1,5 +1,5 @@
 import Config from 'parser/Config';
-import { createContext, useContext, ReactNode } from 'react';
+import { createContext, ReactNode, useContext } from 'react';
 import { usePlayer } from 'interface/report/context/PlayerContext';
 import { useReport } from 'interface/report/context/ReportContext';
 import getConfig from 'parser/getConfig';

@@ -5,12 +5,12 @@ import RESOURCE_TYPES from 'game/RESOURCE_TYPES';
 import { Options } from 'parser/core/Analyzer';
 import EventFilter, { SELECTED_PLAYER } from 'parser/core/EventFilter';
 import Events, {
+  AnyEvent,
+  CastEvent,
+  ClassResources,
   DamageEvent,
   EventType,
   ResourceChangeEvent,
-  CastEvent,
-  AnyEvent,
-  ClassResources,
 } from 'parser/core/Events';
 import Enemies from 'parser/shared/modules/Enemies';
 import ResourceTracker from 'parser/shared/modules/resources/resourcetracker/ResourceTracker';

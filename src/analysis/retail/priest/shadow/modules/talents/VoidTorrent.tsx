@@ -19,7 +19,7 @@ import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import GradiatedPerformanceBar from 'interface/guide/components/GradiatedPerformanceBar';
 import { explanationAndDataSubsection } from 'interface/guide/components/ExplanationRow';
 
-import { MS_BUFFER, VOID_TORRENT_MAX_TIME, VOID_TORRENT_MAX_INSANITY } from '../../constants';
+import { MS_BUFFER, VOID_TORRENT_MAX_INSANITY, VOID_TORRENT_MAX_TIME } from '../../constants';
 
 function formatSeconds(seconds: number) {
   return Math.round(seconds * 10) / 10;

@@ -1,4 +1,4 @@
-import { formatThousands, formatPercentage, formatDuration } from 'common/format';
+import { formatDuration, formatPercentage, formatThousands } from 'common/format';
 import rankingColor from 'common/getRankingColor';
 import makeWclUrl from 'common/makeWclUrl';
 import { Tooltip } from 'interface';

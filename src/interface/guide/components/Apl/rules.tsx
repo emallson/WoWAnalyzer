@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { spells, Apl, CheckResult, InternalRule, isRuleEqual } from 'parser/shared/metrics/apl';
+import { Apl, CheckResult, InternalRule, isRuleEqual, spells } from 'parser/shared/metrics/apl';
 import { RuleDescription } from 'parser/shared/metrics/apl/ChecklistRule';
 import { useMemo } from 'react';
 

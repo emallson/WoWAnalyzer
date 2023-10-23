@@ -1,5 +1,5 @@
-import { useEffect, useReducer, useState } from 'react';
 import * as React from 'react';
+import { useEffect, useReducer, useState } from 'react';
 
 const SECOND = 1000;
 const MINUTE = 60 * SECOND;

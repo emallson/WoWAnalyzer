@@ -8,9 +8,9 @@ import { CastEvent, ResourceChangeEvent } from 'parser/core/Events';
 import ResourceTracker from 'parser/shared/modules/resources/resourcetracker/ResourceTracker';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';
 import {
-  RESOURCES_HUNTER_MINOR_THRESHOLD,
   RESOURCES_HUNTER_AVERAGE_THRESHOLD,
   RESOURCES_HUNTER_MAJOR_THRESHOLD,
+  RESOURCES_HUNTER_MINOR_THRESHOLD,
 } from './constants';
 
 class FocusTracker extends ResourceTracker {

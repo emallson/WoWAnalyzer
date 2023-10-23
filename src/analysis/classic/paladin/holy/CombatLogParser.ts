@@ -18,6 +18,7 @@ import Checklist from './modules/checklist/Module';
 // Healer Features
 import HealingEfficiencyDetails from './modules/features/HealingEfficiencyDetails';
 import HealingEfficiencyTracker from './modules/features/HealingEfficiencyTracker';
+
 // Spells
 
 class CombatLogParser extends BaseCombatLogParser {

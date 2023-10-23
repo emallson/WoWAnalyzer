@@ -1,10 +1,10 @@
 import SPELLS from 'common/SPELLS';
-import Analyzer, { SELECTED_PLAYER, Options } from 'parser/core/Analyzer';
+import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
-  ApplyDebuffStackEvent,
-  RemoveDebuffStackEvent,
-  RemoveDebuffEvent,
   ApplyDebuffEvent,
+  ApplyDebuffStackEvent,
+  RemoveDebuffEvent,
+  RemoveDebuffStackEvent,
 } from 'parser/core/Events';
 import { encodeTargetString } from 'parser/shared/modules/Enemies';
 import { currentStacks } from 'parser/shared/modules/helpers/Stacks';

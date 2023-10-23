@@ -2,14 +2,14 @@ import { formatNumber, formatPercentage } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
-  EventType,
   ApplyBuffEvent,
   ApplyBuffStackEvent,
-  RemoveBuffEvent,
-  RemoveBuffStackEvent,
-  FightEndEvent,
   CastEvent,
   DamageEvent,
+  EventType,
+  FightEndEvent,
+  RemoveBuffEvent,
+  RemoveBuffStackEvent,
 } from 'parser/core/Events';
 import { currentStacks } from 'parser/shared/modules/helpers/Stacks';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';

@@ -1,5 +1,5 @@
 import { change, date } from 'common/changelog';
-import { Listefano, CodersKitchen, ToppleTheNun, Ahri } from 'CONTRIBUTORS';
+import { Ahri, CodersKitchen, Listefano, ToppleTheNun } from 'CONTRIBUTORS';
 import SpellLink from 'interface/SpellLink';
 import TALENTS from 'common/TALENTS/warrior';
 

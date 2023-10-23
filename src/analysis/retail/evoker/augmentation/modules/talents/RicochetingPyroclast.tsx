@@ -6,8 +6,8 @@ import ItemDamageDone from 'parser/ui/ItemDamageDone';
 import Events, { CastEvent } from 'parser/core/Events';
 import { calculateEffectiveDamage } from 'parser/core/EventCalculateLib';
 import {
-  RICOCHETING_PYROCLAST_MULTIPLIER,
   RICOCHETING_PYROCLAST_MAX_MULTIPLIER,
+  RICOCHETING_PYROCLAST_MULTIPLIER,
 } from '../../constants';
 import { getEruptionDamageEvents } from '../normalizers/CastLinkNormalizer';
 

@@ -7,12 +7,11 @@ import ProblemList, {
   ProblemRendererProps,
 } from 'interface/guide/components/ProblemList';
 import { Apl, CheckResult, Violation } from 'parser/shared/metrics/apl';
-import React, { useMemo } from 'react';
-import { useContext } from 'react';
+import React, { useContext, useMemo } from 'react';
 import { ViolationTimeline } from '../timeline';
 import {
-  AplViolationExplainers,
   AplProblemData,
+  AplViolationExplainers,
   minClaimCount,
   ViolationExplainer,
 } from './claims';

@@ -14,7 +14,7 @@ import {
   FreeCastEvent,
   GlobalCooldownEvent,
 } from 'parser/core/Events';
-import { Fragment, CSSProperties, HTMLAttributes, ReactNode } from 'react';
+import { CSSProperties, Fragment, HTMLAttributes, ReactNode } from 'react';
 
 import './Casts.scss';
 

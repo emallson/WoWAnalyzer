@@ -1,4 +1,4 @@
-import { Trans, t } from '@lingui/macro';
+import { t, Trans } from '@lingui/macro';
 import AlertWarning from 'interface/AlertWarning';
 
 import { formatNumber } from '../../common/format';

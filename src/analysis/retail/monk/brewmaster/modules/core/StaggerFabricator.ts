@@ -3,14 +3,14 @@ import talents from 'common/TALENTS/monk';
 import { TIERS } from 'game/TIERS';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
-  AddStaggerEvent,
-  RemoveStaggerEvent,
   AbsorbedEvent,
+  AddStaggerEvent,
   AnyEvent,
   CastEvent,
   DamageEvent,
   DeathEvent,
   EventType,
+  RemoveStaggerEvent,
 } from 'parser/core/Events';
 import EventEmitter from 'parser/core/modules/EventEmitter';
 import Haste from 'parser/shared/modules/Haste';

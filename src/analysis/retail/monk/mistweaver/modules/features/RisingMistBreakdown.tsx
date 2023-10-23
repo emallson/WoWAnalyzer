@@ -4,13 +4,12 @@ import talents from 'common/TALENTS/monk';
 import { SpellLink } from 'interface';
 import STATISTIC_CATEGORY from 'parser/ui/STATISTIC_CATEGORY';
 import STATISTIC_ORDER from 'parser/ui/STATISTIC_ORDER';
-import { TalentAggregateBarSpec } from 'parser/ui/TalentAggregateStatistic';
+import TalentAggregateBars, { TalentAggregateBarSpec } from 'parser/ui/TalentAggregateStatistic';
 import SPELLS from 'common/SPELLS';
 import { SPELL_COLORS } from '../../constants';
 import TalentAggregateStatisticContainer from 'parser/ui/TalentAggregateStatisticContainer';
 import ItemHealingDone from 'parser/ui/ItemHealingDone';
 import { formatNumber } from 'common/format';
-import TalentAggregateBars from 'parser/ui/TalentAggregateStatistic';
 import DonutChart from 'parser/ui/DonutChart';
 
 class RisingMistBreakdown extends Analyzer {

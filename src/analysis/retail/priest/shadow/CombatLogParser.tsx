@@ -1,8 +1,8 @@
 import {
-  TwistOfFate,
   Mindgames,
   ShadowfiendNormalizer,
   TwinsOfTheSunPriestess,
+  TwistOfFate,
 } from 'analysis/retail/priest/shared';
 import MainCombatLogParser from 'parser/core/CombatLogParser';
 import ArcaneTorrent from 'parser/shared/modules/racials/bloodelf/ArcaneTorrent';

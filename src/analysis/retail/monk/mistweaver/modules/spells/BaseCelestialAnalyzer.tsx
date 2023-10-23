@@ -4,16 +4,16 @@ import { CooldownExpandableItem } from 'interface/guide/components/CooldownExpan
 import Analyzer, { Options, SELECTED_PLAYER, SELECTED_PLAYER_PET } from 'parser/core/Analyzer';
 import Events, {
   ApplyBuffEvent,
-  RemoveBuffEvent,
-  DeathEvent,
   CastEvent,
-  RefreshBuffEvent,
-  HealEvent,
   DamageEvent,
+  DeathEvent,
   EndChannelEvent,
+  HealEvent,
+  RefreshBuffEvent,
+  RemoveBuffEvent,
 } from 'parser/core/Events';
 import { QualitativePerformance } from 'parser/ui/QualitativePerformance';
-import { SECRET_INFUSION_BUFFS, LESSONS_BUFFS } from '../../constants';
+import { LESSONS_BUFFS, SECRET_INFUSION_BUFFS } from '../../constants';
 import EssenceFont from './EssenceFont';
 import { PerformanceMark } from 'interface/guide';
 import SPELLS from 'common/SPELLS';

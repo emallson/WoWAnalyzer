@@ -2,6 +2,14 @@
 import { Spec } from 'game/SPECS';
 import { Race } from 'parser/core/Combatant';
 import PhaseConfig from 'parser/core/PhaseConfig';
+import MythicPlusSeasonOne from 'game/raids/mythicplusseasonone';
+import MythicPlusSeasonTwo from 'game/raids/mythicplusseasontwo';
+import VaultOfTheIncarnates from 'game/raids/vaultoftheincarnates';
+import Aberrus from 'game/raids/aberrus';
+import Amirdrassil from 'game/raids/amirdrassil';
+// import Ulduar from 'game/raids/ulduar';
+// import TrialOfTheGrandCrusader from 'game/raids/trialofthegrandcrusader';
+import IcecrownCitadel from 'game/raids/icc';
 
 interface EncounterConfig {
   vantusRuneBuffId?: number;
@@ -26,7 +34,7 @@ export interface Boss {
   fight: EncounterConfig;
 }
 interface Raid {
-  bosses: Boss[];
+  bosses: Record<string, Boss>;
 }
 export interface Phase extends PhaseConfig {
   start: number[];
@@ -44,15 +52,15 @@ export interface Dungeon {
 
 const raids = {
   // Dragonflight
-  MythicPlusSeasonOne: require('./mythicplusseasonone').default,
-  MythicPlusSeasonTwo: require('./mythicplusseasontwo').default,
-  VaultOfTheIncarnates: require('./vaultoftheincarnates').default, // tier 29
-  Aberrus: require('./aberrus').default, // tier 30
-  Amirdrassil: require('./amirdrassil').default, // tier 31
+  MythicPlusSeasonOne,
+  MythicPlusSeasonTwo,
+  VaultOfTheIncarnates, // tier 29
+  Aberrus, // tier 30
+  Amirdrassil, // tier 31
   // Wrath of the Lich King (Classic)
-  Ulduar: require('./ulduar').default, // tier 8
-  TrialOfTheGrandCrusader: require('./trialofthegrandcrusader').default, // tier 9
-  IcecrownCitadel: require('./icc').default, // tier 10
+  // Ulduar, // tier 8
+  // TrialOfTheGrandCrusader, // tier 9
+  IcecrownCitadel, // tier 10
 };
 export default raids;
 

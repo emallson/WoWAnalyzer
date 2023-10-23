@@ -2,28 +2,28 @@ import { change, date } from 'common/changelog';
 import ITEMS from 'common/ITEMS';
 import SPELLS from 'common/SPELLS';
 import {
+  Abelito75,
   Arbixal,
+  Awildfivreld,
+  Bigsxy,
   emallson,
+  HerzBlutRaffy,
   jazminite,
   Jonfanz,
+  Jundarer,
   Khadaj,
   Lapideas,
+  nullDozzer,
+  Pilsung,
   Putro,
+  Seriousnes,
   Sharrq,
   Sref,
   Tialyss,
   ToppleTheNun,
   Trevor,
   Vireve,
-  Pilsung,
-  HerzBlutRaffy,
-  Abelito75,
-  Jundarer,
   Vollmer,
-  Awildfivreld,
-  nullDozzer,
-  Bigsxy,
-  Seriousnes,
 } from 'CONTRIBUTORS';
 import { ItemLink } from 'interface';
 import SpellLink from 'interface/SpellLink';

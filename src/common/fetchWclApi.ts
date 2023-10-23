@@ -5,11 +5,11 @@ import { AnyEvent } from 'parser/core/Events';
 import { QueryParams } from './makeApiUrl';
 import makeWclApiUrl from './makeWclApiUrl';
 import {
-  WclTable,
+  WCLEventsResponse,
+  WCLFightsResponse,
   WclOptions,
   WCLResponseJSON,
-  WCLFightsResponse,
-  WCLEventsResponse,
+  WclTable,
 } from './WCL_TYPES';
 
 export class ApiDownError extends ExtendableError {}
@@ -90,7 +90,7 @@ export async function toJson(response: string | Response) {
 }
 
 async function rawFetchWcl(endpoint: string, queryParams: QueryParams) {
-  if (process.env.NODE_ENV === 'test') {
+  if (import.meta.env.MODE === 'test') {
     throw new Error('Unable to query WCL during test');
   }
   const url = makeWclApiUrl(endpoint, queryParams);

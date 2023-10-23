@@ -1,10 +1,8 @@
 import TALENTS from 'common/TALENTS/paladin';
-import { emallson, Hordehobbs, Heisenburger } from 'CONTRIBUTORS';
+import { emallson, Heisenburger, Hordehobbs } from 'CONTRIBUTORS';
 import Expansion from 'game/Expansion';
 import SPECS from 'game/SPECS';
-import { SpellLink } from 'interface';
-import { TooltipElement } from 'interface';
-import { AlertWarning } from 'interface';
+import { AlertWarning, SpellLink, TooltipElement } from 'interface';
 
 import CHANGELOG from './CHANGELOG';
 
@@ -67,5 +65,5 @@ export default {
       (exports) => exports.default,
     ),
   // The path to the current directory (relative form project root). This is used for generating a GitHub link directly to your spec's code.
-  path: __dirname,
+  path: import.meta.url,
 };

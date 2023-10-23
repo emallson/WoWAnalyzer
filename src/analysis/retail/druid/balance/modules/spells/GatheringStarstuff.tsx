@@ -2,13 +2,13 @@ import { formatPercentage } from 'common/format';
 import SPELLS from 'common/SPELLS';
 import Analyzer, { Options, SELECTED_PLAYER } from 'parser/core/Analyzer';
 import Events, {
-  EventType,
   ApplyBuffEvent,
   ApplyBuffStackEvent,
-  RemoveBuffEvent,
-  RefreshBuffEvent,
   CastEvent,
   DamageEvent,
+  EventType,
+  RefreshBuffEvent,
+  RemoveBuffEvent,
 } from 'parser/core/Events';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';
 import Statistic from 'parser/ui/Statistic';

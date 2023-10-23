@@ -3,9 +3,9 @@ import StatTracker from 'parser/shared/modules/StatTracker';
 
 import {
   ATONEMENT_COEFFICIENT,
+  DISCIPLINE_DAMAGE_AURA_VALUE,
   PENANCE_COEFFICIENCT,
   SMITE_COEFFICIENT,
-  DISCIPLINE_DAMAGE_AURA_VALUE,
 } from './constants';
 
 // 50% dmg increase passive

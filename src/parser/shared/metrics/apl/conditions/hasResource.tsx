@@ -3,7 +3,7 @@ import { ResourceLink } from 'interface';
 import { ClassResources, EventType } from 'parser/core/Events';
 
 import { AplTriggerEvent, Condition, tenseAlt } from '../index';
-import { Range, formatRange } from './index';
+import { formatRange, Range } from './index';
 
 const castResource = (resource: Resource, event: AplTriggerEvent): ClassResources | undefined =>
   event.classResources?.find(({ type }) => type === resource.id);

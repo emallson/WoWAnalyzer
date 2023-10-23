@@ -1,8 +1,8 @@
 import { getAlertComponent } from 'interface/Alert';
 import { Suggestion } from 'parser/core/CombatLogParser';
 import { Issue } from 'parser/core/ParseResults';
-import { ReactNode } from 'react';
 import * as React from 'react';
+import { ReactNode } from 'react';
 
 import { useConfig } from '../ConfigContext';
 import Checklist from './ChecklistPanel';

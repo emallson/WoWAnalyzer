@@ -1,10 +1,10 @@
 import { Trans } from '@lingui/macro';
 import {
-  MS_BUFFER_100,
   COMBUSTION_DURATION,
-  SKB_COMBUST_DURATION,
   HOT_STREAK_SPENDERS,
+  MS_BUFFER_100,
   SharedCode,
+  SKB_COMBUST_DURATION,
 } from 'analysis/retail/mage/shared';
 import { formatNumber, formatPercentage } from 'common/format';
 import SPELLS from 'common/SPELLS';
@@ -12,7 +12,7 @@ import TALENTS from 'common/TALENTS/mage';
 import { SpellLink } from 'interface';
 import Analyzer, { Options } from 'parser/core/Analyzer';
 import { EventType } from 'parser/core/Events';
-import { When, ThresholdStyle } from 'parser/core/ParseResults';
+import { ThresholdStyle, When } from 'parser/core/ParseResults';
 import EventHistory from 'parser/shared/modules/EventHistory';
 import BoringSpellValueText from 'parser/ui/BoringSpellValueText';
 import Statistic from 'parser/ui/Statistic';

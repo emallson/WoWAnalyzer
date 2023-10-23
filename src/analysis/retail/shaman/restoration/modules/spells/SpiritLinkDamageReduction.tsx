@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro';
 import fetchWcl from 'common/fetchWclApi';
-import { formatThousands, formatNumber } from 'common/format';
+import { formatNumber, formatThousands } from 'common/format';
 import makeWclUrl from 'common/makeWclUrl';
 import SPELLS from 'common/SPELLS';
 import TALENTS from 'common/TALENTS/shaman';
