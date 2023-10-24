@@ -15,7 +15,6 @@
     "@wowanalyzer/react-tooltip-lite": "^3.1.2",
     "core-js": "3.32.0",
     "es6-error": "^4.1.1",
-    "make-plural": "^7.3.0",
     "prop-types": "^15.8.1",
     "rc-slider": "^10.2.1",
     "react": "^17.0.2",
