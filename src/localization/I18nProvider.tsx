@@ -1,4 +1,4 @@
-import { i18n, Messages } from '@lingui/core';
+import { i18n } from '@lingui/core';
 import { I18nProvider as LinguiI18nProvider } from '@lingui/react';
 import { getLanguage } from 'interface/selectors/language';
 import { useWaSelector } from 'interface/utils/useWaSelector';
@@ -17,8 +17,12 @@ i18n.loadLocaleData('pt', { plurals: pt });
 i18n.loadLocaleData('ru', { plurals: ru });
 i18n.loadLocaleData('zh', { plurals: zh });
 
-const loadCatalog = (locale: string): Promise<{ messages: Messages }> =>
-  import(`./${locale}/messages.json?lingui`);
+const loadCatalog = async (locale: string) => {
+  const { default: messages } = await import(`./${locale}/messages.json?lingui`);
+
+  i18n.load(locale, messages);
+  i18n.activate(locale);
+};
 
 interface Props {
   children: ReactNode;
@@ -34,9 +38,7 @@ const I18nProvider = ({ children }: Props) => {
     }
 
     loadCatalog(locale)
-      .then(({ messages }) => {
-        i18n.load(locale, messages);
-        i18n.activate(locale);
+      .then(() => {
         setActiveLocale(locale);
       })
       .catch((error) => {
