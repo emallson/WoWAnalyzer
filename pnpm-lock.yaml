@@ -54,9 +54,6 @@ importers:
       es6-error:
         specifier: ^4.1.1
         version: 4.1.1
-      make-plural:
-        specifier: ^7.3.0
-        version: 7.3.0
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -6544,10 +6541,6 @@ packages:
       pify: 4.0.1
       semver: 5.7.2
     dev: true
-
-  /make-plural@7.3.0:
-    resolution: {integrity: sha512-/K3BC0KIsO+WK2i94LkMPv3wslMrazrQhfi5We9fMbLlLjzoOSJWr7TAdupLlDWaJcWxwoNosBkhFDejiu5VDw==}
-    dev: false
 
   /masonry-layout@4.2.2:
     resolution: {integrity: sha512-iGtAlrpHNyxaR19CvKC3npnEcAwszXoyJiI8ARV2ePi7fmYhIud25MHK8Zx4P0LCC4d3TNO9+rFa1KoK1OEOaA==}
