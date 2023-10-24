@@ -15,7 +15,7 @@ const Hotkeys = () => {
             'See https://github.com/WoWAnalyzer/WoWAnalyzer#getting-started for information on how to set this up.',
         )
       ) {
-        const newUrl = `http://localhost:5173${window.location.pathname}`;
+        const newUrl = `http://localhost:3000${window.location.pathname}`;
         window.location.href = newUrl;
       }
     };

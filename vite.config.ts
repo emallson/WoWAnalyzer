@@ -1,6 +1,6 @@
 import { join } from 'node:path';
 
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-swc';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vite';
 import lingui from '@lingui/vite-plugin';
@@ -43,9 +43,10 @@ gtag('event', 'ramp_js', { send_to: 'G-E0TKKBEXVD', pageview_id: window._pwGA4Pa
 export default defineConfig((env) => ({
   plugins: [
     react({
-      babel: {
-        plugins: ['@emotion/babel-plugin', 'macros'],
-      },
+      plugins: [
+        ['@lingui/swc-plugin', {}],
+        ['@swc/plugin-emotion', {}],
+      ],
     }),
     tsconfigPaths(),
     {
@@ -68,6 +69,9 @@ export default defineConfig((env) => ({
       localization: join(__dirname, 'src', 'localization'),
       parser: join(__dirname, 'src', 'parser'),
     },
+  },
+  server: {
+    port: 3000,
   },
   test: {
     environment: 'jsdom',

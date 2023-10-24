@@ -67,3 +67,6 @@ coverage/*
 
 # pnpm when running in Docker
 .pnpm-store
+
+# swc plugin for vite
+.swc
