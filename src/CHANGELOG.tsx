@@ -30,6 +30,7 @@ import SpellLink from 'interface/SpellLink';
 
 // prettier-ignore
 export default [
+  change(date(2023, 10, 23), 'Build app with vite instead of create-react-app.', ToppleTheNun),
   change(date(2023, 10, 23), 'Switch package manager to pnpm.', ToppleTheNun),
   change(date(2023, 10, 22), 'Rename all .js files to .jsx.', ToppleTheNun),
   change(date(2023, 10, 22), 'Remove articles.', ToppleTheNun),
