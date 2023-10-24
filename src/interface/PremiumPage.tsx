@@ -16,7 +16,7 @@ import LoginPanel from './PremiumLoginPanel';
 
 const dateToLocaleString = (date: Date): string => date.toLocaleString(import.meta.env.LOCALE);
 
-export const Component = () => {
+const PremiumPage = () => {
   const user = useWaSelector(getUser);
 
   return (
@@ -229,4 +229,4 @@ export const Component = () => {
     </>
   );
 };
-Component.displayName = 'PremiumPage';
+export default PremiumPage;
