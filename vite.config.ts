@@ -72,6 +72,9 @@ export default defineConfig((env) => ({
   },
   server: {
     port: 3000,
+    watch: {
+      ignored: ['**/.direnv/**'],
+    },
   },
   test: {
     environment: 'jsdom',
@@ -87,15 +90,7 @@ export default defineConfig((env) => ({
       '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build}.config.*',
     ],
     setupFiles: ['./src/vitest.setup.ts'],
-    deps: {
-      optimizer: {
-        web: {
-          include: ['vitest-canvas-mock'],
-        },
-      },
-    },
-    // For this config, check https://github.com/vitest-dev/vitest/issues/740
-    threads: false,
+    threads: true,
     environmentOptions: {
       jsdom: {
         resources: 'usable',

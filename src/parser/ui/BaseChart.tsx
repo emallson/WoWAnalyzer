@@ -45,5 +45,9 @@ export default function BaseChart(props: Props) {
     data: undefined,
   };
 
+  if (process.env.NODE_ENV === 'test') {
+    prp.renderer = 'svg' as const;
+  }
+
   return <VegaLite theme="dark" tooltip={{ theme: 'dark' }} actions={false} {...prp} />;
 }

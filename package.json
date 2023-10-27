@@ -88,7 +88,7 @@
     "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
     "is-ci": "^3.0.1",
-    "jest-canvas-mock": "^2.5.2",
+    "jsdom": "^22.1.0",
     "lint-staged": "13.2.3",
     "prettier": "~2.8.1",
     "react-test-renderer": "^17.0.2",
@@ -100,8 +100,7 @@
     "vite-plugin-svgr": "^4.1.0",
     "vite-plugin-webpackchunkname": "^0.2.4",
     "vite-tsconfig-paths": "^4.2.1",
-    "vitest": "^0.34.6",
-    "vitest-canvas-mock": "^0.3.3"
+    "vitest": "^0.34.6"
   },
   "resolutions": {
     "@lingui/cli": "4.5.0",
