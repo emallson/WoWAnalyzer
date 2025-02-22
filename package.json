@@ -107,7 +107,8 @@
     "vite": "^5.2.8",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^2.1.2"
+    "vitest": "^2.1.2",
+    "@archon/wow-dbc": "file:../wow-dbc"
   },
   "resolutions": {
     "@lingui/cli": "4.8.0",

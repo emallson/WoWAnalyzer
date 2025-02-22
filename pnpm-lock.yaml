@@ -132,6 +132,9 @@ importers:
         specifier: ^5.6.0
         version: 5.6.0(vega@5.23.0)
     devDependencies:
+      '@archon/wow-dbc':
+        specifier: file:../wow-dbc
+        version: file:../wow-dbc
       '@babel/parser':
         specifier: 7.24.4
         version: 7.24.4
@@ -343,6 +346,9 @@ packages:
   '@ampproject/remapping@2.2.1':
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
     engines: {node: '>=6.0.0'}
+
+  '@archon/wow-dbc@file:../wow-dbc':
+    resolution: {directory: ../wow-dbc, type: directory}
 
   '@babel/code-frame@7.24.2':
     resolution: {integrity: sha512-y5+tLQyV8pg3fsiln67BVLD1P13Eg4lh5RW9mF0zUuvLrv9uIQ4MCL+CRT+FTsBlBjcIan6PGsLcBN0m3ClUyQ==}
@@ -5020,6 +5026,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  udsv@0.6.0:
+    resolution: {integrity: sha512-na+0EoqqpDeNKZ0HVTtgYtFP9aQgsMwPM77UEK7g4OX2C42w+Qw7QZs9t1ocDGLidtcKJnsPy+o5XrBYaZfzCA==}
+
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
 
@@ -5421,6 +5430,10 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@archon/wow-dbc@file:../wow-dbc':
+    dependencies:
+      udsv: 0.6.0
 
   '@babel/code-frame@7.24.2':
     dependencies:
@@ -10496,6 +10509,8 @@ snapshots:
       possible-typed-array-names: 1.0.0
 
   typescript@5.4.5: {}
+
+  udsv@0.6.0: {}
 
   unbox-primitive@1.0.2:
     dependencies:
