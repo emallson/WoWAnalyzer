@@ -3,10 +3,16 @@ import CoreAbilities, { AbilityRange } from 'parser/core/modules/Abilities';
 import { SpellbookAbility } from 'parser/core/modules/Ability';
 import SPELL_CATEGORY from 'parser/core/SPELL_CATEGORY';
 import talents from 'common/TALENTS/monk';
+import autoSpellBook from 'parser/core/modules/Abilities/autoSpellList';
+
+import spellList from 'src/generated/retail/spell-list-268.json';
+import type { SpellList } from 'scripts/spell-lists/generate';
 
 class Abilities extends CoreAbilities {
   spellbook(): SpellbookAbility[] {
     const combatant = this.selectedCombatant;
+    return autoSpellBook(spellList as SpellList)(combatant);
+
     return [
       // Rotational Spells
       {

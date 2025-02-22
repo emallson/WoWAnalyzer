@@ -1,0 +1,219 @@
+{
+  "specId": 267,
+  "baselineSpells": [
+    77220,
+    137046,
+    162699,
+    193541,
+    231811,
+    157903,
+    116858,
+    462112,
+    462114
+  ],
+  "spells": [
+    {
+      "id": 77220,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mastery: Chaotic Energies"
+    },
+    {
+      "id": 137046,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Destruction Warlock"
+    },
+    {
+      "id": 162699,
+      "type": "baseline",
+      "label": [
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stat Negation Aura - Intellect DPS"
+    },
+    {
+      "id": 193541,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Immolate"
+    },
+    {
+      "id": 231811,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Soulstone"
+    },
+    {
+      "id": 157903,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Warlock"
+    },
+    {
+      "id": 116858,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        139264,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Chaos Bolt",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 3000
+      }
+    },
+    {
+      "id": 462112,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Warlock"
+    },
+    {
+      "id": 462114,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Destruction Warlock"
+    },
+    {
+      "id": 348,
+      "grantedBy": 137046,
+      "type": "temporary",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        4,
+        131072,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Immolate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 29722,
+      "grantedBy": 137046,
+      "type": "temporary",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        131136,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Incinerate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    }
+  ]
+}

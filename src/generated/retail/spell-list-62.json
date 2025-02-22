@@ -1,0 +1,8233 @@
+{
+  "specId": 62,
+  "baselineSpells": [
+    2139,
+    118,
+    61305,
+    28272,
+    61721,
+    61025,
+    61780,
+    28271,
+    1953,
+    80353,
+    53140,
+    3565,
+    32271,
+    3562,
+    3567,
+    33690,
+    35715,
+    32272,
+    49358,
+    3561,
+    49359,
+    3566,
+    88342,
+    88344,
+    3563,
+    53142,
+    11419,
+    32266,
+    11416,
+    11417,
+    33691,
+    35717,
+    32267,
+    49361,
+    10059,
+    49360,
+    11420,
+    88345,
+    88346,
+    11418,
+    190336,
+    130,
+    122,
+    120146,
+    120145,
+    121039,
+    11419,
+    11418,
+    11420,
+    10059,
+    32267,
+    11417,
+    11416,
+    32266,
+    3565,
+    32271,
+    3562,
+    3567,
+    32272,
+    3561,
+    3566,
+    3563,
+    89744,
+    132626,
+    132620,
+    132621,
+    132627,
+    137018,
+    161354,
+    161372,
+    161355,
+    161353,
+    126819,
+    176246,
+    176248,
+    176244,
+    176242,
+    193759,
+    210086,
+    131784,
+    210726,
+    211088,
+    211076,
+    194466,
+    214634,
+    224869,
+    224871,
+    56384,
+    224968,
+    1459,
+    277787,
+    277792,
+    281400,
+    281402,
+    281403,
+    281404,
+    281403,
+    281404,
+    116,
+    319836,
+    1449,
+    321395,
+    343127,
+    343140,
+    344587,
+    344597,
+    120,
+    395277,
+    395289,
+    391622,
+    66,
+    460392,
+    446534,
+    446540,
+    30451,
+    114664,
+    137021,
+    6117,
+    190427,
+    190740,
+    162699,
+    257190,
+    79684,
+    44425,
+    321745,
+    153626,
+    462083,
+    462084,
+    321526
+  ],
+  "spells": [
+    {
+      "id": 2139,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        16384,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Counterspell",
+      "cooldown": {
+        "duration": 24000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 118,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 61305,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 28272,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 61721,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 61025,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 61780,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 28271,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 1953,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        219,
+        292
+      ],
+      "classMask": [
+        65536,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blink",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 80353,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292,
+        615
+      ],
+      "classMask": [
+        0,
+        0,
+        67108864,
+        0
+      ],
+      "passive": false,
+      "name": "Time Warp",
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 53140,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Dalaran - Northrend",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3565,
+      "type": "baseline"
+    },
+    {
+      "id": 32271,
+      "type": "baseline"
+    },
+    {
+      "id": 3562,
+      "type": "baseline"
+    },
+    {
+      "id": 3567,
+      "type": "baseline"
+    },
+    {
+      "id": 33690,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Shattrath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 35715,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Shattrath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 32272,
+      "type": "baseline"
+    },
+    {
+      "id": 49358,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Stonard",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3561,
+      "type": "baseline"
+    },
+    {
+      "id": 49359,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Theramore",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3566,
+      "type": "baseline"
+    },
+    {
+      "id": 88342,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Tol Barad",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 88344,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Tol Barad",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3563,
+      "type": "baseline"
+    },
+    {
+      "id": 53142,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Dalaran - Northrend",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 11419,
+      "type": "baseline"
+    },
+    {
+      "id": 32266,
+      "type": "baseline"
+    },
+    {
+      "id": 11416,
+      "type": "baseline"
+    },
+    {
+      "id": 11417,
+      "type": "baseline"
+    },
+    {
+      "id": 33691,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Shattrath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 35717,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Shattrath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 32267,
+      "type": "baseline"
+    },
+    {
+      "id": 49361,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Stonard",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 10059,
+      "type": "baseline"
+    },
+    {
+      "id": 49360,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Theramore",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 11420,
+      "type": "baseline"
+    },
+    {
+      "id": 88345,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Tol Barad",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 88346,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Tol Barad",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 11418,
+      "type": "baseline"
+    },
+    {
+      "id": 190336,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        1073741824,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Conjure Refreshment",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 3000
+      }
+    },
+    {
+      "id": 130,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        8388608,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Slow Fall",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 122,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        72,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Frost Nova",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              205036
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -9000,
+            "requiredSpells": [
+              431067
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 120146,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Ancient Portal: Dalaran",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 120145,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Ancient Teleport: Dalaran",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 121039,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mana Attunement"
+    },
+    {
+      "id": 11419,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Darnassus",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 11418,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Undercity",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 11420,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Thunder Bluff",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 10059,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Stormwind",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 32267,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Silvermoon",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 11417,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Orgrimmar",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 11416,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Ironforge",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 32266,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Exodar",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3565,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Darnassus",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 32271,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Exodar",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3562,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Ironforge",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3567,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Orgrimmar",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 32272,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Silvermoon",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3561,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Stormwind",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3566,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Thunder Bluff",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 3563,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Undercity",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 89744,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        171,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wizardry"
+    },
+    {
+      "id": 132626,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Vale of Eternal Blossoms",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 132620,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Vale of Eternal Blossoms",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 132621,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Vale of Eternal Blossoms",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 132627,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Vale of Eternal Blossoms",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 137018,
+      "type": "baseline",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mage"
+    },
+    {
+      "id": 161354,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 161372,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 161355,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 161353,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 126819,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 176246,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Stormshield",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 176248,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Stormshield",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 176244,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Warspear",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 176242,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Warspear",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 193759,
+      "type": "baseline",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        65536
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Hall of the Guardian",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 210086,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "unless-learned",
+      "name": "Arcane Linguist"
+    },
+    {
+      "id": 131784,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Illusion",
+      "cooldown": {
+        "duration": 600000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 210726,
+      "type": "baseline",
+      "label": [
+        107,
+        293
+      ],
+      "passive": false,
+      "name": "Mark of Aluneth",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 211088,
+      "type": "baseline",
+      "label": [
+        107,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mark of Aluneth"
+    },
+    {
+      "id": 211076,
+      "type": "baseline",
+      "label": [
+        107,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mark of Aluneth"
+    },
+    {
+      "id": 194466,
+      "type": "baseline",
+      "label": [
+        108,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Phoenix's Flames",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 2,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              343222
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 214634,
+      "type": "baseline",
+      "label": [
+        203,
+        109,
+        17,
+        16,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ebonbolt",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 3000
+      }
+    },
+    {
+      "id": 224869,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Dalaran - Broken Isles",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 224871,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Dalaran - Broken Isles",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 56384,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Arcane Momentum"
+    },
+    {
+      "id": 224968,
+      "type": "baseline",
+      "label": [
+        107,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mark of Aluneth",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 1459,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Arcane Intellect",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 277787,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 277792,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 281400,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Boralus",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 281402,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Dazar'alor",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 281403,
+      "type": "baseline"
+    },
+    {
+      "id": 281404,
+      "type": "baseline"
+    },
+    {
+      "id": 281403,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Boralus",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 281404,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Dazar'alor",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 116,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        32,
+        33554432,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Frostbolt",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 319836,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        10,
+        0,
+        2097152,
+        0
+      ],
+      "passive": false,
+      "name": "Fire Blast",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 2,
+            "requiredSpells": [
+              205029
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 12000,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": 0,
+            "requiredSpells": [
+              387044
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 1449,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        4104,
+        0,
+        0,
+        16
+      ],
+      "passive": false,
+      "name": "Arcane Explosion",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 321395,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 343127,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Teleport"
+    },
+    {
+      "id": 343140,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Portal"
+    },
+    {
+      "id": 344587,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Oribos",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 344597,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Oribos",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 120,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        520,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cone of Cold",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 12000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": 33000,
+            "hasted": false,
+            "requiredSpells": [
+              417493
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 395277,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Valdrakken",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 395289,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        3205
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Valdrakken",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 391622,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 66,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        262144,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Invisibility",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 460392,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 446534,
+      "type": "baseline",
+      "label": [
+        3205,
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Portal: Dornogal",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 446540,
+      "type": "baseline",
+      "label": [
+        3205,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Teleport: Dornogal",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 30451,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        536870920,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Arcane Blast",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2250
+      }
+    },
+    {
+      "id": 114664,
+      "type": "baseline",
+      "passive": false,
+      "name": "Unknown"
+    },
+    {
+      "id": 137021,
+      "type": "baseline",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Mage"
+    },
+    {
+      "id": 6117,
+      "type": "baseline",
+      "passive": false,
+      "name": "Unknown"
+    },
+    {
+      "id": 190427,
+      "type": "baseline",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Charge"
+    },
+    {
+      "id": 190740,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292,
+        1759
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mastery: Savant"
+    },
+    {
+      "id": 162699,
+      "type": "baseline",
+      "label": [
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stat Negation Aura - Intellect DPS"
+    },
+    {
+      "id": 257190,
+      "type": "baseline",
+      "passive": false,
+      "name": "Unknown"
+    },
+    {
+      "id": 79684,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        8192,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Clearcasting"
+    },
+    {
+      "id": 44425,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        8,
+        32768,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Arcane Barrage",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 321745,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Prismatic Barrier"
+    },
+    {
+      "id": 153626,
+      "type": "baseline",
+      "label": [
+        16,
+        52,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        128,
+        0
+      ],
+      "passive": false,
+      "name": "Arcane Orb",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              384651
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 462083,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Mage"
+    },
+    {
+      "id": 462084,
+      "type": "baseline",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mage"
+    },
+    {
+      "id": 321526,
+      "type": "baseline",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mana Adept"
+    },
+    {
+      "id": 30449,
+      "granted": false,
+      "requiresTalentEntry": [
+        80140
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        16,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Spellsteal",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 414659,
+      "granted": false,
+      "requiresTalentEntry": [
+        80141
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ice Cold"
+    },
+    {
+      "id": 205036,
+      "granted": false,
+      "requiresTalentEntry": [
+        80142
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        131072,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ice Ward"
+    },
+    {
+      "id": 386763,
+      "granted": false,
+      "requiresTalentEntry": [
+        80143
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Freezing Cold"
+    },
+    {
+      "id": 113724,
+      "granted": false,
+      "requiresTalentEntry": [
+        80144
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        64,
+        65536
+      ],
+      "passive": false,
+      "name": "Ring of Frost",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 157997,
+      "granted": false,
+      "requiresTalentEntry": [
+        125820
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        8388608
+      ],
+      "passive": false,
+      "name": "Ice Nova",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 389627,
+      "granted": false,
+      "requiresTalentEntry": [
+        80145
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Volatile Detonation"
+    },
+    {
+      "id": 455428,
+      "granted": false,
+      "requiresTalentEntry": [
+        80147
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Barrier Diffusion"
+    },
+    {
+      "id": 414664,
+      "granted": false,
+      "requiresTalentEntry": [
+        115878
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        566
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        128
+      ],
+      "passive": false,
+      "name": "Mass Invisibility",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 414660,
+      "granted": false,
+      "requiresTalentEntry": [
+        125817
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Mass Barrier",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 382800,
+      "granted": false,
+      "requiresTalentEntry": [
+        80149
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Accumulative Shielding"
+    },
+    {
+      "id": 383243,
+      "granted": false,
+      "requiresTalentEntry": [
+        80151
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Time Anomaly"
+    },
+    {
+      "id": 458437,
+      "granted": false,
+      "requiresTalentEntry": [
+        126060
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inspired Intellect"
+    },
+    {
+      "id": 389713,
+      "granted": false,
+      "requiresTalentEntry": [
+        80152
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        256,
+        8,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Displacement",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 382268,
+      "granted": false,
+      "requiresTalentEntry": [
+        80153
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flow of Time"
+    },
+    {
+      "id": 31589,
+      "granted": false,
+      "requiresTalentEntry": [
+        80154
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        0,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Slow",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 382490,
+      "granted": false,
+      "requiresTalentEntry": [
+        80155
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tome of Antonidas"
+    },
+    {
+      "id": 382826,
+      "granted": false,
+      "requiresTalentEntry": [
+        80156
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Temporal Velocity"
+    },
+    {
+      "id": 386828,
+      "granted": false,
+      "requiresTalentEntry": [
+        80157
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        17,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Energized Barriers"
+    },
+    {
+      "id": 382270,
+      "granted": false,
+      "requiresTalentEntry": [
+        80158
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Diverted Energy"
+    },
+    {
+      "id": 342249,
+      "granted": false,
+      "requiresTalentEntry": [
+        80159
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Master of Time"
+    },
+    {
+      "id": 157981,
+      "granted": false,
+      "requiresTalentEntry": [
+        80160
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        8,
+        64,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blast Wave",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -5000,
+            "hasted": false,
+            "requiredSpells": [
+              389627
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 382297,
+      "granted": false,
+      "requiresTalentEntry": [
+        80161
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Quick Witted"
+    },
+    {
+      "id": 108839,
+      "granted": false,
+      "requiresTalentEntry": [
+        80162
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ice Floes",
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -6000,
+            "requiredSpells": [
+              431067
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 212653,
+      "granted": false,
+      "requiresTalentEntry": [
+        80163
+      ],
+      "overrides": 1953,
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        65536,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shimmer",
+      "charges": {
+        "max": 2
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 383121,
+      "granted": false,
+      "requiresTalentEntry": [
+        80164
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        181,
+        1704
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mass Polymorph",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 382292,
+      "granted": false,
+      "requiresTalentEntry": [
+        80165
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cryo-Freeze"
+    },
+    {
+      "id": 343183,
+      "granted": false,
+      "requiresTalentEntry": [
+        80166
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Frost Nova"
+    },
+    {
+      "id": 382481,
+      "granted": false,
+      "requiresTalentEntry": [
+        80168
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rigid Ice"
+    },
+    {
+      "id": 382289,
+      "granted": false,
+      "requiresTalentEntry": [
+        80169
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tempest Barrier"
+    },
+    {
+      "id": 382293,
+      "granted": false,
+      "requiresTalentEntry": [
+        80170
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Incantation of Swiftness"
+    },
+    {
+      "id": 382440,
+      "granted": false,
+      "requiresTalentEntry": [
+        80171
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17,
+        1960
+      ],
+      "classMask": [
+        0,
+        268435456,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shifting Power",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 383092,
+      "granted": false,
+      "requiresTalentEntry": [
+        80173
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Warding"
+    },
+    {
+      "id": 342245,
+      "granted": false,
+      "requiresTalentEntry": [
+        80174
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        292,
+        892,
+        16,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Alter Time",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 475,
+      "granted": false,
+      "requiresTalentEntry": [
+        80175
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Remove Curse",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1463,
+      "granted": false,
+      "requiresTalentEntry": [
+        80177
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Incanter's Flow"
+    },
+    {
+      "id": 390218,
+      "granted": false,
+      "requiresTalentEntry": [
+        80179
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Overflowing Energy"
+    },
+    {
+      "id": 235450,
+      "granted": false,
+      "requiresTalentEntry": [
+        80180
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        932
+      ],
+      "classMask": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "passive": false,
+      "name": "Prismatic Barrier",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 45438,
+      "granted": false,
+      "requiresTalentEntry": [
+        80181
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        128,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Ice Block",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 240000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              382424
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 382424,
+      "granted": false,
+      "requiresTalentEntry": [
+        80182
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Winter's Protection"
+    },
+    {
+      "id": 55342,
+      "granted": false,
+      "requiresTalentEntry": [
+        80183
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        1284,
+        3672,
+        930
+      ],
+      "classMask": [
+        0,
+        2097152,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mirror Image",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 382820,
+      "granted": false,
+      "requiresTalentEntry": [
+        80184
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reabsorption"
+    },
+    {
+      "id": 382569,
+      "granted": false,
+      "requiresTalentEntry": [
+        80185
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reduplication"
+    },
+    {
+      "id": 382493,
+      "granted": false,
+      "requiresTalentEntry": [
+        80187
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tome of Rhonin"
+    },
+    {
+      "id": 235224,
+      "granted": false,
+      "requiresTalentEntry": [
+        80188
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frigid Winds"
+    },
+    {
+      "id": 387807,
+      "granted": false,
+      "requiresTalentEntry": [
+        80189
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Time Manipulation"
+    },
+    {
+      "id": 270233,
+      "granted": false,
+      "requiresTalentEntry": [
+        80212
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Freezing Rain"
+    },
+    {
+      "id": 378448,
+      "granted": false,
+      "requiresTalentEntry": [
+        80214
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fractured Frost"
+    },
+    {
+      "id": 417491,
+      "granted": false,
+      "requiresTalentEntry": [
+        80215
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cryopathy"
+    },
+    {
+      "id": 205021,
+      "granted": false,
+      "requiresTalentEntry": [
+        80216
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        1048584,
+        16777216,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ray of Frost",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "channel": {
+        "duration": 5000,
+        "hasted": true,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 155149,
+      "granted": false,
+      "requiresTalentEntry": [
+        80217
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thermal Void"
+    },
+    {
+      "id": 382110,
+      "granted": false,
+      "requiresTalentEntry": [
+        80218
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cold Front"
+    },
+    {
+      "id": 382144,
+      "granted": false,
+      "requiresTalentEntry": [
+        80219
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Slick Ice"
+    },
+    {
+      "id": 199786,
+      "granted": false,
+      "requiresTalentEntry": [
+        80220
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        1,
+        32
+      ],
+      "passive": false,
+      "name": "Glacial Spike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2750
+      }
+    },
+    {
+      "id": 381244,
+      "granted": false,
+      "requiresTalentEntry": [
+        80221
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        17,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hailstones"
+    },
+    {
+      "id": 378749,
+      "granted": false,
+      "requiresTalentEntry": [
+        80222
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deep Shatter"
+    },
+    {
+      "id": 380154,
+      "granted": false,
+      "requiresTalentEntry": [
+        80223
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Subzero"
+    },
+    {
+      "id": 278309,
+      "granted": false,
+      "requiresTalentEntry": [
+        80224
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Chain Reaction"
+    },
+    {
+      "id": 56377,
+      "granted": false,
+      "requiresTalentEntry": [
+        80226
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Splitting Ice"
+    },
+    {
+      "id": 112965,
+      "granted": false,
+      "requiresTalentEntry": [
+        80227
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fingers of Frost"
+    },
+    {
+      "id": 12982,
+      "granted": false,
+      "requiresTalentEntry": [
+        80228
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shatter"
+    },
+    {
+      "id": 378919,
+      "granted": false,
+      "requiresTalentEntry": [
+        80229
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Piercing Cold"
+    },
+    {
+      "id": 205027,
+      "granted": false,
+      "requiresTalentEntry": [
+        80230
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bone Chilling"
+    },
+    {
+      "id": 379993,
+      "granted": false,
+      "requiresTalentEntry": [
+        80231
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flash Freeze"
+    },
+    {
+      "id": 460590,
+      "granted": false,
+      "requiresTalentEntry": [
+        80233
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Permafrost Lances"
+    },
+    {
+      "id": 236662,
+      "granted": false,
+      "requiresTalentEntry": [
+        80234
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ice Caller"
+    },
+    {
+      "id": 12472,
+      "granted": false,
+      "requiresTalentEntry": [
+        80235
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        16384,
+        8,
+        512
+      ],
+      "passive": false,
+      "name": "Icy Veins",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 378406,
+      "granted": false,
+      "requiresTalentEntry": [
+        80236
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wintertide"
+    },
+    {
+      "id": 205024,
+      "granted": false,
+      "requiresTalentEntry": [
+        80237
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1024
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lonely Winter"
+    },
+    {
+      "id": 417489,
+      "granted": false,
+      "requiresTalentEntry": [
+        80239
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Winter's Blessing"
+    },
+    {
+      "id": 30455,
+      "granted": false,
+      "requiresTalentEntry": [
+        80241
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        131072,
+        0,
+        0,
+        256
+      ],
+      "passive": false,
+      "name": "Ice Lance",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 84714,
+      "granted": false,
+      "requiresTalentEntry": [
+        80242
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        536870912,
+        0
+      ],
+      "passive": false,
+      "name": "Frozen Orb",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 44614,
+      "granted": false,
+      "requiresTalentEntry": [
+        80243
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        4096,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Flurry",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              378198
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 190447,
+      "granted": false,
+      "requiresTalentEntry": [
+        80244
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32768,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Brain Freeze"
+    },
+    {
+      "id": 205030,
+      "granted": false,
+      "requiresTalentEntry": [
+        80245
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frozen Touch"
+    },
+    {
+      "id": 378198,
+      "granted": false,
+      "requiresTalentEntry": [
+        80247
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Perpetual Winter"
+    },
+    {
+      "id": 153595,
+      "granted": false,
+      "requiresTalentEntry": [
+        80248
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        33554432,
+        16777216
+      ],
+      "passive": false,
+      "name": "Comet Storm",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 378947,
+      "granted": false,
+      "requiresTalentEntry": [
+        80249
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Glacial Assault"
+    },
+    {
+      "id": 382103,
+      "granted": false,
+      "requiresTalentEntry": [
+        80250
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Freezing Winds"
+    },
+    {
+      "id": 417493,
+      "granted": false,
+      "requiresTalentEntry": [
+        80251
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Coldest Snap"
+    },
+    {
+      "id": 378756,
+      "granted": false,
+      "requiresTalentEntry": [
+        102428
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        512,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frostbite"
+    },
+    {
+      "id": 385167,
+      "granted": false,
+      "requiresTalentEntry": [
+        102429
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        17,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Everlasting Frost"
+    },
+    {
+      "id": 110959,
+      "granted": false,
+      "requiresTalentEntry": [
+        115877
+      ],
+      "overrides": 66,
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        262144,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Greater Invisibility",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 431176,
+      "granted": false,
+      "requiresTalentEntry": [
+        117235
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frostfire Empowerment"
+    },
+    {
+      "id": 431067,
+      "granted": false,
+      "requiresTalentEntry": [
+        117236
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Elemental Affinity"
+    },
+    {
+      "id": 431112,
+      "granted": false,
+      "requiresTalentEntry": [
+        117775
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flame and Frost"
+    },
+    {
+      "id": 431166,
+      "granted": false,
+      "requiresTalentEntry": [
+        117237
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frostfire Infusion"
+    },
+    {
+      "id": 431178,
+      "granted": false,
+      "requiresTalentEntry": [
+        117238
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flash Freezeburn"
+    },
+    {
+      "id": 431038,
+      "granted": false,
+      "requiresTalentEntry": [
+        117239
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frostfire Mastery"
+    },
+    {
+      "id": 438595,
+      "granted": false,
+      "requiresTalentEntry": [
+        117240
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17,
+        3992
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Excess Fire"
+    },
+    {
+      "id": 438600,
+      "granted": false,
+      "requiresTalentEntry": [
+        117242
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17,
+        3210
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Excess Frost"
+    },
+    {
+      "id": 431189,
+      "granted": false,
+      "requiresTalentEntry": [
+        117243
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Severe Temperatures"
+    },
+    {
+      "id": 431117,
+      "granted": false,
+      "requiresTalentEntry": [
+        117774
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thermal Conditioning"
+    },
+    {
+      "id": 431044,
+      "granted": false,
+      "requiresTalentEntry": [
+        117244
+      ],
+      "overrides": 116,
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        41,
+        33554432,
+        0,
+        4096
+      ],
+      "passive": false,
+      "name": "Frostfire Bolt",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 431066,
+      "granted": false,
+      "requiresTalentEntry": [
+        117245
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Imbued Warding"
+    },
+    {
+      "id": 431131,
+      "granted": false,
+      "requiresTalentEntry": [
+        117776
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Meltdown"
+    },
+    {
+      "id": 451035,
+      "granted": false,
+      "requiresTalentEntry": [
+        117247
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Burden of Power"
+    },
+    {
+      "id": 449394,
+      "granted": false,
+      "requiresTalentEntry": [
+        117248
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Glorious Incandescence"
+    },
+    {
+      "id": 449619,
+      "granted": false,
+      "requiresTalentEntry": [
+        117249
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Memory of Al'ar"
+    },
+    {
+      "id": 448601,
+      "granted": false,
+      "requiresTalentEntry": [
+        117250
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292,
+        3512
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Spellfire Spheres"
+    },
+    {
+      "id": 449596,
+      "granted": false,
+      "requiresTalentEntry": [
+        117251
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rondurmancy"
+    },
+    {
+      "id": 449558,
+      "granted": false,
+      "requiresTalentEntry": [
+        123833
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ignite the Future"
+    },
+    {
+      "id": 449330,
+      "granted": false,
+      "requiresTalentEntry": [
+        117252
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Merely a Setback"
+    },
+    {
+      "id": 449412,
+      "granted": false,
+      "requiresTalentEntry": [
+        117253
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Savor the Moment"
+    },
+    {
+      "id": 449349,
+      "granted": false,
+      "requiresTalentEntry": [
+        123867
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sunfury Execution"
+    },
+    {
+      "id": 449627,
+      "granted": false,
+      "requiresTalentEntry": [
+        117254
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lessons in Debilitation"
+    },
+    {
+      "id": 458513,
+      "granted": false,
+      "requiresTalentEntry": [
+        123832
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Gravity Lapse"
+    },
+    {
+      "id": 448658,
+      "granted": false,
+      "requiresTalentEntry": [
+        117255
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Invocation: Arcane Phoenix"
+    },
+    {
+      "id": 449293,
+      "granted": false,
+      "requiresTalentEntry": [
+        117256
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mana Cascade"
+    },
+    {
+      "id": 443742,
+      "granted": false,
+      "requiresTalentEntry": [
+        117257
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Splinterstorm"
+    },
+    {
+      "id": 444986,
+      "granted": false,
+      "requiresTalentEntry": [
+        117258
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Spellfrost Teachings"
+    },
+    {
+      "id": 444719,
+      "granted": false,
+      "requiresTalentEntry": [
+        117259
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Force of Will"
+    },
+    {
+      "id": 444968,
+      "granted": false,
+      "requiresTalentEntry": [
+        117261
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Volatile Magic"
+    },
+    {
+      "id": 444974,
+      "granted": false,
+      "requiresTalentEntry": [
+        123407
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unerring Proficiency"
+    },
+    {
+      "id": 444752,
+      "granted": false,
+      "requiresTalentEntry": [
+        117262
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Slippery Slinging"
+    },
+    {
+      "id": 444756,
+      "granted": false,
+      "requiresTalentEntry": [
+        123418
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Look Again"
+    },
+    {
+      "id": 444827,
+      "granted": false,
+      "requiresTalentEntry": [
+        117263
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reactive Barrier"
+    },
+    {
+      "id": 444784,
+      "granted": false,
+      "requiresTalentEntry": [
+        123417
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Phantasmal Image"
+    },
+    {
+      "id": 444256,
+      "granted": false,
+      "requiresTalentEntry": [
+        117264
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Splintering Orbs"
+    },
+    {
+      "id": 443783,
+      "granted": false,
+      "requiresTalentEntry": [
+        117265
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Augury Abounds"
+    },
+    {
+      "id": 444483,
+      "granted": false,
+      "requiresTalentEntry": [
+        117266
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Controlled Instincts"
+    },
+    {
+      "id": 443739,
+      "granted": false,
+      "requiresTalentEntry": [
+        117267
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Splintering Sorcery"
+    },
+    {
+      "id": 2948,
+      "granted": false,
+      "requiresTalentEntry": [
+        124748
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        24,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Scorch",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 450325,
+      "granted": false,
+      "requiresTalentEntry": [
+        124749
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mark of the Firelord"
+    },
+    {
+      "id": 108853,
+      "granted": false,
+      "requiresTalentEntry": [
+        124750
+      ],
+      "overrides": 319836,
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        10,
+        0,
+        2097152,
+        0
+      ],
+      "passive": false,
+      "name": "Fire Blast",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 2,
+            "requiredSpells": [
+              205029
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 12000,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": 0,
+            "requiredSpells": [
+              387044
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 343222,
+      "granted": false,
+      "requiresTalentEntry": [
+        124752
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Call of the Sun King"
+    },
+    {
+      "id": 416715,
+      "granted": false,
+      "requiresTalentEntry": [
+        124753
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Convection"
+    },
+    {
+      "id": 451757,
+      "granted": false,
+      "requiresTalentEntry": [
+        124754
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cratermaker"
+    },
+    {
+      "id": 450716,
+      "granted": false,
+      "requiresTalentEntry": [
+        124755
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        3606
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lit Fuse"
+    },
+    {
+      "id": 190319,
+      "granted": false,
+      "requiresTalentEntry": [
+        124756
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        67108864,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Combustion",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 384033,
+      "granted": false,
+      "requiresTalentEntry": [
+        124757
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Firefall"
+    },
+    {
+      "id": 157642,
+      "granted": false,
+      "requiresTalentEntry": [
+        124758
+      ],
+      "type": "talent",
+      "label": [
+        59,
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        8,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pyrotechnics"
+    },
+    {
+      "id": 11366,
+      "granted": false,
+      "requiresTalentEntry": [
+        124759
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        4194312,
+        0,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Pyroblast",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 4000
+      }
+    },
+    {
+      "id": 342344,
+      "granted": false,
+      "requiresTalentEntry": [
+        124760
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "From the Ashes"
+    },
+    {
+      "id": 416719,
+      "granted": false,
+      "requiresTalentEntry": [
+        124761
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deep Impact"
+    },
+    {
+      "id": 383489,
+      "granted": false,
+      "requiresTalentEntry": [
+        125942
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        17,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wildfire"
+    },
+    {
+      "id": 383669,
+      "granted": false,
+      "requiresTalentEntry": [
+        124763
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Controlled Destruction"
+    },
+    {
+      "id": 383634,
+      "granted": false,
+      "requiresTalentEntry": [
+        124764
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fiery Rush"
+    },
+    {
+      "id": 450831,
+      "granted": false,
+      "requiresTalentEntry": [
+        124765
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        3607
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fire's Ire"
+    },
+    {
+      "id": 384174,
+      "granted": false,
+      "requiresTalentEntry": [
+        124767
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Master of Flame"
+    },
+    {
+      "id": 383967,
+      "granted": false,
+      "requiresTalentEntry": [
+        124769
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Combustion"
+    },
+    {
+      "id": 451875,
+      "granted": false,
+      "requiresTalentEntry": [
+        124768
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Spontaneous Combustion"
+    },
+    {
+      "id": 451440,
+      "granted": false,
+      "requiresTalentEntry": [
+        124770
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Majesty of the Phoenix"
+    },
+    {
+      "id": 205029,
+      "granted": false,
+      "requiresTalentEntry": [
+        124771
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flame On"
+    },
+    {
+      "id": 383604,
+      "granted": false,
+      "requiresTalentEntry": [
+        124774
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Scorch"
+    },
+    {
+      "id": 450746,
+      "granted": false,
+      "requiresTalentEntry": [
+        124773
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Scald"
+    },
+    {
+      "id": 257541,
+      "granted": false,
+      "requiresTalentEntry": [
+        124775
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        17,
+        16
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        536870912
+      ],
+      "passive": false,
+      "name": "Phoenix Flames",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 2,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              343222
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 451760,
+      "granted": false,
+      "requiresTalentEntry": [
+        124776
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Explosive Ingenuity"
+    },
+    {
+      "id": 383391,
+      "granted": false,
+      "requiresTalentEntry": [
+        124777
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Feel the Burn"
+    },
+    {
+      "id": 457803,
+      "granted": false,
+      "requiresTalentEntry": [
+        124778
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Molten Fury"
+    },
+    {
+      "id": 153561,
+      "granted": false,
+      "requiresTalentEntry": [
+        124779
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        67108864
+      ],
+      "passive": false,
+      "name": "Meteor",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -10000,
+            "hasted": false,
+            "requiredSpells": [
+              416719
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 416714,
+      "granted": false,
+      "requiresTalentEntry": [
+        124780
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Intensifying Flame"
+    },
+    {
+      "id": 383810,
+      "granted": false,
+      "requiresTalentEntry": [
+        124783
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        17,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fevered Incantation"
+    },
+    {
+      "id": 451466,
+      "granted": false,
+      "requiresTalentEntry": [
+        124784
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pyromaniac"
+    },
+    {
+      "id": 205037,
+      "granted": false,
+      "requiresTalentEntry": [
+        124786
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flame Patch"
+    },
+    {
+      "id": 450807,
+      "granted": false,
+      "requiresTalentEntry": [
+        126018
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Quickflame"
+    },
+    {
+      "id": 451755,
+      "granted": false,
+      "requiresTalentEntry": [
+        124787
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blast Zone"
+    },
+    {
+      "id": 343230,
+      "granted": false,
+      "requiresTalentEntry": [
+        126024
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Surging Blaze"
+    },
+    {
+      "id": 155148,
+      "granted": false,
+      "requiresTalentEntry": [
+        124789
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Kindling"
+    },
+    {
+      "id": 383886,
+      "granted": false,
+      "requiresTalentEntry": [
+        124791
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sun King's Blessing"
+    },
+    {
+      "id": 416506,
+      "granted": false,
+      "requiresTalentEntry": [
+        124790
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unleashed Inferno"
+    },
+    {
+      "id": 387044,
+      "granted": false,
+      "requiresTalentEntry": [
+        124793
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fervent Flickering"
+    },
+    {
+      "id": 117216,
+      "granted": false,
+      "requiresTalentEntry": [
+        124795
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        131072
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Critical Mass"
+    },
+    {
+      "id": 450331,
+      "granted": false,
+      "requiresTalentEntry": [
+        125131
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death's Chill"
+    },
+    {
+      "id": 31661,
+      "granted": false,
+      "requiresTalentEntry": [
+        125819
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        8388616,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dragon's Breath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 157980,
+      "granted": false,
+      "requiresTalentEntry": [
+        125818
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292,
+        3681
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        33554432
+      ],
+      "passive": false,
+      "name": "Supernova",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 383860,
+      "granted": false,
+      "requiresTalentEntry": [
+        125940
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hyperthermia"
+    },
+    {
+      "id": 453123,
+      "granted": false,
+      "requiresTalentEntry": [
+        125941
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        2557,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Phoenix Reborn"
+    },
+    {
+      "id": 450813,
+      "granted": false,
+      "requiresTalentEntry": [
+        125944
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ashen Feather"
+    },
+    {
+      "id": 235870,
+      "granted": false,
+      "requiresTalentEntry": [
+        126023
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Alexstrasza's Fury"
+    },
+    {
+      "id": 457735,
+      "granted": false,
+      "requiresTalentEntry": [
+        126019
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Heat Shimmer"
+    },
+    {
+      "id": 457728,
+      "granted": false,
+      "requiresTalentEntry": [
+        126020
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sparking Cinders"
+    },
+    {
+      "id": 453282,
+      "granted": false,
+      "requiresTalentEntry": [
+        126021
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flame Accelerant"
+    },
+    {
+      "id": 417467,
+      "granted": false,
+      "requiresTalentEntry": [
+        126022
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inflame"
+    },
+    {
+      "id": 205026,
+      "granted": false,
+      "requiresTalentEntry": [
+        126025
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Firestarter"
+    },
+    {
+      "id": 454016,
+      "granted": false,
+      "requiresTalentEntry": [
+        126505
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Magi's Spark"
+    },
+    {
+      "id": 450206,
+      "granted": false,
+      "requiresTalentEntry": [
+        126504
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nether Munitions"
+    },
+    {
+      "id": 383980,
+      "granted": false,
+      "requiresTalentEntry": [
+        126506
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Tempo"
+    },
+    {
+      "id": 205028,
+      "granted": false,
+      "requiresTalentEntry": [
+        126507
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Resonance"
+    },
+    {
+      "id": 384374,
+      "granted": false,
+      "requiresTalentEntry": [
+        126508
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Concentration"
+    },
+    {
+      "id": 205022,
+      "granted": false,
+      "requiresTalentEntry": [
+        126509
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Familiar"
+    },
+    {
+      "id": 457521,
+      "granted": false,
+      "requiresTalentEntry": [
+        126510
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Surging Urge"
+    },
+    {
+      "id": 281482,
+      "granted": false,
+      "requiresTalentEntry": [
+        126511
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reverberate"
+    },
+    {
+      "id": 384858,
+      "granted": false,
+      "requiresTalentEntry": [
+        126513
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Orb Barrage"
+    },
+    {
+      "id": 384060,
+      "granted": false,
+      "requiresTalentEntry": [
+        126514
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Illuminated Thoughts"
+    },
+    {
+      "id": 236628,
+      "granted": false,
+      "requiresTalentEntry": [
+        126515
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Amplification"
+    },
+    {
+      "id": 461261,
+      "granted": false,
+      "requiresTalentEntry": [
+        126516
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Big Brained"
+    },
+    {
+      "id": 384452,
+      "granted": false,
+      "requiresTalentEntry": [
+        126517
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Harmony"
+    },
+    {
+      "id": 467633,
+      "granted": false,
+      "requiresTalentEntry": [
+        126518
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Aethervision"
+    },
+    {
+      "id": 365350,
+      "granted": false,
+      "requiresTalentEntry": [
+        126519
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        17,
+        690
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        2048
+      ],
+      "passive": false,
+      "name": "Arcane Surge",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2500
+      }
+    },
+    {
+      "id": 384612,
+      "granted": false,
+      "requiresTalentEntry": [
+        126520
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Prodigious Savant"
+    },
+    {
+      "id": 452924,
+      "granted": false,
+      "requiresTalentEntry": [
+        126521
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Time Loop"
+    },
+    {
+      "id": 453002,
+      "granted": false,
+      "requiresTalentEntry": [
+        126522
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Touch of the Magi"
+    },
+    {
+      "id": 461257,
+      "granted": false,
+      "requiresTalentEntry": [
+        126523
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Static Cloud"
+    },
+    {
+      "id": 461457,
+      "granted": false,
+      "requiresTalentEntry": [
+        126524
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Energy Reconstitution"
+    },
+    {
+      "id": 452198,
+      "granted": false,
+      "requiresTalentEntry": [
+        126525
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Eureka"
+    },
+    {
+      "id": 461456,
+      "granted": false,
+      "requiresTalentEntry": [
+        126526
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dematerialize"
+    },
+    {
+      "id": 342231,
+      "granted": false,
+      "requiresTalentEntry": [
+        126527
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Echo"
+    },
+    {
+      "id": 231564,
+      "granted": false,
+      "requiresTalentEntry": [
+        126528
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcing Cleave"
+    },
+    {
+      "id": 12051,
+      "granted": false,
+      "requiresTalentEntry": [
+        126529
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        67108864,
+        0,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Evocation",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 205025,
+      "granted": false,
+      "requiresTalentEntry": [
+        126530
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        32,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Presence of Mind",
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 414379,
+      "granted": false,
+      "requiresTalentEntry": [
+        126531
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Concentrated Power"
+    },
+    {
+      "id": 452997,
+      "granted": false,
+      "requiresTalentEntry": [
+        126532
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Energized Familiar"
+    },
+    {
+      "id": 453598,
+      "granted": false,
+      "requiresTalentEntry": [
+        126533
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        2848,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Debilitation"
+    },
+    {
+      "id": 384581,
+      "granted": false,
+      "requiresTalentEntry": [
+        126535
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292,
+        3507
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Bombardment"
+    },
+    {
+      "id": 384651,
+      "granted": false,
+      "requiresTalentEntry": [
+        126536
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Charged Orb"
+    },
+    {
+      "id": 5143,
+      "granted": false,
+      "requiresTalentEntry": [
+        126537
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        2048,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Arcane Missiles",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "channel": {
+        "duration": 2500,
+        "hasted": true,
+        "buffIsLogged": false,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 321507,
+      "granted": false,
+      "requiresTalentEntry": [
+        126538
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17,
+        3616
+      ],
+      "classMask": [
+        0,
+        0,
+        65536,
+        0
+      ],
+      "passive": false,
+      "name": "Touch of the Magi",
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 236457,
+      "granted": false,
+      "requiresTalentEntry": [
+        126539
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Slipstream"
+    },
+    {
+      "id": 321387,
+      "granted": false,
+      "requiresTalentEntry": [
+        126540
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        17,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Enlightened"
+    },
+    {
+      "id": 321420,
+      "granted": false,
+      "requiresTalentEntry": [
+        126541
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Clearcasting"
+    },
+    {
+      "id": 461248,
+      "granted": false,
+      "requiresTalentEntry": [
+        126542
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "High Voltage"
+    },
+    {
+      "id": 383782,
+      "granted": false,
+      "requiresTalentEntry": [
+        126543
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nether Precision"
+    },
+    {
+      "id": 452196,
+      "granted": false,
+      "requiresTalentEntry": [
+        126544
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Leydrinker"
+    },
+    {
+      "id": 461260,
+      "granted": false,
+      "requiresTalentEntry": [
+        126545
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Consortium's Bauble"
+    },
+    {
+      "id": 453600,
+      "granted": false,
+      "requiresTalentEntry": [
+        126546
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        2848,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Aether Attunement"
+    },
+    {
+      "id": 452187,
+      "granted": false,
+      "requiresTalentEntry": [
+        126547
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Leysight"
+    },
+    {
+      "id": 383676,
+      "granted": false,
+      "requiresTalentEntry": [
+        126550
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        17
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Impetus"
+    },
+    {
+      "id": 418733,
+      "granted": false,
+      "requiresTalentEntry": [
+        128077
+      ],
+      "type": "talent",
+      "label": [
+        17,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Splintering Ray"
+    },
+    {
+      "id": 191738,
+      "type": "learned",
+      "taughtBy": 212653,
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shimmer"
+    },
+    {
+      "id": 414658,
+      "grantedBy": 414659,
+      "type": "temporary",
+      "label": [
+        17,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        128,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Ice Cold",
+      "cooldown": {
+        "duration": 240000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              382424
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 449700,
+      "grantedBy": 458513,
+      "type": "temporary",
+      "label": [
+        16,
+        17,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        33554432
+      ],
+      "passive": false,
+      "name": "Gravity Lapse",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 40000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 212801,
+      "grantedBy": 191738,
+      "type": "temporary",
+      "label": [
+        17,
+        16,
+        292,
+        219
+      ],
+      "classMask": [
+        0,
+        256,
+        8,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Displacement",
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    }
+  ]
+}

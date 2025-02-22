@@ -1,0 +1,6176 @@
+{
+  "specId": 1452,
+  "baselineSpells": [
+    89745,
+    585,
+    77489,
+    137030,
+    161862,
+    586,
+    2006,
+    207946,
+    208065,
+    207948,
+    205065,
+    21562,
+    8092,
+    453,
+    17,
+    2061,
+    589,
+    19236,
+    8122,
+    1706,
+    2096,
+    45243,
+    228264,
+    228266,
+    417191
+  ],
+  "spells": [
+    {
+      "id": 89745,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        171,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mysticism"
+    },
+    {
+      "id": 585,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292,
+        954
+      ],
+      "classMask": [
+        128,
+        0,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Smite",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 77489,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Echo of Light"
+    },
+    {
+      "id": 137030,
+      "type": "baseline",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Priest"
+    },
+    {
+      "id": 161862,
+      "type": "baseline",
+      "label": [
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Ascension",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 586,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        16384,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Fade",
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -5000,
+            "hasted": false,
+            "requiredSpells": [
+              390670
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2006,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292,
+        773,
+        954
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1048576
+      ],
+      "passive": false,
+      "name": "Resurrection",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 207946,
+      "type": "baseline",
+      "label": [
+        78,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Light's Wrath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2500
+      }
+    },
+    {
+      "id": 208065,
+      "type": "baseline",
+      "label": [
+        77,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Light of T'uure",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 2
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 207948,
+      "type": "baseline",
+      "label": [
+        78,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Light's Wrath"
+    },
+    {
+      "id": 205065,
+      "type": "baseline",
+      "label": [
+        79,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Void Torrent",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "channel": {
+        "duration": 4000,
+        "hasted": false,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 21562,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Power Word: Fortitude",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 8092,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292,
+        4040
+      ],
+      "classMask": [
+        8192,
+        0,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Mind Blast",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              406788
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 9000,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 453,
+      "type": "baseline",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mind Soothe",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 5000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 17,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Power Word: Shield",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 7500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 2061,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292,
+        741,
+        802,
+        889,
+        954
+      ],
+      "classMask": [
+        2048,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Flash Heal",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 589,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        32768,
+        0,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Shadow Word: Pain",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 19236,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292,
+        741,
+        1284,
+        930
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Desperate Prayer",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 8122,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        65536,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Psychic Scream",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              196704
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 1706,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "passive": false,
+      "name": "Levitate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 2096,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        -2147483648,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mind Vision",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "channel": {
+        "duration": 60000,
+        "hasted": false,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 45243,
+      "type": "baseline",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Focused Will"
+    },
+    {
+      "id": 228264,
+      "type": "baseline"
+    },
+    {
+      "id": 228266,
+      "type": "baseline"
+    },
+    {
+      "id": 417191,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Initial Priest"
+    },
+    {
+      "id": 373280,
+      "granted": false,
+      "requiresTalentEntry": [
+        103781
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Idol of N'Zoth"
+    },
+    {
+      "id": 373310,
+      "granted": false,
+      "requiresTalentEntry": [
+        103787
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Idol of Y'Shaarj"
+    },
+    {
+      "id": 392988,
+      "granted": false,
+      "requiresTalentEntry": [
+        103675
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Image"
+    },
+    {
+      "id": 373273,
+      "granted": false,
+      "requiresTalentEntry": [
+        103817
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Idol of Yogg-Saron"
+    },
+    {
+      "id": 108942,
+      "granted": false,
+      "requiresTalentEntry": [
+        103834
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Phantasm"
+    },
+    {
+      "id": 73510,
+      "granted": false,
+      "requiresTalentEntry": [
+        103803
+      ],
+      "overrides": 15407,
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        65792,
+        0
+      ],
+      "passive": false,
+      "name": "Mind Spike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 392507,
+      "granted": false,
+      "requiresTalentEntry": [
+        103681
+      ],
+      "type": "talent",
+      "label": [
+        187,
+        294
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deathspeaker"
+    },
+    {
+      "id": 406777,
+      "granted": false,
+      "requiresTalentEntry": [
+        103682
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        117,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Whispering Shadows"
+    },
+    {
+      "id": 373212,
+      "granted": false,
+      "requiresTalentEntry": [
+        103683
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Insidious Ire"
+    },
+    {
+      "id": 373202,
+      "granted": false,
+      "requiresTalentEntry": [
+        103684
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mind Devourer"
+    },
+    {
+      "id": 407469,
+      "granted": false,
+      "requiresTalentEntry": [
+        103686
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Phantasmal Pathogen"
+    },
+    {
+      "id": 62618,
+      "granted": false,
+      "requiresTalentEntry": [
+        103687
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        16777216,
+        0
+      ],
+      "passive": false,
+      "name": "Power Word: Barrier",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 271466,
+      "granted": false,
+      "requiresTalentEntry": [
+        116182
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        8
+      ],
+      "passive": false,
+      "name": "Luminous Barrier",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 373003,
+      "granted": false,
+      "requiresTalentEntry": [
+        103690
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Revel in Purity"
+    },
+    {
+      "id": 238063,
+      "granted": false,
+      "requiresTalentEntry": [
+        103692
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lenience"
+    },
+    {
+      "id": 246287,
+      "granted": false,
+      "requiresTalentEntry": [
+        103691
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        118,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Evangelism",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 215768,
+      "granted": false,
+      "requiresTalentEntry": [
+        103693
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blaze of Light"
+    },
+    {
+      "id": 390786,
+      "granted": false,
+      "requiresTalentEntry": [
+        103694
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Weal and Woe"
+    },
+    {
+      "id": 390770,
+      "granted": false,
+      "requiresTalentEntry": [
+        103695
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Void Summoner"
+    },
+    {
+      "id": 390705,
+      "granted": false,
+      "requiresTalentEntry": [
+        103696
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twilight Equilibrium"
+    },
+    {
+      "id": 373180,
+      "granted": false,
+      "requiresTalentEntry": [
+        103697
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Harsh Discipline"
+    },
+    {
+      "id": 421557,
+      "granted": false,
+      "requiresTalentEntry": [
+        103698
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Overloaded with Light"
+    },
+    {
+      "id": 421558,
+      "granted": false,
+      "requiresTalentEntry": [
+        103699
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Heaven's Wrath"
+    },
+    {
+      "id": 421453,
+      "granted": false,
+      "requiresTalentEntry": [
+        103700
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ultimate Penitence",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 240000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 373042,
+      "granted": false,
+      "requiresTalentEntry": [
+        103701
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Exaltation"
+    },
+    {
+      "id": 373049,
+      "granted": false,
+      "requiresTalentEntry": [
+        108226
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Indemnity"
+    },
+    {
+      "id": 193134,
+      "granted": false,
+      "requiresTalentEntry": [
+        103702
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Castigation"
+    },
+    {
+      "id": 390689,
+      "granted": false,
+      "requiresTalentEntry": [
+        103703
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pain and Suffering"
+    },
+    {
+      "id": 424509,
+      "granted": false,
+      "requiresTalentEntry": [
+        103704
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Schism"
+    },
+    {
+      "id": 372969,
+      "granted": false,
+      "requiresTalentEntry": [
+        103705
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Malicious Intent"
+    },
+    {
+      "id": 314867,
+      "granted": false,
+      "requiresTalentEntry": [
+        103706
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadow Covenant"
+    },
+    {
+      "id": 373065,
+      "granted": false,
+      "requiresTalentEntry": [
+        103708
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twilight Corruption"
+    },
+    {
+      "id": 373054,
+      "granted": false,
+      "requiresTalentEntry": [
+        103709
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Abyssal Reverie"
+    },
+    {
+      "id": 123040,
+      "granted": false,
+      "requiresTalentEntry": [
+        103710
+      ],
+      "overrides": 34433,
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        524288,
+        0,
+        0,
+        33554432
+      ],
+      "passive": false,
+      "name": "Mindbender",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 390832,
+      "granted": false,
+      "requiresTalentEntry": [
+        103711
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Expiation"
+    },
+    {
+      "id": 373427,
+      "granted": false,
+      "requiresTalentEntry": [
+        103712,
+        103783
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        2616
+      ],
+      "classMask": [
+        8388608,
+        0,
+        256,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inescapable Torment"
+    },
+    {
+      "id": 33206,
+      "granted": false,
+      "requiresTalentEntry": [
+        103713
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        268435456,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Pain Suppression",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              373035
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 372991,
+      "granted": false,
+      "requiresTalentEntry": [
+        103715
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pain Transformation"
+    },
+    {
+      "id": 373035,
+      "granted": false,
+      "requiresTalentEntry": [
+        103714
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Protector of the Frail"
+    },
+    {
+      "id": 197045,
+      "granted": false,
+      "requiresTalentEntry": [
+        103717
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shield Discipline"
+    },
+    {
+      "id": 204197,
+      "granted": false,
+      "requiresTalentEntry": [
+        103718
+      ],
+      "overrides": 589,
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        256,
+        16
+      ],
+      "passive": false,
+      "name": "Purge the Wicked",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 390684,
+      "granted": false,
+      "requiresTalentEntry": [
+        103720
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bright Pupil"
+    },
+    {
+      "id": 390685,
+      "granted": false,
+      "requiresTalentEntry": [
+        103719
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Enduring Luminescence"
+    },
+    {
+      "id": 322115,
+      "granted": false,
+      "requiresTalentEntry": [
+        103721
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Promise"
+    },
+    {
+      "id": 194509,
+      "granted": false,
+      "requiresTalentEntry": [
+        103722
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        4194304,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Power Word: Radiance",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              322115
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 18000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 81749,
+      "granted": false,
+      "requiresTalentEntry": [
+        103723
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        8,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Atonement"
+    },
+    {
+      "id": 198068,
+      "granted": false,
+      "requiresTalentEntry": [
+        103724
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18,
+        1385
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Power of the Dark Side"
+    },
+    {
+      "id": 372972,
+      "granted": false,
+      "requiresTalentEntry": [
+        103725
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dark Indulgence"
+    },
+    {
+      "id": 390686,
+      "granted": false,
+      "requiresTalentEntry": [
+        103726
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Painful Punishment"
+    },
+    {
+      "id": 47536,
+      "granted": false,
+      "requiresTalentEntry": [
+        103727
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        8388608
+      ],
+      "passive": false,
+      "name": "Rapture",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 197419,
+      "granted": false,
+      "requiresTalentEntry": [
+        103728
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Contrition"
+    },
+    {
+      "id": 390691,
+      "granted": false,
+      "requiresTalentEntry": [
+        103729
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Borrowed Time"
+    },
+    {
+      "id": 390693,
+      "granted": false,
+      "requiresTalentEntry": [
+        103731
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Train of Thought"
+    },
+    {
+      "id": 47515,
+      "granted": false,
+      "requiresTalentEntry": [
+        103732
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        262144,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Aegis"
+    },
+    {
+      "id": 390992,
+      "granted": false,
+      "requiresTalentEntry": [
+        103734
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lightweaver"
+    },
+    {
+      "id": 372835,
+      "granted": false,
+      "requiresTalentEntry": [
+        103733
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        134217728,
+        0
+      ],
+      "passive": false,
+      "name": "Lightwell",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 372309,
+      "granted": false,
+      "requiresTalentEntry": [
+        103735
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Resonant Words"
+    },
+    {
+      "id": 391124,
+      "granted": false,
+      "requiresTalentEntry": [
+        103737
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Restitution"
+    },
+    {
+      "id": 372760,
+      "granted": false,
+      "requiresTalentEntry": [
+        103676
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        1513
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Divine Word",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 414553,
+      "granted": false,
+      "requiresTalentEntry": [
+        103738
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Epiphany"
+    },
+    {
+      "id": 372307,
+      "granted": false,
+      "requiresTalentEntry": [
+        103739
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Burning Vehemence"
+    },
+    {
+      "id": 391387,
+      "granted": false,
+      "requiresTalentEntry": [
+        103740
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Answered Prayers"
+    },
+    {
+      "id": 391381,
+      "granted": false,
+      "requiresTalentEntry": [
+        103741
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Desperate Times"
+    },
+    {
+      "id": 200183,
+      "granted": false,
+      "requiresTalentEntry": [
+        103743
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        3635,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Apotheosis",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 265202,
+      "granted": false,
+      "requiresTalentEntry": [
+        103742
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        1116,
+        954,
+        2706
+      ],
+      "classMask": [
+        2097152,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Holy Word: Salvation",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 720000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2500
+      }
+    },
+    {
+      "id": 390994,
+      "granted": false,
+      "requiresTalentEntry": [
+        103744
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Voice of Harmony"
+    },
+    {
+      "id": 235587,
+      "granted": false,
+      "requiresTalentEntry": [
+        103745
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Miracle Worker"
+    },
+    {
+      "id": 372370,
+      "granted": false,
+      "requiresTalentEntry": [
+        103747
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Gales of Song"
+    },
+    {
+      "id": 390967,
+      "granted": false,
+      "requiresTalentEntry": [
+        103748
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Prismatic Echoes"
+    },
+    {
+      "id": 391186,
+      "granted": false,
+      "requiresTalentEntry": [
+        103749
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Say Your Prayers"
+    },
+    {
+      "id": 390977,
+      "granted": false,
+      "requiresTalentEntry": [
+        103750
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Prayers of the Virtuous"
+    },
+    {
+      "id": 64901,
+      "granted": false,
+      "requiresTalentEntry": [
+        103751
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        954
+      ],
+      "classMask": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "passive": false,
+      "name": "Symbol of Hope",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      },
+      "channel": {
+        "duration": 4000,
+        "hasted": true,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 193155,
+      "granted": false,
+      "requiresTalentEntry": [
+        103752
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Enlightenment"
+    },
+    {
+      "id": 200199,
+      "granted": false,
+      "requiresTalentEntry": [
+        103753
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Censure"
+    },
+    {
+      "id": 341997,
+      "granted": false,
+      "requiresTalentEntry": [
+        103754
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Renewed Faith"
+    },
+    {
+      "id": 64843,
+      "granted": false,
+      "requiresTalentEntry": [
+        103755
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        690,
+        954,
+        930
+      ],
+      "classMask": [
+        0,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Divine Hymn",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      },
+      "channel": {
+        "duration": 8000,
+        "hasted": true,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 391161,
+      "granted": false,
+      "requiresTalentEntry": [
+        103756
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        18,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Everlasting Light"
+    },
+    {
+      "id": 391209,
+      "granted": false,
+      "requiresTalentEntry": [
+        103757
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Prayerful Litany"
+    },
+    {
+      "id": 204883,
+      "granted": false,
+      "requiresTalentEntry": [
+        103758
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4194304,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Circle of Healing",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": -3000,
+            "hasted": false,
+            "requiredSpells": [
+              390947
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 321377,
+      "granted": false,
+      "requiresTalentEntry": [
+        103760
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Prayer Circle"
+    },
+    {
+      "id": 390881,
+      "granted": false,
+      "requiresTalentEntry": [
+        103759
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Healing Chorus"
+    },
+    {
+      "id": 390947,
+      "granted": false,
+      "requiresTalentEntry": [
+        103761
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Orison"
+    },
+    {
+      "id": 390954,
+      "granted": false,
+      "requiresTalentEntry": [
+        103762
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Crisis Management"
+    },
+    {
+      "id": 390980,
+      "granted": false,
+      "requiresTalentEntry": [
+        103763
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pontifex"
+    },
+    {
+      "id": 196985,
+      "granted": false,
+      "requiresTalentEntry": [
+        103764
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light of the Naaru"
+    },
+    {
+      "id": 238136,
+      "granted": false,
+      "requiresTalentEntry": [
+        103765
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cosmic Ripple"
+    },
+    {
+      "id": 34861,
+      "granted": false,
+      "requiresTalentEntry": [
+        103766
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        1116
+      ],
+      "classMask": [
+        268435456,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Holy Word: Sanctify",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              235587
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 596,
+      "granted": false,
+      "requiresTalentEntry": [
+        103767
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        954
+      ],
+      "classMask": [
+        512,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Prayer of Healing",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 391208,
+      "granted": false,
+      "requiresTalentEntry": [
+        103769
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        2401
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Revitalizing Prayers"
+    },
+    {
+      "id": 196489,
+      "granted": false,
+      "requiresTalentEntry": [
+        103768
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanctified Prayers"
+    },
+    {
+      "id": 200128,
+      "granted": false,
+      "requiresTalentEntry": [
+        103770
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Trail of Light"
+    },
+    {
+      "id": 196707,
+      "granted": false,
+      "requiresTalentEntry": [
+        103771
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Afterlife"
+    },
+    {
+      "id": 200209,
+      "granted": false,
+      "requiresTalentEntry": [
+        103773
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Guardian Angel"
+    },
+    {
+      "id": 196437,
+      "granted": false,
+      "requiresTalentEntry": [
+        103772
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Guardians of the Light"
+    },
+    {
+      "id": 47788,
+      "granted": false,
+      "requiresTalentEntry": [
+        103774
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        2048,
+        0
+      ],
+      "passive": false,
+      "name": "Guardian Spirit",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 2050,
+      "granted": false,
+      "requiresTalentEntry": [
+        103775
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        741,
+        1116
+      ],
+      "classMask": [
+        1024,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Holy Word: Serenity",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              235587
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 88625,
+      "granted": false,
+      "requiresTalentEntry": [
+        103776
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        1116
+      ],
+      "classMask": [
+        0,
+        0,
+        288,
+        0
+      ],
+      "passive": false,
+      "name": "Holy Word: Chastise",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 372616,
+      "granted": false,
+      "requiresTalentEntry": [
+        103777
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        1513
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Empyreal Blaze"
+    },
+    {
+      "id": 193157,
+      "granted": false,
+      "requiresTalentEntry": [
+        103779
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Benediction"
+    },
+    {
+      "id": 391154,
+      "granted": false,
+      "requiresTalentEntry": [
+        103778
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Mending"
+    },
+    {
+      "id": 391233,
+      "granted": false,
+      "requiresTalentEntry": [
+        103780
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Service"
+    },
+    {
+      "id": 377349,
+      "granted": false,
+      "requiresTalentEntry": [
+        103782
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Idol of C'Thun"
+    },
+    {
+      "id": 391228,
+      "granted": false,
+      "requiresTalentEntry": [
+        103784
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Maddening Touch"
+    },
+    {
+      "id": 407430,
+      "granted": false,
+      "requiresTalentEntry": [
+        103785
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Voidtouched"
+    },
+    {
+      "id": 407470,
+      "granted": false,
+      "requiresTalentEntry": [
+        103786
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mind's Eye"
+    },
+    {
+      "id": 409044,
+      "granted": false,
+      "requiresTalentEntry": [
+        115671
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Distorted Reality"
+    },
+    {
+      "id": 200174,
+      "granted": false,
+      "requiresTalentEntry": [
+        103788
+      ],
+      "overrides": 34433,
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        524288,
+        0,
+        0,
+        33554432
+      ],
+      "passive": false,
+      "name": "Mindbender",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 375767,
+      "granted": false,
+      "requiresTalentEntry": [
+        103789
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Screams of the Void"
+    },
+    {
+      "id": 15487,
+      "granted": false,
+      "requiresTalentEntry": [
+        103792
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        2097152,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Silence",
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              263716
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 263716,
+      "granted": false,
+      "requiresTalentEntry": [
+        103794
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Last Word"
+    },
+    {
+      "id": 64044,
+      "granted": false,
+      "requiresTalentEntry": [
+        103793
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        8192,
+        0
+      ],
+      "passive": false,
+      "name": "Psychic Horror",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 406788,
+      "granted": false,
+      "requiresTalentEntry": [
+        103795
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thought Harvester"
+    },
+    {
+      "id": 263165,
+      "granted": false,
+      "requiresTalentEntry": [
+        103796
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        524288,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Void Torrent",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              373221
+            ]
+          }
+        ]
+      },
+      "channel": {
+        "duration": 3000,
+        "hasted": false,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 373221,
+      "granted": false,
+      "requiresTalentEntry": [
+        103797
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Malediction"
+    },
+    {
+      "id": 341240,
+      "granted": false,
+      "requiresTalentEntry": [
+        103798
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ancient Madness"
+    },
+    {
+      "id": 391109,
+      "granted": false,
+      "requiresTalentEntry": [
+        103680
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        690
+      ],
+      "classMask": [
+        134217728,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dark Ascension",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 228260,
+      "granted": false,
+      "requiresTalentEntry": [
+        103674
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        16,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Void Eruption",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 375994,
+      "granted": false,
+      "requiresTalentEntry": [
+        103799
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mental Decay"
+    },
+    {
+      "id": 288733,
+      "granted": false,
+      "requiresTalentEntry": [
+        103801
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Intangibility"
+    },
+    {
+      "id": 377065,
+      "granted": false,
+      "requiresTalentEntry": [
+        103800
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mental Fortitude"
+    },
+    {
+      "id": 391095,
+      "granted": false,
+      "requiresTalentEntry": [
+        103802
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dark Evangelism"
+    },
+    {
+      "id": 341273,
+      "granted": false,
+      "requiresTalentEntry": [
+        103804
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unfurling Darkness"
+    },
+    {
+      "id": 375888,
+      "granted": false,
+      "requiresTalentEntry": [
+        103805
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadowy Insight"
+    },
+    {
+      "id": 47585,
+      "granted": false,
+      "requiresTalentEntry": [
+        103806
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        262144,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dispersion",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              288733
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 335467,
+      "granted": false,
+      "requiresTalentEntry": [
+        103808
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        1405
+      ],
+      "classMask": [
+        0,
+        0,
+        8388864,
+        0
+      ],
+      "passive": false,
+      "name": "Devouring Plague",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 341491,
+      "granted": false,
+      "requiresTalentEntry": [
+        103809
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadowy Apparitions"
+    },
+    {
+      "id": 155271,
+      "granted": false,
+      "requiresTalentEntry": [
+        103811
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Auspicious Spirits"
+    },
+    {
+      "id": 391399,
+      "granted": false,
+      "requiresTalentEntry": [
+        103812
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Surge of Insanity"
+    },
+    {
+      "id": 457042,
+      "granted": false,
+      "requiresTalentEntry": [
+        103813
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        117,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shadow Crash",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 205385,
+      "granted": false,
+      "requiresTalentEntry": [
+        125983
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        117,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shadow Crash",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 199484,
+      "granted": false,
+      "requiresTalentEntry": [
+        103814
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Psychic Link"
+    },
+    {
+      "id": 391151,
+      "granted": false,
+      "requiresTalentEntry": [
+        103816
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mastermind"
+    },
+    {
+      "id": 459985,
+      "granted": false,
+      "requiresTalentEntry": [
+        103818
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Manipulation"
+    },
+    {
+      "id": 459559,
+      "granted": false,
+      "requiresTalentEntry": [
+        103819
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Phantom Reach"
+    },
+    {
+      "id": 108968,
+      "granted": false,
+      "requiresTalentEntry": [
+        103820
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        2048
+      ],
+      "passive": false,
+      "name": "Void Shift",
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 415479,
+      "granted": false,
+      "requiresTalentEntry": [
+        115883
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Essence Devourer"
+    },
+    {
+      "id": 108945,
+      "granted": false,
+      "requiresTalentEntry": [
+        103821
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        3801
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Angelic Bulwark"
+    },
+    {
+      "id": 415416,
+      "granted": false,
+      "requiresTalentEntry": [
+        115884
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Benevolence"
+    },
+    {
+      "id": 373481,
+      "granted": false,
+      "requiresTalentEntry": [
+        103822
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32768,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Power Word: Life",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -3000,
+            "hasted": false,
+            "requiredSpells": [
+              440674
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 109186,
+      "granted": false,
+      "requiresTalentEntry": [
+        103823
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Surge of Light"
+    },
+    {
+      "id": 238100,
+      "granted": false,
+      "requiresTalentEntry": [
+        103825
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Angel's Mercy"
+    },
+    {
+      "id": 368275,
+      "granted": false,
+      "requiresTalentEntry": [
+        103824
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Binding Heals"
+    },
+    {
+      "id": 373450,
+      "granted": false,
+      "requiresTalentEntry": [
+        103826
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Inspiration"
+    },
+    {
+      "id": 373457,
+      "granted": false,
+      "requiresTalentEntry": [
+        103829
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Crystalline Reflection"
+    },
+    {
+      "id": 373466,
+      "granted": false,
+      "requiresTalentEntry": [
+        103832
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twins of the Sun Priestess"
+    },
+    {
+      "id": 390972,
+      "granted": false,
+      "requiresTalentEntry": [
+        103833
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twist of Fate"
+    },
+    {
+      "id": 373446,
+      "granted": false,
+      "requiresTalentEntry": [
+        103835
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Translucent Image"
+    },
+    {
+      "id": 390670,
+      "granted": false,
+      "requiresTalentEntry": [
+        103836
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Fade"
+    },
+    {
+      "id": 459990,
+      "granted": false,
+      "requiresTalentEntry": [
+        103837
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cauterizing Shadows"
+    },
+    {
+      "id": 373223,
+      "granted": false,
+      "requiresTalentEntry": [
+        103838
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tithe Evasion"
+    },
+    {
+      "id": 390668,
+      "granted": false,
+      "requiresTalentEntry": [
+        103839
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Apathy"
+    },
+    {
+      "id": 199855,
+      "granted": false,
+      "requiresTalentEntry": [
+        103840
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "San'layn"
+    },
+    {
+      "id": 15286,
+      "granted": false,
+      "requiresTalentEntry": [
+        103841
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Vampiric Embrace",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              199855
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 373218,
+      "granted": false,
+      "requiresTalentEntry": [
+        114735
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        2453
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanguine Teachings"
+    },
+    {
+      "id": 280749,
+      "granted": false,
+      "requiresTalentEntry": [
+        103842
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Void Shield"
+    },
+    {
+      "id": 9484,
+      "granted": false,
+      "requiresTalentEntry": [
+        103843
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        954
+      ],
+      "classMask": [
+        0,
+        67108864,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shackle Undead",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 10060,
+      "granted": false,
+      "requiresTalentEntry": [
+        103844
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        1383
+      ],
+      "classMask": [
+        0,
+        536870912,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Power Infusion",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 196704,
+      "granted": false,
+      "requiresTalentEntry": [
+        103845
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Psychic Voice"
+    },
+    {
+      "id": 55676,
+      "granted": false,
+      "requiresTalentEntry": [
+        114588
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Petrifying Scream"
+    },
+    {
+      "id": 390676,
+      "granted": false,
+      "requiresTalentEntry": [
+        103846
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inspiration"
+    },
+    {
+      "id": 373456,
+      "granted": false,
+      "requiresTalentEntry": [
+        103847
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unwavering Will"
+    },
+    {
+      "id": 341167,
+      "granted": false,
+      "requiresTalentEntry": [
+        103848
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mental Agility"
+    },
+    {
+      "id": 32375,
+      "granted": false,
+      "requiresTalentEntry": [
+        103849
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        954,
+        1387
+      ],
+      "classMask": [
+        0,
+        128,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mass Dispel",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 390622,
+      "granted": false,
+      "requiresTalentEntry": [
+        103850
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rhapsody"
+    },
+    {
+      "id": 132157,
+      "granted": false,
+      "requiresTalentEntry": [
+        103851
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        131072,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Holy Nova",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 390620,
+      "granted": false,
+      "requiresTalentEntry": [
+        103852
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Move with Grace"
+    },
+    {
+      "id": 121536,
+      "granted": false,
+      "requiresTalentEntry": [
+        103853
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        219,
+        292,
+        1381
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Angelic Feather",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 64129,
+      "granted": false,
+      "requiresTalentEntry": [
+        103856
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Body and Soul"
+    },
+    {
+      "id": 193063,
+      "granted": false,
+      "requiresTalentEntry": [
+        103858
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Protective Light"
+    },
+    {
+      "id": 390615,
+      "granted": false,
+      "requiresTalentEntry": [
+        103857
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "From Darkness Comes Light"
+    },
+    {
+      "id": 390919,
+      "granted": false,
+      "requiresTalentEntry": [
+        103860
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sheer Terror"
+    },
+    {
+      "id": 108920,
+      "granted": false,
+      "requiresTalentEntry": [
+        103859
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Void Tendrils",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377422,
+      "granted": false,
+      "requiresTalentEntry": [
+        103861
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        18,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Throes of Pain"
+    },
+    {
+      "id": 605,
+      "granted": false,
+      "requiresTalentEntry": [
+        103862
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        991,
+        3289
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mind Control",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "channel": {
+        "duration": 30000,
+        "hasted": false,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      },
+      "castTime": {
+        "duration": 1800
+      }
+    },
+    {
+      "id": 205364,
+      "granted": false,
+      "requiresTalentEntry": [
+        103678
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        3289
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dominate Mind",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1800
+      }
+    },
+    {
+      "id": 321291,
+      "granted": false,
+      "requiresTalentEntry": [
+        103863
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        118,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death and Madness"
+    },
+    {
+      "id": 32379,
+      "granted": false,
+      "requiresTalentEntry": [
+        103864
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        2,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Shadow Word: Death",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 10000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 34433,
+      "granted": false,
+      "requiresTalentEntry": [
+        103865
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        256,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shadowfiend",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 393870,
+      "granted": false,
+      "requiresTalentEntry": [
+        103866
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        18,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Flash Heal"
+    },
+    {
+      "id": 528,
+      "granted": false,
+      "requiresTalentEntry": [
+        103867
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        33554432,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dispel Magic",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 73325,
+      "granted": false,
+      "requiresTalentEntry": [
+        103868
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        954,
+        1381
+      ],
+      "classMask": [
+        0,
+        0,
+        524288,
+        0
+      ],
+      "passive": false,
+      "name": "Leap of Faith",
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 139,
+      "granted": false,
+      "requiresTalentEntry": [
+        103869
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        64,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Renew",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 33076,
+      "granted": false,
+      "requiresTalentEntry": [
+        103870
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        954
+      ],
+      "classMask": [
+        0,
+        32,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Prayer of Mending",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 12000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 372354,
+      "granted": false,
+      "requiresTalentEntry": [
+        103871
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Focused Mending"
+    },
+    {
+      "id": 390667,
+      "granted": false,
+      "requiresTalentEntry": [
+        103872
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Spell Warding"
+    },
+    {
+      "id": 390767,
+      "granted": false,
+      "requiresTalentEntry": [
+        103677
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blessed Recovery"
+    },
+    {
+      "id": 377438,
+      "granted": false,
+      "requiresTalentEntry": [
+        103873
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        18,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Words of the Pious"
+    },
+    {
+      "id": 238135,
+      "granted": false,
+      "requiresTalentEntry": [
+        103688
+      ],
+      "type": "talent",
+      "label": [
+        277,
+        78,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Aegis of Wrath"
+    },
+    {
+      "id": 231682,
+      "granted": false,
+      "requiresTalentEntry": [
+        108225
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        32
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanctuary"
+    },
+    {
+      "id": 391284,
+      "granted": false,
+      "requiresTalentEntry": [
+        103810
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tormented Spirits"
+    },
+    {
+      "id": 238558,
+      "granted": false,
+      "requiresTalentEntry": [
+        115448
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Misery"
+    },
+    {
+      "id": 391090,
+      "granted": false,
+      "requiresTalentEntry": [
+        115449
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mind Melt"
+    },
+    {
+      "id": 451840,
+      "granted": false,
+      "requiresTalentEntry": [
+        117271
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Devour Matter"
+    },
+    {
+      "id": 449912,
+      "granted": false,
+      "requiresTalentEntry": [
+        117298
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Darkening Horizon"
+    },
+    {
+      "id": 448278,
+      "granted": false,
+      "requiresTalentEntry": [
+        117273
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022,
+        3886
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inner Quietus"
+    },
+    {
+      "id": 440742,
+      "granted": false,
+      "requiresTalentEntry": [
+        117276
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Providence"
+    },
+    {
+      "id": 440671,
+      "granted": false,
+      "requiresTalentEntry": [
+        117277
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022,
+        3985
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Preemptive Care"
+    },
+    {
+      "id": 440670,
+      "granted": false,
+      "requiresTalentEntry": [
+        117278
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Feathers"
+    },
+    {
+      "id": 440669,
+      "granted": false,
+      "requiresTalentEntry": [
+        119331
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Save the Day"
+    },
+    {
+      "id": 453917,
+      "granted": false,
+      "requiresTalentEntry": [
+        117280
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Perfected Form"
+    },
+    {
+      "id": 440681,
+      "granted": false,
+      "requiresTalentEntry": [
+        117282
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Waste No Time"
+    },
+    {
+      "id": 440674,
+      "granted": false,
+      "requiresTalentEntry": [
+        119332
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Miraculous Recovery"
+    },
+    {
+      "id": 453726,
+      "granted": false,
+      "requiresTalentEntry": [
+        117283
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Word of Supremacy"
+    },
+    {
+      "id": 453729,
+      "granted": false,
+      "requiresTalentEntry": [
+        125084
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Heightened Alteration"
+    },
+    {
+      "id": 428924,
+      "granted": false,
+      "requiresTalentEntry": [
+        117286
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        3022,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Premonition",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              440742
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 453828,
+      "granted": false,
+      "requiresTalentEntry": [
+        117288
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Energy Cycle"
+    },
+    {
+      "id": 453852,
+      "granted": false,
+      "requiresTalentEntry": [
+        117289
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shock Pulse"
+    },
+    {
+      "id": 453918,
+      "granted": false,
+      "requiresTalentEntry": [
+        125083
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Incessant Screams"
+    },
+    {
+      "id": 428940,
+      "granted": false,
+      "requiresTalentEntry": [
+        117290
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        3022,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Clairvoyance"
+    },
+    {
+      "id": 453799,
+      "granted": false,
+      "requiresTalentEntry": [
+        117291
+      ],
+      "type": "talent",
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Empowered Surges"
+    },
+    {
+      "id": 440738,
+      "granted": false,
+      "requiresTalentEntry": [
+        117292
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Foreseen Circumstances"
+    },
+    {
+      "id": 433905,
+      "granted": false,
+      "requiresTalentEntry": [
+        117293
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        3022,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Prophet's Will"
+    },
+    {
+      "id": 458718,
+      "granted": false,
+      "requiresTalentEntry": [
+        126068
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        3022,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Desperate Measures"
+    },
+    {
+      "id": 440766,
+      "granted": false,
+      "requiresTalentEntry": [
+        117294
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Assured Safety"
+    },
+    {
+      "id": 451311,
+      "granted": false,
+      "requiresTalentEntry": [
+        117299
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Void Leech"
+    },
+    {
+      "id": 451569,
+      "granted": false,
+      "requiresTalentEntry": [
+        123844
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Embrace the Shadow"
+    },
+    {
+      "id": 440662,
+      "granted": false,
+      "requiresTalentEntry": [
+        117301
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Preventive Measures"
+    },
+    {
+      "id": 440743,
+      "granted": false,
+      "requiresTalentEntry": [
+        117303
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fatebender"
+    },
+    {
+      "id": 440661,
+      "granted": false,
+      "requiresTalentEntry": [
+        119330
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Perfect Vision"
+    },
+    {
+      "id": 451308,
+      "granted": false,
+      "requiresTalentEntry": [
+        123842
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Depth of Shadows"
+    },
+    {
+      "id": 451234,
+      "granted": false,
+      "requiresTalentEntry": [
+        123841
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        18,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Voidwraith"
+    },
+    {
+      "id": 455316,
+      "type": "learned",
+      "taughtBy": 123040
+    },
+    {
+      "id": 440616,
+      "type": "learned",
+      "taughtBy": 372835,
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lightwell"
+    },
+    {
+      "id": 455316,
+      "type": "learned",
+      "taughtBy": 200174,
+      "label": [
+        16,
+        18,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Voidwraith"
+    },
+    {
+      "id": 185916,
+      "type": "learned",
+      "taughtBy": 228260,
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Voidform"
+    },
+    {
+      "id": 228266,
+      "type": "learned",
+      "taughtBy": 228260,
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Void Bolt"
+    },
+    {
+      "id": 228264,
+      "type": "learned",
+      "taughtBy": 228260,
+      "label": [
+        18,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Voidform"
+    },
+    {
+      "id": 231688,
+      "type": "learned",
+      "taughtBy": 228260,
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Void Bolt"
+    },
+    {
+      "id": 347159,
+      "type": "learned",
+      "taughtBy": 32379,
+      "label": [
+        16,
+        18,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Shadow Word: Death",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 443056,
+      "type": "learned",
+      "taughtBy": 428924,
+      "label": [
+        16,
+        292,
+        3022,
+        18
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Premonition"
+    },
+    {
+      "id": 451235,
+      "grantedBy": 451234,
+      "type": "temporary"
+    },
+    {
+      "id": 451235,
+      "grantedBy": 451234,
+      "type": "temporary"
+    },
+    {
+      "id": 451235,
+      "grantedBy": 451234,
+      "type": "temporary",
+      "label": [
+        16,
+        18,
+        292,
+        3022,
+        3676
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Voidwraith",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    }
+  ]
+}

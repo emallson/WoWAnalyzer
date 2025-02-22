@@ -1,0 +1,6230 @@
+{
+  "specId": 251,
+  "baselineSpells": [
+    55078,
+    49576,
+    55095,
+    3714,
+    61999,
+    51986,
+    82246,
+    50977,
+    52212,
+    137005,
+    127344,
+    56222,
+    205223,
+    205224,
+    190778,
+    190780,
+    220143,
+    50977,
+    278107,
+    43265,
+    316239,
+    47541,
+    197147,
+    48265,
+    49039,
+    48707,
+    45524,
+    86113,
+    77514,
+    137006,
+    674,
+    162698,
+    178819,
+    195621,
+    81229,
+    317214,
+    81333,
+    196770,
+    59057,
+    462062,
+    462063
+  ],
+  "spells": [
+    {
+      "id": 55078,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        33556480,
+        2,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Blood Plague"
+    },
+    {
+      "id": 49576,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        33554432,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Death Grip",
+      "gcd": {
+        "duration": 500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              356367
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 55095,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        1219
+      ],
+      "classMask": [
+        0,
+        67110912,
+        2,
+        16777216
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Frost Fever"
+    },
+    {
+      "id": 3714,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Path of Frost",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 61999,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        773
+      ],
+      "classMask": [
+        0,
+        -2147483648,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Raise Ally",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 600000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 51986,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "On a Pale Horse"
+    },
+    {
+      "id": 82246,
+      "type": "baseline",
+      "passive": true,
+      "hidden": "always",
+      "name": "Parry"
+    },
+    {
+      "id": 50977,
+      "type": "baseline"
+    },
+    {
+      "id": 52212,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        2048,
+        16392,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Death and Decay"
+    },
+    {
+      "id": 137005,
+      "type": "baseline",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        524352,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death Knight"
+    },
+    {
+      "id": 127344,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Corpse Exploder",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 56222,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        268435456,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dark Command",
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 205223,
+      "type": "baseline",
+      "label": [
+        98,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Consumption",
+      "gcd": {
+        "duration": 1500,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 205224,
+      "type": "baseline",
+      "label": [
+        98,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Consumption"
+    },
+    {
+      "id": 190778,
+      "type": "baseline",
+      "label": [
+        99,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Sindragosa's Fury",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 190780,
+      "type": "baseline",
+      "label": [
+        99,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Frost Breath"
+    },
+    {
+      "id": 220143,
+      "type": "baseline",
+      "label": [
+        100,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Apocalypse",
+      "gcd": {
+        "duration": 1500,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 50977,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        65536,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Death Gate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 4000
+      }
+    },
+    {
+      "id": 278107,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Val'kyr"
+    },
+    {
+      "id": 43265,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        32,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Death and Decay",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              356367
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 316239,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        536872960,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Rune Strike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 47541,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        8192,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Death Coil",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 197147,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Festering Wound"
+    },
+    {
+      "id": 48265,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        219
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        134217728
+      ],
+      "passive": false,
+      "name": "Death's Advance",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              356367
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 49039,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        16,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Lichborne",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              437122
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 48707,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        131072,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Anti-Magic Shell",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -20000,
+            "hasted": false,
+            "requiredSpells": [
+              205727
+            ]
+          },
+          {
+            "duration": 20000,
+            "hasted": false,
+            "requiredSpells": [
+              457574
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 45524,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Chains of Ice",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 0,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": 12000,
+            "hasted": false,
+            "requiredSpells": [
+              454786
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 86113,
+      "type": "baseline",
+      "label": [
+        171,
+        16,
+        27,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Plate Specialization"
+    },
+    {
+      "id": 77514,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mastery: Frozen Heart"
+    },
+    {
+      "id": 137006,
+      "type": "baseline",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frost Death Knight"
+    },
+    {
+      "id": 674,
+      "type": "baseline",
+      "passive": true,
+      "hidden": "always",
+      "name": "Dual Wield"
+    },
+    {
+      "id": 162698,
+      "type": "baseline",
+      "label": [
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stat Negation Aura - Strength DPS"
+    },
+    {
+      "id": 178819,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Dark Succor"
+    },
+    {
+      "id": 195621,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frost Fever"
+    },
+    {
+      "id": 81229,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        2097152,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "unless-learned",
+      "name": "Runic Empowerment"
+    },
+    {
+      "id": 317214,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Frostreaper"
+    },
+    {
+      "id": 81333,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Might of the Frozen Wastes"
+    },
+    {
+      "id": 196770,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        67108864
+      ],
+      "passive": false,
+      "name": "Remorseless Winter",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 59057,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Rime"
+    },
+    {
+      "id": 462062,
+      "type": "baseline",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death Knight"
+    },
+    {
+      "id": 462063,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frost Death Knight"
+    },
+    {
+      "id": 392950,
+      "granted": false,
+      "requiresTalentEntry": [
+        96161
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Icebreaker"
+    },
+    {
+      "id": 281208,
+      "granted": false,
+      "requiresTalentEntry": [
+        96163
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cold Heart"
+    },
+    {
+      "id": 253593,
+      "granted": false,
+      "requiresTalentEntry": [
+        96165
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inexorable Assault"
+    },
+    {
+      "id": 391477,
+      "granted": false,
+      "requiresTalentEntry": [
+        96166
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Coagulopathy"
+    },
+    {
+      "id": 221699,
+      "granted": false,
+      "requiresTalentEntry": [
+        96167
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blood Tap",
+      "charges": {
+        "max": 2
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 391517,
+      "granted": false,
+      "requiresTalentEntry": [
+        96168
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Umbilicus Eternus"
+    },
+    {
+      "id": 391458,
+      "granted": false,
+      "requiresTalentEntry": [
+        96169
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanguine Ground"
+    },
+    {
+      "id": 108199,
+      "granted": false,
+      "requiresTalentEntry": [
+        96170
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        3798
+      ],
+      "classMask": [
+        67108864,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Gorefiend's Grasp",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              206970
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 273953,
+      "granted": false,
+      "requiresTalentEntry": [
+        96171
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        2778
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Voracious"
+    },
+    {
+      "id": 207167,
+      "granted": false,
+      "requiresTalentEntry": [
+        96172
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blinding Sleet",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 207104,
+      "granted": false,
+      "requiresTalentEntry": [
+        96173
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Runic Attenuation"
+    },
+    {
+      "id": 205727,
+      "granted": false,
+      "requiresTalentEntry": [
+        96174
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        2782
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Anti-Magic Barrier"
+    },
+    {
+      "id": 374383,
+      "granted": false,
+      "requiresTalentEntry": [
+        96176
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Assimilation"
+    },
+    {
+      "id": 383269,
+      "granted": false,
+      "requiresTalentEntry": [
+        96177
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        292,
+        16,
+        1078
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Abomination Limb",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 457574,
+      "granted": false,
+      "requiresTalentEntry": [
+        96178
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Unyielding Will"
+    },
+    {
+      "id": 391566,
+      "granted": false,
+      "requiresTalentEntry": [
+        96179
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Insidious Chill"
+    },
+    {
+      "id": 391571,
+      "granted": false,
+      "requiresTalentEntry": [
+        96180
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292,
+        2776
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Gloom Ward"
+    },
+    {
+      "id": 454851,
+      "granted": false,
+      "requiresTalentEntry": [
+        96181
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vestigial Shell"
+    },
+    {
+      "id": 206967,
+      "granted": false,
+      "requiresTalentEntry": [
+        96182
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        117,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Will of the Necropolis"
+    },
+    {
+      "id": 454788,
+      "granted": false,
+      "requiresTalentEntry": [
+        96183
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Runic Protection"
+    },
+    {
+      "id": 374598,
+      "granted": false,
+      "requiresTalentEntry": [
+        96184
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blood Draw"
+    },
+    {
+      "id": 273952,
+      "granted": false,
+      "requiresTalentEntry": [
+        96186
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Grip of the Dead"
+    },
+    {
+      "id": 389682,
+      "granted": false,
+      "requiresTalentEntry": [
+        96187
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unholy Endurance"
+    },
+    {
+      "id": 111673,
+      "granted": false,
+      "requiresTalentEntry": [
+        96188
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Control Undead",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 392566,
+      "granted": false,
+      "requiresTalentEntry": [
+        96189
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Enfeeble"
+    },
+    {
+      "id": 327574,
+      "granted": false,
+      "requiresTalentEntry": [
+        125608
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        268435456
+      ],
+      "passive": false,
+      "name": "Sacrificial Pact",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 374504,
+      "granted": false,
+      "requiresTalentEntry": [
+        96190
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Brittle"
+    },
+    {
+      "id": 343294,
+      "granted": false,
+      "requiresTalentEntry": [
+        96192
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        2397,
+        3236
+      ],
+      "classMask": [
+        0,
+        2048,
+        67125248,
+        -2130706432
+      ],
+      "passive": false,
+      "name": "Soul Reaper",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 6000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 221562,
+      "granted": false,
+      "requiresTalentEntry": [
+        96193
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        1048576,
+        0
+      ],
+      "passive": false,
+      "name": "Asphyxiate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 51052,
+      "granted": false,
+      "requiresTalentEntry": [
+        96194
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        118,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        524288,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Anti-Magic Zone",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              374383
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 207200,
+      "granted": false,
+      "requiresTalentEntry": [
+        96195
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Permafrost"
+    },
+    {
+      "id": 374277,
+      "granted": false,
+      "requiresTalentEntry": [
+        96196
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Death Strike"
+    },
+    {
+      "id": 48263,
+      "granted": false,
+      "requiresTalentEntry": [
+        96197
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        2048
+      ],
+      "passive": true,
+      "name": "Veteran of the Third War"
+    },
+    {
+      "id": 374265,
+      "granted": false,
+      "requiresTalentEntry": [
+        96198
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unholy Ground"
+    },
+    {
+      "id": 49998,
+      "granted": false,
+      "requiresTalentEntry": [
+        96200
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        823,
+        881,
+        2397
+      ],
+      "classMask": [
+        16,
+        2048,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Death Strike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 316916,
+      "granted": false,
+      "requiresTalentEntry": [
+        96202
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Cleaving Strikes"
+    },
+    {
+      "id": 391546,
+      "granted": false,
+      "requiresTalentEntry": [
+        96203
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "unless-learned",
+      "name": "March of Darkness"
+    },
+    {
+      "id": 48743,
+      "granted": false,
+      "requiresTalentEntry": [
+        96204
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        524288,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Death Pact",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 374261,
+      "granted": false,
+      "requiresTalentEntry": [
+        96205
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unholy Bond"
+    },
+    {
+      "id": 212552,
+      "granted": false,
+      "requiresTalentEntry": [
+        96206
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        219,
+        292,
+        329
+      ],
+      "classMask": [
+        0,
+        1,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Wraith Walk",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "channel": {
+        "duration": 4000,
+        "hasted": false,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 374030,
+      "granted": false,
+      "requiresTalentEntry": [
+        96207
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blood Scent"
+    },
+    {
+      "id": 374574,
+      "granted": false,
+      "requiresTalentEntry": [
+        96208
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rune Mastery"
+    },
+    {
+      "id": 454822,
+      "granted": false,
+      "requiresTalentEntry": [
+        96209
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Subduing Grasp"
+    },
+    {
+      "id": 48792,
+      "granted": false,
+      "requiresTalentEntry": [
+        96210
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        1284,
+        930
+      ],
+      "classMask": [
+        1048576,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Icebound Fortitude",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 378848,
+      "granted": false,
+      "requiresTalentEntry": [
+        96212
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Coldthirst"
+    },
+    {
+      "id": 47528,
+      "granted": false,
+      "requiresTalentEntry": [
+        96213
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        1024,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mind Freeze",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 194878,
+      "granted": false,
+      "requiresTalentEntry": [
+        96214
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Icy Talons"
+    },
+    {
+      "id": 454786,
+      "granted": false,
+      "requiresTalentEntry": [
+        96215
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ice Prison"
+    },
+    {
+      "id": 374049,
+      "granted": false,
+      "requiresTalentEntry": [
+        96216
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Suppression"
+    },
+    {
+      "id": 454835,
+      "granted": false,
+      "requiresTalentEntry": [
+        96217
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Osmosis"
+    },
+    {
+      "id": 57330,
+      "granted": false,
+      "requiresTalentEntry": [
+        96218
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        1073741824,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Horn of Winter",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 456230,
+      "granted": false,
+      "requiresTalentEntry": [
+        96220
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arctic Assault"
+    },
+    {
+      "id": 194913,
+      "granted": false,
+      "requiresTalentEntry": [
+        96221
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        2,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Glacial Advance",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 152279,
+      "granted": false,
+      "requiresTalentEntry": [
+        96222
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        27,
+        292,
+        881,
+        3023
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        131072
+      ],
+      "passive": false,
+      "name": "Breath of Sindragosa",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 455993,
+      "granted": false,
+      "requiresTalentEntry": [
+        96223
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Shattered Frost"
+    },
+    {
+      "id": 207057,
+      "granted": false,
+      "requiresTalentEntry": [
+        96224
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Shattering Blade"
+    },
+    {
+      "id": 207230,
+      "granted": false,
+      "requiresTalentEntry": [
+        96225
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        117,
+        292,
+        881
+      ],
+      "classMask": [
+        32768,
+        2048,
+        0,
+        -2130706432
+      ],
+      "passive": false,
+      "name": "Frostscythe",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377351,
+      "granted": false,
+      "requiresTalentEntry": [
+        96227
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Piercing Chill"
+    },
+    {
+      "id": 377376,
+      "granted": false,
+      "requiresTalentEntry": [
+        96226
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Enduring Chill"
+    },
+    {
+      "id": 305392,
+      "granted": false,
+      "requiresTalentEntry": [
+        96228
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        118,
+        27,
+        292,
+        2899
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Chill Streak",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 194912,
+      "granted": false,
+      "requiresTalentEntry": [
+        96229
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Gathering Storm"
+    },
+    {
+      "id": 377190,
+      "granted": false,
+      "requiresTalentEntry": [
+        96230
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Enduring Strength"
+    },
+    {
+      "id": 435005,
+      "granted": false,
+      "requiresTalentEntry": [
+        96231
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Smothering Offense"
+    },
+    {
+      "id": 376251,
+      "granted": false,
+      "requiresTalentEntry": [
+        96232
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Runic Command"
+    },
+    {
+      "id": 316803,
+      "granted": false,
+      "requiresTalentEntry": [
+        96233
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Improved Frost Strike"
+    },
+    {
+      "id": 207142,
+      "granted": false,
+      "requiresTalentEntry": [
+        96235
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Avalanche"
+    },
+    {
+      "id": 377226,
+      "granted": false,
+      "requiresTalentEntry": [
+        96236
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frostwhelp's Aid"
+    },
+    {
+      "id": 456238,
+      "granted": false,
+      "requiresTalentEntry": [
+        96238
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hyperpyrexia"
+    },
+    {
+      "id": 456237,
+      "granted": false,
+      "requiresTalentEntry": [
+        96239
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cryogenic Chamber"
+    },
+    {
+      "id": 47568,
+      "granted": false,
+      "requiresTalentEntry": [
+        96240
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        16384,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Empower Rune Weapon",
+      "charges": {
+        "max": 0
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377056,
+      "granted": false,
+      "requiresTalentEntry": [
+        96241
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Biting Cold"
+    },
+    {
+      "id": 316838,
+      "granted": false,
+      "requiresTalentEntry": [
+        96242
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Improved Rime"
+    },
+    {
+      "id": 376938,
+      "granted": false,
+      "requiresTalentEntry": [
+        96243
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Everfrost"
+    },
+    {
+      "id": 49184,
+      "granted": false,
+      "requiresTalentEntry": [
+        96244
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        2310
+      ],
+      "classMask": [
+        0,
+        2050,
+        0,
+        16777216
+      ],
+      "passive": false,
+      "name": "Howling Blast",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 49143,
+      "granted": false,
+      "requiresTalentEntry": [
+        96245
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        4,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Frost Strike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 49020,
+      "granted": false,
+      "requiresTalentEntry": [
+        96246
+      ],
+      "overrides": 316239,
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        131072,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Obliterate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 51128,
+      "granted": false,
+      "requiresTalentEntry": [
+        96247
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "passive": true,
+      "name": "Killing Machine"
+    },
+    {
+      "id": 376905,
+      "granted": false,
+      "requiresTalentEntry": [
+        96248
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unleashed Frenzy"
+    },
+    {
+      "id": 317198,
+      "granted": false,
+      "requiresTalentEntry": [
+        96249
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Improved Obliterate"
+    },
+    {
+      "id": 377073,
+      "granted": false,
+      "requiresTalentEntry": [
+        96251
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Frigid Executioner"
+    },
+    {
+      "id": 377076,
+      "granted": false,
+      "requiresTalentEntry": [
+        96250
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Rage of the Frozen Champion"
+    },
+    {
+      "id": 207061,
+      "granted": false,
+      "requiresTalentEntry": [
+        96252
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        32,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Murderous Efficiency"
+    },
+    {
+      "id": 377098,
+      "granted": false,
+      "requiresTalentEntry": [
+        96253
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Bonegrinder"
+    },
+    {
+      "id": 281238,
+      "granted": false,
+      "requiresTalentEntry": [
+        96254
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Obliteration"
+    },
+    {
+      "id": 374747,
+      "granted": false,
+      "requiresTalentEntry": [
+        96255
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Perseverance of the Ebon Blade"
+    },
+    {
+      "id": 391398,
+      "granted": false,
+      "requiresTalentEntry": [
+        96256
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Bloodshot"
+    },
+    {
+      "id": 374717,
+      "granted": false,
+      "requiresTalentEntry": [
+        96257
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Heart Strike"
+    },
+    {
+      "id": 194844,
+      "granted": false,
+      "requiresTalentEntry": [
+        96258
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        8192
+      ],
+      "passive": false,
+      "name": "Bonestorm",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377640,
+      "granted": false,
+      "requiresTalentEntry": [
+        96259
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Shattering Bone"
+    },
+    {
+      "id": 377637,
+      "granted": false,
+      "requiresTalentEntry": [
+        96260
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        2781
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Insatiable Blade"
+    },
+    {
+      "id": 377668,
+      "granted": false,
+      "requiresTalentEntry": [
+        96261
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Everlasting Bond"
+    },
+    {
+      "id": 377655,
+      "granted": false,
+      "requiresTalentEntry": [
+        96262
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Heartrend"
+    },
+    {
+      "id": 205723,
+      "granted": false,
+      "requiresTalentEntry": [
+        96263
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Red Thirst"
+    },
+    {
+      "id": 114556,
+      "granted": false,
+      "requiresTalentEntry": [
+        96264
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Purgatory"
+    },
+    {
+      "id": 221536,
+      "granted": false,
+      "requiresTalentEntry": [
+        96266
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Heartbreaker"
+    },
+    {
+      "id": 273946,
+      "granted": false,
+      "requiresTalentEntry": [
+        96268
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hemostasis"
+    },
+    {
+      "id": 49028,
+      "granted": false,
+      "requiresTalentEntry": [
+        96269
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        690,
+        930
+      ],
+      "classMask": [
+        1073741824,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dancing Rune Weapon",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 206940,
+      "granted": false,
+      "requiresTalentEntry": [
+        96271
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mark of Blood",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 6000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 219809,
+      "granted": false,
+      "requiresTalentEntry": [
+        96270
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Tombstone",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 317133,
+      "granted": false,
+      "requiresTalentEntry": [
+        96272
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Improved Vampiric Blood"
+    },
+    {
+      "id": 194662,
+      "granted": false,
+      "requiresTalentEntry": [
+        96273
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        2780
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rapid Decomposition"
+    },
+    {
+      "id": 374715,
+      "granted": false,
+      "requiresTalentEntry": [
+        96274
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        2777
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Improved Bone Shield"
+    },
+    {
+      "id": 374737,
+      "granted": false,
+      "requiresTalentEntry": [
+        96276
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        2775
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reinforced Bones"
+    },
+    {
+      "id": 219786,
+      "granted": false,
+      "requiresTalentEntry": [
+        96277
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ossuary"
+    },
+    {
+      "id": 377629,
+      "granted": false,
+      "requiresTalentEntry": [
+        96278
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Leeching Strike"
+    },
+    {
+      "id": 458744,
+      "granted": false,
+      "requiresTalentEntry": [
+        96279
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ossified Vitriol"
+    },
+    {
+      "id": 317610,
+      "granted": false,
+      "requiresTalentEntry": [
+        96280
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Relish in Blood"
+    },
+    {
+      "id": 390196,
+      "granted": false,
+      "requiresTalentEntry": [
+        96282
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Magus of the Dead"
+    },
+    {
+      "id": 390259,
+      "granted": false,
+      "requiresTalentEntry": [
+        96283
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Commander of the Dead"
+    },
+    {
+      "id": 377440,
+      "granted": false,
+      "requiresTalentEntry": [
+        96284
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unholy Aura"
+    },
+    {
+      "id": 207289,
+      "granted": false,
+      "requiresTalentEntry": [
+        96285
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        536870912,
+        2048,
+        16384,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Unholy Assault",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377590,
+      "granted": false,
+      "requiresTalentEntry": [
+        96286
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Festermight"
+    },
+    {
+      "id": 455395,
+      "granted": false,
+      "requiresTalentEntry": [
+        96287
+      ],
+      "overrides": 42650,
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        2048,
+        0,
+        0,
+        -2147483647
+      ],
+      "passive": false,
+      "name": "Raise Abomination",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 455398,
+      "granted": false,
+      "requiresTalentEntry": [
+        96288
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Decomposition"
+    },
+    {
+      "id": 390283,
+      "granted": false,
+      "requiresTalentEntry": [
+        96289
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Superstrain"
+    },
+    {
+      "id": 390270,
+      "granted": false,
+      "requiresTalentEntry": [
+        96290
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        27,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Coil of Devastation"
+    },
+    {
+      "id": 277234,
+      "granted": false,
+      "requiresTalentEntry": [
+        96291
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pestilence"
+    },
+    {
+      "id": 377537,
+      "granted": false,
+      "requiresTalentEntry": [
+        96292
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death Rot"
+    },
+    {
+      "id": 390279,
+      "granted": false,
+      "requiresTalentEntry": [
+        96293
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Vile Contagion",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 207269,
+      "granted": false,
+      "requiresTalentEntry": [
+        96294
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ebon Fever"
+    },
+    {
+      "id": 152280,
+      "granted": false,
+      "requiresTalentEntry": [
+        96295,
+        96315
+      ],
+      "overrides": 43265,
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        27,
+        292,
+        1134
+      ],
+      "classMask": [
+        32,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Defile",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              356367
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 455396,
+      "granted": false,
+      "requiresTalentEntry": [
+        96296
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Foul Infections"
+    },
+    {
+      "id": 460448,
+      "granted": false,
+      "requiresTalentEntry": [
+        96297
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        2048,
+        536887296,
+        0
+      ],
+      "passive": true,
+      "name": "Unholy Blight"
+    },
+    {
+      "id": 207264,
+      "granted": false,
+      "requiresTalentEntry": [
+        96299
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bursting Sores"
+    },
+    {
+      "id": 206970,
+      "granted": false,
+      "requiresTalentEntry": [
+        96300
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tightening Grasp"
+    },
+    {
+      "id": 194679,
+      "granted": false,
+      "requiresTalentEntry": [
+        96301
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        134217728,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Rune Tap",
+      "charges": {
+        "max": 2
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 206974,
+      "granted": false,
+      "requiresTalentEntry": [
+        96302
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Foul Bulwark"
+    },
+    {
+      "id": 195182,
+      "granted": false,
+      "requiresTalentEntry": [
+        96303
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        2397
+      ],
+      "classMask": [
+        0,
+        2048,
+        0,
+        -2145386496
+      ],
+      "passive": false,
+      "name": "Marrowrend",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 206930,
+      "granted": false,
+      "requiresTalentEntry": [
+        96304
+      ],
+      "overrides": 316239,
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        2397
+      ],
+      "classMask": [
+        16777216,
+        2048,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Heart Strike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 50842,
+      "granted": false,
+      "requiresTalentEntry": [
+        96305
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        2397
+      ],
+      "classMask": [
+        262144,
+        67584,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blood Boil",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 2
+      },
+      "cooldown": {
+        "duration": 7500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 458572,
+      "granted": false,
+      "requiresTalentEntry": [
+        96306
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bone Collector"
+    },
+    {
+      "id": 391395,
+      "granted": false,
+      "requiresTalentEntry": [
+        96307
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Iron Heart"
+    },
+    {
+      "id": 55233,
+      "granted": false,
+      "requiresTalentEntry": [
+        96308
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        690,
+        1284,
+        930
+      ],
+      "classMask": [
+        0,
+        8,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Vampiric Blood",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 195679,
+      "granted": false,
+      "requiresTalentEntry": [
+        96309
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bloodworms"
+    },
+    {
+      "id": 390275,
+      "granted": false,
+      "requiresTalentEntry": [
+        96310
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        27,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rotten Touch"
+    },
+    {
+      "id": 49206,
+      "granted": false,
+      "requiresTalentEntry": [
+        96311
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        128,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Gargoyle",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 455386,
+      "granted": false,
+      "requiresTalentEntry": [
+        125816
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Doomed Bidding"
+    },
+    {
+      "id": 390236,
+      "granted": false,
+      "requiresTalentEntry": [
+        96312
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ruptured Viscera"
+    },
+    {
+      "id": 276023,
+      "granted": false,
+      "requiresTalentEntry": [
+        96313
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Harbinger of Doom"
+    },
+    {
+      "id": 377514,
+      "granted": false,
+      "requiresTalentEntry": [
+        96314
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reaping"
+    },
+    {
+      "id": 319230,
+      "granted": false,
+      "requiresTalentEntry": [
+        96316
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        27,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unholy Pact"
+    },
+    {
+      "id": 194916,
+      "granted": false,
+      "requiresTalentEntry": [
+        96317
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "All Will Serve"
+    },
+    {
+      "id": 390268,
+      "granted": false,
+      "requiresTalentEntry": [
+        96318
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Eternal Agony"
+    },
+    {
+      "id": 207311,
+      "granted": false,
+      "requiresTalentEntry": [
+        96320
+      ],
+      "overrides": 55090,
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        134219776,
+        16384,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Clawing Shadows",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 390175,
+      "granted": false,
+      "requiresTalentEntry": [
+        96319
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Plaguebringer"
+    },
+    {
+      "id": 377580,
+      "granted": false,
+      "requiresTalentEntry": [
+        96321
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Death Coil"
+    },
+    {
+      "id": 275699,
+      "granted": false,
+      "requiresTalentEntry": [
+        96322
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        690
+      ],
+      "classMask": [
+        0,
+        16779264,
+        16384,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Apocalypse",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 390166,
+      "granted": false,
+      "requiresTalentEntry": [
+        96323
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Runic Mastery"
+    },
+    {
+      "id": 63560,
+      "granted": false,
+      "requiresTalentEntry": [
+        96324
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32,
+        0
+      ],
+      "passive": false,
+      "name": "Dark Transformation",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 46584,
+      "granted": false,
+      "requiresTalentEntry": [
+        96325
+      ],
+      "overrides": 46585,
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        4096,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Raise Dead",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              437122
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 85948,
+      "granted": false,
+      "requiresTalentEntry": [
+        96326
+      ],
+      "overrides": 316239,
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        2048,
+        512,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Festering Strike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 55090,
+      "granted": false,
+      "requiresTalentEntry": [
+        96327
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        134219776,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Scourge Strike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 49530,
+      "granted": false,
+      "requiresTalentEntry": [
+        96328
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "passive": true,
+      "name": "Sudden Doom"
+    },
+    {
+      "id": 316867,
+      "granted": false,
+      "requiresTalentEntry": [
+        96329
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Improved Festering Strike"
+    },
+    {
+      "id": 455397,
+      "granted": false,
+      "requiresTalentEntry": [
+        96330
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Festering Scythe"
+    },
+    {
+      "id": 377587,
+      "granted": false,
+      "requiresTalentEntry": [
+        96331
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ghoulish Frenzy"
+    },
+    {
+      "id": 207272,
+      "granted": false,
+      "requiresTalentEntry": [
+        96332
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Infected Claws"
+    },
+    {
+      "id": 42650,
+      "granted": false,
+      "requiresTalentEntry": [
+        96333
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        2048,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Army of the Dead",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377592,
+      "granted": false,
+      "requiresTalentEntry": [
+        96334
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Morbidity"
+    },
+    {
+      "id": 443560,
+      "granted": false,
+      "requiresTalentEntry": [
+        117629
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Swift and Painful"
+    },
+    {
+      "id": 434143,
+      "granted": false,
+      "requiresTalentEntry": [
+        117630
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292,
+        4138
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Infliction of Sorrow"
+    },
+    {
+      "id": 434905,
+      "granted": false,
+      "requiresTalentEntry": [
+        117631
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Grim Reaper"
+    },
+    {
+      "id": 440002,
+      "granted": false,
+      "requiresTalentEntry": [
+        128235
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reaper of Souls"
+    },
+    {
+      "id": 440476,
+      "granted": false,
+      "requiresTalentEntry": [
+        117632
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pact of the Deathbringer"
+    },
+    {
+      "id": 440282,
+      "granted": false,
+      "requiresTalentEntry": [
+        123420
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rune Carved Plates"
+    },
+    {
+      "id": 439851,
+      "granted": false,
+      "requiresTalentEntry": [
+        117633
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wave of Souls"
+    },
+    {
+      "id": 444074,
+      "granted": false,
+      "requiresTalentEntry": [
+        117634
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Horsemen's Aid"
+    },
+    {
+      "id": 444083,
+      "granted": false,
+      "requiresTalentEntry": [
+        123410
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pact of the Apocalypse"
+    },
+    {
+      "id": 434151,
+      "granted": false,
+      "requiresTalentEntry": [
+        117637
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Incite Terror"
+    },
+    {
+      "id": 444040,
+      "granted": false,
+      "requiresTalentEntry": [
+        117638
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Apocalypse Now"
+    },
+    {
+      "id": 444069,
+      "granted": false,
+      "requiresTalentEntry": [
+        117639
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fury of the Horsemen"
+    },
+    {
+      "id": 444072,
+      "granted": false,
+      "requiresTalentEntry": [
+        123411
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "A Feast of Souls"
+    },
+    {
+      "id": 440031,
+      "granted": false,
+      "requiresTalentEntry": [
+        117640
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bind in Darkness"
+    },
+    {
+      "id": 444037,
+      "granted": false,
+      "requiresTalentEntry": [
+        117641
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hungering Thirst"
+    },
+    {
+      "id": 434157,
+      "granted": false,
+      "requiresTalentEntry": [
+        117642
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Visceral Strength"
+    },
+    {
+      "id": 434260,
+      "granted": false,
+      "requiresTalentEntry": [
+        117643
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "The Blood is Life"
+    },
+    {
+      "id": 444033,
+      "granted": false,
+      "requiresTalentEntry": [
+        117644
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Whitemane's Famine"
+    },
+    {
+      "id": 434033,
+      "granted": false,
+      "requiresTalentEntry": [
+        117645
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blood-Soaked Ground"
+    },
+    {
+      "id": 437122,
+      "granted": false,
+      "requiresTalentEntry": [
+        117646
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death's Messenger"
+    },
+    {
+      "id": 439948,
+      "granted": false,
+      "requiresTalentEntry": [
+        128234
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Expelling Shield"
+    },
+    {
+      "id": 433901,
+      "granted": false,
+      "requiresTalentEntry": [
+        117648
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        4242
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Vampiric Strike"
+    },
+    {
+      "id": 434152,
+      "granted": false,
+      "requiresTalentEntry": [
+        117650
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Gift of the San'layn"
+    },
+    {
+      "id": 444099,
+      "granted": false,
+      "requiresTalentEntry": [
+        117651
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mawsworn Menace"
+    },
+    {
+      "id": 434261,
+      "granted": false,
+      "requiresTalentEntry": [
+        117652
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pact of the San'layn"
+    },
+    {
+      "id": 434263,
+      "granted": false,
+      "requiresTalentEntry": [
+        117893
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanguine Scent"
+    },
+    {
+      "id": 434100,
+      "granted": false,
+      "requiresTalentEntry": [
+        117653
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292,
+        3135
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vampiric Aura"
+    },
+    {
+      "id": 434136,
+      "granted": false,
+      "requiresTalentEntry": [
+        117891
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bloody Fortitude"
+    },
+    {
+      "id": 436687,
+      "granted": false,
+      "requiresTalentEntry": [
+        117654
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dark Talons"
+    },
+    {
+      "id": 469870,
+      "granted": false,
+      "requiresTalentEntry": [
+        128266
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reaper's Onslaught"
+    },
+    {
+      "id": 441894,
+      "granted": false,
+      "requiresTalentEntry": [
+        117655
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wither Away"
+    },
+    {
+      "id": 444052,
+      "granted": false,
+      "requiresTalentEntry": [
+        117656
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nazgrim's Conquest"
+    },
+    {
+      "id": 444008,
+      "granted": false,
+      "requiresTalentEntry": [
+        117657
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "On a Paler Horse"
+    },
+    {
+      "id": 444010,
+      "granted": false,
+      "requiresTalentEntry": [
+        123412
+      ],
+      "overrides": 124285,
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death Charge"
+    },
+    {
+      "id": 437161,
+      "granted": false,
+      "requiresTalentEntry": [
+        117658
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Soul Rupture"
+    },
+    {
+      "id": 439843,
+      "granted": false,
+      "requiresTalentEntry": [
+        117659
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022,
+        3243,
+        3236
+      ],
+      "classMask": [
+        0,
+        2048,
+        0,
+        16777216
+      ],
+      "passive": false,
+      "name": "Reaper's Mark",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 444097,
+      "granted": false,
+      "requiresTalentEntry": [
+        117660
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Trollbane's Icy Fury"
+    },
+    {
+      "id": 433934,
+      "granted": false,
+      "requiresTalentEntry": [
+        117661
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Newly Turned"
+    },
+    {
+      "id": 434028,
+      "granted": false,
+      "requiresTalentEntry": [
+        117892
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Vampiric Speed"
+    },
+    {
+      "id": 434075,
+      "granted": false,
+      "requiresTalentEntry": [
+        117662
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        4192,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Frenzied Bloodthirst"
+    },
+    {
+      "id": 444005,
+      "granted": false,
+      "requiresTalentEntry": [
+        117663
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rider's Champion"
+    },
+    {
+      "id": 444047,
+      "granted": false,
+      "requiresTalentEntry": [
+        117664
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mograine's Might"
+    },
+    {
+      "id": 441378,
+      "granted": false,
+      "requiresTalentEntry": [
+        117665
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022,
+        4099
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Exterminate"
+    },
+    {
+      "id": 373930,
+      "granted": false,
+      "requiresTalentEntry": [
+        125606
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Proliferating Chill"
+    },
+    {
+      "id": 455135,
+      "granted": false,
+      "requiresTalentEntry": [
+        125815
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Menacing Magus"
+    },
+    {
+      "id": 51271,
+      "granted": false,
+      "requiresTalentEntry": [
+        125874
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        2097152,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Pillar of Frost",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              207126
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 207126,
+      "granted": false,
+      "requiresTalentEntry": [
+        125875
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Icecap"
+    },
+    {
+      "id": 279302,
+      "granted": false,
+      "requiresTalentEntry": [
+        125876
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        16384,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Frostwyrm's Fury",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 456240,
+      "granted": false,
+      "requiresTalentEntry": [
+        125877
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "The Long Winter"
+    },
+    {
+      "id": 435010,
+      "granted": false,
+      "requiresTalentEntry": [
+        125878
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Icy Death Torrent"
+    },
+    {
+      "id": 276079,
+      "granted": false,
+      "requiresTalentEntry": [
+        126014
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death's Reach"
+    },
+    {
+      "id": 356367,
+      "granted": false,
+      "requiresTalentEntry": [
+        126015
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        118,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death's Echo"
+    },
+    {
+      "id": 454842,
+      "granted": false,
+      "requiresTalentEntry": [
+        126016
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Null Magic"
+    },
+    {
+      "id": 377047,
+      "granted": false,
+      "requiresTalentEntry": [
+        126017
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        27
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Absolute Zero"
+    },
+    {
+      "id": 458753,
+      "granted": false,
+      "requiresTalentEntry": [
+        126296
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bloodied Blade"
+    },
+    {
+      "id": 391386,
+      "granted": false,
+      "requiresTalentEntry": [
+        126298
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Blood Feast"
+    },
+    {
+      "id": 206931,
+      "granted": false,
+      "requiresTalentEntry": [
+        126300
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        117,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        2048,
+        4194304,
+        0
+      ],
+      "passive": false,
+      "name": "Blooddrinker",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      },
+      "channel": {
+        "duration": 3000,
+        "hasted": true,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 274156,
+      "granted": false,
+      "requiresTalentEntry": [
+        126299
+      ],
+      "type": "talent",
+      "label": [
+        27,
+        16,
+        292,
+        881,
+        2397
+      ],
+      "classMask": [
+        0,
+        2048,
+        0,
+        -1610612736
+      ],
+      "passive": false,
+      "name": "Consumption",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 458752,
+      "granted": false,
+      "requiresTalentEntry": [
+        126301
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Carnage"
+    },
+    {
+      "id": 274773,
+      "type": "learned",
+      "taughtBy": 316239,
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rune Strike"
+    },
+    {
+      "id": 124285,
+      "type": "learned",
+      "taughtBy": 48265,
+      "label": [
+        27,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death's Advance"
+    },
+    {
+      "id": 445669,
+      "type": "learned",
+      "taughtBy": 207311,
+      "label": [
+        27,
+        16,
+        117,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vampiric Strike"
+    },
+    {
+      "id": 443564,
+      "type": "learned",
+      "taughtBy": 441378,
+      "label": [
+        292,
+        16,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Painful Death"
+    },
+    {
+      "id": 459269,
+      "type": "learned",
+      "taughtBy": 458752,
+      "label": [
+        16,
+        27,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Carnage"
+    },
+    {
+      "id": 207349,
+      "grantedBy": 278107,
+      "type": "temporary",
+      "label": [
+        27,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        1048576,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Dark Arbiter",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 444347,
+      "grantedBy": 444010,
+      "type": "temporary",
+      "label": [
+        16,
+        67,
+        292,
+        27,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        134217728
+      ],
+      "passive": false,
+      "name": "Death Charge",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              356367
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    }
+  ]
+}

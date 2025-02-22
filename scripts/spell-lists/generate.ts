@@ -23,38 +23,36 @@ function formatSpell(spell: RetailSpell): RetailSpell {
 
 const specList = await retailSpecList(retailDbc);
 
-interface SpellList {
+export interface SpellList {
   specId: number;
   baselineSpells: number[];
-  activeSpells: RetailSpell[];
+  spells: RetailSpell[];
 }
 
-const spellLists: Record<number, SpellList> = {};
+const done: Set<number> = new Set();
 for (const specId of specList) {
-  if (spellLists[specId]) {
+  if (done.has(specId)) {
     // due to double indexing, there may be repeated specs.
     continue;
   }
   const spellList = await retailSpellList(retailDbc, specId);
   const data: RetailSpell[] = await loadAll(PRESETS.RETAIL, retailDbc, spellList);
 
-  spellLists[specId] = {
+  const output = {
     specId,
     baselineSpells: data
-      .filter((spell) => spell.type === SpellType.Class || spell.type === SpellType.Spec)
+      .filter((spell) => spell.type === SpellType.Baseline)
       .map((spell) => spell.id),
-    activeSpells: data
-      .filter((spell) => !spell.passive && !spell.hidden && spell.name)
-      .map(formatSpell),
-  };
-}
+    spells: data.map(formatSpell),
+  } satisfies SpellList;
 
-let file: fs.FileHandle | undefined = undefined;
-try {
-  const directory = path.join(import.meta.dirname, '..', '..', 'src', 'generated');
-  await fs.mkdir(directory, { recursive: true });
-  file = await fs.open(path.join(directory, 'RETAIL_SPELLS.json'), 'w');
-  await file.writeFile(JSON.stringify(spellLists, null, 2));
-} finally {
-  await file?.close();
+  let file: fs.FileHandle | undefined = undefined;
+  try {
+    const directory = path.join(import.meta.dirname, '..', '..', 'src', 'generated', 'retail');
+    await fs.mkdir(directory, { recursive: true });
+    file = await fs.open(path.join(directory, `spell-list-${specId}.json`), 'w');
+    await file.writeFile(JSON.stringify(output, null, 2));
+  } finally {
+    await file?.close();
+  }
 }

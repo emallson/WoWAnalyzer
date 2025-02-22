@@ -1,0 +1,241 @@
+{
+  "specId": 265,
+  "baselineSpells": [
+    980,
+    77215,
+    137043,
+    162699,
+    231799,
+    231811,
+    334315,
+    231791,
+    231792,
+    317031,
+    324536,
+    462111,
+    462112
+  ],
+  "spells": [
+    {
+      "id": 980,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        1024,
+        131072,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Agony",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 77215,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mastery: Potent Afflictions"
+    },
+    {
+      "id": 137043,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Affliction Warlock"
+    },
+    {
+      "id": 162699,
+      "type": "baseline",
+      "label": [
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stat Negation Aura - Intellect DPS"
+    },
+    {
+      "id": 231799,
+      "type": "baseline",
+      "passive": false,
+      "name": "Unknown"
+    },
+    {
+      "id": 231811,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Soulstone"
+    },
+    {
+      "id": 334315,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        19
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unstable Affliction"
+    },
+    {
+      "id": 231791,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unstable Affliction"
+    },
+    {
+      "id": 231792,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Agony"
+    },
+    {
+      "id": 317031,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Xavian Teachings"
+    },
+    {
+      "id": 324536,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Malefic Rapture",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 462111,
+      "type": "baseline",
+      "label": [
+        292,
+        16,
+        19
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Affliction Warlock"
+    },
+    {
+      "id": 462112,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Warlock"
+    }
+  ]
+}

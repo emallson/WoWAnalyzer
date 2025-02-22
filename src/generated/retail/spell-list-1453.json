@@ -1,0 +1,5970 @@
+{
+  "specId": 1453,
+  "baselineSpells": [
+    1766,
+    1804,
+    2983,
+    31224,
+    1966,
+    86092,
+    82245,
+    1860,
+    2836,
+    2818,
+    5374,
+    27576,
+    113780,
+    8679,
+    86392,
+    22482,
+    137034,
+    157442,
+    185311,
+    56814,
+    210108,
+    57934,
+    212205,
+    114018,
+    315584,
+    1752,
+    196819,
+    1784,
+    1833,
+    921,
+    1856,
+    315496,
+    6770,
+    8676,
+    408,
+    3408,
+    31209,
+    5938,
+    231691,
+    1725,
+    5277,
+    2094,
+    5761,
+    51667
+  ],
+  "spells": [
+    {
+      "id": 1766,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        242,
+        292
+      ],
+      "classMask": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Kick",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1804,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        16384,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Pick Lock",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 2983,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        184,
+        219,
+        292,
+        1381,
+        1387
+      ],
+      "classMask": [
+        64,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Sprint",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -60000,
+            "hasted": false,
+            "requiredSpells": [
+              231691
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 31224,
+      "type": "baseline"
+    },
+    {
+      "id": 1966,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        184,
+        292
+      ],
+      "classMask": [
+        134217728,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Feint",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              423647
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 86092,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        171,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Leather Specialization"
+    },
+    {
+      "id": 82245,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Parry"
+    },
+    {
+      "id": 1860,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        32768,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Safe Fall"
+    },
+    {
+      "id": 2836,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Detect Traps"
+    },
+    {
+      "id": 2818,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292,
+        869
+      ],
+      "classMask": [
+        65536,
+        4718592,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Deadly Poison"
+    },
+    {
+      "id": 5374,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        4194306,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Mutilate"
+    },
+    {
+      "id": 27576,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        4194308,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Mutilate"
+    },
+    {
+      "id": 113780,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        65536,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Deadly Poison"
+    },
+    {
+      "id": 8679,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292,
+        869
+      ],
+      "classMask": [
+        268435456,
+        0,
+        1,
+        0
+      ],
+      "passive": false,
+      "name": "Wound Poison",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 86392,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292,
+        1387
+      ],
+      "classMask": [
+        0,
+        4194304,
+        2,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Main Gauche"
+    },
+    {
+      "id": 22482,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        536870912,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Blade Flurry"
+    },
+    {
+      "id": 137034,
+      "type": "baseline",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rogue"
+    },
+    {
+      "id": 157442,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Critical Strikes"
+    },
+    {
+      "id": 185311,
+      "type": "baseline",
+      "label": [
+        16,
+        20,
+        173,
+        292,
+        1284,
+        1387,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        8
+      ],
+      "passive": false,
+      "name": "Crimson Vial",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 56814,
+      "type": "baseline"
+    },
+    {
+      "id": 210108,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Detection"
+    },
+    {
+      "id": 57934,
+      "type": "baseline"
+    },
+    {
+      "id": 212205,
+      "type": "baseline",
+      "label": [
+        118,
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Create: Crimson Vial",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 114018,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292,
+        2360
+      ],
+      "classMask": [
+        0,
+        0,
+        128,
+        0
+      ],
+      "passive": false,
+      "name": "Shroud of Concealment",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 360000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 315584,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292,
+        869
+      ],
+      "classMask": [
+        65536,
+        0,
+        1,
+        0
+      ],
+      "passive": false,
+      "name": "Instant Poison",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 1752,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        2,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Sinister Strike",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 196819,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        131072,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Eviscerate",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1784,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        4194304,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Stealth",
+      "cooldown": {
+        "duration": 2000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1833,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        1024,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cheap Shot",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 921,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        -2147483648,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Pick Pocket",
+      "cooldown": {
+        "duration": 500,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1856,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        184,
+        292,
+        1387,
+        930
+      ],
+      "classMask": [
+        2048,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Vanish",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              382513
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 315496,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292,
+        2880
+      ],
+      "classMask": [
+        262144,
+        0,
+        33554432,
+        0
+      ],
+      "passive": false,
+      "name": "Slice and Dice",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 6770,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        128,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Sap",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 8676,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        512,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ambush",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 408,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        2097152,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Kidney Shot",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 3408,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292,
+        870
+      ],
+      "classMask": [
+        16384,
+        0,
+        1,
+        0
+      ],
+      "passive": false,
+      "name": "Crippling Poison",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 31209,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1024
+      ],
+      "passive": true,
+      "name": "Fleet Footed"
+    },
+    {
+      "id": 5938,
+      "type": "baseline"
+    },
+    {
+      "id": 231691,
+      "type": "baseline"
+    },
+    {
+      "id": 1725,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        4096,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Distract",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 5277,
+      "type": "baseline"
+    },
+    {
+      "id": 2094,
+      "type": "baseline"
+    },
+    {
+      "id": 5761,
+      "type": "baseline"
+    },
+    {
+      "id": 51667,
+      "type": "baseline",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Cut to the Chase"
+    },
+    {
+      "id": 381664,
+      "granted": false,
+      "requiresTalentEntry": [
+        112505
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        869
+      ],
+      "classMask": [
+        0,
+        0,
+        17,
+        0
+      ],
+      "passive": false,
+      "name": "Amplifying Poison",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 455352,
+      "granted": false,
+      "requiresTalentEntry": [
+        112507
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Serrated Bone Spikes"
+    },
+    {
+      "id": 255989,
+      "granted": false,
+      "requiresTalentEntry": [
+        112508
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Master Assassin"
+    },
+    {
+      "id": 381640,
+      "granted": false,
+      "requiresTalentEntry": [
+        112509
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lethal Dose"
+    },
+    {
+      "id": 381626,
+      "granted": false,
+      "requiresTalentEntry": [
+        112510
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bloody Mess"
+    },
+    {
+      "id": 392384,
+      "granted": false,
+      "requiresTalentEntry": [
+        112511
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fatal Concoction"
+    },
+    {
+      "id": 319032,
+      "granted": false,
+      "requiresTalentEntry": [
+        112513
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Shiv"
+    },
+    {
+      "id": 381629,
+      "granted": false,
+      "requiresTalentEntry": [
+        112515
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thrown Precision"
+    },
+    {
+      "id": 121411,
+      "granted": false,
+      "requiresTalentEntry": [
+        112517
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        1077
+      ],
+      "classMask": [
+        0,
+        4194304,
+        131072,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Crimson Tempest",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 394983,
+      "granted": false,
+      "requiresTalentEntry": [
+        112518
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lightweight Shiv"
+    },
+    {
+      "id": 381624,
+      "granted": false,
+      "requiresTalentEntry": [
+        112519
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Poisons"
+    },
+    {
+      "id": 79134,
+      "granted": false,
+      "requiresTalentEntry": [
+        112520
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        67108864,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Venomous Wounds"
+    },
+    {
+      "id": 378436,
+      "granted": false,
+      "requiresTalentEntry": [
+        112521
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Master Poisoner"
+    },
+    {
+      "id": 319066,
+      "granted": false,
+      "requiresTalentEntry": [
+        112522
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Wound Poison"
+    },
+    {
+      "id": 470669,
+      "granted": false,
+      "requiresTalentEntry": [
+        112524
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Echoing Reprimand"
+    },
+    {
+      "id": 470668,
+      "granted": false,
+      "requiresTalentEntry": [
+        112523
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Forced Induction"
+    },
+    {
+      "id": 470347,
+      "granted": false,
+      "requiresTalentEntry": [
+        112525
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Supercharger"
+    },
+    {
+      "id": 378996,
+      "granted": false,
+      "requiresTalentEntry": [
+        112526
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Recuperator"
+    },
+    {
+      "id": 381845,
+      "granted": false,
+      "requiresTalentEntry": [
+        112527
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Audacity"
+    },
+    {
+      "id": 381885,
+      "granted": false,
+      "requiresTalentEntry": [
+        112528
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Heavy Hitter"
+    },
+    {
+      "id": 256165,
+      "granted": false,
+      "requiresTalentEntry": [
+        112529
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blinding Powder"
+    },
+    {
+      "id": 196937,
+      "granted": false,
+      "requiresTalentEntry": [
+        112530,
+        117162
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        67108864,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ghostly Strike",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 108216,
+      "granted": false,
+      "requiresTalentEntry": [
+        112531
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dirty Tricks"
+    },
+    {
+      "id": 61329,
+      "granted": false,
+      "requiresTalentEntry": [
+        112532
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Combat Potency"
+    },
+    {
+      "id": 428377,
+      "granted": false,
+      "requiresTalentEntry": [
+        112533
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Precision Shot"
+    },
+    {
+      "id": 381877,
+      "granted": false,
+      "requiresTalentEntry": [
+        112534
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Combat Stamina"
+    },
+    {
+      "id": 381988,
+      "granted": false,
+      "requiresTalentEntry": [
+        112535
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Swift Slasher"
+    },
+    {
+      "id": 381839,
+      "granted": false,
+      "requiresTalentEntry": [
+        112537
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sleight of Hand"
+    },
+    {
+      "id": 381989,
+      "granted": false,
+      "requiresTalentEntry": [
+        112538
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        131072
+      ],
+      "passive": false,
+      "name": "Keep It Rolling",
+      "cooldown": {
+        "duration": 360000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 381990,
+      "granted": false,
+      "requiresTalentEntry": [
+        112539
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Summarily Dispatched"
+    },
+    {
+      "id": 395422,
+      "granted": false,
+      "requiresTalentEntry": [
+        112540
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Adrenaline Rush"
+    },
+    {
+      "id": 381982,
+      "granted": false,
+      "requiresTalentEntry": [
+        112541
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Count the Odds"
+    },
+    {
+      "id": 256170,
+      "granted": false,
+      "requiresTalentEntry": [
+        112542
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        20,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Loaded Dice"
+    },
+    {
+      "id": 13750,
+      "granted": false,
+      "requiresTalentEntry": [
+        112545
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        184,
+        292,
+        690,
+        2887,
+        1387
+      ],
+      "classMask": [
+        0,
+        128,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Adrenaline Rush",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 381822,
+      "granted": false,
+      "requiresTalentEntry": [
+        112546
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ambidexterity"
+    },
+    {
+      "id": 344363,
+      "granted": false,
+      "requiresTalentEntry": [
+        112547
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Riposte"
+    },
+    {
+      "id": 35551,
+      "granted": false,
+      "requiresTalentEntry": [
+        112548
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        67108864,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fatal Flourish"
+    },
+    {
+      "id": 196938,
+      "granted": false,
+      "requiresTalentEntry": [
+        112549
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Quick Draw"
+    },
+    {
+      "id": 271877,
+      "granted": false,
+      "requiresTalentEntry": [
+        112551
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        8192,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blade Rush",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 386823,
+      "granted": false,
+      "requiresTalentEntry": [
+        112552
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Greenskin's Wickers"
+    },
+    {
+      "id": 381846,
+      "granted": false,
+      "requiresTalentEntry": [
+        112553
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fan the Hammer"
+    },
+    {
+      "id": 381985,
+      "granted": false,
+      "requiresTalentEntry": [
+        112554
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Precise Cuts"
+    },
+    {
+      "id": 382746,
+      "granted": false,
+      "requiresTalentEntry": [
+        112555
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Main Gauche"
+    },
+    {
+      "id": 272026,
+      "granted": false,
+      "requiresTalentEntry": [
+        112556
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dancing Steel"
+    },
+    {
+      "id": 381828,
+      "granted": false,
+      "requiresTalentEntry": [
+        112557
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ace Up Your Sleeve"
+    },
+    {
+      "id": 235484,
+      "granted": false,
+      "requiresTalentEntry": [
+        112558
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Between the Eyes"
+    },
+    {
+      "id": 381878,
+      "granted": false,
+      "requiresTalentEntry": [
+        112559
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deft Maneuvers"
+    },
+    {
+      "id": 196922,
+      "granted": false,
+      "requiresTalentEntry": [
+        112560
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hit and Run"
+    },
+    {
+      "id": 383281,
+      "granted": false,
+      "requiresTalentEntry": [
+        112562
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hidden Opportunity"
+    },
+    {
+      "id": 382742,
+      "granted": false,
+      "requiresTalentEntry": [
+        112563
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Take 'em by Surprise"
+    },
+    {
+      "id": 424044,
+      "granted": false,
+      "requiresTalentEntry": [
+        112565
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Underhanded Upper Hand"
+    },
+    {
+      "id": 381894,
+      "granted": false,
+      "requiresTalentEntry": [
+        112566
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Triple Threat"
+    },
+    {
+      "id": 394321,
+      "granted": false,
+      "requiresTalentEntry": [
+        112567
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Devious Stratagem"
+    },
+    {
+      "id": 14161,
+      "granted": false,
+      "requiresTalentEntry": [
+        112568
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ruthlessness"
+    },
+    {
+      "id": 256188,
+      "granted": false,
+      "requiresTalentEntry": [
+        112569
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Retractable Hook"
+    },
+    {
+      "id": 279876,
+      "granted": false,
+      "requiresTalentEntry": [
+        112571
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Opportunity"
+    },
+    {
+      "id": 2094,
+      "granted": false,
+      "requiresTalentEntry": [
+        112572
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        184,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blind",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 57934,
+      "granted": false,
+      "requiresTalentEntry": [
+        112574
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        180,
+        292
+      ],
+      "classMask": [
+        0,
+        131072,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Tricks of the Trade",
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 379005,
+      "granted": false,
+      "requiresTalentEntry": [
+        117143
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blackjack"
+    },
+    {
+      "id": 378807,
+      "granted": false,
+      "requiresTalentEntry": [
+        112575
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadowrunner"
+    },
+    {
+      "id": 108208,
+      "granted": false,
+      "requiresTalentEntry": [
+        112576
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Subterfuge"
+    },
+    {
+      "id": 91023,
+      "granted": false,
+      "requiresTalentEntry": [
+        112578
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Find Weakness"
+    },
+    {
+      "id": 393970,
+      "granted": false,
+      "requiresTalentEntry": [
+        112579
+      ],
+      "type": "talent",
+      "label": [
+        117,
+        20,
+        16,
+        292,
+        3057
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Soothing Darkness"
+    },
+    {
+      "id": 381620,
+      "granted": false,
+      "requiresTalentEntry": [
+        112580
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Ambush"
+    },
+    {
+      "id": 381621,
+      "granted": false,
+      "requiresTalentEntry": [
+        117152
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tight Spender"
+    },
+    {
+      "id": 394931,
+      "granted": false,
+      "requiresTalentEntry": [
+        112583
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thrill Seeking"
+    },
+    {
+      "id": 31224,
+      "granted": false,
+      "requiresTalentEntry": [
+        112585
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        65536,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cloak of Shadows",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 257505,
+      "granted": false,
+      "requiresTalentEntry": [
+        112586
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shot in the Dark"
+    },
+    {
+      "id": 200758,
+      "granted": false,
+      "requiresTalentEntry": [
+        112587
+      ],
+      "overrides": 53,
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        4194304,
+        0,
+        8192
+      ],
+      "passive": false,
+      "name": "Gloomblade",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 382507,
+      "granted": false,
+      "requiresTalentEntry": [
+        112588
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shrouded in Darkness"
+    },
+    {
+      "id": 394309,
+      "granted": false,
+      "requiresTalentEntry": [
+        112589
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Swift Death"
+    },
+    {
+      "id": 382508,
+      "granted": false,
+      "requiresTalentEntry": [
+        112591
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Planned Execution"
+    },
+    {
+      "id": 426555,
+      "granted": false,
+      "requiresTalentEntry": [
+        117172
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Warning Signs"
+    },
+    {
+      "id": 382512,
+      "granted": false,
+      "requiresTalentEntry": [
+        112592
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inevitability"
+    },
+    {
+      "id": 382015,
+      "granted": false,
+      "requiresTalentEntry": [
+        112593
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "The Rotten"
+    },
+    {
+      "id": 469642,
+      "granted": false,
+      "requiresTalentEntry": [
+        112594
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        20,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death Perception"
+    },
+    {
+      "id": 382518,
+      "granted": false,
+      "requiresTalentEntry": [
+        112595
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Perforated Veins"
+    },
+    {
+      "id": 58423,
+      "granted": false,
+      "requiresTalentEntry": [
+        112597
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Relentless Strikes"
+    },
+    {
+      "id": 319951,
+      "granted": false,
+      "requiresTalentEntry": [
+        112598
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Shuriken Storm"
+    },
+    {
+      "id": 428486,
+      "granted": false,
+      "requiresTalentEntry": [
+        112599
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Exhilarating Execution"
+    },
+    {
+      "id": 382017,
+      "granted": false,
+      "requiresTalentEntry": [
+        112601
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Veiltouched"
+    },
+    {
+      "id": 385722,
+      "granted": false,
+      "requiresTalentEntry": [
+        112602
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Silent Storm"
+    },
+    {
+      "id": 280719,
+      "granted": false,
+      "requiresTalentEntry": [
+        112603
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        4194305,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Secret Technique",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 277925,
+      "granted": false,
+      "requiresTalentEntry": [
+        112604
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        1073741824,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shuriken Tornado",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 382506,
+      "granted": false,
+      "requiresTalentEntry": [
+        112605
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Replicating Shadows"
+    },
+    {
+      "id": 384631,
+      "granted": false,
+      "requiresTalentEntry": [
+        112606
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        4194304,
+        0,
+        268435456
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Flagellation",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 382504,
+      "granted": false,
+      "requiresTalentEntry": [
+        112607
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dark Brew"
+    },
+    {
+      "id": 382525,
+      "granted": false,
+      "requiresTalentEntry": [
+        112608
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Finality"
+    },
+    {
+      "id": 382517,
+      "granted": false,
+      "requiresTalentEntry": [
+        112609
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deeper Daggers"
+    },
+    {
+      "id": 394320,
+      "granted": false,
+      "requiresTalentEntry": [
+        112610
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Secret Stratagem"
+    },
+    {
+      "id": 382511,
+      "granted": false,
+      "requiresTalentEntry": [
+        112611
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadowed Finishers"
+    },
+    {
+      "id": 185314,
+      "granted": false,
+      "requiresTalentEntry": [
+        112612
+      ],
+      "type": "talent",
+      "label": [
+        59,
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        16777216,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deepening Shadows"
+    },
+    {
+      "id": 426563,
+      "granted": false,
+      "requiresTalentEntry": [
+        112613
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ephemeral Bond"
+    },
+    {
+      "id": 121471,
+      "granted": false,
+      "requiresTalentEntry": [
+        112614
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        16384,
+        0
+      ],
+      "passive": false,
+      "name": "Shadow Blades",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 108209,
+      "granted": false,
+      "requiresTalentEntry": [
+        112615
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadow Focus"
+    },
+    {
+      "id": 382503,
+      "granted": false,
+      "requiresTalentEntry": [
+        112616
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Quick Decisions"
+    },
+    {
+      "id": 382528,
+      "granted": false,
+      "requiresTalentEntry": [
+        112618
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Danse Macabre"
+    },
+    {
+      "id": 382524,
+      "granted": false,
+      "requiresTalentEntry": [
+        112619
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lingering Shadow"
+    },
+    {
+      "id": 245687,
+      "granted": false,
+      "requiresTalentEntry": [
+        112620
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        20,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dark Shadow"
+    },
+    {
+      "id": 382515,
+      "granted": false,
+      "requiresTalentEntry": [
+        112622
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cloaked in Shadows"
+    },
+    {
+      "id": 382514,
+      "granted": false,
+      "requiresTalentEntry": [
+        112621
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fade to Nothing"
+    },
+    {
+      "id": 393972,
+      "granted": false,
+      "requiresTalentEntry": [
+        112623
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Shadow Dance"
+    },
+    {
+      "id": 382505,
+      "granted": false,
+      "requiresTalentEntry": [
+        112625
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "The First Dance"
+    },
+    {
+      "id": 196976,
+      "granted": false,
+      "requiresTalentEntry": [
+        112624
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Master of Shadows"
+    },
+    {
+      "id": 394023,
+      "granted": false,
+      "requiresTalentEntry": [
+        112626
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Shadow Techniques"
+    },
+    {
+      "id": 343160,
+      "granted": false,
+      "requiresTalentEntry": [
+        112627
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Premeditation"
+    },
+    {
+      "id": 193537,
+      "granted": false,
+      "requiresTalentEntry": [
+        112628
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Weaponmaster"
+    },
+    {
+      "id": 319949,
+      "granted": false,
+      "requiresTalentEntry": [
+        112629
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Backstab"
+    },
+    {
+      "id": 5938,
+      "granted": false,
+      "requiresTalentEntry": [
+        112630
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        536870912,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Shiv",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              394983
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1776,
+      "granted": false,
+      "requiresTalentEntry": [
+        112631
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        184,
+        292
+      ],
+      "classMask": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Gouge",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 200733,
+      "granted": false,
+      "requiresTalentEntry": [
+        117740
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        2919
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Airborne Irritant"
+    },
+    {
+      "id": 79008,
+      "granted": false,
+      "requiresTalentEntry": [
+        112632
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Elusiveness"
+    },
+    {
+      "id": 31230,
+      "granted": false,
+      "requiresTalentEntry": [
+        114737
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        1024,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cheat Death"
+    },
+    {
+      "id": 231719,
+      "granted": false,
+      "requiresTalentEntry": [
+        112633
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deadened Nerves"
+    },
+    {
+      "id": 193546,
+      "granted": false,
+      "requiresTalentEntry": [
+        112634
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Iron Stomach"
+    },
+    {
+      "id": 378427,
+      "granted": false,
+      "requiresTalentEntry": [
+        112635
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nimble Fingers"
+    },
+    {
+      "id": 231691,
+      "granted": false,
+      "requiresTalentEntry": [
+        112636
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Sprint"
+    },
+    {
+      "id": 400804,
+      "granted": false,
+      "requiresTalentEntry": [
+        112638
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1024
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unbreakable Stride"
+    },
+    {
+      "id": 382245,
+      "granted": false,
+      "requiresTalentEntry": [
+        112639
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        64,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cold Blood",
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 382238,
+      "granted": false,
+      "requiresTalentEntry": [
+        112640
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lethality"
+    },
+    {
+      "id": 193531,
+      "granted": false,
+      "requiresTalentEntry": [
+        112642
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deeper Stratagem"
+    },
+    {
+      "id": 193539,
+      "granted": false,
+      "requiresTalentEntry": [
+        112643
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Alacrity"
+    },
+    {
+      "id": 455143,
+      "granted": false,
+      "requiresTalentEntry": [
+        112644
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Acrobatic Strikes"
+    },
+    {
+      "id": 381619,
+      "granted": false,
+      "requiresTalentEntry": [
+        112645
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thief's Versatility"
+    },
+    {
+      "id": 378803,
+      "granted": false,
+      "requiresTalentEntry": [
+        112646
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rushed Setup"
+    },
+    {
+      "id": 354897,
+      "granted": false,
+      "requiresTalentEntry": [
+        112647
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Float Like a Butterfly"
+    },
+    {
+      "id": 131511,
+      "granted": false,
+      "requiresTalentEntry": [
+        117173
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        524288,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sting Like a Bee"
+    },
+    {
+      "id": 469779,
+      "granted": false,
+      "requiresTalentEntry": [
+        112648
+      ],
+      "visibleSpellId": 381623,
+      "type": "talent",
+      "label": [
+        16,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Thistle Tea"
+    },
+    {
+      "id": 14190,
+      "granted": false,
+      "requiresTalentEntry": [
+        112649
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        2365
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Seal Fate"
+    },
+    {
+      "id": 280716,
+      "granted": false,
+      "requiresTalentEntry": [
+        112650
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Leeching Poison"
+    },
+    {
+      "id": 14983,
+      "granted": false,
+      "requiresTalentEntry": [
+        112651
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vigor"
+    },
+    {
+      "id": 381542,
+      "granted": false,
+      "requiresTalentEntry": [
+        112652
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deadly Precision"
+    },
+    {
+      "id": 381543,
+      "granted": false,
+      "requiresTalentEntry": [
+        117150
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Virulent Poisons"
+    },
+    {
+      "id": 378813,
+      "granted": false,
+      "requiresTalentEntry": [
+        112654
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1024
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fleet Footed"
+    },
+    {
+      "id": 5761,
+      "granted": false,
+      "requiresTalentEntry": [
+        112656
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        870
+      ],
+      "classMask": [
+        0,
+        0,
+        524289,
+        0
+      ],
+      "passive": false,
+      "name": "Numbing Poison",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 381637,
+      "granted": false,
+      "requiresTalentEntry": [
+        112655
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        870
+      ],
+      "classMask": [
+        0,
+        8192,
+        1,
+        0
+      ],
+      "passive": false,
+      "name": "Atrophic Poison",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 5277,
+      "granted": false,
+      "requiresTalentEntry": [
+        112657
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        32,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Evasion",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 381797,
+      "granted": false,
+      "requiresTalentEntry": [
+        112659
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dashing Scoundrel"
+    },
+    {
+      "id": 255544,
+      "granted": false,
+      "requiresTalentEntry": [
+        112660
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        4194304,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Poison Bomb"
+    },
+    {
+      "id": 381669,
+      "granted": false,
+      "requiresTalentEntry": [
+        112661
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twist the Knife"
+    },
+    {
+      "id": 360194,
+      "granted": false,
+      "requiresTalentEntry": [
+        112662
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        690,
+        1077
+      ],
+      "classMask": [
+        0,
+        134217728,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Deathmark",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 381800,
+      "granted": false,
+      "requiresTalentEntry": [
+        112663
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tiny Toxic Blade"
+    },
+    {
+      "id": 381652,
+      "granted": false,
+      "requiresTalentEntry": [
+        112664
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Systemic Failure"
+    },
+    {
+      "id": 381634,
+      "granted": false,
+      "requiresTalentEntry": [
+        112665
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vicious Venoms"
+    },
+    {
+      "id": 381802,
+      "granted": false,
+      "requiresTalentEntry": [
+        112667
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Indiscriminate Carnage"
+    },
+    {
+      "id": 381799,
+      "granted": false,
+      "requiresTalentEntry": [
+        112668
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Scent of Blood"
+    },
+    {
+      "id": 385478,
+      "granted": false,
+      "requiresTalentEntry": [
+        112669
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shrouded Suffocation"
+    },
+    {
+      "id": 381673,
+      "granted": false,
+      "requiresTalentEntry": [
+        112670
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Doomblade"
+    },
+    {
+      "id": 200806,
+      "granted": false,
+      "requiresTalentEntry": [
+        112672
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292,
+        2423
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanguine Blades"
+    },
+    {
+      "id": 381632,
+      "granted": false,
+      "requiresTalentEntry": [
+        112673
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Garrote"
+    },
+    {
+      "id": 2823,
+      "granted": false,
+      "requiresTalentEntry": [
+        112676
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292,
+        869
+      ],
+      "classMask": [
+        65536,
+        0,
+        1,
+        0
+      ],
+      "passive": false,
+      "name": "Deadly Poison",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 400783,
+      "granted": false,
+      "requiresTalentEntry": [
+        112677
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arterial Precision"
+    },
+    {
+      "id": 381798,
+      "granted": false,
+      "requiresTalentEntry": [
+        112678
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Zoldyck Recipe"
+    },
+    {
+      "id": 328085,
+      "granted": false,
+      "requiresTalentEntry": [
+        112679
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blindside"
+    },
+    {
+      "id": 423054,
+      "granted": false,
+      "requiresTalentEntry": [
+        117106
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Path of Blood"
+    },
+    {
+      "id": 423136,
+      "granted": false,
+      "requiresTalentEntry": [
+        117129
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sudden Demise"
+    },
+    {
+      "id": 385627,
+      "granted": false,
+      "requiresTalentEntry": [
+        117130
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292,
+        1141
+      ],
+      "classMask": [
+        0,
+        4194304,
+        2097152,
+        8388608
+      ],
+      "passive": false,
+      "name": "Kingsbane",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 381801,
+      "granted": false,
+      "requiresTalentEntry": [
+        117131
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dragon-Tempered Blades"
+    },
+    {
+      "id": 381631,
+      "granted": false,
+      "requiresTalentEntry": [
+        117133
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flying Daggers"
+    },
+    {
+      "id": 457512,
+      "granted": false,
+      "requiresTalentEntry": [
+        117132
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanguine Stratagem"
+    },
+    {
+      "id": 381630,
+      "granted": false,
+      "requiresTalentEntry": [
+        117135
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Intent to Kill"
+    },
+    {
+      "id": 196861,
+      "granted": false,
+      "requiresTalentEntry": [
+        117134
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Iron Wire"
+    },
+    {
+      "id": 421975,
+      "granted": false,
+      "requiresTalentEntry": [
+        117137
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        512
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Caustic Spatter"
+    },
+    {
+      "id": 381627,
+      "granted": false,
+      "requiresTalentEntry": [
+        117136
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Internal Bleeding"
+    },
+    {
+      "id": 455072,
+      "granted": false,
+      "requiresTalentEntry": [
+        117139
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rapid Injection"
+    },
+    {
+      "id": 423662,
+      "granted": false,
+      "requiresTalentEntry": [
+        117144
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stillshroud"
+    },
+    {
+      "id": 423647,
+      "granted": false,
+      "requiresTalentEntry": [
+        117145
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Graceful Guile"
+    },
+    {
+      "id": 423683,
+      "granted": false,
+      "requiresTalentEntry": [
+        117146
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Featherfoot"
+    },
+    {
+      "id": 423703,
+      "granted": false,
+      "requiresTalentEntry": [
+        117148
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Crackshot"
+    },
+    {
+      "id": 51690,
+      "granted": false,
+      "requiresTalentEntry": [
+        117149
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        184,
+        292
+      ],
+      "classMask": [
+        0,
+        8388608,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Killing Spree",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 423701,
+      "granted": false,
+      "requiresTalentEntry": [
+        117151
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Superior Mixture"
+    },
+    {
+      "id": 426594,
+      "granted": false,
+      "requiresTalentEntry": [
+        117168
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadowcraft"
+    },
+    {
+      "id": 426591,
+      "granted": false,
+      "requiresTalentEntry": [
+        117169
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Goremaw's Bite",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 277953,
+      "granted": false,
+      "requiresTalentEntry": [
+        117170
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Night Terrors"
+    },
+    {
+      "id": 428387,
+      "granted": false,
+      "requiresTalentEntry": [
+        117753
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Terrifying Pace"
+    },
+    {
+      "id": 457022,
+      "granted": false,
+      "requiresTalentEntry": [
+        117703
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ethereal Cloak"
+    },
+    {
+      "id": 457034,
+      "granted": false,
+      "requiresTalentEntry": [
+        126029
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bait and Switch"
+    },
+    {
+      "id": 454419,
+      "granted": false,
+      "requiresTalentEntry": [
+        117704
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deal Fate"
+    },
+    {
+      "id": 457066,
+      "granted": false,
+      "requiresTalentEntry": [
+        117705
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Corrupt the Blood"
+    },
+    {
+      "id": 457056,
+      "granted": false,
+      "requiresTalentEntry": [
+        117706
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lingering Darkness"
+    },
+    {
+      "id": 457062,
+      "granted": false,
+      "requiresTalentEntry": [
+        126030
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Symbolic Victory"
+    },
+    {
+      "id": 457053,
+      "granted": false,
+      "requiresTalentEntry": [
+        117707
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Clear the Witnesses"
+    },
+    {
+      "id": 441321,
+      "granted": false,
+      "requiresTalentEntry": [
+        117708
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flawless Form"
+    },
+    {
+      "id": 454434,
+      "granted": false,
+      "requiresTalentEntry": [
+        117711
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inevitabile End"
+    },
+    {
+      "id": 454435,
+      "granted": false,
+      "requiresTalentEntry": [
+        125139
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Destiny Defined"
+    },
+    {
+      "id": 441423,
+      "granted": false,
+      "requiresTalentEntry": [
+        117712
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Coup de Grace"
+    },
+    {
+      "id": 441429,
+      "granted": false,
+      "requiresTalentEntry": [
+        117713
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cloud Cover"
+    },
+    {
+      "id": 441398,
+      "granted": false,
+      "requiresTalentEntry": [
+        120132
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "No Scruples"
+    },
+    {
+      "id": 457055,
+      "granted": false,
+      "requiresTalentEntry": [
+        117714
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Singular Focus"
+    },
+    {
+      "id": 454426,
+      "granted": false,
+      "requiresTalentEntry": [
+        117716
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Delivered Doom"
+    },
+    {
+      "id": 454429,
+      "granted": false,
+      "requiresTalentEntry": [
+        117717
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fate Intertwined"
+    },
+    {
+      "id": 441273,
+      "granted": false,
+      "requiresTalentEntry": [
+        117718
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Surprising Strikes"
+    },
+    {
+      "id": 453428,
+      "granted": false,
+      "requiresTalentEntry": [
+        117719
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mean Streak"
+    },
+    {
+      "id": 457057,
+      "granted": false,
+      "requiresTalentEntry": [
+        117720
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadewalker"
+    },
+    {
+      "id": 457063,
+      "granted": false,
+      "requiresTalentEntry": [
+        126027
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shroud of Night"
+    },
+    {
+      "id": 452536,
+      "granted": false,
+      "requiresTalentEntry": [
+        117722
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hand of Fate"
+    },
+    {
+      "id": 454428,
+      "granted": false,
+      "requiresTalentEntry": [
+        117724
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fateful Ending"
+    },
+    {
+      "id": 441367,
+      "granted": false,
+      "requiresTalentEntry": [
+        117725
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nimble Flurry"
+    },
+    {
+      "id": 454430,
+      "granted": false,
+      "requiresTalentEntry": [
+        117726
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Double Jeopardy"
+    },
+    {
+      "id": 454432,
+      "granted": false,
+      "requiresTalentEntry": [
+        117727
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inexorable March"
+    },
+    {
+      "id": 454433,
+      "granted": false,
+      "requiresTalentEntry": [
+        125140
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        4049
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Death's Arrival"
+    },
+    {
+      "id": 457067,
+      "granted": false,
+      "requiresTalentEntry": [
+        117728
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Momentum of Despair"
+    },
+    {
+      "id": 457068,
+      "granted": false,
+      "requiresTalentEntry": [
+        126028
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Follow the Blood"
+    },
+    {
+      "id": 457054,
+      "granted": false,
+      "requiresTalentEntry": [
+        117729
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hunt Them Down"
+    },
+    {
+      "id": 441403,
+      "granted": false,
+      "requiresTalentEntry": [
+        117731
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "So Tricky"
+    },
+    {
+      "id": 441415,
+      "granted": false,
+      "requiresTalentEntry": [
+        120133
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Don't Be Suspicious"
+    },
+    {
+      "id": 461980,
+      "granted": false,
+      "requiresTalentEntry": [
+        117732
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fatal Intent"
+    },
+    {
+      "id": 457052,
+      "granted": false,
+      "requiresTalentEntry": [
+        117733
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Deathstalker's Mark"
+    },
+    {
+      "id": 441346,
+      "granted": false,
+      "requiresTalentEntry": [
+        117734
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thousand Cuts"
+    },
+    {
+      "id": 441359,
+      "granted": false,
+      "requiresTalentEntry": [
+        120131
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flickerstrike"
+    },
+    {
+      "id": 454300,
+      "granted": false,
+      "requiresTalentEntry": [
+        117735
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Chosen's Revelry"
+    },
+    {
+      "id": 454286,
+      "granted": false,
+      "requiresTalentEntry": [
+        125132
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tempted Fate"
+    },
+    {
+      "id": 441146,
+      "granted": false,
+      "requiresTalentEntry": [
+        117737
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unseen Blade"
+    },
+    {
+      "id": 441247,
+      "granted": false,
+      "requiresTalentEntry": [
+        117738
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Smoke"
+    },
+    {
+      "id": 441250,
+      "granted": false,
+      "requiresTalentEntry": [
+        120130
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mirrors"
+    },
+    {
+      "id": 457058,
+      "granted": false,
+      "requiresTalentEntry": [
+        117739
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        20,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Darkest Night"
+    },
+    {
+      "id": 382513,
+      "granted": false,
+      "requiresTalentEntry": [
+        125614
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Without a Trace"
+    },
+    {
+      "id": 455131,
+      "granted": false,
+      "requiresTalentEntry": [
+        125615
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shadowheart"
+    },
+    {
+      "id": 394930,
+      "granted": false,
+      "requiresTalentEntry": [
+        125619
+      ],
+      "type": "talent",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Double Dance"
+    },
+    {
+      "id": 56814,
+      "type": "learned",
+      "taughtBy": 210108,
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Detection",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 281786,
+      "type": "learned",
+      "taughtBy": 280719,
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Secret Technique"
+    },
+    {
+      "id": 381623,
+      "type": "learned",
+      "taughtBy": 469779,
+      "label": [
+        16,
+        20
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "passive": false,
+      "name": "Thistle Tea",
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 115191,
+      "grantedBy": 108208,
+      "type": "temporary",
+      "label": [
+        20,
+        16,
+        292,
+        1387
+      ],
+      "classMask": [
+        4194304,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Stealth",
+      "cooldown": {
+        "duration": 2000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 456330,
+      "grantedBy": 454434,
+      "type": "temporary",
+      "label": [
+        16,
+        20,
+        292
+      ],
+      "classMask": [
+        0,
+        64,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cold Blood",
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 441587,
+      "grantedBy": 441429,
+      "type": "temporary",
+      "label": [
+        20,
+        16,
+        292
+      ],
+      "classMask": [
+        4096,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Distract",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    }
+  ]
+}

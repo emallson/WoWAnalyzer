@@ -259,6 +259,11 @@ class GlobalCooldown extends Analyzer {
     baseGcd: number = 1500,
     minGcd: number = 750,
   ): number {
+    if (baseGcd < minGcd) {
+      // autogen: some spells have base gcds after modifiers that are lower than the minimum. example: expel harm on Brewmaster has a 500ms "hasted" base gcd.
+      // since this is below the minimum, we don't haste it.
+      return baseGcd;
+    }
     const gcd = baseGcd / (1 + haste);
     // Global cooldowns can't normally drop below a certain threshold
     return Math.max(minGcd, gcd);

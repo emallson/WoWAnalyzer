@@ -1,0 +1,7721 @@
+{
+  "specId": 65,
+  "baselineSpells": [
+    633,
+    1044,
+    642,
+    32223,
+    82242,
+    115675,
+    23214,
+    34767,
+    73630,
+    69826,
+    69820,
+    13819,
+    34769,
+    73629,
+    123830,
+    94289,
+    86678,
+    53652,
+    25912,
+    25914,
+    86704,
+    81297,
+    114852,
+    66235,
+    137026,
+    162056,
+    162056,
+    114919,
+    114871,
+    121183,
+    7328,
+    62124,
+    205273,
+    200652,
+    200654,
+    209202,
+    190784,
+    465,
+    270564,
+    270562,
+    290608,
+    85673,
+    183435,
+    24275,
+    53600,
+    10326,
+    6940,
+    200327,
+    5502,
+    317872,
+    35395,
+    317906,
+    317911,
+    20271,
+    19750,
+    853,
+    26573,
+    326730,
+    327977,
+    1022,
+    31884,
+    363613,
+    391054,
+    453785,
+    53563,
+    86103,
+    137029,
+    162701,
+    183997,
+    212056,
+    275773,
+    53576,
+    4987,
+    289941,
+    53651,
+    315867,
+    498,
+    82326,
+    415091,
+    428076,
+    440013,
+    462092,
+    462093,
+    376996
+  ],
+  "spells": [
+    {
+      "id": 633,
+      "type": "baseline"
+    },
+    {
+      "id": 1044,
+      "type": "baseline"
+    },
+    {
+      "id": 642,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        177,
+        292
+      ],
+      "classMask": [
+        4194304,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Divine Shield",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 32223,
+      "type": "baseline"
+    },
+    {
+      "id": 82242,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Parry"
+    },
+    {
+      "id": 115675,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Boundless Conviction"
+    },
+    {
+      "id": 23214,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Charger",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 34767,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Thalassian Charger",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 73630,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Great Exarch's Elekk",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 69826,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Great Sunwalker Kodo",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 69820,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Sunwalker Kodo",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 13819,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Warhorse",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 34769,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Thalassian Warhorse",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 73629,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Exarch's Elekk",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 123830,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Block"
+    },
+    {
+      "id": 94289,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Protector of the Innocent"
+    },
+    {
+      "id": 86678,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Light of the Ancient Kings"
+    },
+    {
+      "id": 53652,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        16
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Beacon of Light",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 25912,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        2097152,
+        0,
+        2,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Holy Shock",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 25914,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        0,
+        81920,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Holy Shock",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 86704,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        65536
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Ancient Fury"
+    },
+    {
+      "id": 81297,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        881,
+        2587,
+        2664
+      ],
+      "classMask": [
+        134217760,
+        0,
+        2,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Consecration"
+    },
+    {
+      "id": 114852,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        0,
+        67108866,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Holy Prism",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 66235,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        8388608,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Ardent Defender"
+    },
+    {
+      "id": 137026,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        170,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Paladin"
+    },
+    {
+      "id": 162056,
+      "type": "baseline"
+    },
+    {
+      "id": 162056,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Jailer's Judgment",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 114919,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        0,
+        10,
+        0
+      ],
+      "passive": false,
+      "name": "Light's Hammer"
+    },
+    {
+      "id": 114871,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        741,
+        881,
+        2607
+      ],
+      "classMask": [
+        0,
+        0,
+        67108866,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Holy Prism",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 121183,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Contemplation",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 7328,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        773
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        131072
+      ],
+      "passive": false,
+      "name": "Redemption",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 62124,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        1073741824,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Hand of Reckoning",
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 205273,
+      "type": "baseline",
+      "label": [
+        74,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Wake of Ashes",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 200652,
+      "type": "baseline"
+    },
+    {
+      "id": 200654,
+      "type": "baseline",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        16896,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Tyr's Deliverance"
+    },
+    {
+      "id": 209202,
+      "type": "baseline",
+      "label": [
+        75,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Eye of Tyr",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 190784,
+      "type": "baseline"
+    },
+    {
+      "id": 465,
+      "type": "baseline"
+    },
+    {
+      "id": 270564,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Dawnforge Ram",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 270562,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Darkforge Ram",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 290608,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Crusader's Direhorn",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 85673,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        16384,
+        16384,
+        0
+      ],
+      "passive": false,
+      "name": "Word of Glory",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 183435,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        1223
+      ],
+      "classMask": [
+        0,
+        0,
+        1073741824,
+        0
+      ],
+      "passive": false,
+      "name": "Retribution Aura",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 24275,
+      "type": "baseline"
+    },
+    {
+      "id": 53600,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        760,
+        881
+      ],
+      "classMask": [
+        134217728,
+        1048576,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Shield of the Righteous",
+      "cooldown": {
+        "duration": 1000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 10326,
+      "type": "baseline"
+    },
+    {
+      "id": 6940,
+      "type": "baseline"
+    },
+    {
+      "id": 200327,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Blessing of Sacrifice"
+    },
+    {
+      "id": 5502,
+      "type": "baseline",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Sense Undead",
+      "gcd": {
+        "duration": 1500,
+        "hasted": false
+      }
+    },
+    {
+      "id": 317872,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Avenging Wrath"
+    },
+    {
+      "id": 35395,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        189,
+        292,
+        2570,
+        2580,
+        2835
+      ],
+      "classMask": [
+        0,
+        32768,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Crusader Strike",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": -1,
+            "requiredSpells": [
+              406646
+            ]
+          },
+          {
+            "max": 1,
+            "requiredSpells": [
+              216331
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 7800,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": -1800,
+            "requiredSpells": [
+              216331
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 317906,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Retribution Aura"
+    },
+    {
+      "id": 317911,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Divine Steed"
+    },
+    {
+      "id": 20271,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        189,
+        292,
+        881,
+        2580
+      ],
+      "classMask": [
+        142606336,
+        0,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Judgment",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              204023
+            ]
+          },
+          {
+            "max": 1,
+            "requiredSpells": [
+              405461
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 11000,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": -3300,
+            "requiredSpells": [
+              216331
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 19750,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        741,
+        802
+      ],
+      "classMask": [
+        1073741824,
+        16384,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Flash of Light",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 0,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": 6000,
+            "hasted": false,
+            "requiredSpells": [
+              403698
+            ]
+          }
+        ]
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 853,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        3127
+      ],
+      "classMask": [
+        2048,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Hammer of Justice",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              234299
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 26573,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        32,
+        67108864,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Consecration",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 9000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 326730,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Hammer of Wrath"
+    },
+    {
+      "id": 327977,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Judgment"
+    },
+    {
+      "id": 1022,
+      "type": "baseline"
+    },
+    {
+      "id": 31884,
+      "type": "baseline"
+    },
+    {
+      "id": 363613,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Lightforged Ruinstrider",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 391054,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        773,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        536870912,
+        32768
+      ],
+      "passive": false,
+      "name": "Intercession",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 600000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 453785,
+      "type": "baseline",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Earthen Ordinant's Ramolith",
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 53563,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        3895
+      ],
+      "classMask": [
+        0,
+        16777216,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Beacon of Light",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 86103,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        171,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Plate Specialization"
+    },
+    {
+      "id": 137029,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        170,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Paladin"
+    },
+    {
+      "id": 162701,
+      "type": "baseline",
+      "label": [
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stat Negation Aura - Intellect Healer"
+    },
+    {
+      "id": 183997,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mastery: Lightbringer"
+    },
+    {
+      "id": 212056,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        773
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        131072
+      ],
+      "passive": false,
+      "name": "Absolution",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 275773,
+      "type": "baseline",
+      "overrides": 20271,
+      "label": [
+        26,
+        16,
+        189,
+        292,
+        881
+      ],
+      "classMask": [
+        142606336,
+        0,
+        2,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Judgment",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              204023
+            ]
+          },
+          {
+            "max": 1,
+            "requiredSpells": [
+              405461
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 11000,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": -3300,
+            "requiredSpells": [
+              216331
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 53576,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Infusion of Light"
+    },
+    {
+      "id": 4987,
+      "type": "baseline",
+      "overrides": 440013,
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        4096,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cleanse",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 289941,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Shock"
+    },
+    {
+      "id": 53651,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        256
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Beacon"
+    },
+    {
+      "id": 315867,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Judgment"
+    },
+    {
+      "id": 498,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        1284,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        256,
+        0
+      ],
+      "passive": false,
+      "name": "Divine Protection",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 82326,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        0,
+        16384,
+        1024,
+        0
+      ],
+      "passive": false,
+      "name": "Holy Light",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 415091,
+      "type": "baseline",
+      "overrides": 53600,
+      "label": [
+        26,
+        16,
+        292,
+        760,
+        881
+      ],
+      "classMask": [
+        134217728,
+        1048576,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Shield of the Righteous",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 1000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 428076,
+      "type": "baseline",
+      "label": [
+        16,
+        26,
+        170,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Paladin"
+    },
+    {
+      "id": 440013,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        4096,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cleanse Toxins",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 462092,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Paladin"
+    },
+    {
+      "id": 462093,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Paladin"
+    },
+    {
+      "id": 376996,
+      "type": "baseline",
+      "label": [
+        26,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Seasoned Warhorse"
+    },
+    {
+      "id": 53595,
+      "granted": false,
+      "requiresTalentEntry": [
+        102431
+      ],
+      "overrides": 35395,
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        262144,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Hammer of the Righteous",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 2
+      },
+      "cooldown": {
+        "duration": 5000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 204019,
+      "granted": false,
+      "requiresTalentEntry": [
+        102430
+      ],
+      "overrides": 35395,
+      "type": "talent",
+      "label": [
+        26,
+        117,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blessed Hammer",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 5000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 379022,
+      "granted": false,
+      "requiresTalentEntry": [
+        102432
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Consecration in Flame"
+    },
+    {
+      "id": 385422,
+      "granted": false,
+      "requiresTalentEntry": [
+        102433
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "unless-learned",
+      "name": "Resolute Defender"
+    },
+    {
+      "id": 378845,
+      "granted": false,
+      "requiresTalentEntry": [
+        102435
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        16384,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Focused Enmity"
+    },
+    {
+      "id": 204023,
+      "granted": false,
+      "requiresTalentEntry": [
+        102436
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Crusader's Judgment"
+    },
+    {
+      "id": 378285,
+      "granted": false,
+      "requiresTalentEntry": [
+        102437
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Tyr's Enforcer"
+    },
+    {
+      "id": 315924,
+      "granted": false,
+      "requiresTalentEntry": [
+        102438
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hand of the Protector"
+    },
+    {
+      "id": 393022,
+      "granted": false,
+      "requiresTalentEntry": [
+        102439
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inspiring Vanguard"
+    },
+    {
+      "id": 204074,
+      "granted": false,
+      "requiresTalentEntry": [
+        102440
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2755
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Righteous Protector"
+    },
+    {
+      "id": 31850,
+      "granted": false,
+      "requiresTalentEntry": [
+        102445
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        1284,
+        2371,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        8388608,
+        0
+      ],
+      "passive": false,
+      "name": "Ardent Defender",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 378762,
+      "granted": false,
+      "requiresTalentEntry": [
+        102446
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Ferren Marcus's Fervor"
+    },
+    {
+      "id": 31884,
+      "granted": false,
+      "requiresTalentEntry": [
+        102448,
+        102519,
+        102569
+      ],
+      "visibleSpellId": 31884,
+      "type": "talent"
+    },
+    {
+      "id": 389539,
+      "granted": false,
+      "requiresTalentEntry": [
+        102447
+      ],
+      "visibleSpellId": 389539,
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": false,
+      "name": "Sentinel",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 378279,
+      "granted": false,
+      "requiresTalentEntry": [
+        102449
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Gift of the Golden Val'kyr"
+    },
+    {
+      "id": 379043,
+      "granted": false,
+      "requiresTalentEntry": [
+        102450
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Faith in the Light"
+    },
+    {
+      "id": 393030,
+      "granted": false,
+      "requiresTalentEntry": [
+        102452
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Holy Shield"
+    },
+    {
+      "id": 85043,
+      "granted": false,
+      "requiresTalentEntry": [
+        102453
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1024
+      ],
+      "passive": true,
+      "name": "Grand Crusader"
+    },
+    {
+      "id": 378974,
+      "granted": false,
+      "requiresTalentEntry": [
+        102454
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Bastion of Light",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 152261,
+      "granted": false,
+      "requiresTalentEntry": [
+        102455
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        2752
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Shield"
+    },
+    {
+      "id": 86659,
+      "granted": false,
+      "requiresTalentEntry": [
+        102456
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        131072,
+        0
+      ],
+      "passive": false,
+      "name": "Guardian of Ancient Kings",
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 386653,
+      "granted": false,
+      "requiresTalentEntry": [
+        102457
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Bulwark of Righteous Fury"
+    },
+    {
+      "id": 469883,
+      "granted": false,
+      "requiresTalentEntry": [
+        102459
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Refining Fire"
+    },
+    {
+      "id": 393071,
+      "granted": false,
+      "requiresTalentEntry": [
+        102461
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Strength in Adversity"
+    },
+    {
+      "id": 380188,
+      "granted": false,
+      "requiresTalentEntry": [
+        102460
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Crusader's Resolve"
+    },
+    {
+      "id": 386568,
+      "granted": false,
+      "requiresTalentEntry": [
+        102463
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inner Light"
+    },
+    {
+      "id": 280373,
+      "granted": false,
+      "requiresTalentEntry": [
+        102462
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Redoubt"
+    },
+    {
+      "id": 406101,
+      "granted": false,
+      "requiresTalentEntry": [
+        102464
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Faith's Armor"
+    },
+    {
+      "id": 375576,
+      "granted": false,
+      "requiresTalentEntry": [
+        102465
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        134217728,
+        16384,
+        268435458,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Divine Toll",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              379391
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 387174,
+      "granted": false,
+      "requiresTalentEntry": [
+        102466
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        134217728,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Eye of Tyr",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -19800,
+            "requiredSpells": [
+              405757
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 321136,
+      "granted": false,
+      "requiresTalentEntry": [
+        102467
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Shining Light"
+    },
+    {
+      "id": 209389,
+      "granted": false,
+      "requiresTalentEntry": [
+        102468
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        2756
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bulwark of Order"
+    },
+    {
+      "id": 378425,
+      "granted": false,
+      "requiresTalentEntry": [
+        102469
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Uther's Counsel"
+    },
+    {
+      "id": 385726,
+      "granted": false,
+      "requiresTalentEntry": [
+        102470
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Barricade of Faith"
+    },
+    {
+      "id": 31935,
+      "granted": false,
+      "requiresTalentEntry": [
+        102471
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        881,
+        4252
+      ],
+      "classMask": [
+        16384,
+        0,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Avenger's Shield",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 378405,
+      "granted": false,
+      "requiresTalentEntry": [
+        102472
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light of the Titans"
+    },
+    {
+      "id": 392928,
+      "granted": false,
+      "requiresTalentEntry": [
+        125873
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26,
+        2693
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tirion's Devotion"
+    },
+    {
+      "id": 204077,
+      "granted": false,
+      "requiresTalentEntry": [
+        102473
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Final Stand"
+    },
+    {
+      "id": 327193,
+      "granted": false,
+      "requiresTalentEntry": [
+        102474
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Moment of Glory",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 383388,
+      "granted": false,
+      "requiresTalentEntry": [
+        102475,
+        102575
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26,
+        2735
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Relentless Inquisitor"
+    },
+    {
+      "id": 393024,
+      "granted": false,
+      "requiresTalentEntry": [
+        102477
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Cleanse"
+    },
+    {
+      "id": 24275,
+      "granted": false,
+      "requiresTalentEntry": [
+        102479
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2580
+      ],
+      "classMask": [
+        134217728,
+        128,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Hammer of Wrath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              383314
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 18750,
+        "hasted": true
+      }
+    },
+    {
+      "id": 407067,
+      "granted": false,
+      "requiresTalentEntry": [
+        115475
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rush of Light"
+    },
+    {
+      "id": 198034,
+      "granted": false,
+      "requiresTalentEntry": [
+        115016
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        117,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        4096
+      ],
+      "passive": false,
+      "name": "Divine Hammer",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 383228,
+      "granted": false,
+      "requiresTalentEntry": [
+        102491
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Swift Justice"
+    },
+    {
+      "id": 404436,
+      "granted": false,
+      "requiresTalentEntry": [
+        114828
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light of Justice"
+    },
+    {
+      "id": 402912,
+      "granted": false,
+      "requiresTalentEntry": [
+        102494
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Righteous Cause"
+    },
+    {
+      "id": 406064,
+      "granted": false,
+      "requiresTalentEntry": [
+        102493
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Art of War"
+    },
+    {
+      "id": 255937,
+      "granted": false,
+      "requiresTalentEntry": [
+        102497
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        134217728,
+        0,
+        18,
+        0
+      ],
+      "passive": false,
+      "name": "Wake of Ashes",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 184575,
+      "granted": false,
+      "requiresTalentEntry": [
+        102498
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        881
+      ],
+      "classMask": [
+        134217728,
+        0,
+        2,
+        1073741824
+      ],
+      "passive": false,
+      "name": "Blade of Justice",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              403745
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 12000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 53385,
+      "granted": false,
+      "requiresTalentEntry": [
+        102499
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        134217728,
+        131072,
+        134217730,
+        0
+      ],
+      "passive": false,
+      "name": "Divine Storm",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 403698,
+      "granted": false,
+      "requiresTalentEntry": [
+        102503
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Celerity"
+    },
+    {
+      "id": 404357,
+      "granted": false,
+      "requiresTalentEntry": [
+        115020
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Guided Prayer"
+    },
+    {
+      "id": 383328,
+      "granted": false,
+      "requiresTalentEntry": [
+        102504
+      ],
+      "overrides": 85256,
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2546,
+        2580
+      ],
+      "classMask": [
+        134217728,
+        4096,
+        8194,
+        0
+      ],
+      "passive": false,
+      "name": "Final Verdict",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 215661,
+      "granted": false,
+      "requiresTalentEntry": [
+        114831
+      ],
+      "overrides": 85256,
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        881,
+        2580
+      ],
+      "classMask": [
+        134217728,
+        0,
+        16777218,
+        0
+      ],
+      "passive": false,
+      "name": "Justicar's Vengeance",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 405461,
+      "granted": false,
+      "requiresTalentEntry": [
+        102505
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Judgment"
+    },
+    {
+      "id": 405278,
+      "granted": false,
+      "requiresTalentEntry": [
+        115021
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        3622
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Boundless Judgment"
+    },
+    {
+      "id": 404512,
+      "granted": false,
+      "requiresTalentEntry": [
+        102506
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Highlord's Wrath"
+    },
+    {
+      "id": 405289,
+      "granted": false,
+      "requiresTalentEntry": [
+        102510
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Burning Crusade"
+    },
+    {
+      "id": 406157,
+      "granted": false,
+      "requiresTalentEntry": [
+        102511
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Adjudication"
+    },
+    {
+      "id": 406158,
+      "granted": false,
+      "requiresTalentEntry": [
+        102512
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Auxiliary"
+    },
+    {
+      "id": 343721,
+      "granted": false,
+      "requiresTalentEntry": [
+        102513
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26,
+        2564,
+        2578
+      ],
+      "classMask": [
+        -2013265920,
+        0,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Final Reckoning",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 343527,
+      "granted": false,
+      "requiresTalentEntry": [
+        115435
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2564,
+        2511,
+        2578
+      ],
+      "classMask": [
+        -2013265920,
+        0,
+        2,
+        0
+      ],
+      "passive": false,
+      "name": "Execution Sentence",
+      "gcd": {
+        "duration": 750,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 404306,
+      "granted": false,
+      "requiresTalentEntry": [
+        102514
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Arbiter"
+    },
+    {
+      "id": 403010,
+      "granted": false,
+      "requiresTalentEntry": [
+        102515
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blessed Champion"
+    },
+    {
+      "id": 402971,
+      "granted": false,
+      "requiresTalentEntry": [
+        102516
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Jurisdiction"
+    },
+    {
+      "id": 204054,
+      "granted": false,
+      "requiresTalentEntry": [
+        102518
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Consecrated Ground"
+    },
+    {
+      "id": 231895,
+      "granted": false,
+      "requiresTalentEntry": [
+        125129
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        8192,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Crusade",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 403826,
+      "granted": false,
+      "requiresTalentEntry": [
+        102521
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blade of Vengeance"
+    },
+    {
+      "id": 406545,
+      "granted": false,
+      "requiresTalentEntry": [
+        115438
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Flames"
+    },
+    {
+      "id": 406940,
+      "granted": false,
+      "requiresTalentEntry": [
+        102524
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Executioner's Will"
+    },
+    {
+      "id": 458359,
+      "granted": false,
+      "requiresTalentEntry": [
+        102525
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Radiant Glory"
+    },
+    {
+      "id": 403654,
+      "granted": false,
+      "requiresTalentEntry": [
+        102526
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Aegis of Protection"
+    },
+    {
+      "id": 184662,
+      "granted": false,
+      "requiresTalentEntry": [
+        125130
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Shield of Vengeance",
+      "gcd": {
+        "duration": 750,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 404540,
+      "granted": false,
+      "requiresTalentEntry": [
+        102530
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Searing Light"
+    },
+    {
+      "id": 156910,
+      "granted": false,
+      "requiresTalentEntry": [
+        102533
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        3893
+      ],
+      "classMask": [
+        0,
+        16777216,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Beacon of Faith",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 200025,
+      "granted": false,
+      "requiresTalentEntry": [
+        102532
+      ],
+      "overrides": 53563,
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        3894
+      ],
+      "classMask": [
+        0,
+        16777216,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Beacon of Virtue",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 20473,
+      "granted": false,
+      "requiresTalentEntry": [
+        102534
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        2097152,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Holy Shock",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              414073
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 9500,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": 0,
+            "requiredSpells": [
+              31884
+            ]
+          },
+          {
+            "duration": 0,
+            "requiredSpells": [
+              216331
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 461244,
+      "granted": false,
+      "requiresTalentEntry": [
+        102535
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Overflowing Light"
+    },
+    {
+      "id": 392961,
+      "granted": false,
+      "requiresTalentEntry": [
+        102536
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Imbued Infusions"
+    },
+    {
+      "id": 415364,
+      "granted": false,
+      "requiresTalentEntry": [
+        102537
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reclamation"
+    },
+    {
+      "id": 448040,
+      "granted": false,
+      "requiresTalentEntry": [
+        102539
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bestow Light"
+    },
+    {
+      "id": 447985,
+      "granted": false,
+      "requiresTalentEntry": [
+        102540
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26,
+        3495
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light of the Martyr"
+    },
+    {
+      "id": 414443,
+      "granted": false,
+      "requiresTalentEntry": [
+        102541
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shining Righteousness"
+    },
+    {
+      "id": 417855,
+      "granted": false,
+      "requiresTalentEntry": [
+        102544
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Awestruck"
+    },
+    {
+      "id": 85222,
+      "granted": false,
+      "requiresTalentEntry": [
+        102545
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2706
+      ],
+      "classMask": [
+        0,
+        0,
+        262144,
+        0
+      ],
+      "passive": false,
+      "name": "Light of Dawn",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 392911,
+      "granted": false,
+      "requiresTalentEntry": [
+        102547
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unwavering Spirit"
+    },
+    {
+      "id": 200430,
+      "granted": false,
+      "requiresTalentEntry": [
+        102546
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Protection of Tyr"
+    },
+    {
+      "id": 31821,
+      "granted": false,
+      "requiresTalentEntry": [
+        102548
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32768,
+        0
+      ],
+      "passive": false,
+      "name": "Aura Mastery",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              392911
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 197446,
+      "granted": false,
+      "requiresTalentEntry": [
+        102549
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Beacon of the Lightbringer"
+    },
+    {
+      "id": 461278,
+      "granted": false,
+      "requiresTalentEntry": [
+        102550
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Extrication"
+    },
+    {
+      "id": 460422,
+      "granted": false,
+      "requiresTalentEntry": [
+        102551
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Divine Favor"
+    },
+    {
+      "id": 414273,
+      "granted": false,
+      "requiresTalentEntry": [
+        115876
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Hand of Divinity",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 387786,
+      "granted": false,
+      "requiresTalentEntry": [
+        102553
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Moment of Compassion"
+    },
+    {
+      "id": 392902,
+      "granted": false,
+      "requiresTalentEntry": [
+        102552
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Resplendent Light"
+    },
+    {
+      "id": 414720,
+      "granted": false,
+      "requiresTalentEntry": [
+        102556
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tirion's Devotion"
+    },
+    {
+      "id": 157047,
+      "granted": false,
+      "requiresTalentEntry": [
+        102557
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Saved by the Light"
+    },
+    {
+      "id": 387998,
+      "granted": false,
+      "requiresTalentEntry": [
+        102558
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unending Light"
+    },
+    {
+      "id": 461245,
+      "granted": false,
+      "requiresTalentEntry": [
+        102559
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Glistening Radiance"
+    },
+    {
+      "id": 114165,
+      "granted": false,
+      "requiresTalentEntry": [
+        102561
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        67108864,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Holy Prism",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 148039,
+      "granted": false,
+      "requiresTalentEntry": [
+        102560
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        930
+      ],
+      "classMask": [
+        0,
+        64,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Barrier of Faith",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 387808,
+      "granted": false,
+      "requiresTalentEntry": [
+        102562
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Revelations"
+    },
+    {
+      "id": 461273,
+      "granted": false,
+      "requiresTalentEntry": [
+        102563
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Truth Prevails"
+    },
+    {
+      "id": 387781,
+      "granted": false,
+      "requiresTalentEntry": [
+        102564
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Commanding Light"
+    },
+    {
+      "id": 392938,
+      "granted": false,
+      "requiresTalentEntry": [
+        102565
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Veneration"
+    },
+    {
+      "id": 387879,
+      "granted": false,
+      "requiresTalentEntry": [
+        102567
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Breaking Dawn"
+    },
+    {
+      "id": 394088,
+      "granted": false,
+      "requiresTalentEntry": [
+        102568
+      ],
+      "visibleSpellId": 216331,
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Avenging Crusader"
+    },
+    {
+      "id": 387805,
+      "granted": false,
+      "requiresTalentEntry": [
+        102570
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Glimpse"
+    },
+    {
+      "id": 231642,
+      "granted": false,
+      "requiresTalentEntry": [
+        102571
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tower of Radiance"
+    },
+    {
+      "id": 392951,
+      "granted": false,
+      "requiresTalentEntry": [
+        102572
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Boundless Salvation"
+    },
+    {
+      "id": 200652,
+      "granted": false,
+      "requiresTalentEntry": [
+        102573
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Tyr's Deliverance",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 200474,
+      "granted": false,
+      "requiresTalentEntry": [
+        102574
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Power of the Silver Hand"
+    },
+    {
+      "id": 392907,
+      "granted": false,
+      "requiresTalentEntry": [
+        102577
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inflorescence of the Sunwell"
+    },
+    {
+      "id": 53376,
+      "granted": false,
+      "requiresTalentEntry": [
+        102578,
+        128278
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanctified Wrath"
+    },
+    {
+      "id": 414195,
+      "granted": false,
+      "requiresTalentEntry": [
+        116205
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2739
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Awakening"
+    },
+    {
+      "id": 183415,
+      "granted": false,
+      "requiresTalentEntry": [
+        102579
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2747
+      ],
+      "classMask": [
+        0,
+        16384,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Merciful Auras"
+    },
+    {
+      "id": 388007,
+      "granted": false,
+      "requiresTalentEntry": [
+        116183
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26,
+        1079,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        262144
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Blessing of Summer",
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 196926,
+      "granted": false,
+      "requiresTalentEntry": [
+        102580
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Crusader's Might"
+    },
+    {
+      "id": 461250,
+      "granted": false,
+      "requiresTalentEntry": [
+        102581
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rising Sunlight"
+    },
+    {
+      "id": 633,
+      "granted": true,
+      "requiresTalentEntry": [
+        102583
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        177,
+        292,
+        930
+      ],
+      "classMask": [
+        32768,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Lay on Hands",
+      "cooldown": {
+        "duration": 600000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 20066,
+      "granted": false,
+      "requiresTalentEntry": [
+        102585
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Repentance",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              469325
+            ]
+          }
+        ]
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 115750,
+      "granted": false,
+      "requiresTalentEntry": [
+        102584
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        181,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        2048,
+        0
+      ],
+      "passive": false,
+      "name": "Blinding Light",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              469325
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 385633,
+      "granted": true,
+      "requiresTalentEntry": [
+        102587
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Auras of the Resolute"
+    },
+    {
+      "id": 234299,
+      "granted": false,
+      "requiresTalentEntry": [
+        102589
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fist of Justice"
+    },
+    {
+      "id": 96231,
+      "granted": false,
+      "requiresTalentEntry": [
+        102591
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2835,
+        4252
+      ],
+      "classMask": [
+        0,
+        0,
+        1048576,
+        0
+      ],
+      "passive": false,
+      "name": "Rebuke",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 230332,
+      "granted": false,
+      "requiresTalentEntry": [
+        102592
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cavalier"
+    },
+    {
+      "id": 384820,
+      "granted": false,
+      "requiresTalentEntry": [
+        102595
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        2651
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Sacrifice of the Just"
+    },
+    {
+      "id": 384914,
+      "granted": false,
+      "requiresTalentEntry": [
+        102594
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        16384,
+        2,
+        0
+      ],
+      "passive": true,
+      "name": "Recompense"
+    },
+    {
+      "id": 183778,
+      "granted": false,
+      "requiresTalentEntry": [
+        102596
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Judgment of Light"
+    },
+    {
+      "id": 385515,
+      "granted": false,
+      "requiresTalentEntry": [
+        102597
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Aegis"
+    },
+    {
+      "id": 384815,
+      "granted": false,
+      "requiresTalentEntry": [
+        102600
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Seal of Charity"
+    },
+    {
+      "id": 385414,
+      "granted": false,
+      "requiresTalentEntry": [
+        102601
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Afterimage"
+    },
+    {
+      "id": 6940,
+      "granted": false,
+      "requiresTalentEntry": [
+        102602
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        2655
+      ],
+      "classMask": [
+        8192,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blessing of Sacrifice",
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -60000,
+            "hasted": false,
+            "requiredSpells": [
+              384820
+            ]
+          },
+          {
+            "duration": 45000,
+            "hasted": false,
+            "requiredSpells": [
+              384820,
+              428076
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 114154,
+      "granted": false,
+      "requiresTalentEntry": [
+        102603
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unbreakable Spirit"
+    },
+    {
+      "id": 1022,
+      "granted": false,
+      "requiresTalentEntry": [
+        102604
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        128,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blessing of Protection",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -90000,
+            "requiredSpells": [
+              378425
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 384909,
+      "granted": false,
+      "requiresTalentEntry": [
+        102606
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Improved Blessing of Protection"
+    },
+    {
+      "id": 385450,
+      "granted": false,
+      "requiresTalentEntry": [
+        102612
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Seal of Might"
+    },
+    {
+      "id": 469309,
+      "granted": false,
+      "requiresTalentEntry": [
+        102620
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Eye for an Eye"
+    },
+    {
+      "id": 377053,
+      "granted": false,
+      "requiresTalentEntry": [
+        102621
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        117,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Seal of Reprisal"
+    },
+    {
+      "id": 385427,
+      "granted": false,
+      "requiresTalentEntry": [
+        102622
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Obduracy"
+    },
+    {
+      "id": 469304,
+      "granted": false,
+      "requiresTalentEntry": [
+        102624
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Steed of Liberty"
+    },
+    {
+      "id": 1044,
+      "granted": false,
+      "requiresTalentEntry": [
+        128251
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292,
+        219
+      ],
+      "classMask": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blessing of Freedom",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 190784,
+      "granted": true,
+      "requiresTalentEntry": [
+        102625
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        219,
+        292,
+        373
+      ],
+      "classMask": [
+        0,
+        268435472,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Divine Steed",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              230332
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -9000,
+            "requiredSpells": [
+              469409
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 393114,
+      "granted": false,
+      "requiresTalentEntry": [
+        111887
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Ardent Defender"
+    },
+    {
+      "id": 204018,
+      "granted": false,
+      "requiresTalentEntry": [
+        111886
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        117,
+        177,
+        292
+      ],
+      "classMask": [
+        268435584,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Blessing of Spellwarding",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1
+      },
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -90000,
+            "requiredSpells": [
+              378425
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 231644,
+      "granted": false,
+      "requiresTalentEntry": [
+        114292
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        2688
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Greater Judgment"
+    },
+    {
+      "id": 446663,
+      "granted": false,
+      "requiresTalentEntry": [
+        114824
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Burn to Ash"
+    },
+    {
+      "id": 383314,
+      "granted": false,
+      "requiresTalentEntry": [
+        114826
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vanguard's Momentum"
+    },
+    {
+      "id": 382536,
+      "granted": false,
+      "requiresTalentEntry": [
+        115488
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanctify"
+    },
+    {
+      "id": 383344,
+      "granted": false,
+      "requiresTalentEntry": [
+        114830
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Expurgation"
+    },
+    {
+      "id": 403745,
+      "granted": false,
+      "requiresTalentEntry": [
+        115023
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Blade of Justice"
+    },
+    {
+      "id": 383342,
+      "granted": false,
+      "requiresTalentEntry": [
+        115022
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Blade"
+    },
+    {
+      "id": 403026,
+      "granted": false,
+      "requiresTalentEntry": [
+        115024
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Penitence"
+    },
+    {
+      "id": 405355,
+      "granted": false,
+      "requiresTalentEntry": [
+        115043
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Seething Flames"
+    },
+    {
+      "id": 326732,
+      "granted": false,
+      "requiresTalentEntry": [
+        115051
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Empyrean Power"
+    },
+    {
+      "id": 405607,
+      "granted": false,
+      "requiresTalentEntry": [
+        115477
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Judge, Jury and Executioner"
+    },
+    {
+      "id": 403975,
+      "granted": false,
+      "requiresTalentEntry": [
+        115164
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        292,
+        117
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inquisitor's Ire"
+    },
+    {
+      "id": 383396,
+      "granted": false,
+      "requiresTalentEntry": [
+        115452
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Tempest of the Lightbringer"
+    },
+    {
+      "id": 403509,
+      "granted": false,
+      "requiresTalentEntry": [
+        115165
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Zealot's Fervor"
+    },
+    {
+      "id": 405757,
+      "granted": false,
+      "requiresTalentEntry": [
+        115167
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Inmost Light"
+    },
+    {
+      "id": 402964,
+      "granted": false,
+      "requiresTalentEntry": [
+        115034
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26,
+        2602
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanctified Plates"
+    },
+    {
+      "id": 10326,
+      "granted": false,
+      "requiresTalentEntry": [
+        102623
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "passive": false,
+      "name": "Turn Evil",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 406872,
+      "granted": false,
+      "requiresTalentEntry": [
+        115439
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Wrath"
+    },
+    {
+      "id": 403495,
+      "granted": false,
+      "requiresTalentEntry": [
+        115440
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Judgment of Justice"
+    },
+    {
+      "id": 403664,
+      "granted": false,
+      "requiresTalentEntry": [
+        115443
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blades of Light"
+    },
+    {
+      "id": 403530,
+      "granted": false,
+      "requiresTalentEntry": [
+        115444
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Punishment"
+    },
+    {
+      "id": 469476,
+      "granted": false,
+      "requiresTalentEntry": [
+        115447
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Reach"
+    },
+    {
+      "id": 387170,
+      "granted": false,
+      "requiresTalentEntry": [
+        115453,
+        102576
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        2627
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Empyrean Legacy"
+    },
+    {
+      "id": 406835,
+      "granted": false,
+      "requiresTalentEntry": [
+        115457,
+        128241
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vengeful Wrath"
+    },
+    {
+      "id": 386738,
+      "granted": false,
+      "requiresTalentEntry": [
+        115466
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Resonance"
+    },
+    {
+      "id": 379391,
+      "granted": false,
+      "requiresTalentEntry": [
+        115465
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Quickened Invocation"
+    },
+    {
+      "id": 404542,
+      "granted": false,
+      "requiresTalentEntry": [
+        115474
+      ],
+      "overrides": 35395,
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Crusading Strikes"
+    },
+    {
+      "id": 406646,
+      "granted": false,
+      "requiresTalentEntry": [
+        115473
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Templar Strikes"
+    },
+    {
+      "id": 406154,
+      "granted": false,
+      "requiresTalentEntry": [
+        115483
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Heart of the Crusader"
+    },
+    {
+      "id": 469337,
+      "granted": false,
+      "requiresTalentEntry": [
+        115489
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sacred Strength"
+    },
+    {
+      "id": 223817,
+      "granted": false,
+      "requiresTalentEntry": [
+        128246
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Purpose"
+    },
+    {
+      "id": 409439,
+      "granted": false,
+      "requiresTalentEntry": [
+        115673
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Of Dusk and Dawn"
+    },
+    {
+      "id": 387801,
+      "granted": false,
+      "requiresTalentEntry": [
+        115872
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Echoing Blessings"
+    },
+    {
+      "id": 461246,
+      "granted": false,
+      "requiresTalentEntry": [
+        115873
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Glorious Dawn"
+    },
+    {
+      "id": 461243,
+      "granted": false,
+      "requiresTalentEntry": [
+        115874
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Protection"
+    },
+    {
+      "id": 414113,
+      "granted": false,
+      "requiresTalentEntry": [
+        115875
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Righteous Judgment"
+    },
+    {
+      "id": 416770,
+      "granted": false,
+      "requiresTalentEntry": [
+        116064
+      ],
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Seal of the Crusader"
+    },
+    {
+      "id": 414073,
+      "granted": false,
+      "requiresTalentEntry": [
+        116376
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Conviction"
+    },
+    {
+      "id": 445200,
+      "granted": false,
+      "requiresTalentEntry": [
+        117668
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blessing of An'she"
+    },
+    {
+      "id": 431407,
+      "granted": false,
+      "requiresTalentEntry": [
+        117779
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lingering Radiance"
+    },
+    {
+      "id": 431413,
+      "granted": false,
+      "requiresTalentEntry": [
+        117669
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sun Sear"
+    },
+    {
+      "id": 431482,
+      "granted": false,
+      "requiresTalentEntry": [
+        117670
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16,
+        3087
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Morning Star"
+    },
+    {
+      "id": 431480,
+      "granted": false,
+      "requiresTalentEntry": [
+        117778
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Gleaming Rays"
+    },
+    {
+      "id": 431402,
+      "granted": false,
+      "requiresTalentEntry": [
+        117677
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Luminosity"
+    },
+    {
+      "id": 431474,
+      "granted": false,
+      "requiresTalentEntry": [
+        117683
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Second Sunrise"
+    },
+    {
+      "id": 431404,
+      "granted": false,
+      "requiresTalentEntry": [
+        117691
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Solar Grace"
+    },
+    {
+      "id": 156322,
+      "granted": false,
+      "requiresTalentEntry": [
+        117692
+      ],
+      "overrides": 85673,
+      "type": "talent",
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        16896,
+        33554432,
+        524288
+      ],
+      "passive": false,
+      "name": "Eternal Flame",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 431423,
+      "granted": false,
+      "requiresTalentEntry": [
+        117695
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Illumine"
+    },
+    {
+      "id": 431406,
+      "granted": false,
+      "requiresTalentEntry": [
+        117777
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Will of the Dawn"
+    },
+    {
+      "id": 431425,
+      "granted": false,
+      "requiresTalentEntry": [
+        117702
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        26,
+        16,
+        3865
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sun's Avatar"
+    },
+    {
+      "id": 431551,
+      "granted": false,
+      "requiresTalentEntry": [
+        117810
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        4200
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wrathful Descent"
+    },
+    {
+      "id": 431687,
+      "granted": false,
+      "requiresTalentEntry": [
+        117811
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Higher Calling"
+    },
+    {
+      "id": 432992,
+      "granted": false,
+      "requiresTalentEntry": [
+        117814
+      ],
+      "type": "talent",
+      "label": [
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bonds of Fellowship"
+    },
+    {
+      "id": 432990,
+      "granted": false,
+      "requiresTalentEntry": [
+        117858
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Unrelenting Charger"
+    },
+    {
+      "id": 431463,
+      "granted": false,
+      "requiresTalentEntry": [
+        117816
+      ],
+      "type": "talent",
+      "label": [
+        3022,
+        26,
+        292,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Zealous Vindication"
+    },
+    {
+      "id": 432929,
+      "granted": false,
+      "requiresTalentEntry": [
+        117859
+      ],
+      "type": "talent",
+      "label": [
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "For Whom the Bell Tolls"
+    },
+    {
+      "id": 432463,
+      "granted": false,
+      "requiresTalentEntry": [
+        117818
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hammerfall"
+    },
+    {
+      "id": 432615,
+      "granted": false,
+      "requiresTalentEntry": [
+        117820
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Endless Wrath"
+    },
+    {
+      "id": 432977,
+      "granted": false,
+      "requiresTalentEntry": [
+        117819
+      ],
+      "type": "talent",
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Sanctification"
+    },
+    {
+      "id": 432802,
+      "granted": false,
+      "requiresTalentEntry": [
+        117873
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Solidarity"
+    },
+    {
+      "id": 432919,
+      "granted": false,
+      "requiresTalentEntry": [
+        117874
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Valiance"
+    },
+    {
+      "id": 433011,
+      "granted": false,
+      "requiresTalentEntry": [
+        117875
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Blessing of the Forge"
+    },
+    {
+      "id": 432964,
+      "granted": false,
+      "requiresTalentEntry": [
+        117877
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Divine Inspiration"
+    },
+    {
+      "id": 432804,
+      "granted": false,
+      "requiresTalentEntry": [
+        117876
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Forewarning"
+    },
+    {
+      "id": 469886,
+      "granted": false,
+      "requiresTalentEntry": [
+        117879
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Authoritative Rebuke"
+    },
+    {
+      "id": 469701,
+      "granted": false,
+      "requiresTalentEntry": [
+        117878
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Tempered in Battle"
+    },
+    {
+      "id": 433568,
+      "granted": false,
+      "requiresTalentEntry": [
+        117881
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Rite of Sanctification",
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 433583,
+      "granted": false,
+      "requiresTalentEntry": [
+        117880
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Rite of Adjuration",
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 432459,
+      "granted": false,
+      "requiresTalentEntry": [
+        117882
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        3113
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Holy Bulwark",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 2
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -12000,
+            "requiredSpells": [
+              432804
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 433106,
+      "granted": false,
+      "requiresTalentEntry": [
+        117884
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26,
+        4182
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Divine Guidance"
+    },
+    {
+      "id": 433015,
+      "granted": false,
+      "requiresTalentEntry": [
+        117883
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Blessed Assurance"
+    },
+    {
+      "id": 432866,
+      "granted": false,
+      "requiresTalentEntry": [
+        117885
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Laying Down Arms"
+    },
+    {
+      "id": 432821,
+      "granted": false,
+      "requiresTalentEntry": [
+        117886
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Shared Resolve"
+    },
+    {
+      "id": 433718,
+      "granted": false,
+      "requiresTalentEntry": [
+        117887
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Hammer and Anvil"
+    },
+    {
+      "id": 379021,
+      "granted": false,
+      "requiresTalentEntry": [
+        102451
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26,
+        2760
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sanctuary"
+    },
+    {
+      "id": 378457,
+      "granted": false,
+      "requiresTalentEntry": [
+        102434
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Soaring Shield"
+    },
+    {
+      "id": 461287,
+      "granted": false,
+      "requiresTalentEntry": [
+        126571
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Liberation"
+    },
+    {
+      "id": 406468,
+      "granted": false,
+      "requiresTalentEntry": [
+        128242,
+        128245
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lightforged Blessing"
+    },
+    {
+      "id": 469325,
+      "granted": false,
+      "requiresTalentEntry": [
+        128247
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Countenance"
+    },
+    {
+      "id": 460720,
+      "granted": false,
+      "requiresTalentEntry": [
+        128250
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wrench Evil"
+    },
+    {
+      "id": 469317,
+      "granted": false,
+      "requiresTalentEntry": [
+        128249
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stand Against Evil"
+    },
+    {
+      "id": 377128,
+      "granted": false,
+      "requiresTalentEntry": [
+        128252
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Golden Path"
+    },
+    {
+      "id": 469434,
+      "granted": false,
+      "requiresTalentEntry": [
+        128309
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292,
+        4088
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Selfless Healer"
+    },
+    {
+      "id": 469409,
+      "granted": false,
+      "requiresTalentEntry": [
+        128253
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Divine Spurs"
+    },
+    {
+      "id": 469411,
+      "granted": false,
+      "requiresTalentEntry": [
+        128254
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "A Just Reward"
+    },
+    {
+      "id": 387791,
+      "granted": false,
+      "requiresTalentEntry": [
+        128255
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        26
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Empyreal Ward"
+    },
+    {
+      "id": 469445,
+      "granted": false,
+      "requiresTalentEntry": [
+        128256
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Reprieve"
+    },
+    {
+      "id": 469416,
+      "granted": false,
+      "requiresTalentEntry": [
+        128257
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lightbearer"
+    },
+    {
+      "id": 469316,
+      "granted": false,
+      "requiresTalentEntry": [
+        128258
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stoicism"
+    },
+    {
+      "id": 146956,
+      "granted": false,
+      "requiresTalentEntry": [
+        128259
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light's Revocation"
+    },
+    {
+      "id": 469439,
+      "granted": false,
+      "requiresTalentEntry": [
+        128260
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inspired Guard"
+    },
+    {
+      "id": 469279,
+      "granted": false,
+      "requiresTalentEntry": [
+        128261
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Worthy Sacrifice"
+    },
+    {
+      "id": 469321,
+      "granted": false,
+      "requiresTalentEntry": [
+        128248
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Righteous Protection"
+    },
+    {
+      "id": 199422,
+      "granted": false,
+      "requiresTalentEntry": [
+        128262
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        118,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Holy Ritual"
+    },
+    {
+      "id": 469780,
+      "granted": false,
+      "requiresTalentEntry": [
+        128263
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lead the Charge"
+    },
+    {
+      "id": 469770,
+      "granted": false,
+      "requiresTalentEntry": [
+        128264
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blessed Calling"
+    },
+    {
+      "id": 229976,
+      "type": "learned",
+      "taughtBy": 204019,
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blessed Hammer"
+    },
+    {
+      "id": 403696,
+      "type": "learned",
+      "taughtBy": 255937,
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Truth's Wake"
+    },
+    {
+      "id": 449198,
+      "type": "learned",
+      "taughtBy": 404512,
+      "label": [
+        26,
+        16,
+        292,
+        3502
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Highlord's Judgment"
+    },
+    {
+      "id": 409478,
+      "type": "learned",
+      "taughtBy": 404540,
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Searing Light"
+    },
+    {
+      "id": 31884,
+      "type": "learned",
+      "taughtBy": 394088,
+      "label": [
+        26,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        256,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Avenging Wrath",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 216331,
+      "type": "learned",
+      "overrides": 31884,
+      "taughtBy": 394088,
+      "label": [
+        26,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        64
+      ],
+      "passive": false,
+      "name": "Avenging Crusader",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 395355,
+      "type": "learned",
+      "taughtBy": 388007,
+      "label": [
+        292,
+        16,
+        26,
+        1079
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        262144
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blessing of the Seasons"
+    },
+    {
+      "id": 317920,
+      "type": "learned",
+      "taughtBy": 385633,
+      "label": [
+        16,
+        292,
+        26,
+        1223
+      ],
+      "classMask": [
+        131072,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Concentration Aura",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 465,
+      "type": "learned",
+      "taughtBy": 385633,
+      "label": [
+        16,
+        292,
+        26,
+        1223
+      ],
+      "classMask": [
+        64,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Devotion Aura",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 32223,
+      "type": "learned",
+      "taughtBy": 385633,
+      "label": [
+        26,
+        16,
+        292,
+        1223
+      ],
+      "classMask": [
+        67108864,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Crusader Aura",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 409089,
+      "type": "learned",
+      "taughtBy": 403664,
+      "label": [
+        26,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mastery: Hand of Light"
+    },
+    {
+      "id": 407480,
+      "type": "learned",
+      "overrides": 35395,
+      "taughtBy": 406646,
+      "label": [
+        26,
+        16,
+        189,
+        292,
+        2570,
+        2580
+      ],
+      "classMask": [
+        134217728,
+        0,
+        66,
+        524288
+      ],
+      "passive": false,
+      "name": "Templar Strike",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": -1,
+            "requiredSpells": [
+              406646
+            ]
+          },
+          {
+            "max": 1,
+            "requiredSpells": [
+              216331
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 7800,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": -1800,
+            "requiredSpells": [
+              216331
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 454353,
+      "grantedBy": 458359,
+      "type": "temporary",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Radiant Glory"
+    },
+    {
+      "id": 462048,
+      "grantedBy": 458359,
+      "type": "temporary",
+      "label": [
+        16,
+        26,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Radiant Glory"
+    },
+    {
+      "id": 471195,
+      "grantedBy": 387791,
+      "type": "temporary",
+      "label": [
+        26,
+        16,
+        177,
+        292,
+        930
+      ],
+      "classMask": [
+        32768,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Lay on Hands",
+      "cooldown": {
+        "duration": 600000,
+        "hasted": false
+      }
+    }
+  ]
+}

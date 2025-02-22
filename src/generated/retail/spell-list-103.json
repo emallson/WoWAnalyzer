@@ -1,0 +1,9158 @@
+{
+  "specId": 103,
+  "baselineSpells": [
+    102352,
+    37846,
+    81098,
+    81097,
+    5420,
+    102547,
+    102794,
+    5421,
+    5487,
+    1178,
+    21178,
+    17057,
+    768,
+    3025,
+    20719,
+    783,
+    16870,
+    18960,
+    5225,
+    157982,
+    61391,
+    77758,
+    106830,
+    81269,
+    125972,
+    137009,
+    145109,
+    145110,
+    114282,
+    339,
+    8921,
+    164812,
+    164815,
+    165962,
+    20484,
+    193753,
+    164862,
+    210053,
+    210065,
+    127757,
+    50769,
+    1850,
+    6795,
+    210722,
+    210723,
+    208253,
+    8936,
+    236716,
+    231437,
+    1126,
+    5221,
+    33917,
+    276012,
+    276029,
+    22568,
+    5176,
+    22812,
+    5215,
+    159456,
+    343238,
+    213764,
+    16949,
+    86097,
+    77493,
+    137011,
+    157447,
+    162697,
+    197692,
+    228545,
+    300349,
+    462069,
+    462070
+  ],
+  "spells": [
+    {
+      "id": 102352,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        4195328
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Cenarion Ward"
+    },
+    {
+      "id": 37846,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Force of Nature"
+    },
+    {
+      "id": 81098,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Incarnation: Tree of Life"
+    },
+    {
+      "id": 81097,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Incarnation: Tree of Life"
+    },
+    {
+      "id": 5420,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Incarnation: Tree of Life"
+    },
+    {
+      "id": 102547,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        566
+      ],
+      "classMask": [
+        16384,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Prowl",
+      "cooldown": {
+        "duration": 6000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 102794,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        1387
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Ursol's Vortex"
+    },
+    {
+      "id": 5421,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Aquatic Form Passive"
+    },
+    {
+      "id": 5487,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        1220
+      ],
+      "classMask": [
+        1073741824,
+        0,
+        0,
+        2
+      ],
+      "passive": false,
+      "name": "Bear Form",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 1178,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        67108864
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bear Form Passive"
+    },
+    {
+      "id": 21178,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        3341
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bear Form Passive 2"
+    },
+    {
+      "id": 17057,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Bear Form"
+    },
+    {
+      "id": 768,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        1220
+      ],
+      "classMask": [
+        -2147483648,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cat Form",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 3025,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cat Form"
+    },
+    {
+      "id": 20719,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Feline Grace"
+    },
+    {
+      "id": 783,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        219,
+        1221
+      ],
+      "classMask": [
+        0,
+        16384,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Travel Form",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 16870,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        262144
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Clearcasting"
+    },
+    {
+      "id": 18960,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        65536
+      ],
+      "passive": false,
+      "name": "Teleport: Moonglade",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 5225,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Track Humanoids",
+      "cooldown": {
+        "duration": 1500,
+        "hasted": false
+      }
+    },
+    {
+      "id": 157982,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        2706
+      ],
+      "classMask": [
+        128,
+        0,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Tranquility"
+    },
+    {
+      "id": 61391,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        588
+      ],
+      "classMask": [
+        0,
+        16777216,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Typhoon"
+    },
+    {
+      "id": 77758,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        138420224,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Thrash",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 6000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 106830,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4194304,
+        1073741828
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Thrash",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 81269,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        2,
+        4194304
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Efflorescence"
+    },
+    {
+      "id": 125972,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Feline Grace"
+    },
+    {
+      "id": 137009,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Druid"
+    },
+    {
+      "id": 145109,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        262144,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Ysera's Gift"
+    },
+    {
+      "id": 145110,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        262144,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Ysera's Gift"
+    },
+    {
+      "id": 114282,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        1220
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Treant Form",
+      "gcd": {
+        "duration": 1500,
+        "hasted": false
+      }
+    },
+    {
+      "id": 339,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        512,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Entangling Roots",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 8921,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        2691
+      ],
+      "classMask": [
+        2097152,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Moonfire",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 164812,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        2691
+      ],
+      "classMask": [
+        262144,
+        0,
+        268435456,
+        0
+      ],
+      "passive": false,
+      "name": "Moonfire"
+    },
+    {
+      "id": 164815,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        262144,
+        0,
+        0,
+        -2147483648
+      ],
+      "passive": false,
+      "name": "Sunfire"
+    },
+    {
+      "id": 165962,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        16384,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Flight Form",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 20484,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        773
+      ],
+      "classMask": [
+        268435456,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Rebirth",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 600000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 193753,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        65536
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Dreamwalk",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 164862,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Flap",
+      "gcd": {
+        "duration": 500,
+        "hasted": true
+      },
+      "channel": {
+        "duration": 15000,
+        "hasted": false,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 210053,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        219,
+        292,
+        1128,
+        1220
+      ],
+      "classMask": [
+        0,
+        16384,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Mount Form",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 210065,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Track Beasts",
+      "cooldown": {
+        "duration": 1500,
+        "hasted": false
+      }
+    },
+    {
+      "id": 127757,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Charm Woodland Creature",
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 50769,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        773
+      ],
+      "classMask": [
+        0,
+        0,
+        512,
+        0
+      ],
+      "passive": false,
+      "name": "Revive",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 1850,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        219,
+        292,
+        1381
+      ],
+      "classMask": [
+        0,
+        0,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Dash",
+      "gcd": {
+        "duration": 1500,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 6795,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        8,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Growl",
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 210722,
+      "type": "baseline",
+      "label": [
+        89,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ashamane's Frenzy",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 75000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 210723,
+      "type": "baseline",
+      "label": [
+        89,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Ashamane's Frenzy"
+    },
+    {
+      "id": 208253,
+      "type": "baseline",
+      "label": [
+        91,
+        203,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Essence of G'Hanir",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 8936,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        741,
+        802
+      ],
+      "classMask": [
+        64,
+        0,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Regrowth",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 236716,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        118,
+        292
+      ],
+      "classMask": [
+        2048,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Strength of the Wild",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 3000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 231437,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Archdruid's Lunarwing Form"
+    },
+    {
+      "id": 1126,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mark of the Wild",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 5221,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        2835
+      ],
+      "classMask": [
+        32768,
+        0,
+        0,
+        4
+      ],
+      "passive": false,
+      "name": "Shred",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 33917,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        2835
+      ],
+      "classMask": [
+        0,
+        64,
+        8192,
+        0
+      ],
+      "passive": false,
+      "name": "Mangle",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 6000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 276012,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        536870912,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Aquatic Form"
+    },
+    {
+      "id": 276029,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292,
+        3098
+      ],
+      "classMask": [
+        0,
+        32768,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Flight Form"
+    },
+    {
+      "id": 22568,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        2835
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        4100
+      ],
+      "passive": false,
+      "name": "Ferocious Bite",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 5176,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        262145,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Wrath",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 22812,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        930,
+        1284
+      ],
+      "classMask": [
+        0,
+        262144,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Barkskin",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 5215,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292,
+        566
+      ],
+      "classMask": [
+        16384,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Prowl",
+      "cooldown": {
+        "duration": 6000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 159456,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Travel Form"
+    },
+    {
+      "id": 343238,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Entangling Roots"
+    },
+    {
+      "id": 213764,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        16777216,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Swipe",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 16949,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Feral Instinct"
+    },
+    {
+      "id": 86097,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        171,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Leather Specialization"
+    },
+    {
+      "id": 77493,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mastery: Razor Claws"
+    },
+    {
+      "id": 137011,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Feral Druid"
+    },
+    {
+      "id": 157447,
+      "type": "baseline",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Critical Strikes"
+    },
+    {
+      "id": 162697,
+      "type": "baseline",
+      "label": [
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stat Negation Aura - Agility DPS"
+    },
+    {
+      "id": 197692,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Feral Overrides Passive"
+    },
+    {
+      "id": 228545,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Shapeshift Form"
+    },
+    {
+      "id": 300349,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Feline Adept"
+    },
+    {
+      "id": 462069,
+      "type": "baseline",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Druid"
+    },
+    {
+      "id": 462070,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Feral Druid"
+    },
+    {
+      "id": 50464,
+      "granted": false,
+      "requiresTalentEntry": [
+        103094
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        131072,
+        4194304
+      ],
+      "passive": false,
+      "name": "Nourish",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": 102693,
+      "granted": false,
+      "requiresTalentEntry": [
+        117104
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        3034
+      ],
+      "classMask": [
+        0,
+        512,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Grove Guardians",
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 328025,
+      "granted": false,
+      "requiresTalentEntry": [
+        103096
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Wild Growth"
+    },
+    {
+      "id": 392221,
+      "granted": false,
+      "requiresTalentEntry": [
+        103097
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Waking Dream"
+    },
+    {
+      "id": 383192,
+      "granted": false,
+      "requiresTalentEntry": [
+        103098
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Grove Tending"
+    },
+    {
+      "id": 145108,
+      "granted": false,
+      "requiresTalentEntry": [
+        103099
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        2922
+      ],
+      "classMask": [
+        0,
+        0,
+        262144,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ysera's Gift"
+    },
+    {
+      "id": 33763,
+      "granted": false,
+      "requiresTalentEntry": [
+        103100
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        0,
+        4112,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Lifebloom",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 132158,
+      "granted": false,
+      "requiresTalentEntry": [
+        103101
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        524288,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Nature's Swiftness",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              470540
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 392288,
+      "granted": false,
+      "requiresTalentEntry": [
+        103103
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nature's Splendor"
+    },
+    {
+      "id": 382550,
+      "granted": false,
+      "requiresTalentEntry": [
+        103102
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Passing Seasons"
+    },
+    {
+      "id": 207383,
+      "granted": false,
+      "requiresTalentEntry": [
+        103105
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Abundance"
+    },
+    {
+      "id": 102351,
+      "granted": false,
+      "requiresTalentEntry": [
+        103104
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        1024
+      ],
+      "passive": false,
+      "name": "Cenarion Ward",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -10000,
+            "hasted": false,
+            "requiredSpells": [
+              470549
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 197073,
+      "granted": false,
+      "requiresTalentEntry": [
+        103107
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Inner Peace"
+    },
+    {
+      "id": 392162,
+      "granted": false,
+      "requiresTalentEntry": [
+        103106
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dreamstate"
+    },
+    {
+      "id": 740,
+      "granted": false,
+      "requiresTalentEntry": [
+        103108
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        2097152,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Tranquility",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -30000,
+            "hasted": false,
+            "requiredSpells": [
+              197073
+            ]
+          }
+        ]
+      },
+      "channel": {
+        "duration": 8000,
+        "hasted": true,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 231032,
+      "granted": false,
+      "requiresTalentEntry": [
+        103109
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Regrowth"
+    },
+    {
+      "id": 200390,
+      "granted": false,
+      "requiresTalentEntry": [
+        103110
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cultivation"
+    },
+    {
+      "id": 145205,
+      "granted": false,
+      "requiresTalentEntry": [
+        103111
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        524288
+      ],
+      "passive": false,
+      "name": "Efflorescence",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 404521,
+      "granted": false,
+      "requiresTalentEntry": [
+        103112
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rampant Growth"
+    },
+    {
+      "id": 158478,
+      "granted": false,
+      "requiresTalentEntry": [
+        103113
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Soul of the Forest"
+    },
+    {
+      "id": 392325,
+      "granted": false,
+      "requiresTalentEntry": [
+        103114
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Verdancy"
+    },
+    {
+      "id": 207385,
+      "granted": false,
+      "requiresTalentEntry": [
+        103116
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Spring Blossoms"
+    },
+    {
+      "id": 203651,
+      "granted": false,
+      "requiresTalentEntry": [
+        103115
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        4194304,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Overgrowth",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 383191,
+      "granted": false,
+      "requiresTalentEntry": [
+        103117
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Regenesis"
+    },
+    {
+      "id": 393371,
+      "granted": false,
+      "requiresTalentEntry": [
+        103118
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cenarius' Guidance"
+    },
+    {
+      "id": 33891,
+      "granted": false,
+      "requiresTalentEntry": [
+        103120
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        1220,
+        930
+      ],
+      "classMask": [
+        0,
+        67584,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Incarnation: Tree of Life",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -60000,
+            "hasted": false,
+            "requiredSpells": [
+              391174
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 391528,
+      "granted": false,
+      "requiresTalentEntry": [
+        103119,
+        103177,
+        103200,
+        109838
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        65536,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Convoke the Spirits",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false
+      },
+      "channel": {
+        "duration": 4000,
+        "hasted": false,
+        "buffIsLogged": true,
+        "triggeredSpells": []
+      }
+    },
+    {
+      "id": 392256,
+      "granted": false,
+      "requiresTalentEntry": [
+        103121
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Harmonious Blooming"
+    },
+    {
+      "id": 158504,
+      "granted": false,
+      "requiresTalentEntry": [
+        103122
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dream of Cenarius"
+    },
+    {
+      "id": 426784,
+      "granted": false,
+      "requiresTalentEntry": [
+        103123
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Call of the Elder Druid"
+    },
+    {
+      "id": 447131,
+      "granted": false,
+      "requiresTalentEntry": [
+        103124
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thriving Vegetation"
+    },
+    {
+      "id": 392356,
+      "granted": false,
+      "requiresTalentEntry": [
+        103125
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        21,
+        16,
+        3042
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reforestation"
+    },
+    {
+      "id": 392124,
+      "granted": false,
+      "requiresTalentEntry": [
+        103126
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Embrace of the Dream"
+    },
+    {
+      "id": 392160,
+      "granted": false,
+      "requiresTalentEntry": [
+        123777
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        741,
+        3060
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Invigorate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 155675,
+      "granted": false,
+      "requiresTalentEntry": [
+        103127
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Germination"
+    },
+    {
+      "id": 392167,
+      "granted": false,
+      "requiresTalentEntry": [
+        103128
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Budding Leaves"
+    },
+    {
+      "id": 274902,
+      "granted": false,
+      "requiresTalentEntry": [
+        103129
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Photosynthesis"
+    },
+    {
+      "id": 197721,
+      "granted": false,
+      "requiresTalentEntry": [
+        123776
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2706
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Flourish",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 426702,
+      "granted": false,
+      "requiresTalentEntry": [
+        103130
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Liveliness"
+    },
+    {
+      "id": 289237,
+      "granted": false,
+      "requiresTalentEntry": [
+        114809
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        118,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Master Shapeshifter"
+    },
+    {
+      "id": 392116,
+      "granted": false,
+      "requiresTalentEntry": [
+        103131
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Regenerative Heartwood"
+    },
+    {
+      "id": 392099,
+      "granted": false,
+      "requiresTalentEntry": [
+        103132
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nurturing Dormancy"
+    },
+    {
+      "id": 392302,
+      "granted": false,
+      "requiresTalentEntry": [
+        103134
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Power of the Archdruid"
+    },
+    {
+      "id": 392301,
+      "granted": false,
+      "requiresTalentEntry": [
+        103133
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Undergrowth"
+    },
+    {
+      "id": 392410,
+      "granted": false,
+      "requiresTalentEntry": [
+        103137
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Verdant Infusion"
+    },
+    {
+      "id": 200383,
+      "granted": false,
+      "requiresTalentEntry": [
+        103136
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Prosperity"
+    },
+    {
+      "id": 382559,
+      "granted": false,
+      "requiresTalentEntry": [
+        103138
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unstoppable Growth"
+    },
+    {
+      "id": 197061,
+      "granted": false,
+      "requiresTalentEntry": [
+        103140
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stonebark"
+    },
+    {
+      "id": 382552,
+      "granted": false,
+      "requiresTalentEntry": [
+        103139
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Ironbark"
+    },
+    {
+      "id": 102342,
+      "granted": false,
+      "requiresTalentEntry": [
+        103141
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        256
+      ],
+      "passive": false,
+      "name": "Ironbark",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -20000,
+            "hasted": false,
+            "requiredSpells": [
+              382552
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 392220,
+      "granted": false,
+      "requiresTalentEntry": [
+        103142
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flash of Clarity"
+    },
+    {
+      "id": 449537,
+      "granted": false,
+      "requiresTalentEntry": [
+        103144
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Coiled to Spring"
+    },
+    {
+      "id": 391700,
+      "granted": false,
+      "requiresTalentEntry": [
+        103145
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Double-Clawed Rake"
+    },
+    {
+      "id": 384665,
+      "granted": false,
+      "requiresTalentEntry": [
+        103147
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Taste for Blood"
+    },
+    {
+      "id": 384668,
+      "granted": false,
+      "requiresTalentEntry": [
+        103149
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Berserk: Frenzy"
+    },
+    {
+      "id": 202028,
+      "granted": false,
+      "requiresTalentEntry": [
+        103151
+      ],
+      "overrides": 213764,
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        12
+      ],
+      "passive": false,
+      "name": "Brutal Slash",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 8000,
+        "hasted": true
+      }
+    },
+    {
+      "id": 390864,
+      "granted": false,
+      "requiresTalentEntry": [
+        103150
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wild Slashes"
+    },
+    {
+      "id": 391881,
+      "granted": false,
+      "requiresTalentEntry": [
+        103152
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Apex Predator's Craving"
+    },
+    {
+      "id": 391978,
+      "granted": false,
+      "requiresTalentEntry": [
+        103154
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Veinripper"
+    },
+    {
+      "id": 391347,
+      "granted": false,
+      "requiresTalentEntry": [
+        103153
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rip and Tear"
+    },
+    {
+      "id": 421432,
+      "granted": false,
+      "requiresTalentEntry": [
+        103155
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Saber Jaws"
+    },
+    {
+      "id": 400320,
+      "granted": false,
+      "requiresTalentEntry": [
+        103156
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Circle of Life and Death"
+    },
+    {
+      "id": 158476,
+      "granted": false,
+      "requiresTalentEntry": [
+        103157
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Soul of the Forest"
+    },
+    {
+      "id": 231063,
+      "granted": false,
+      "requiresTalentEntry": [
+        103159
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Merciless Claws"
+    },
+    {
+      "id": 405300,
+      "granted": false,
+      "requiresTalentEntry": [
+        114823
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thrashing Claws"
+    },
+    {
+      "id": 449645,
+      "granted": false,
+      "requiresTalentEntry": [
+        103160
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Savage Fury"
+    },
+    {
+      "id": 236068,
+      "granted": false,
+      "requiresTalentEntry": [
+        103161
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292,
+        3432
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Moment of Clarity"
+    },
+    {
+      "id": 343223,
+      "granted": false,
+      "requiresTalentEntry": [
+        103162
+      ],
+      "visibleSpellId": 106951,
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Berserk"
+    },
+    {
+      "id": 202031,
+      "granted": false,
+      "requiresTalentEntry": [
+        103163
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        117,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sabertooth"
+    },
+    {
+      "id": 391709,
+      "granted": false,
+      "requiresTalentEntry": [
+        103164
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rampant Ferocity"
+    },
+    {
+      "id": 384667,
+      "granted": false,
+      "requiresTalentEntry": [
+        103165
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sudden Ambush"
+    },
+    {
+      "id": 391174,
+      "granted": false,
+      "requiresTalentEntry": [
+        103166
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Berserk: Heart of the Lion"
+    },
+    {
+      "id": 16974,
+      "granted": false,
+      "requiresTalentEntry": [
+        103167
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Predatory Swiftness"
+    },
+    {
+      "id": 391078,
+      "granted": false,
+      "requiresTalentEntry": [
+        103169
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3434
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Raging Fury"
+    },
+    {
+      "id": 391872,
+      "granted": false,
+      "requiresTalentEntry": [
+        103168
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tiger's Tenacity"
+    },
+    {
+      "id": 274837,
+      "granted": false,
+      "requiresTalentEntry": [
+        103170
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        1073741824,
+        0
+      ],
+      "passive": false,
+      "name": "Feral Frenzy",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -10000,
+            "hasted": false,
+            "requiredSpells": [
+              441846
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 391972,
+      "granted": false,
+      "requiresTalentEntry": [
+        103172
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lion's Strength"
+    },
+    {
+      "id": 319439,
+      "granted": false,
+      "requiresTalentEntry": [
+        103171
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bloodtalons"
+    },
+    {
+      "id": 390902,
+      "granted": false,
+      "requiresTalentEntry": [
+        103173
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Carnivorous Instinct"
+    },
+    {
+      "id": 391951,
+      "granted": false,
+      "requiresTalentEntry": [
+        103174
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Unbridled Swarm"
+    },
+    {
+      "id": 391888,
+      "granted": false,
+      "requiresTalentEntry": [
+        103175
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        21,
+        16,
+        1162
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Adaptive Swarm",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 25000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 391548,
+      "granted": false,
+      "requiresTalentEntry": [
+        103176
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ashamane's Guidance"
+    },
+    {
+      "id": 102543,
+      "granted": false,
+      "requiresTalentEntry": [
+        103178
+      ],
+      "overrides": 106951,
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        690,
+        1387
+      ],
+      "classMask": [
+        -2147483648,
+        2048,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Incarnation: Avatar of Ashamane",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -60000,
+            "hasted": false,
+            "requiredSpells": [
+              391174
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 391875,
+      "granted": false,
+      "requiresTalentEntry": [
+        103179
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Frantic Momentum"
+    },
+    {
+      "id": 61336,
+      "granted": false,
+      "requiresTalentEntry": [
+        103180,
+        103193
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        770,
+        930
+      ],
+      "classMask": [
+        0,
+        0,
+        128,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Survival Instincts",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              328767
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -21600,
+            "requiredSpells": [
+              203965
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 391045,
+      "granted": false,
+      "requiresTalentEntry": [
+        103181
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dreadful Bleeding"
+    },
+    {
+      "id": 48484,
+      "granted": false,
+      "requiresTalentEntry": [
+        103182
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Infected Wounds"
+    },
+    {
+      "id": 390772,
+      "granted": false,
+      "requiresTalentEntry": [
+        103183
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Pouncing Strikes"
+    },
+    {
+      "id": 285381,
+      "granted": false,
+      "requiresTalentEntry": [
+        103184
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        536870912,
+        4
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Primal Wrath",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 383352,
+      "granted": false,
+      "requiresTalentEntry": [
+        103185
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        3431
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tireless Energy"
+    },
+    {
+      "id": 202021,
+      "granted": false,
+      "requiresTalentEntry": [
+        103186
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Predator"
+    },
+    {
+      "id": 16864,
+      "granted": false,
+      "requiresTalentEntry": [
+        103187
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        262144
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Omen of Clarity"
+    },
+    {
+      "id": 5217,
+      "granted": false,
+      "requiresTalentEntry": [
+        103188
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        2048,
+        0
+      ],
+      "passive": false,
+      "name": "Tiger's Fury",
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 210706,
+      "granted": false,
+      "requiresTalentEntry": [
+        103190
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        536870912,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Gore"
+    },
+    {
+      "id": 6807,
+      "granted": false,
+      "requiresTalentEntry": [
+        103191
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2510
+      ],
+      "classMask": [
+        2048,
+        0,
+        8192,
+        0
+      ],
+      "passive": false,
+      "name": "Maul",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 328767,
+      "granted": false,
+      "requiresTalentEntry": [
+        103192
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Survival Instincts"
+    },
+    {
+      "id": 393611,
+      "granted": false,
+      "requiresTalentEntry": [
+        103194
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ursoc's Endurance"
+    },
+    {
+      "id": 231064,
+      "granted": false,
+      "requiresTalentEntry": [
+        103195
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Mangle"
+    },
+    {
+      "id": 200854,
+      "granted": false,
+      "requiresTalentEntry": [
+        103196
+      ],
+      "type": "talent",
+      "label": [
+        90,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Gory Fur"
+    },
+    {
+      "id": 135288,
+      "granted": false,
+      "requiresTalentEntry": [
+        103197
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tooth and Claw"
+    },
+    {
+      "id": 370586,
+      "granted": false,
+      "requiresTalentEntry": [
+        103198
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Elune's Favored"
+    },
+    {
+      "id": 393414,
+      "granted": false,
+      "requiresTalentEntry": [
+        103199
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ursoc's Guidance"
+    },
+    {
+      "id": 394786,
+      "granted": false,
+      "requiresTalentEntry": [
+        103201
+      ],
+      "visibleSpellId": 102558,
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Incarnation: Guardian of Ursoc"
+    },
+    {
+      "id": 391969,
+      "granted": false,
+      "requiresTalentEntry": [
+        103202
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Circle of Life and Death"
+    },
+    {
+      "id": 370695,
+      "granted": false,
+      "requiresTalentEntry": [
+        103203
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fury of Nature"
+    },
+    {
+      "id": 393618,
+      "granted": false,
+      "requiresTalentEntry": [
+        103204
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reinforced Fur"
+    },
+    {
+      "id": 371905,
+      "granted": false,
+      "requiresTalentEntry": [
+        103206
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "After the Wildfire"
+    },
+    {
+      "id": 155578,
+      "granted": false,
+      "requiresTalentEntry": [
+        103205
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Guardian of Elune"
+    },
+    {
+      "id": 200851,
+      "granted": false,
+      "requiresTalentEntry": [
+        103207
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21,
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Rage of the Sleeper",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 203962,
+      "granted": false,
+      "requiresTalentEntry": [
+        103209
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3097
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blood Frenzy"
+    },
+    {
+      "id": 203965,
+      "granted": false,
+      "requiresTalentEntry": [
+        103210
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Survival of the Fittest"
+    },
+    {
+      "id": 377779,
+      "granted": false,
+      "requiresTalentEntry": [
+        103211
+      ],
+      "visibleSpellId": 50334,
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Berserk: Persistence"
+    },
+    {
+      "id": 203964,
+      "granted": false,
+      "requiresTalentEntry": [
+        103212
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Galactic Guardian"
+    },
+    {
+      "id": 238049,
+      "granted": false,
+      "requiresTalentEntry": [
+        103213
+      ],
+      "type": "talent",
+      "label": [
+        90,
+        277,
+        293,
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Scintillating Moonlight"
+    },
+    {
+      "id": 372567,
+      "granted": false,
+      "requiresTalentEntry": [
+        103214
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twin Moonfire"
+    },
+    {
+      "id": 384721,
+      "granted": false,
+      "requiresTalentEntry": [
+        103215
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Layered Mane"
+    },
+    {
+      "id": 343240,
+      "granted": false,
+      "requiresTalentEntry": [
+        103216
+      ],
+      "visibleSpellId": 50334,
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Berserk: Ravage"
+    },
+    {
+      "id": 377210,
+      "granted": false,
+      "requiresTalentEntry": [
+        103219
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ursoc's Fury"
+    },
+    {
+      "id": 204053,
+      "granted": false,
+      "requiresTalentEntry": [
+        103221
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rend and Tear"
+    },
+    {
+      "id": 372943,
+      "granted": false,
+      "requiresTalentEntry": [
+        103220
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Untamed Savagery"
+    },
+    {
+      "id": 80313,
+      "granted": false,
+      "requiresTalentEntry": [
+        103222
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        52,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        8192,
+        134217728
+      ],
+      "passive": false,
+      "name": "Pulverize",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -10000,
+            "hasted": false,
+            "requiredSpells": [
+              441846
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 393427,
+      "granted": false,
+      "requiresTalentEntry": [
+        103223
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flashing Claws"
+    },
+    {
+      "id": 377623,
+      "granted": false,
+      "requiresTalentEntry": [
+        103224
+      ],
+      "visibleSpellId": 50334,
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Berserk: Unchecked Aggression"
+    },
+    {
+      "id": 203974,
+      "granted": false,
+      "requiresTalentEntry": [
+        103225
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Earthwarden"
+    },
+    {
+      "id": 372945,
+      "granted": false,
+      "requiresTalentEntry": [
+        103226
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Reinvigoration"
+    },
+    {
+      "id": 371999,
+      "granted": false,
+      "requiresTalentEntry": [
+        103227
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vicious Cycle"
+    },
+    {
+      "id": 372618,
+      "granted": false,
+      "requiresTalentEntry": [
+        103228
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vulnerable Flesh"
+    },
+    {
+      "id": 377811,
+      "granted": false,
+      "requiresTalentEntry": [
+        103229
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Innate Resolve"
+    },
+    {
+      "id": 203953,
+      "granted": false,
+      "requiresTalentEntry": [
+        103231
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Brambles"
+    },
+    {
+      "id": 155835,
+      "granted": false,
+      "requiresTalentEntry": [
+        103230
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292,
+        2594
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Bristling Fur",
+      "gcd": {
+        "duration": 1500,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 40000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 345208,
+      "granted": false,
+      "requiresTalentEntry": [
+        103232
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Infected Wounds"
+    },
+    {
+      "id": 102401,
+      "granted": false,
+      "requiresTalentEntry": [
+        103276
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        219,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Wild Charge",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 252216,
+      "granted": false,
+      "requiresTalentEntry": [
+        103275
+      ],
+      "overrides": 1850,
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        219,
+        292,
+        1381
+      ],
+      "classMask": [
+        0,
+        0,
+        8,
+        0
+      ],
+      "passive": false,
+      "name": "Tiger Dash",
+      "gcd": {
+        "duration": 1500,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1822,
+      "granted": true,
+      "requiresTalentEntry": [
+        103277
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2835
+      ],
+      "classMask": [
+        4096,
+        0,
+        0,
+        4
+      ],
+      "passive": false,
+      "name": "Rake",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 197626,
+      "granted": false,
+      "requiresTalentEntry": [
+        103278
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        3558
+      ],
+      "classMask": [
+        262144,
+        0,
+        33554432,
+        0
+      ],
+      "passive": false,
+      "name": "Starsurge",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 10000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -4000,
+            "hasted": false,
+            "requiredSpells": [
+              451211
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2782,
+      "granted": false,
+      "requiresTalentEntry": [
+        103282
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        32768
+      ],
+      "passive": false,
+      "name": "Remove Corruption",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 8000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377796,
+      "granted": false,
+      "requiresTalentEntry": [
+        103284
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Natural Recovery"
+    },
+    {
+      "id": 417712,
+      "granted": false,
+      "requiresTalentEntry": [
+        103285
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rising Light, Falling Night"
+    },
+    {
+      "id": 93402,
+      "granted": false,
+      "requiresTalentEntry": [
+        103286
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        64
+      ],
+      "passive": false,
+      "name": "Sunfire",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 132469,
+      "granted": false,
+      "requiresTalentEntry": [
+        103287
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        16777216,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Typhoon",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 197524,
+      "granted": false,
+      "requiresTalentEntry": [
+        103288
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        2922
+      ],
+      "classMask": [
+        0,
+        0,
+        4096,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Astral Influence"
+    },
+    {
+      "id": 2637,
+      "granted": false,
+      "requiresTalentEntry": [
+        103289
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        131072,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Hibernate",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 33786,
+      "granted": false,
+      "requiresTalentEntry": [
+        103291
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        118,
+        119,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        32,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Cyclone",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1700
+      }
+    },
+    {
+      "id": 33873,
+      "granted": false,
+      "requiresTalentEntry": [
+        103292
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nurturing Instinct"
+    },
+    {
+      "id": 774,
+      "granted": false,
+      "requiresTalentEntry": [
+        103295
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        16,
+        0,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Rejuvenation",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 301768,
+      "granted": false,
+      "requiresTalentEntry": [
+        103296
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Verdant Heart"
+    },
+    {
+      "id": 327993,
+      "granted": false,
+      "requiresTalentEntry": [
+        103297
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Barkskin"
+    },
+    {
+      "id": 22842,
+      "granted": false,
+      "requiresTalentEntry": [
+        103298
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        1073741824,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Frenzied Regeneration",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              377811
+            ]
+          },
+          {
+            "max": 1,
+            "requiredSpells": [
+              319454
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 36000,
+        "hasted": true,
+        "modifiers": [
+          {
+            "duration": -3600,
+            "requiredSpells": [
+              372945
+            ]
+          },
+          {
+            "duration": -36000,
+            "requiredSpells": [
+              50334
+            ]
+          },
+          {
+            "duration": -36000,
+            "requiredSpells": [
+              102558
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 22570,
+      "granted": false,
+      "requiresTalentEntry": [
+        103299
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2835
+      ],
+      "classMask": [
+        0,
+        128,
+        0,
+        4
+      ],
+      "passive": false,
+      "name": "Maim",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 1079,
+      "granted": true,
+      "requiresTalentEntry": [
+        103300
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2835
+      ],
+      "classMask": [
+        0,
+        0,
+        2097152,
+        4
+      ],
+      "passive": false,
+      "name": "Rip",
+      "gcd": {
+        "duration": 1000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 106832,
+      "granted": false,
+      "requiresTalentEntry": [
+        103301
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        67108864,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Thrash"
+    },
+    {
+      "id": 106839,
+      "granted": false,
+      "requiresTalentEntry": [
+        103302
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        33554432,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Skull Bash",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 108299,
+      "granted": false,
+      "requiresTalentEntry": [
+        103303
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Killer Instinct"
+    },
+    {
+      "id": 192081,
+      "granted": false,
+      "requiresTalentEntry": [
+        103305
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        114,
+        292,
+        824
+      ],
+      "classMask": [
+        0,
+        0,
+        16384,
+        0
+      ],
+      "passive": false,
+      "name": "Ironfur",
+      "cooldown": {
+        "duration": 500,
+        "hasted": false
+      }
+    },
+    {
+      "id": 16931,
+      "granted": false,
+      "requiresTalentEntry": [
+        103306
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2922
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thick Hide"
+    },
+    {
+      "id": 2908,
+      "granted": false,
+      "requiresTalentEntry": [
+        103307
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        131072,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Soothe",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 10000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 288826,
+      "granted": false,
+      "requiresTalentEntry": [
+        103308
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Stampeding Roar"
+    },
+    {
+      "id": 319454,
+      "granted": false,
+      "requiresTalentEntry": [
+        103309
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Heart of the Wild",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 300000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 108238,
+      "granted": false,
+      "requiresTalentEntry": [
+        103310
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        32
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Renewal",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 378988,
+      "granted": false,
+      "requiresTalentEntry": [
+        103311
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lycara's Teachings"
+    },
+    {
+      "id": 106898,
+      "granted": false,
+      "requiresTalentEntry": [
+        103312
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2706
+      ],
+      "classMask": [
+        134217728,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Stampeding Roar",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 120000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -60000,
+            "hasted": false,
+            "requiredSpells": [
+              288826
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 377842,
+      "granted": false,
+      "requiresTalentEntry": [
+        103313
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ursine Vigor"
+    },
+    {
+      "id": 385786,
+      "granted": false,
+      "requiresTalentEntry": [
+        103314
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        21,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Matted Fur"
+    },
+    {
+      "id": 99,
+      "granted": false,
+      "requiresTalentEntry": [
+        103316
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Incapacitating Roar",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 5211,
+      "granted": false,
+      "requiresTalentEntry": [
+        103315
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        8192,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Mighty Bash",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 159286,
+      "granted": false,
+      "requiresTalentEntry": [
+        103317
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Primal Fury"
+    },
+    {
+      "id": 131768,
+      "granted": false,
+      "requiresTalentEntry": [
+        103318
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2922
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Feline Swiftness"
+    },
+    {
+      "id": 231040,
+      "granted": false,
+      "requiresTalentEntry": [
+        103319
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Rejuvenation"
+    },
+    {
+      "id": 48438,
+      "granted": false,
+      "requiresTalentEntry": [
+        103320
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        67108864,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Wild Growth",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 10000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 102359,
+      "granted": false,
+      "requiresTalentEntry": [
+        103322
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Mass Entanglement",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 102793,
+      "granted": false,
+      "requiresTalentEntry": [
+        103321
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        1387
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        16384
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Ursol's Vortex",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 29166,
+      "granted": false,
+      "requiresTalentEntry": [
+        103323
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32768,
+        0
+      ],
+      "passive": false,
+      "name": "Innervate",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 124974,
+      "granted": false,
+      "requiresTalentEntry": [
+        103324
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Nature's Vigil",
+      "cooldown": {
+        "duration": 90000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 377847,
+      "granted": false,
+      "requiresTalentEntry": [
+        103326
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Well-Honed Instincts"
+    },
+    {
+      "id": 394094,
+      "granted": false,
+      "requiresTalentEntry": [
+        109831
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sundered Firmament"
+    },
+    {
+      "id": 383197,
+      "granted": false,
+      "requiresTalentEntry": [
+        123860
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Orbit Breaker"
+    },
+    {
+      "id": 394046,
+      "granted": false,
+      "requiresTalentEntry": [
+        109832
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        262144,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Power of Goldrinn"
+    },
+    {
+      "id": 279620,
+      "granted": false,
+      "requiresTalentEntry": [
+        109833
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twin Moons"
+    },
+    {
+      "id": 468936,
+      "granted": false,
+      "requiresTalentEntry": [
+        109834
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        16777216,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Sunseeker Mushroom"
+    },
+    {
+      "id": 88747,
+      "granted": false,
+      "requiresTalentEntry": [
+        128232
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        16777216,
+        0
+      ],
+      "passive": false,
+      "name": "Wild Mushroom",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 30000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 343647,
+      "granted": false,
+      "requiresTalentEntry": [
+        109835
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Solstice"
+    },
+    {
+      "id": 394058,
+      "granted": false,
+      "requiresTalentEntry": [
+        109836
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Astral Smolder"
+    },
+    {
+      "id": 394013,
+      "granted": false,
+      "requiresTalentEntry": [
+        109839
+      ],
+      "visibleSpellId": 102560,
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Incarnation: Chosen of Elune"
+    },
+    {
+      "id": 202345,
+      "granted": false,
+      "requiresTalentEntry": [
+        109840
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Starlord"
+    },
+    {
+      "id": 450347,
+      "granted": false,
+      "requiresTalentEntry": [
+        109842
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nature's Grace"
+    },
+    {
+      "id": 327541,
+      "granted": false,
+      "requiresTalentEntry": [
+        109843
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        4084
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Aetherial Kindling"
+    },
+    {
+      "id": 205636,
+      "granted": false,
+      "requiresTalentEntry": [
+        109844
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        3035
+      ],
+      "classMask": [
+        0,
+        512,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Force of Nature",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 202425,
+      "granted": false,
+      "requiresTalentEntry": [
+        114648
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Warrior of Elune",
+      "cooldown": {
+        "duration": 45000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 202918,
+      "granted": false,
+      "requiresTalentEntry": [
+        109845
+      ],
+      "type": "talent",
+      "label": [
+        92,
+        293
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Light of the Sun"
+    },
+    {
+      "id": 114107,
+      "granted": false,
+      "requiresTalentEntry": [
+        109846
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Soul of the Forest"
+    },
+    {
+      "id": 394121,
+      "granted": false,
+      "requiresTalentEntry": [
+        109847
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Radiant Moonlight"
+    },
+    {
+      "id": 394048,
+      "granted": false,
+      "requiresTalentEntry": [
+        109848
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Balance of All Things"
+    },
+    {
+      "id": 395022,
+      "granted": false,
+      "requiresTalentEntry": [
+        109849
+      ],
+      "visibleSpellId": 194223,
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Celestial Alignment"
+    },
+    {
+      "id": 393760,
+      "granted": false,
+      "requiresTalentEntry": [
+        109850
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Umbral Embrace"
+    },
+    {
+      "id": 450418,
+      "granted": false,
+      "requiresTalentEntry": [
+        109851
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Umbral Inspiration"
+    },
+    {
+      "id": 450558,
+      "granted": false,
+      "requiresTalentEntry": [
+        109852
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Harmony of the Heavens"
+    },
+    {
+      "id": 383195,
+      "granted": false,
+      "requiresTalentEntry": [
+        109853
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Umbral Intensity"
+    },
+    {
+      "id": 393956,
+      "granted": false,
+      "requiresTalentEntry": [
+        117100
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Waning Twilight"
+    },
+    {
+      "id": 468743,
+      "granted": false,
+      "requiresTalentEntry": [
+        109856
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        4081
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Whirling Stars"
+    },
+    {
+      "id": 390378,
+      "granted": false,
+      "requiresTalentEntry": [
+        109855
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Orbital Strike"
+    },
+    {
+      "id": 450356,
+      "granted": false,
+      "requiresTalentEntry": [
+        109857
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Touch the Cosmos"
+    },
+    {
+      "id": 79577,
+      "granted": false,
+      "requiresTalentEntry": [
+        109858
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        131072,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Eclipse"
+    },
+    {
+      "id": 274281,
+      "granted": false,
+      "requiresTalentEntry": [
+        109860
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        262144,
+        -2147483648,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "New Moon",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      },
+      "charges": {
+        "max": 3
+      },
+      "cooldown": {
+        "duration": 20000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 1000
+      }
+    },
+    {
+      "id": 202770,
+      "granted": false,
+      "requiresTalentEntry": [
+        109859
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        8388608,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Fury of Elune",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -15000,
+            "hasted": false,
+            "requiredSpells": [
+              394121
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 202342,
+      "granted": false,
+      "requiresTalentEntry": [
+        109861
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        268435456
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Shooting Stars"
+    },
+    {
+      "id": 202430,
+      "granted": false,
+      "requiresTalentEntry": [
+        109862
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Nature's Balance"
+    },
+    {
+      "id": 400059,
+      "granted": false,
+      "requiresTalentEntry": [
+        109863
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cosmic Rapidity"
+    },
+    {
+      "id": 393991,
+      "granted": false,
+      "requiresTalentEntry": [
+        109864
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Elune's Guidance"
+    },
+    {
+      "id": 450212,
+      "granted": false,
+      "requiresTalentEntry": [
+        109865
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stellar Amplification"
+    },
+    {
+      "id": 78675,
+      "granted": false,
+      "requiresTalentEntry": [
+        109867
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        67108864,
+        0
+      ],
+      "passive": false,
+      "name": "Solar Beam",
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 468960,
+      "granted": false,
+      "requiresTalentEntry": [
+        109868
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Astronomical Impact"
+    },
+    {
+      "id": 394065,
+      "granted": false,
+      "requiresTalentEntry": [
+        109870
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        21,
+        16
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Denizen of the Dream"
+    },
+    {
+      "id": 450598,
+      "granted": false,
+      "requiresTalentEntry": [
+        109871
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Astral Communion"
+    },
+    {
+      "id": 393940,
+      "granted": false,
+      "requiresTalentEntry": [
+        109873
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Starweaver"
+    },
+    {
+      "id": 393954,
+      "granted": false,
+      "requiresTalentEntry": [
+        109872
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Rattle the Stars"
+    },
+    {
+      "id": 197628,
+      "granted": false,
+      "requiresTalentEntry": [
+        112967,
+        112969
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        262148,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Starfire",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 2500
+      }
+    },
+    {
+      "id": 197625,
+      "granted": false,
+      "requiresTalentEntry": [
+        112970
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        1220
+      ],
+      "classMask": [
+        0,
+        8192,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Moonkin Form",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 202347,
+      "granted": false,
+      "requiresTalentEntry": [
+        109841
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        262144,
+        0,
+        0,
+        512
+      ],
+      "passive": false,
+      "name": "Stellar Flare",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 406890,
+      "granted": false,
+      "requiresTalentEntry": [
+        115458
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wild Surges"
+    },
+    {
+      "id": 158477,
+      "granted": false,
+      "requiresTalentEntry": [
+        103208
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Soul of the Forest"
+    },
+    {
+      "id": 372119,
+      "granted": false,
+      "requiresTalentEntry": [
+        103218
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dream of Cenarius"
+    },
+    {
+      "id": 449193,
+      "granted": false,
+      "requiresTalentEntry": [
+        114300
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fluid Form"
+    },
+    {
+      "id": 400222,
+      "granted": false,
+      "requiresTalentEntry": [
+        114698
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        2595
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thorns of Iron"
+    },
+    {
+      "id": 400278,
+      "granted": false,
+      "requiresTalentEntry": [
+        114699
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Moonless Night"
+    },
+    {
+      "id": 204066,
+      "granted": false,
+      "requiresTalentEntry": [
+        114700
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292,
+        2905
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Lunar Beam",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 400254,
+      "granted": false,
+      "requiresTalentEntry": [
+        114701
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        2048,
+        0,
+        8192,
+        0
+      ],
+      "passive": false,
+      "name": "Raze",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 155580,
+      "granted": false,
+      "requiresTalentEntry": [
+        114771
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lunar Inspiration"
+    },
+    {
+      "id": 403521,
+      "granted": false,
+      "requiresTalentEntry": [
+        114808
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tranquil Mind"
+    },
+    {
+      "id": 231050,
+      "granted": false,
+      "requiresTalentEntry": [
+        116102
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Sunfire"
+    },
+    {
+      "id": 400533,
+      "granted": false,
+      "requiresTalentEntry": [
+        117105
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wild Synthesis"
+    },
+    {
+      "id": 428655,
+      "granted": false,
+      "requiresTalentEntry": [
+        117176
+      ],
+      "type": "talent",
+      "label": [
+        292,
+        16,
+        21,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "The Light of Elune"
+    },
+    {
+      "id": 429536,
+      "granted": false,
+      "requiresTalentEntry": [
+        117772
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Astral Insight"
+    },
+    {
+      "id": 429540,
+      "granted": false,
+      "requiresTalentEntry": [
+        117178
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Arcane Affinity"
+    },
+    {
+      "id": 429539,
+      "granted": false,
+      "requiresTalentEntry": [
+        117177
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lunation"
+    },
+    {
+      "id": 429530,
+      "granted": false,
+      "requiresTalentEntry": [
+        117181
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022,
+        3990
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lunar Insight"
+    },
+    {
+      "id": 429668,
+      "granted": false,
+      "requiresTalentEntry": [
+        117183
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stellar Command"
+    },
+    {
+      "id": 429523,
+      "granted": false,
+      "requiresTalentEntry": [
+        117770
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lunar Calling"
+    },
+    {
+      "id": 434220,
+      "granted": false,
+      "requiresTalentEntry": [
+        117185
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Power of the Dream"
+    },
+    {
+      "id": 434249,
+      "granted": false,
+      "requiresTalentEntry": [
+        117894
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Control of the Dream"
+    },
+    {
+      "id": 433748,
+      "granted": false,
+      "requiresTalentEntry": [
+        117186
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Protective Growth"
+    },
+    {
+      "id": 429533,
+      "granted": false,
+      "requiresTalentEntry": [
+        117769
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Glistening Fur"
+    },
+    {
+      "id": 429402,
+      "granted": false,
+      "requiresTalentEntry": [
+        117189
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Grove's Inspiration"
+    },
+    {
+      "id": 429420,
+      "granted": false,
+      "requiresTalentEntry": [
+        117188
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Potent Enchantments"
+    },
+    {
+      "id": 429529,
+      "granted": false,
+      "requiresTalentEntry": [
+        117190
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lunar Amplification"
+    },
+    {
+      "id": 429538,
+      "granted": false,
+      "requiresTalentEntry": [
+        117192
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Moondust"
+    },
+    {
+      "id": 443046,
+      "granted": false,
+      "requiresTalentEntry": [
+        123304
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Elune's Grace"
+    },
+    {
+      "id": 429433,
+      "granted": false,
+      "requiresTalentEntry": [
+        117196
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Blooming Infusion"
+    },
+    {
+      "id": 429399,
+      "granted": false,
+      "requiresTalentEntry": [
+        117197
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Expansiveness"
+    },
+    {
+      "id": 455797,
+      "granted": false,
+      "requiresTalentEntry": [
+        117199
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cenarius' Might"
+    },
+    {
+      "id": 428859,
+      "granted": false,
+      "requiresTalentEntry": [
+        117201
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Power of Nature"
+    },
+    {
+      "id": 429227,
+      "granted": false,
+      "requiresTalentEntry": [
+        117200
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Durability of Nature"
+    },
+    {
+      "id": 441583,
+      "granted": false,
+      "requiresTalentEntry": [
+        117206
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ravage"
+    },
+    {
+      "id": 441678,
+      "granted": false,
+      "requiresTalentEntry": [
+        117207
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wildshape Mastery"
+    },
+    {
+      "id": 441841,
+      "granted": false,
+      "requiresTalentEntry": [
+        117208
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bestial Strength"
+    },
+    {
+      "id": 441689,
+      "granted": false,
+      "requiresTalentEntry": [
+        117210
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Empowered Shapeshifting"
+    },
+    {
+      "id": 441691,
+      "granted": false,
+      "requiresTalentEntry": [
+        117209
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wildpower Surge"
+    },
+    {
+      "id": 441835,
+      "granted": false,
+      "requiresTalentEntry": [
+        117211
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Claw Rampage"
+    },
+    {
+      "id": 441845,
+      "granted": false,
+      "requiresTalentEntry": [
+        117214
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Strike for the Heart"
+    },
+    {
+      "id": 441846,
+      "granted": false,
+      "requiresTalentEntry": [
+        117213
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Tear Down the Mighty"
+    },
+    {
+      "id": 441829,
+      "granted": false,
+      "requiresTalentEntry": [
+        117216
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Aggravate Wounds"
+    },
+    {
+      "id": 441675,
+      "granted": false,
+      "requiresTalentEntry": [
+        117218
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fount of Strength"
+    },
+    {
+      "id": 441814,
+      "granted": false,
+      "requiresTalentEntry": [
+        117219
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ruthless Aggression"
+    },
+    {
+      "id": 441824,
+      "granted": false,
+      "requiresTalentEntry": [
+        123048
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Killing Strikes"
+    },
+    {
+      "id": 441809,
+      "granted": false,
+      "requiresTalentEntry": [
+        117220
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Dreadful Wound"
+    },
+    {
+      "id": 439926,
+      "granted": false,
+      "requiresTalentEntry": [
+        117221
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wildstalker's Power"
+    },
+    {
+      "id": 439895,
+      "granted": false,
+      "requiresTalentEntry": [
+        117222
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Entangling Vortex"
+    },
+    {
+      "id": 439901,
+      "granted": false,
+      "requiresTalentEntry": [
+        119855
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Flower Walk"
+    },
+    {
+      "id": 439890,
+      "granted": false,
+      "requiresTalentEntry": [
+        117223
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Strategic Infusion"
+    },
+    {
+      "id": 455461,
+      "granted": false,
+      "requiresTalentEntry": [
+        117224
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lethal Preservation"
+    },
+    {
+      "id": 439929,
+      "granted": false,
+      "requiresTalentEntry": [
+        117225
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bond with Nature"
+    },
+    {
+      "id": 440116,
+      "granted": false,
+      "requiresTalentEntry": [
+        119854
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022,
+        3962
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Harmonious Constitution"
+    },
+    {
+      "id": 439528,
+      "granted": false,
+      "requiresTalentEntry": [
+        117226
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Thriving Growth"
+    },
+    {
+      "id": 440119,
+      "granted": false,
+      "requiresTalentEntry": [
+        117227
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Vigorous Creepers"
+    },
+    {
+      "id": 440117,
+      "granted": false,
+      "requiresTalentEntry": [
+        117230
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twin Sprouts"
+    },
+    {
+      "id": 440118,
+      "granted": false,
+      "requiresTalentEntry": [
+        117229
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022,
+        3872
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Implant"
+    },
+    {
+      "id": 439868,
+      "granted": false,
+      "requiresTalentEntry": [
+        117231
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hunt Beneath the Open Skies"
+    },
+    {
+      "id": 440120,
+      "granted": false,
+      "requiresTalentEntry": [
+        117232
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Bursting Growth"
+    },
+    {
+      "id": 439880,
+      "granted": false,
+      "requiresTalentEntry": [
+        117234
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Resilient Flourishing"
+    },
+    {
+      "id": 439882,
+      "granted": false,
+      "requiresTalentEntry": [
+        117233
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Root Network"
+    },
+    {
+      "id": 400129,
+      "granted": false,
+      "requiresTalentEntry": [
+        123792
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Forestwalk"
+    },
+    {
+      "id": 449191,
+      "granted": false,
+      "requiresTalentEntry": [
+        123793
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Oakskin"
+    },
+    {
+      "id": 449185,
+      "granted": false,
+      "requiresTalentEntry": [
+        123794
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Lore of the Grove"
+    },
+    {
+      "id": 449184,
+      "granted": false,
+      "requiresTalentEntry": [
+        123795
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Instincts of the Claw"
+    },
+    {
+      "id": 449182,
+      "granted": false,
+      "requiresTalentEntry": [
+        123796
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ursoc's Spirit"
+    },
+    {
+      "id": 451211,
+      "granted": false,
+      "requiresTalentEntry": [
+        123868
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Starlight Conduit"
+    },
+    {
+      "id": 469004,
+      "granted": false,
+      "requiresTalentEntry": [
+        128230
+      ],
+      "type": "talent",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Hail of Stars"
+    },
+    {
+      "id": 468978,
+      "granted": false,
+      "requiresTalentEntry": [
+        128231
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Crashing Star"
+    },
+    {
+      "id": 470581,
+      "granted": false,
+      "requiresTalentEntry": [
+        128274
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Forest's Flow"
+    },
+    {
+      "id": 470562,
+      "granted": false,
+      "requiresTalentEntry": [
+        128275
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Renewing Surge"
+    },
+    {
+      "id": 470540,
+      "granted": false,
+      "requiresTalentEntry": [
+        128276
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Twinleaf"
+    },
+    {
+      "id": 470549,
+      "granted": false,
+      "requiresTalentEntry": [
+        128277
+      ],
+      "type": "talent",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Wildwood Roots"
+    },
+    {
+      "id": 393374,
+      "type": "learned",
+      "taughtBy": 393371,
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cenarius' Guidance"
+    },
+    {
+      "id": 393381,
+      "type": "learned",
+      "taughtBy": 393371,
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Cenarius' Guidance"
+    },
+    {
+      "id": 106951,
+      "type": "learned",
+      "taughtBy": 343223,
+      "label": [
+        21,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "passive": false,
+      "name": "Berserk",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -60000,
+            "hasted": false,
+            "requiredSpells": [
+              391174
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 391538,
+      "type": "learned",
+      "taughtBy": 391548,
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ashamane's Guidance"
+    },
+    {
+      "id": 421440,
+      "type": "learned",
+      "taughtBy": 391548,
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Ashamane's Guidance"
+    },
+    {
+      "id": 231052,
+      "type": "learned",
+      "taughtBy": 390772,
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Prowl"
+    },
+    {
+      "id": 343232,
+      "type": "learned",
+      "taughtBy": 390772,
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Improved Shred"
+    },
+    {
+      "id": 50334,
+      "type": "learned",
+      "taughtBy": 394786
+    },
+    {
+      "id": 102558,
+      "type": "learned",
+      "overrides": 50334,
+      "taughtBy": 394786,
+      "label": [
+        21,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        1073741824,
+        2048,
+        0,
+        1
+      ],
+      "passive": false,
+      "name": "Incarnation: Guardian of Ursoc",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false,
+        "modifiers": [
+          {
+            "duration": -60000,
+            "hasted": false,
+            "requiredSpells": [
+              391174
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 50334,
+      "type": "learned",
+      "taughtBy": 377779
+    },
+    {
+      "id": 50334,
+      "type": "learned",
+      "taughtBy": 343240
+    },
+    {
+      "id": 50334,
+      "type": "learned",
+      "taughtBy": 377623,
+      "label": [
+        21,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        1048576,
+        0
+      ],
+      "passive": false,
+      "name": "Berserk",
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 392999,
+      "type": "learned",
+      "taughtBy": 468936
+    },
+    {
+      "id": 392999,
+      "type": "learned",
+      "taughtBy": 88747,
+      "label": [
+        16,
+        292,
+        21
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Fungal Growth"
+    },
+    {
+      "id": 194223,
+      "type": "learned",
+      "taughtBy": 394013
+    },
+    {
+      "id": 102560,
+      "type": "learned",
+      "overrides": 194223,
+      "taughtBy": 394013,
+      "label": [
+        21,
+        16,
+        292,
+        690,
+        2330
+      ],
+      "classMask": [
+        0,
+        2048,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Incarnation: Chosen of Elune",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              468743
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 194223,
+      "type": "learned",
+      "taughtBy": 395022,
+      "label": [
+        21,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        131072
+      ],
+      "passive": false,
+      "name": "Celestial Alignment",
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              468743
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 155627,
+      "type": "learned",
+      "taughtBy": 155580,
+      "label": [
+        16,
+        52,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Lunar Inspiration"
+    },
+    {
+      "id": 439460,
+      "type": "learned",
+      "taughtBy": 441583,
+      "label": [
+        16,
+        21,
+        292,
+        3022
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Druid of the Claw"
+    },
+    {
+      "id": 102416,
+      "grantedBy": 5421,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        219,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Wild Charge",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 16979,
+      "grantedBy": 21178,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        219,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Wild Charge",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 49376,
+      "grantedBy": 3025,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        219,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Wild Charge",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 293840,
+      "grantedBy": 18960,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        65536
+      ],
+      "passive": false,
+      "name": "Teleport: Moonglade",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 293887,
+      "grantedBy": 193753,
+      "type": "temporary",
+      "label": [
+        16,
+        21,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        65536
+      ],
+      "passive": false,
+      "hidden": "unless-learned",
+      "name": "Dreamwalk",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "cooldown": {
+        "duration": 60000,
+        "hasted": false
+      },
+      "castTime": {
+        "duration": 10000
+      }
+    },
+    {
+      "id": 188550,
+      "grantedBy": 392301,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        292,
+        741
+      ],
+      "classMask": [
+        0,
+        4112,
+        0,
+        4194304
+      ],
+      "passive": false,
+      "name": "Lifebloom",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      }
+    },
+    {
+      "id": 383410,
+      "grantedBy": 390378,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        292,
+        690
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        131072
+      ],
+      "passive": false,
+      "name": "Celestial Alignment",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              468743
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 390414,
+      "grantedBy": 390378,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        292,
+        690,
+        2330
+      ],
+      "classMask": [
+        0,
+        2048,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Incarnation: Chosen of Elune",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "charges": {
+        "max": 1,
+        "modifiers": [
+          {
+            "max": 1,
+            "requiredSpells": [
+              468743
+            ]
+          }
+        ]
+      },
+      "cooldown": {
+        "duration": 180000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 102383,
+      "grantedBy": 197625,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        219,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        32,
+        0
+      ],
+      "passive": false,
+      "hidden": "always",
+      "name": "Wild Charge",
+      "cooldown": {
+        "duration": 15000,
+        "hasted": false
+      }
+    },
+    {
+      "id": 155625,
+      "grantedBy": 155627,
+      "type": "temporary",
+      "label": [
+        21,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        16777220
+      ],
+      "passive": false,
+      "name": "Moonfire",
+      "gcd": {
+        "duration": 1000,
+        "hasted": true
+      }
+    }
+  ]
+}

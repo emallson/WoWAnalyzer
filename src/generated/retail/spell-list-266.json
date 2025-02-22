@@ -1,0 +1,180 @@
+{
+  "specId": 266,
+  "baselineSpells": [
+    30146,
+    105174,
+    77219,
+    137044,
+    162699,
+    231811,
+    334591,
+    462112,
+    462113
+  ],
+  "spells": [
+    {
+      "id": 30146,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        1073741824,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Summon Felguard",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 6000
+      }
+    },
+    {
+      "id": 105174,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        2097152,
+        0,
+        0,
+        0
+      ],
+      "passive": false,
+      "name": "Hand of Gul'dan",
+      "gcd": {
+        "duration": 1500,
+        "hasted": true
+      },
+      "castTime": {
+        "duration": 1500
+      }
+    },
+    {
+      "id": 77219,
+      "type": "baseline",
+      "label": [
+        19,
+        16,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Mastery: Master Demonologist"
+    },
+    {
+      "id": 137044,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Demonology Warlock"
+    },
+    {
+      "id": 162699,
+      "type": "baseline",
+      "label": [
+        16,
+        292
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Stat Negation Aura - Intellect DPS"
+    },
+    {
+      "id": 231811,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Soulstone"
+    },
+    {
+      "id": 334591,
+      "type": "baseline",
+      "label": [
+        16,
+        292,
+        19
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "name": "Fel Firebolt"
+    },
+    {
+      "id": 462112,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Warlock"
+    },
+    {
+      "id": 462113,
+      "type": "baseline",
+      "label": [
+        16,
+        19,
+        292
+      ],
+      "classMask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passive": true,
+      "hidden": "always",
+      "name": "Demonology Warlock"
+    }
+  ]
+}
