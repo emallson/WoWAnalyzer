@@ -5,7 +5,7 @@ import { lingui } from '@lingui/vite-plugin';
 import { sentryVitePlugin } from '@sentry/vite-plugin';
 import react from '@vitejs/plugin-react';
 import { globSync } from 'glob';
-import { defineConfig } from 'vite';
+import { PluginOption, defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import svgr from 'vite-plugin-svgr';
 
@@ -60,6 +60,7 @@ export default defineConfig((env) => ({
     },
   },
   plugins: [
+    workerCssResolver(),
     tsconfigPaths(),
     react({
       babel: {
@@ -144,3 +145,23 @@ export default defineConfig((env) => ({
     reporters: ['basic', 'hanging-process'],
   },
 }));
+
+const workerCssResolver = (): PluginOption => ({
+  name: '@wowanalyzer/worker-css-resolver',
+  configureServer(server) {
+    server.middlewares.use((req, res, next) => {
+      const isWorkerRequest = req.headers['sec-fetch-dest'] === 'worker';
+      if (isWorkerRequest && req.url) {
+        const url = new URL(req.url, `http://${req.headers.host}`);
+        if (url.pathname.endsWith('.css') || url.pathname.endsWith('.scss')) {
+          res.appendHeader('content-type', 'text/javascript');
+          res.end('export default function ignored() {}');
+        } else {
+          next();
+        }
+      } else {
+        next();
+      }
+    });
+  },
+});

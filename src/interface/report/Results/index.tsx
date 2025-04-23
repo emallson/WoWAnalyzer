@@ -41,7 +41,7 @@ import { appendReportHistory } from 'interface/reducers/reportHistory';
 import FoundationSupportBadge from 'interface/guide/foundation/FoundationSupportBadge';
 
 interface PassedProps {
-  parser: CombatLogParser;
+  parser: CombatLogParser | null;
   characterProfile: CharacterProfile;
   makeTabUrl: (tab: string, build?: string) => string;
   phases: Record<string, Phase> | null;
@@ -219,9 +219,6 @@ const Results = (props: PassedProps) => {
           <div className="container">
             <AlertWarning style={{ marginBottom: 30 }}>{boss.fight.resultsWarning}</AlertWarning>
           </div>
-        )}
-        {props.parser && props.parser.selectedCombatant.gear && (
-          <ItemWarning gear={props.parser.selectedCombatant.gear} />
         )}
         {props.timeFilter && (
           <div className="container">

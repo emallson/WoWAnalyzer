@@ -324,6 +324,7 @@ class CombatLogParser {
     selectedFight: Fight,
     combatantInfoEvents: CombatantInfoEvent[],
     characterProfile: CharacterProfile,
+    serializedAnalyzers: Record<string, unknown> = {},
   ) {
     this.config = config;
     this.report = report;
@@ -344,11 +345,14 @@ class CombatLogParser {
       this.disabledModules[key] = [];
     });
     const ctor = this.constructor as typeof CombatLogParser;
-    this.initializeModules({
-      ...ctor.internalModules,
-      ...ctor.defaultModules,
-      ...ctor.specModules,
-    });
+    this.initializeModules(
+      {
+        ...ctor.internalModules,
+        ...ctor.defaultModules,
+        ...ctor.specModules,
+      },
+      serializedAnalyzers,
+    );
   }
   finish() {
     this.finished = true;
@@ -406,11 +410,19 @@ class CombatLogParser {
     moduleClass: T,
     options: { [prop: string]: any; priority: number },
     desiredModuleName = `module${Object.keys(this._modules).length}`,
+    serializedState: unknown | undefined = undefined,
   ) {
     const fullOptions = {
       ...options,
       owner: this,
     };
+
+    if (serializedState) {
+      const module = Analyzer.deserialize(fullOptions, moduleClass, serializedState);
+      this._modules[desiredModuleName] = module;
+
+      return module;
+    }
 
     const module = new moduleClass(fullOptions);
     Module.applyDependencies(fullOptions, module);
@@ -418,7 +430,11 @@ class CombatLogParser {
     this._modules[desiredModuleName] = module;
     return module;
   }
-  initializeModules(modules: DependenciesDefinition, iteration = 1) {
+  initializeModules(
+    modules: DependenciesDefinition,
+    serializedAnalyzers: Record<string, unknown>,
+    iteration = 1,
+  ) {
     // TODO: Refactor and test, this dependency injection thing works really well but it's hard to understand or change.
     const failedModules: string[] = [];
     Object.keys(modules).forEach((desiredModuleName) => {
@@ -456,6 +472,7 @@ class CombatLogParser {
               priority,
             },
             desiredModuleName,
+            serializedAnalyzers[desiredModuleName],
           );
         } catch (e) {
           if (!import.meta.env.PROD) {
@@ -521,7 +538,7 @@ class CombatLogParser {
         debugger;
         throw new Error(`Failed to load modules: ${Object.keys(newBatch).join(', ')}`);
       }
-      this.initializeModules(newBatch, iteration + 1);
+      this.initializeModules(newBatch, serializedAnalyzers, iteration + 1);
     } else {
       this.allModulesInitialized();
     }

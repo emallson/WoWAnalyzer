@@ -1,14 +1,11 @@
 import { captureException } from '@sentry/react';
 import makeApiUrl from 'common/makeApiUrl';
 import SPELLS from 'common/SPELLS';
-import { useEffect } from 'react';
-import useSWR from 'swr';
+import { useEffect, useState } from 'react';
 import Spell from 'common/SPELLS/Spell';
 import { useExpansionContext } from 'interface/report/ExpansionContext';
 import { getSpellId } from 'common/getSpellId';
 import { maybeGetTalentOrSpell } from 'common/maybeGetTalentOrSpell';
-
-const fetcher = (...args: Parameters<typeof fetch>) => fetch(...args).then((res) => res.json());
 
 const useSpellInfo = (spell: number | Spell | undefined) => {
   const { expansion } = useExpansionContext();
@@ -16,24 +13,33 @@ const useSpellInfo = (spell: number | Spell | undefined) => {
   const argumentAsSpell =
     typeof spell === 'number' ? maybeGetTalentOrSpell(spell, expansion) : spell;
 
-  const { data, error } = useSWR<Spell>(spellId ? makeApiUrl(`spell/${spellId}`) : null, {
-    fetcher,
-    isPaused: () => argumentAsSpell !== undefined,
-  });
+  const [spellData, setSpellData] = useState(argumentAsSpell);
 
   useEffect(() => {
-    if (spellId && data) {
-      SPELLS[spellId] = data;
+    if (spellData && spellData.id !== spellId) {
+      setSpellData(argumentAsSpell);
     }
-  }, [data, spellId]);
+  }, [spellData, spellId]);
 
-  if (error) {
-    captureException(error);
-    console.error(error);
-    return argumentAsSpell;
-  }
+  useEffect(() => {
+    if (argumentAsSpell === undefined) {
+      // we are missing the spell definition
+      fetch(makeApiUrl(`spell/${spellId}`))
+        .then((data) => data.json())
+        .then((data) => {
+          if (spellId && data) {
+            SPELLS[spellId] = data;
+            setSpellData(data);
+          }
+        })
+        .catch((error) => {
+          captureException(error);
+          console.error(error);
+        });
+    }
+  }, [spellId, argumentAsSpell]);
 
-  return argumentAsSpell ?? data;
+  return spellData;
 };
 
 export default useSpellInfo;

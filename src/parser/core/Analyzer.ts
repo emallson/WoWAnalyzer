@@ -93,7 +93,61 @@ class Analyzer extends EventSubscriber {
   ): AnalyzerConstructor<T, D> {
     return withDependencies(this, deps);
   }
+
+  static serialize(analyzer: Analyzer): unknown {
+    const dependencies = analyzer.constructor.dependencies;
+    const base = { ...analyzer, deps: undefined, owner: undefined };
+    for (const depName of Object.keys(dependencies)) {
+      delete base[depName];
+    }
+
+    for (const name of Object.keys(base)) {
+      try {
+        structuredClone(base[name]);
+      } catch (e) {
+        console.warn(
+          `unable to perform structured clone of property ${name} on analyzer ${analyzer.key}`,
+          e,
+        );
+        base[name] = OMITTED;
+      }
+    }
+
+    return base;
+  }
+
+  static deserialize<T extends typeof Analyzer>(
+    options: Options,
+    constructor: T,
+    serialized: unknown,
+  ): InstanceType<T> {
+    const props = {
+      ...serialized,
+      ...options,
+      deps: options,
+    };
+    for (const name of Object.keys(props)) {
+      if (props[name] === OMITTED) {
+        props[name] = OMITTED_PROXY(name);
+      }
+    }
+    return Object.create(constructor.prototype, Object.getOwnPropertyDescriptors(props));
+  }
 }
+
+const OMITTED = '__OMITTED__';
+const OMITTED_PROXY = (name: string) =>
+  new Proxy(
+    {},
+    {
+      get() {
+        throw new Error(`attempted to access non-transferrable propery ${name}`);
+      },
+      set() {
+        throw new Error(`attempted to set non-transferrable property ${name}`);
+      },
+    },
+  );
 
 export default Analyzer;
 

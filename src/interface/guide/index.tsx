@@ -321,29 +321,29 @@ export const GoodMark = () => <i className="glyphicon glyphicon-ok good-mark" />
 export const OkMark = () => <i className="glyphicon glyphicon-asterisk ok-mark" />;
 export const BadMark = () => <i className="glyphicon glyphicon-remove bad-mark" />;
 
-export const PerfectColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--guide-perfect-color',
-);
-export const GoodColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--guide-good-color',
-);
-export const OkColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--guide-ok-color',
-);
-export const BadColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--guide-bad-color',
-);
+export const PerfectColor = globalThis.document
+  ? getComputedStyle(document.documentElement).getPropertyValue('--guide-perfect-color')
+  : undefined;
+export const GoodColor = globalThis.document
+  ? getComputedStyle(document.documentElement).getPropertyValue('--guide-good-color')
+  : undefined;
+export const OkColor = globalThis.document
+  ? getComputedStyle(document.documentElement).getPropertyValue('--guide-ok-color')
+  : undefined;
+export const BadColor = globalThis.document
+  ? getComputedStyle(document.documentElement).getPropertyValue('--guide-bad-color')
+  : undefined;
 
 // some extra colors for fun
-export const VeryBadColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--guide-very-bad-color',
-);
-export const MediocreColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--guide-mediocre-color',
-);
-export const AvailableColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--guide-available-color',
-);
+export const VeryBadColor = globalThis.document
+  ? getComputedStyle(document.documentElement).getPropertyValue('--guide-very-bad-color')
+  : undefined;
+export const MediocreColor = globalThis.document
+  ? getComputedStyle(document.documentElement).getPropertyValue('--guide-mediocre-color')
+  : undefined;
+export const AvailableColor = globalThis.document
+  ? getComputedStyle(document.documentElement).getPropertyValue('--guide-available-color')
+  : undefined;
 
 /** Shows a glyph - either a green checkmark or a red X depending on if 'pass' is true */
 export const PassFailCheckmark = ({ pass }: { pass: boolean }) =>
