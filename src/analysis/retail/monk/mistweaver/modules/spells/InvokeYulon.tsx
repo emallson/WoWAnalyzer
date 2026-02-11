@@ -165,6 +165,21 @@ class InvokeYulon extends BaseCelestialAnalyzer {
               checklistItems={checklistItems}
               perf={avgPerf}
               key={ix}
+              timeline={{
+                range: {
+                  start: cast.timestamp,
+                  end: cast.deathTimestamp,
+                },
+                cooldowns: [
+                  TALENTS_MONK.THUNDER_FOCUS_TEA_TALENT.id,
+                  TALENTS_MONK.INVOKE_YULON_THE_JADE_SERPENT_TALENT.id,
+                  TALENTS_MONK.CELESTIAL_CONDUIT_MISTWEAVER_TALENT.id,
+                ],
+                auras: [
+                  TALENTS_MONK.THUNDER_FOCUS_TEA_TALENT.id,
+                  SPELLS.SECRET_INFUSION_HASTE_BUFF.id,
+                ],
+              }}
             />
           );
         })}
