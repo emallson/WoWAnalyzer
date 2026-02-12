@@ -15,13 +15,14 @@ import { useCombatLogParser } from 'interface/report/CombatLogParserContext';
 import SpellUsable from 'parser/shared/modules/SpellUsable';
 import type Spell from 'common/SPELLS/Spell';
 import React from 'react';
+import DragScroll from 'interface/DragScroll';
 
 /**
  * Container for embedding the timeline in another component.
  *
  * Use `SpellTimeline` component for wrapping the `Casts` component.
  */
-export const EmbeddedTimelineContainer = styled.div<{
+export const EmbeddedTimelineContainer = styled(DragScroll)<{
   secondWidth?: number;
   secondsShown?: number;
   castBarCount?: number;
@@ -35,7 +36,15 @@ export const EmbeddedTimelineContainer = styled.div<{
 
     .cooldowns:only-child {
       margin-top: unset;
+
+      .lane {
+        overflow-x: clip;
+      }
     }
+  }
+
+  &.drag-scroll-container {
+    cursor: default;
   }
 
   --cast-bars: ${(props) => props.castBarCount ?? 1};
@@ -48,6 +57,13 @@ export const EmbeddedTimelineContainer = styled.div<{
     const width = (props.secondWidth ?? 60) * (props.secondsShown ?? 10);
     return `${width}px`;
   }};
+`;
+
+const ResponsiveEmbeddedTimelineContainer = styled(EmbeddedTimelineContainer)`
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: auto;
 `;
 
 export const SpellTimeline = ({
@@ -65,7 +81,16 @@ interface AutoSizerTimelineContainerProps {
   secondsShown: number;
   castBarCount?: number;
   children?: React.ReactNode;
+  minSecondWidth?: number;
 }
+
+/**
+ * Extra spacing to allow spell icons positioned at exactly the left/right boundaries to display
+ * without causing scrollbars.
+ *
+ * This is set to the equivalent of 2.2rem, the size of a spell icon on the timeline.
+ */
+const OVERFLOW_WIDTH_OFFSET = 22;
 
 /**
  * Timeline container that automatically sets the width of seconds to prevent scrolling.
@@ -78,39 +103,52 @@ export const AutoSizerTimelineContainer = ({
   children,
   secondsShown,
   castBarCount,
+  minSecondWidth,
 }: AutoSizerTimelineContainerProps) => {
   // using this instead of AutoSizer because it works with the AnimateHeight component
   const [width, setWidth] = useState(0);
-  const mutationObserver = useRef(
+  const [scrollable, setScrollable] = useState(false);
+  const containerSizeObserver = useRef(
     new ResizeObserver((entries) => {
       for (const entry of entries) {
         const rawWidth = entry.contentBoxSize[0].inlineSize;
         if (rawWidth > 0) {
           setWidth(Math.max(1, rawWidth));
         }
+
+        // we can't directly use a ref with `DragScroll` because it uses an old-style ref for the element
+        const parent = entry.target.parentElement;
+        if (parent) {
+          setScrollable(parent.scrollWidth > parent.clientWidth);
+        }
       }
     }),
   );
-  const innerSecondWidth = width / secondsShown;
+  const innerSecondWidth = Math.max(
+    (width - OVERFLOW_WIDTH_OFFSET) / secondsShown,
+    minSecondWidth ?? 0,
+  );
 
   return (
-    <EmbeddedTimelineContainer
+    <ResponsiveEmbeddedTimelineContainer
       secondsShown={secondsShown}
       castBarCount={castBarCount}
-      secondWidth={0}
-      style={{ width: '100%', boxSizing: 'border-box', maxWidth: '100%' }}
+      secondWidth={innerSecondWidth}
+      style={{ cursor: scrollable ? 'grab' : 'default' }}
     >
       <div
         style={{ width: '100%' }}
         ref={(el) =>
-          el ? mutationObserver.current.observe(el) : mutationObserver.current.disconnect()
+          el
+            ? containerSizeObserver.current.observe(el)
+            : containerSizeObserver.current.disconnect()
         }
       >
         <TimelineSettingsContext value={{ secondWidth: innerSecondWidth }}>
           {children}
         </TimelineSettingsContext>
       </div>
-    </EmbeddedTimelineContainer>
+    </ResponsiveEmbeddedTimelineContainer>
   );
 };
 
@@ -185,7 +223,7 @@ function EmbeddedTimeline({ range, auras, cooldowns }: EmbeddedTimelineProps) {
   }
 
   return (
-    <AutoSizerTimelineContainer secondsShown={secondsShown}>
+    <AutoSizerTimelineContainer secondsShown={secondsShown} minSecondWidth={30}>
       <SpellTimeline>
         {auras && (
           <AuraTimeline
