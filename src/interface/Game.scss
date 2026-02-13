@@ -102,16 +102,40 @@
   background-color: #33937f !important;
 }
 
-.Pet,
-.Boss,
-.NPC {
-  color: #64bdc8 !important;
+.Boss {
+  color: #B4BDFF !important
 }
 
-.Pet-bg,
-.Boss-bg,
+.Boss-bg {
+  background-color: #B4BDFF !important
+}
+
+.Boss:hover {
+  color: #FFCDFF !important
+}
+
+.NPC {
+  color: #84BDF8 !important
+}
+
 .NPC-bg {
-  background-color: #64bdc8 !important;
+  background-color: #84BDF8 !important
+}
+
+.NPC:hover {
+  color: #A4DDFF !important
+}
+
+.Pet {
+  color: #64BDC8 !important
+}
+
+.Pet-bg {
+  background-color: #64BDC8 !important
+}
+
+.Other-bg {
+  background-color: #434241;
 }
 
 .poor {
